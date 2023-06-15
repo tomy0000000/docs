@@ -1,0 +1,8 @@
+{
+  "label": "Package Managers",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Cheatsheet to switch between package managers"
+  }
+}
