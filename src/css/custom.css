@@ -28,3 +28,13 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+li.tabs__item p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li.tabs__item svg {
+  margin-inline-start: 0.25em;
+  margin-inline-end: 0.25em;
+}

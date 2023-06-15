@@ -7,26 +7,27 @@ sidebar_position: 2
 ```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { Icon } from '@iconify/react';
 ```
 
 Finding an installable.
 
 <Tabs groupId="package-manager">
-<TabItem value="apt" label="apt">
+<TabItem value="apt" label={<p><Icon icon="logos:debian" inline={true}/>apt</p>}>
 
 ```shell
 apt search _
 ```
 
 </TabItem>
-<TabItem value="brew" label="🍺 Homebrew">
+<TabItem value="brew" label={<p><Icon icon="logos:homebrew" inline={true}/>Homebrew</p>}>
 
 ```shell
 brew search _
 ```
 
 </TabItem>
-<TabItem value="pip" label="🐍 Python">
+<TabItem value="pip" label={<p><Icon icon="logos:python" inline={true}/>Python</p>}>
 
 ```shell
 pip search _
@@ -39,14 +40,14 @@ pip search _
 :::
 
 </TabItem>
-<TabItem value="npm" label="npm">
+<TabItem value="npm" label={<p><Icon icon="logos:npm-icon" inline={true}/>npm</p>}>
 
 ```shell
 npm search _
 ```
 
 </TabItem>
-<TabItem value="gem" label="💎 Ruby">
+<TabItem value="gem" label={<p><Icon icon="logos:rubygems" inline={true}/>Ruby</p>}>
 
 ```shell
 gem search _
