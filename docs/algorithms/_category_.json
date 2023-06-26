@@ -1,0 +1,8 @@
+{
+  "label": "Algorithms",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Cheat sheets for picking the right algorithm for the job."
+  }
+}
