@@ -1,0 +1,71 @@
+import SortableTable from "@site/src/components/SortableTable";
+import countries from "./countries.json";
+
+# Glossary
+
+The generic list of countries, according to the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) standard.
+
+[ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) is the international standard to denote countries. The most common form is the Alpha 2 code, a two-letter code. There's also the Alpha 3 code, a three-letter code, and the numeric code, a three-digit code.
+
+The ITU-T E.164 is the international standard for telephone numbers, also known as the [calling code](https://en.wikipedia.org/wiki/List_of_country_calling_codes). It's a three-digit code. Notice that not all calling codes are listed here.
+
+Note that the ISO 3166-1 numeric code and the ITU-T E.164 code are **NOT** the same.
+
+Clicking Emoji will open the [Emojipedia](https://emojipedia.org/) page for that emoji. Although some look similar, each emoji is unique.
+
+Clicking the ISO 3166-1 Alpha 2 code will open the Wikipedia page with a more comprehensive list of more extended codes for each subdivision.
+
+<SortableTable
+  columns={[
+    {
+      header: "Name",
+      accessorKey: "name",
+    },
+    {
+      header: "Emoji",
+      accessorKey: "emoji",
+      cell: ({ getValue }) => (
+        <a
+          href={`https://emojipedia.org/search/?q=${getValue()}`}
+          target="blank"
+          rel="noreferrer noopener"
+        >
+          {getValue()}
+        </a>
+      ),
+    },
+    {
+      header: "ISO 3166-1 Alpha 2",
+      accessorKey: "iso",
+      cell: ({ getValue }) => (
+        <a
+          href={`https://en.wikipedia.org/wiki/ISO_3166-2:${getValue()}`}
+          target="blank"
+          rel="noreferrer noopener"
+        >
+          {getValue()}
+        </a>
+      ),
+    },
+    {
+      header: "ITU-T E.164",
+      accessorKey: "itut",
+      cell: ({ getValue }) => (
+        <>
+          {getValue()
+            .split("\n")
+            .map(function (item, idx) {
+              return (
+                <span key={idx}>
+                  {item}
+                  <br />
+                </span>
+              );
+            })}
+          {/* .map((line) => <p>{line}</p>) */}
+        </>
+      ),
+    },
+  ]}
+  data={countries}
+/>
