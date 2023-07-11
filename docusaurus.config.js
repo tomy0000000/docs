@@ -106,6 +106,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: "BOH1GMBANC",
+        apiKey: "b6b393e443621591c2c26b62f5da001e",
+        indexName: "tomy-docs",
+        contextualSearch: true,
+      },
     }),
 };
 
