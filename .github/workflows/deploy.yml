@@ -26,6 +26,7 @@ jobs:
       - name: 🛒 Checkout
         uses: actions/checkout@v3
         with:
+          fetch-depth: 0 # For generating updated timestamps in each page
           submodules: recursive
 
       - name: ⚙️ Setup pnpm
