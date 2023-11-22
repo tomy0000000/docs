@@ -18,9 +18,14 @@ Quick index of built-in Python version in each Linux distribution and changes ma
 
 ## Python 3.12
 
+- `type` statement ([ref](https://docs.python.org/3/reference/simple_stmts.html#the-type-statement))
+- Multiline, Nested, Blackslash-compatible f-string ([ref](https://docs.python.org/3/whatsnew/3.12.html#pep-701-syntactic-formalization-of-f-strings))
+- "Did you mean..." error message ([ref](https://docs.python.org/3/whatsnew/3.12.html#improved-error-messages))
+- `@override` decorator ([ref](https://docs.python.org/3/whatsnew/3.12.html#pep-698-override-decorator-for-static-typing))
+
 ## Python 3.11
 
-- `tomllib` for loading (but not writing) TOML file/configs ([ref](https://docs.python.org/3.11/library/tomllib.html))
+- Built-in `tomllib` ([ref](https://docs.python.org/3.11/library/tomllib.html))
 
 ## Python 3.10
 
