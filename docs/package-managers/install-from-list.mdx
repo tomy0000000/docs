@@ -1,0 +1,51 @@
+---
+sidebar_position: 4
+---
+
+# Install from list
+
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { Icon } from '@iconify/react';
+```
+
+Install installables from a list of file, file name varies by convention.
+
+<Tabs groupId="package-manager">
+<TabItem value="apt" label={<p><Icon icon="logos:debian" inline={true}/>apt</p>}>
+
+```shell
+xargs -a Aptfile apt install
+```
+
+</TabItem>
+<TabItem value="brew" label={<p><Icon icon="logos:homebrew" inline={true}/>Homebrew</p>}>
+
+```shell
+
+```
+
+</TabItem>
+<TabItem value="pip" label={<p><Icon icon="logos:python" inline={true}/>Python</p>}>
+
+```shell
+pip install -r requirements.txt
+```
+
+</TabItem>
+<TabItem value="npm" label={<p><Icon icon="logos:npm-icon" inline={true}/>npm</p>}>
+
+```shell
+
+```
+
+</TabItem>
+<TabItem value="gem" label={<p><Icon icon="logos:rubygems" inline={true}/>Ruby</p>}>
+
+```shell
+
+```
+
+</TabItem>
+</Tabs>
