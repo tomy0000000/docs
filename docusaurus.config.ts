@@ -101,9 +101,9 @@ const config: Config = {
       darkTheme: require("prism-react-renderer").themes.dracula,
     },
     algolia: {
-      appId: "BOH1GMBANC",
-      apiKey: "b6b393e443621591c2c26b62f5da001e",
-      indexName: "tomy-docs",
+      appId: "RJBX6ZLAHI",
+      apiKey: "9991342c2a17675564d2451763097278",
+      indexName: "tomy",
       contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
