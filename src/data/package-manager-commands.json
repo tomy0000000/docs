@@ -1,0 +1,8 @@
+{
+  "search": {
+    "apt": "apt search _",
+    "brew": "brew search _",
+    "npm": "npm search _",
+    "gem": "gem search _"
+  }
+}
