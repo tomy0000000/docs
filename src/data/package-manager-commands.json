@@ -6,6 +6,13 @@
     "npm": "npm search _",
     "gem": "gem search _"
   },
+  "information": {
+    "apt": "apt show _",
+    "brew": "brew info _",
+    "pip": "pip show _",
+    "npm": "npm info _",
+    "gem": "gem info _"
+  },
   "install": {
     "apt": "apt install _",
     "brew": "brew install _",
