@@ -1,5 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
 const config: Config = {
   title: "Tomy's Docs",
@@ -39,6 +41,8 @@ const config: Config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           showLastUpdateTime: true,
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {
@@ -96,6 +100,15 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Tomy Hsieh. Built with Docusaurus.`,
     },
+    stylesheets: [
+      {
+        href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+        type: "text/css",
+        integrity:
+          "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+        crossorigin: "anonymous",
+      },
+    ],
     prism: {
       theme: require("prism-react-renderer").themes.github,
       darkTheme: require("prism-react-renderer").themes.dracula,
