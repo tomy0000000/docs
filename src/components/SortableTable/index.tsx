@@ -6,7 +6,6 @@
 //
 // Code sandbox at https://codesandbox.io/s/pester-data-table-basic-1x0mw
 // ----------------------------------------------------------------------------
-import React from "react";
 import {
   flexRender,
   getCoreRowModel,
@@ -14,6 +13,8 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
+import React from "react";
+
 import "./style.css";
 
 export default function SortableTable({ columns, data }): JSX.Element {
@@ -42,7 +43,7 @@ export default function SortableTable({ columns, data }): JSX.Element {
               >
                 {flexRender(
                   header.column.columnDef.header,
-                  header.getContext()
+                  header.getContext(),
                 )}
                 {{
                   asc: " 🔼",
