@@ -19,5 +19,12 @@
     "pip": "pip install -r requirements.txt",
     "npm": "",
     "gem": ""
+  },
+  "uninstall": {
+    "apt": "apt remove _",
+    "brew": "brew uninstall _",
+    "pip": "pip uninstall _",
+    "npm": "npm uninstall _",
+    "gem": "gem uninstall _"
   }
 }
