@@ -47,5 +47,12 @@
     "pip": "pip freeze | xargs pip uninstall -y",
     "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
     "gem": "gem uninstall -aIx"
+  },
+  "upgrade": {
+    "apt": "apt upgrade _",
+    "brew": "brew upgrade _",
+    "pip": "pip install --upgrade _",
+    "npm": "npm update -g _@latest",
+    "gem": "gem update _"
   }
 }
