@@ -5,47 +5,13 @@ sidebar_position: 3
 # Install
 
 ```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import { Icon } from '@iconify/react';
 ```
 
 Install an installable.
 
-<Tabs groupId="package-manager">
-<TabItem value="apt" label={<p><Icon icon="logos:debian" inline={true}/>apt</p>}>
-
-```shell
-apt install _
-```
-
-</TabItem>
-<TabItem value="brew" label={<p><Icon icon="logos:homebrew" inline={true}/>Homebrew</p>}>
-
-```shell
-brew install _
-```
-
-</TabItem>
-<TabItem value="pip" label={<p><Icon icon="logos:python" inline={true}/>Python</p>}>
-
-```shell
-pip install _
-```
-
-</TabItem>
-<TabItem value="npm" label={<p><Icon icon="logos:npm-icon" inline={true}/>npm</p>}>
-
-```shell
-npm install _
-```
-
-</TabItem>
-<TabItem value="gem" label={<p><Icon icon="logos:rubygems" inline={true}/>Ruby</p>}>
-
-```shell
-gem install _
-```
-
-</TabItem>
-</Tabs>
+<PacageManagerCommands commands={commands.install} />

@@ -55,7 +55,9 @@ export default function PackageManagers({ commands }): JSX.Element {
           }
         >
           <CodeBlock language="shell">
-            {commands[props.id] ?? "# Open a PR to complete this 🫶🏻"}
+            {commands[props.id]
+              ? commands[props.id]
+              : "# Open a PR to complete this 🫶🏻"}
           </CodeBlock>
         </TabItem>
       ))}

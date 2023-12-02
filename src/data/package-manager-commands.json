@@ -2,7 +2,22 @@
   "search": {
     "apt": "apt search _",
     "brew": "brew search _",
+    "pip": "pip search _",
     "npm": "npm search _",
     "gem": "gem search _"
+  },
+  "install": {
+    "apt": "apt install _",
+    "brew": "brew install _",
+    "pip": "pip install _",
+    "npm": "npm install _",
+    "gem": "gem install _"
+  },
+  "install_from_list": {
+    "apt": "xargs -a Aptfile apt install",
+    "brew": "",
+    "pip": "pip install -r requirements.txt",
+    "npm": "",
+    "gem": ""
   }
 }
