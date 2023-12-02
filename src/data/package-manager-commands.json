@@ -40,5 +40,12 @@
     "pip": "pip uninstall _",
     "npm": "npm uninstall _",
     "gem": "gem uninstall _"
+  },
+  "uninstall_global_all": {
+    "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
+    "brew": "brew uninstall --force $(brew list)",
+    "pip": "pip freeze | xargs pip uninstall -y",
+    "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
+    "gem": "gem uninstall -aIx"
   }
 }
