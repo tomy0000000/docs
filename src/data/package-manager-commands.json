@@ -27,6 +27,13 @@
     "npm": "",
     "gem": ""
   },
+  "install_project": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "pip": "# See Install from list",
+    "npm": "npm install",
+    "gem": "bundle install"
+  },
   "uninstall": {
     "apt": "apt remove _",
     "brew": "brew uninstall _",
