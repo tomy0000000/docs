@@ -20,7 +20,7 @@
     "npm": "npm install _",
     "gem": "gem install _"
   },
-  "install_from_list": {
+  "install_list": {
     "apt": "xargs -a Aptfile apt install",
     "brew": "",
     "pip": "pip install -r requirements.txt",
