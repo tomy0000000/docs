@@ -54,5 +54,12 @@
     "pip": "pip install --upgrade _",
     "npm": "npm update -g _@latest",
     "gem": "gem update _"
+  },
+  "upgrade_global_all": {
+    "apt": "apt upgrade",
+    "brew": "brew upgrade",
+    "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U",
+    "npm": "npm update -g",
+    "gem": "gem update"
   }
 }

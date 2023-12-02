@@ -1,0 +1,22 @@
+---
+---
+
+# Upgrade All
+
+```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+Upgrade all global installables.
+
+<PacageManagerCommands commands={commands.upgrade_global_all} />
+
+:::info
+
+The pip commands is modified from [this](https://stackoverflow.com/a/3452888/10325430) StackOverflow answer.
+
+:::
