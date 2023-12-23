@@ -1,5 +1,10 @@
 # Monotonic Stack
 
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
 Use a monotonic stack to record the index of the next greater/smaller element.
 
 ## Initialize
@@ -12,11 +17,29 @@ mont = []
 
 ## Push an item
 
-```python
-from bisect import insort
+<Tabs groupId="package-manager">
+    <TabItem
+        value="ascending"
+        label="Ascending"
+    >
+        ```python
+        from bisect import insort
 
-insort(mont, item)
-```
+        insort(mont, item)
+        ```
+    </TabItem>
+    <TabItem
+        value="descending"
+        label="Descending"
+    >
+        ```python
+        from bisect import insort
+
+        insort(mont, item, key=lambda x: -x)
+        ```
+    </TabItem>
+
+</Tabs>
 
 :::note
 
