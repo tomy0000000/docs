@@ -48,6 +48,16 @@ if i < len(h):
     heapq._siftdown(h, 0, i)
 ```
 
+## Keep top K largest items
+
+```python
+for item in items:
+    if len(heap) == k:
+        heappushpop(heap, item)
+    else:
+        heappush(heap, item)
+```
+
 ## Reference
 
 - [Python `heapq` module docs](https://docs.python.org/3/library/heapq.html)
