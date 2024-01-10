@@ -96,5 +96,12 @@
     "pip": "pip list --not-required",
     "npm": "",
     "gem": ""
+  },
+  "dependency": {
+    "apt": "apt depends _",
+    "brew": "brew deps _",
+    "pip": "pipdeptree --packages _",
+    "npm": "npm ls _ --all",
+    "gem": "gem dependency _"
   }
 }

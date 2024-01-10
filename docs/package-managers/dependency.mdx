@@ -1,0 +1,25 @@
+---
+---
+
+# Dependency
+
+```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+List all dependencies of an installable.
+
+In another word, find out a package depend on which other packages.
+
+<PacageManagerCommands commands={commands.dependency} />
+
+:::warning
+
+For `npm`, you need to install the package first before you can list its dependencies.
+In addition, [this command is expected change in the future](https://docs.npmjs.com/cli/v10/commands/npm-ls#note-design-changes-pending).
+
+:::
