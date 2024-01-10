@@ -10,7 +10,7 @@ type PackageManagerItem = {
   icon: string;
 };
 
-const PackageManagerList: PackageManagerItem[] = [
+export const PackageManagerList: PackageManagerItem[] = [
   {
     id: "apt",
     title: "apt",
