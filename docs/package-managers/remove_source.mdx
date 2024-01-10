@@ -1,0 +1,16 @@
+---
+---
+
+# Remove Source
+
+```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+Remove a source from the list of sources used to resolve packages.
+
+<PacageManagerCommands commands={commands.remove_source} />

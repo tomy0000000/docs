@@ -124,5 +124,12 @@
     "pip": "pip config set global.index-url _",
     "npm": "",
     "gem": "gem sources --add _"
+  },
+  "remove_source": {
+    "apt": "add-apt-repository --remove _",
+    "brew": "brew untap _",
+    "pip": "pip config unset global.index-url",
+    "npm": "",
+    "gem": "gem sources --remove _"
   }
 }
