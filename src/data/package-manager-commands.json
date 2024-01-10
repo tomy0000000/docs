@@ -103,5 +103,12 @@
     "pip": "pipdeptree --packages _",
     "npm": "npm ls _ --all",
     "gem": "gem dependency _"
+  },
+  "reverse_dependency": {
+    "apt": "apt rdepends _",
+    "brew": "brew uses _",
+    "pip": "pipdeptree --reverse --packages _",
+    "npm": "npm explain _",
+    "gem": "gem dependency _ --reverse-dependencies"
   }
 }
