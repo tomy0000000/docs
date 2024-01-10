@@ -110,5 +110,12 @@
     "pip": "pipdeptree --reverse --packages _",
     "npm": "npm explain _",
     "gem": "gem dependency _ --reverse-dependencies"
+  },
+  "list_source": {
+    "apt": "apt policy",
+    "brew": "brew tap",
+    "pip": "pip config get global.index-url",
+    "npm": "",
+    "gem": "gem sources --list"
   }
 }

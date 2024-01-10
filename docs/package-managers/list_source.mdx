@@ -1,0 +1,22 @@
+---
+---
+
+# List Sources
+
+```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+List all sources where installables can be installed from.
+
+<PacageManagerCommands commands={commands.list_source} />
+
+:::info
+
+If the `pip` command yield `ERROR: No such key`, it means the source is the default index url, which is https://pypi.org/simple.
+
+:::
