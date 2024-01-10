@@ -41,6 +41,13 @@
     "npm": "npm uninstall _",
     "gem": "gem uninstall _"
   },
+  "uninstall_useless": {
+    "apt": "apt autoremove",
+    "brew": "brew autoremove",
+    "pip": "",
+    "npm": "",
+    "gem": "gem cleanup"
+  },
   "uninstall_global_all": {
     "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
     "brew": "brew uninstall --force $(brew list)",
