@@ -75,5 +75,12 @@
     "pip": "pip freeze",
     "npm": "npm list --depth=0",
     "gem": "bundle list"
+  },
+  "list_global_upgradable": {
+    "apt": "apt list --upgradable",
+    "brew": "brew outdated",
+    "pip": "pip list --outdated",
+    "npm": "npm outdated -g --depth=0",
+    "gem": "gem outdated"
   }
 }
