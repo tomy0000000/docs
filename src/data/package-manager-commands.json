@@ -138,5 +138,12 @@
     "pip": "# N/A",
     "npm": "# N/A",
     "gem": "gem sources --update"
+  },
+  "cleanup_all": {
+    "apt": "apt clean",
+    "brew": "brew cleanup --prune=all",
+    "pip": "pip cache purge",
+    "npm": "npm cache clean",
+    "gem": "gem sources --clear-all"
   }
 }
