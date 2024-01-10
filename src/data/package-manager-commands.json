@@ -131,5 +131,12 @@
     "pip": "pip config unset global.index-url",
     "npm": "",
     "gem": "gem sources --remove _"
+  },
+  "update_source": {
+    "apt": "apt update",
+    "brew": "brew update",
+    "pip": "# N/A",
+    "npm": "# N/A",
+    "gem": "gem sources --update"
   }
 }
