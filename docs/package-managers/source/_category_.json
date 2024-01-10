@@ -1,0 +1,8 @@
+{
+  "label": "Source",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Commands related to install source management"
+  }
+}
