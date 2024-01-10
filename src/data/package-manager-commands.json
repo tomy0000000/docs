@@ -61,5 +61,12 @@
     "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U",
     "npm": "npm update -g",
     "gem": "gem update"
+  },
+  "list_global_installed": {
+    "apt": "apt list --installed",
+    "brew": "brew list",
+    "pip": "pip list",
+    "npm": "npm list -g --depth=0",
+    "gem": "gem list"
   }
 }
