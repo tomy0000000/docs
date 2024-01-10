@@ -1,170 +1,170 @@
 {
-  "search": {
-    "apt": "apt search _",
-    "brew": "brew search _",
-    "pip": "pip search _",
-    "npm": "npm search _",
-    "gem": "gem search _"
-  },
-  "information": {
-    "apt": "apt show _",
-    "brew": "brew info _",
-    "pip": "pip show _",
-    "npm": "npm info _",
-    "gem": "gem info _"
-  },
-  "install": {
-    "apt": "apt install _",
-    "brew": "brew install _",
-    "pip": "pip install _",
-    "npm": "npm install _",
-    "gem": "gem install _"
-  },
-  "install_list": {
-    "apt": "xargs -a Aptfile apt install",
-    "brew": "",
-    "pip": "pip install -r requirements.txt",
-    "npm": "",
-    "gem": ""
-  },
-  "install_project": {
-    "apt": "# N/A",
-    "brew": "# N/A",
-    "pip": "# See Install from list",
-    "npm": "npm install",
-    "gem": "bundle install"
-  },
-  "uninstall": {
-    "apt": "apt remove _",
-    "brew": "brew uninstall _",
-    "pip": "pip uninstall _",
-    "npm": "npm uninstall _",
-    "gem": "gem uninstall _"
-  },
-  "uninstall_useless": {
-    "apt": "apt autoremove",
-    "brew": "brew autoremove",
-    "pip": "",
-    "npm": "",
-    "gem": "gem cleanup"
-  },
-  "uninstall_global_all": {
-    "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
-    "brew": "brew uninstall --force $(brew list)",
-    "pip": "pip freeze | xargs pip uninstall -y",
-    "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
-    "gem": "gem uninstall -aIx"
-  },
-  "upgrade": {
-    "apt": "apt upgrade _",
-    "brew": "brew upgrade _",
-    "pip": "pip install --upgrade _",
-    "npm": "npm update -g _@latest",
-    "gem": "gem update _"
-  },
-  "upgrade_global_all": {
-    "apt": "apt upgrade",
-    "brew": "brew upgrade",
-    "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U",
-    "npm": "npm update -g",
-    "gem": "gem update"
-  },
-  "list_global_installed": {
-    "apt": "apt list --installed",
-    "brew": "brew list",
-    "pip": "pip list",
-    "npm": "npm list -g --depth=0",
-    "gem": "gem list"
-  },
-  "list_project_installed": {
-    "apt": "# N/A",
-    "brew": "# N/A",
-    "pip": "pip freeze",
-    "npm": "npm list --depth=0",
-    "gem": "bundle list"
-  },
-  "list_global_upgradable": {
-    "apt": "apt list --upgradable",
-    "brew": "brew outdated",
-    "pip": "pip list --outdated",
-    "npm": "npm outdated -g --depth=0",
-    "gem": "gem outdated"
-  },
-  "list_project_upgradable": {
-    "apt": "# N/A",
-    "brew": "# N/A",
-    "pip": "# N/A",
-    "npm": "npm outdated --depth=0",
-    "gem": "bundle outdated"
-  },
-  "list_global_undepend": {
-    "apt": "",
-    "brew": "brew leaves",
-    "pip": "pip list --not-required",
-    "npm": "",
-    "gem": ""
-  },
-  "dependency": {
-    "apt": "apt depends _",
-    "brew": "brew deps _",
-    "pip": "pipdeptree --packages _",
-    "npm": "npm ls _ --all",
-    "gem": "gem dependency _"
-  },
-  "reverse_dependency": {
-    "apt": "apt rdepends _",
-    "brew": "brew uses _",
-    "pip": "pipdeptree --reverse --packages _",
-    "npm": "npm explain _",
-    "gem": "gem dependency _ --reverse-dependencies"
-  },
-  "list_source": {
-    "apt": "apt policy",
-    "brew": "brew tap",
-    "pip": "pip config get global.index-url",
-    "npm": "",
-    "gem": "gem sources --list"
-  },
   "add_source": {
     "apt": "add-apt-repository _",
     "brew": "brew tap _",
-    "pip": "pip config set global.index-url _",
+    "gem": "gem sources --add _",
     "npm": "",
-    "gem": "gem sources --add _"
-  },
-  "remove_source": {
-    "apt": "add-apt-repository --remove _",
-    "brew": "brew untap _",
-    "pip": "pip config unset global.index-url",
-    "npm": "",
-    "gem": "gem sources --remove _"
-  },
-  "update_source": {
-    "apt": "apt update",
-    "brew": "brew update",
-    "pip": "# N/A",
-    "npm": "# N/A",
-    "gem": "gem sources --update"
+    "pip": "pip config set global.index-url _"
   },
   "cleanup_all": {
     "apt": "apt clean",
     "brew": "brew cleanup --prune=all",
-    "pip": "pip cache purge",
+    "gem": "gem sources --clear-all",
     "npm": "npm cache clean",
-    "gem": "gem sources --clear-all"
+    "pip": "pip cache purge"
   },
   "cleanup_useless": {
     "apt": "apt autoclean",
     "brew": "brew cleanup",
-    "pip": "# N/A",
+    "gem": "# N/A",
     "npm": "# N/A",
-    "gem": "# N/A"
+    "pip": "# N/A"
+  },
+  "dependency": {
+    "apt": "apt depends _",
+    "brew": "brew deps _",
+    "gem": "gem dependency _",
+    "npm": "npm ls _ --all",
+    "pip": "pipdeptree --packages _"
   },
   "healthcheck": {
     "apt": "",
     "brew": "brew doctor",
-    "pip": "pip check",
+    "gem": "gem check",
     "npm": "npm doctor",
-    "gem": "gem check"
+    "pip": "pip check"
+  },
+  "information": {
+    "apt": "apt show _",
+    "brew": "brew info _",
+    "gem": "gem info _",
+    "npm": "npm info _",
+    "pip": "pip show _"
+  },
+  "install": {
+    "apt": "apt install _",
+    "brew": "brew install _",
+    "gem": "gem install _",
+    "npm": "npm install _",
+    "pip": "pip install _"
+  },
+  "install_list": {
+    "apt": "xargs -a Aptfile apt install",
+    "brew": "",
+    "gem": "",
+    "npm": "",
+    "pip": "pip install -r requirements.txt"
+  },
+  "install_project": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "gem": "bundle install",
+    "npm": "npm install",
+    "pip": "# See Install from list"
+  },
+  "list_global_installed": {
+    "apt": "apt list --installed",
+    "brew": "brew list",
+    "gem": "gem list",
+    "npm": "npm list -g --depth=0",
+    "pip": "pip list"
+  },
+  "list_global_undepend": {
+    "apt": "",
+    "brew": "brew leaves",
+    "gem": "",
+    "npm": "",
+    "pip": "pip list --not-required"
+  },
+  "list_global_upgradable": {
+    "apt": "apt list --upgradable",
+    "brew": "brew outdated",
+    "gem": "gem outdated",
+    "npm": "npm outdated -g --depth=0",
+    "pip": "pip list --outdated"
+  },
+  "list_project_installed": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "gem": "bundle list",
+    "npm": "npm list --depth=0",
+    "pip": "pip freeze"
+  },
+  "list_project_upgradable": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "gem": "bundle outdated",
+    "npm": "npm outdated --depth=0",
+    "pip": "# N/A"
+  },
+  "list_source": {
+    "apt": "apt policy",
+    "brew": "brew tap",
+    "gem": "gem sources --list",
+    "npm": "",
+    "pip": "pip config get global.index-url"
+  },
+  "remove_source": {
+    "apt": "add-apt-repository --remove _",
+    "brew": "brew untap _",
+    "gem": "gem sources --remove _",
+    "npm": "",
+    "pip": "pip config unset global.index-url"
+  },
+  "reverse_dependency": {
+    "apt": "apt rdepends _",
+    "brew": "brew uses _",
+    "gem": "gem dependency _ --reverse-dependencies",
+    "npm": "npm explain _",
+    "pip": "pipdeptree --reverse --packages _"
+  },
+  "search": {
+    "apt": "apt search _",
+    "brew": "brew search _",
+    "gem": "gem search _",
+    "npm": "npm search _",
+    "pip": "pip search _"
+  },
+  "uninstall": {
+    "apt": "apt remove _",
+    "brew": "brew uninstall _",
+    "gem": "gem uninstall _",
+    "npm": "npm uninstall _",
+    "pip": "pip uninstall _"
+  },
+  "uninstall_global_all": {
+    "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
+    "brew": "brew uninstall --force $(brew list)",
+    "gem": "gem uninstall -aIx",
+    "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
+    "pip": "pip freeze | xargs pip uninstall -y"
+  },
+  "uninstall_useless": {
+    "apt": "apt autoremove",
+    "brew": "brew autoremove",
+    "gem": "gem cleanup",
+    "npm": "",
+    "pip": ""
+  },
+  "update_source": {
+    "apt": "apt update",
+    "brew": "brew update",
+    "gem": "gem sources --update",
+    "npm": "# N/A",
+    "pip": "# N/A"
+  },
+  "upgrade": {
+    "apt": "apt upgrade _",
+    "brew": "brew upgrade _",
+    "gem": "gem update _",
+    "npm": "npm update -g _@latest",
+    "pip": "pip install --upgrade _"
+  },
+  "upgrade_global_all": {
+    "apt": "apt upgrade",
+    "brew": "brew upgrade",
+    "gem": "gem update",
+    "npm": "npm update -g",
+    "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U"
   }
 }
