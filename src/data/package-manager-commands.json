@@ -89,5 +89,12 @@
     "pip": "# N/A",
     "npm": "npm outdated --depth=0",
     "gem": "bundle outdated"
+  },
+  "list_global_undepend": {
+    "apt": "",
+    "brew": "brew leaves",
+    "pip": "pip list --not-required",
+    "npm": "",
+    "gem": ""
   }
 }
