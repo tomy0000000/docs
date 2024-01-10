@@ -117,5 +117,12 @@
     "pip": "pip config get global.index-url",
     "npm": "",
     "gem": "gem sources --list"
+  },
+  "add_source": {
+    "apt": "add-apt-repository _",
+    "brew": "brew tap _",
+    "pip": "pip config set global.index-url _",
+    "npm": "",
+    "gem": "gem sources --add _"
   }
 }
