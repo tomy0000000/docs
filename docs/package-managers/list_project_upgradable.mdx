@@ -1,0 +1,16 @@
+---
+---
+
+# List Upgradable (Project)
+
+```mdx-code-block
+import { Icon } from '@iconify/react';
+import PacageManagerCommands from '@site/src/components/PacageManagerCommands';
+import commands from '@site/src/data/package-manager-commands.json';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+List all upgradable packages in the current project.
+
+<PacageManagerCommands commands={commands.list_project_upgradable} />

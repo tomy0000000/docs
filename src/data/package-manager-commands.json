@@ -82,5 +82,12 @@
     "pip": "pip list --outdated",
     "npm": "npm outdated -g --depth=0",
     "gem": "gem outdated"
+  },
+  "list_project_upgradable": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "pip": "# N/A",
+    "npm": "npm outdated --depth=0",
+    "gem": "bundle outdated"
   }
 }
