@@ -152,5 +152,12 @@
     "pip": "# N/A",
     "npm": "# N/A",
     "gem": "# N/A"
+  },
+  "healthcheck": {
+    "apt": "",
+    "brew": "brew doctor",
+    "pip": "pip check",
+    "npm": "npm doctor",
+    "gem": "gem check"
   }
 }
