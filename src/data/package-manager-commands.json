@@ -68,5 +68,12 @@
     "pip": "pip list",
     "npm": "npm list -g --depth=0",
     "gem": "gem list"
+  },
+  "list_project_installed": {
+    "apt": "# N/A",
+    "brew": "# N/A",
+    "pip": "pip freeze",
+    "npm": "npm list --depth=0",
+    "gem": "bundle list"
   }
 }
