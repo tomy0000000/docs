@@ -145,5 +145,12 @@
     "pip": "pip cache purge",
     "npm": "npm cache clean",
     "gem": "gem sources --clear-all"
+  },
+  "cleanup_useless": {
+    "apt": "apt autoclean",
+    "brew": "brew cleanup",
+    "pip": "# N/A",
+    "npm": "# N/A",
+    "gem": "# N/A"
   }
 }
