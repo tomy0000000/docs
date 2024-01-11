@@ -6,7 +6,7 @@ import remarkMath from "remark-math";
 
 const config: Config = {
   title: "Tomy's Docs",
-  tagline: "Dinosaurs are cool",
+  tagline: "Tomy's Personal Documents Library",
   favicon: "img/favicon.ico",
 
   url: "https://docs.tomy.me",
