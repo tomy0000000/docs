@@ -59,13 +59,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image:
-      "https://raw.githubusercontent.com/facebook/docusaurus/main/examples/classic-typescript/static/img/docusaurus-social-card.jpg",
+    // image:
+    //   "https://raw.githubusercontent.com/facebook/docusaurus/main/examples/classic-typescript/static/img/docusaurus-social-card.jpg",
     navbar: {
       title: "Tomy's Docs",
       logo: {
         alt: "Tomy's Docs Logo",
-        src: "https://github.com/facebook/docusaurus/raw/main/examples/classic-typescript/static/img/logo.svg",
+        src: "img/tomy-circle-white.png",
       },
       items: [
         {
