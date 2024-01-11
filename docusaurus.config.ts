@@ -81,6 +81,12 @@ const config: Config = {
           position: "left",
         },
         {
+          type: "docSidebar",
+          sidebarId: "specificationsSidebar",
+          label: "📜 Specifications",
+          position: "left",
+        },
+        {
           href: "https://github.com/tomy0000000/docs",
           label: "GitHub",
           position: "right",
