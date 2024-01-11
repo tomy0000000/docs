@@ -1,0 +1,9 @@
+{
+  // https://code.visualstudio.com/docs/editor/userdefinedsnippets
+  "Admonitions": {
+    "scope": "markdown",
+    "prefix": "admonitions",
+    "body": [":::${1|note,tip,info,warning,danger|}", "", "${2}", "", ":::>"],
+    "description": "Admonition info box"
+  }
+}
