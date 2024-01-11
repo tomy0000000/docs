@@ -64,9 +64,21 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "mainSidebar",
+          label: "Main",
           position: "left",
-          label: "Tutorial",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "packageManagerSidebar",
+          label: "📦 Package Managers",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "pythonSidebar",
+          label: "🐍 Python",
+          position: "left",
         },
         {
           href: "https://github.com/tomy0000000/docs",
@@ -82,8 +94,12 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Home",
               to: "/",
+            },
+            {
+              label: "Package Managers",
+              to: "/package-managers/glossary",
             },
           ],
         },
