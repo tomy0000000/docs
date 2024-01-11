@@ -37,7 +37,7 @@ const config: Config = {
       {
         docs: {
           routeBasePath: "/",
-          sidebarPath: "./sidebars.js",
+          sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/tomy0000000/docs/",
           showLastUpdateTime: true,
           remarkPlugins: [remarkMath],
