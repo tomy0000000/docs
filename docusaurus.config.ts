@@ -1,5 +1,6 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
+import { themes } from "prism-react-renderer";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
@@ -40,7 +41,7 @@ const config: Config = {
       {
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -51,7 +52,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -115,8 +116,8 @@ const config: Config = {
       },
     ],
     prism: {
-      theme: require("prism-react-renderer").themes.github,
-      darkTheme: require("prism-react-renderer").themes.dracula,
+      theme: themes.github,
+      darkTheme: themes.dracula,
     },
     algolia: {
       appId: "RJBX6ZLAHI",
