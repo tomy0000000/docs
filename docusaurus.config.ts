@@ -18,6 +18,15 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+      type: "text/css",
+      integrity: "sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=",
+      crossorigin: "anonymous",
+    },
+  ],
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -121,15 +130,6 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Tomy Hsieh. Built with Docusaurus.`,
     },
-    stylesheets: [
-      {
-        href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
-        type: "text/css",
-        integrity:
-          "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
-        crossorigin: "anonymous",
-      },
-    ],
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
