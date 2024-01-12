@@ -1,0 +1,104 @@
+import Admonition from "@theme-original/Admonition";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# 國際匯款
+
+| 匯款方式                   | 匯款行費用 | 中轉行費用 | 受款行費用 |
+| -------------------------- | ---------- | ---------- | ---------- |
+| BEN                        | 受款人     | 受款人     | 受款人     |
+| SHA, 一般匯款, General     | 匯款人     | 受款人     | 受款人     |
+| OUR, 全額到行, Pay in Full | 匯款人     | 匯款人     | 受款人     |
+| 全額入戶, Receive in Full  | 匯款人     | 匯款人     | 匯款人     |
+
+## 匯款資訊
+
+:::info
+
+**粗體字為必備項目**
+
+:::
+
+<Tabs
+    defaultValue="us"
+    values={[
+        { label: "🇺🇸 美國", value: "us" },
+        { label: "🇨🇦 加拿大", value: "ca" },
+        { label: "🇪🇺 歐洲、中東、加勒比海地區 (SEPA)", value: "sepa" },
+        { label: "🇯🇵 日本", value: "jp" },
+        { label: "🇨🇳 中國", value: "cn" },
+    ]}
+>
+    <TabItem value="us">
+        - **受款帳號 (Account Number)**
+        - **匯款路徑號碼 (Routing Number)**
+        - **受款人 (Beneficiary)**
+        - 受款人電話 (Phone)
+        - 受款人地址 (Address)
+        - **受款人銀行 (Bank)**
+        - **受款人銀行代碼 (SWIFT Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+    </TabItem>
+    <TabItem value="ca">
+        - **受款帳號 (Account Number)**
+        - **受款人 (Beneficiary)**
+        - 受款人電話 (Phone)
+        - **受款人地址 (Address)**
+        - **受款人銀行 (Bank)**
+        - **受款人銀行代碼 (SWIFT Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+        <Admonition title="INFO">
+        **加拿大匯款必須提供銀行地址或 CC Code**
+        </Admonition>
+    </TabItem>
+    <TabItem value="sepa">
+        - **受款帳號 (IBAN)**
+        - **受款人 (Beneficiary)**
+        - 受款人電話 (Phone)
+        - 受款人地址 (Address)
+        - **受款人銀行 (Bank)**
+        - **受款人銀行代碼 (BIC Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+    </TabItem>
+    <TabItem value="uk">
+        - **受款帳號 (IBAN)**
+        - **受款人 (Beneficiary)**
+        - 受款人電話 (Phone)
+        - 受款人地址 (Address)
+        - **受款人銀行 (Bank)**
+        - **受款人銀行清算代碼 (Sort Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+    </TabItem>
+    <TabItem value="jp">
+        - **受款帳號 (Account Number)**
+        - **受款人 (Beneficiary)**
+        - 受款人電話 (Phone)
+        - 受款人地址 (Address)
+        - **受款人銀行 (Bank)**
+        - **受款人銀行代碼 (SWIFT Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+        <Admonition title="INFO">
+        **日本匯款必須提供銀行分行或地址**
+        </Admonition>
+    </TabItem>
+    <TabItem value="cn">
+        - **受款帳號 (Account Number)**
+        - **受款人 (Beneficiary)**
+        - **受款人電話 (Phone)**
+        - 受款人地址 (Address)
+        - **受款人銀行 (Bank)**
+        - **受款人銀行代碼 (SWIFT Code)**
+        - 受款人銀行分行 (Bank Branch)
+        - 受款人銀行地址 (Bank Address)
+    </TabItem>
+
+</Tabs>
+
+## Reference
+
+- [IBAN 國際銀行帳戶號碼](https://zh.wikipedia.org/zh-tw/%E5%9C%8B%E9%9A%9B%E9%8A%80%E8%A1%8C%E5%B8%B3%E6%88%B6%E8%99%9F%E7%A2%BC)
