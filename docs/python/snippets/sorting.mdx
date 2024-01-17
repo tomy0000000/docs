@@ -32,11 +32,11 @@ the_list.sort(*, key=None, reverse=False)
         ```python
         import heapq
 
-        def heapsort(iterable):
+        def heap_sort(iterable):
             heapq.heapify(iterable)
             return [heapq.heappop(h) for _ in range(len(h))]
 
-        heapsort(the_list)
+        heap_sort(the_list)
         ```
     </TabItem>
     <TabItem value="inplace">
@@ -44,16 +44,25 @@ the_list.sort(*, key=None, reverse=False)
         ```python
         import heapq
 
-        def heapsort(iterable):
+        def heap_sort(iterable):
             heapq.heapify(iterable)
             iterable += [heapq.heappop(iterable) for _ in range(len(iterable))]
 
-        heapsort(the_list)
+        heap_sort(the_list)
         ```
 
     </TabItem>
 
 </Tabs>
+
+## Selection Sort
+
+```python
+def selection_sort(self, iterable) -> None:
+    for i in range(len(iterable)):
+        argmin = min(range(i, len(iterable)), key=lambda x: iterable[x])
+        iterable[i], iterable[argmin] = iterable[argmin], iterable[i]
+```
 
 ## Reference
 
