@@ -22,13 +22,15 @@ the_list.sort(*, key=None, reverse=False)
 ## Heap Sort
 
 <Tabs
-    defaultValue="outofplace"
+    groupId="python-sorting"
+    defaultValue="out"
     values={[
-        { label: "Out of Place", value: "outofplace" },
-        { label: "In Place", value: "inplace" },
+        { label: "Out of Place", value: "out" },
+        { label: "In Place", value: "in" },
     ]}
 >
-    <TabItem value="outofplace">
+    <TabItem value="out">
+
         ```python
         import heapq
 
@@ -38,8 +40,9 @@ the_list.sort(*, key=None, reverse=False)
 
         heap_sort(the_list)
         ```
+
     </TabItem>
-    <TabItem value="inplace">
+    <TabItem value="in">
 
         ```python
         import heapq
@@ -63,6 +66,76 @@ def selection_sort(self, iterable) -> None:
         argmin = min(range(i, len(iterable)), key=lambda x: iterable[x])
         iterable[i], iterable[argmin] = iterable[argmin], iterable[i]
 ```
+
+## Merge Sort
+
+<Tabs
+    groupId="python-sorting"
+    defaultValue="out"
+    values={[
+        { label: "Out of Place", value: "out" },
+        { label: "In Place", value: "in" },
+    ]}
+>
+    <TabItem value="out">
+
+        ```python
+        def _merge(left, right):
+            result = []
+            i = j = 0
+            while i < len(left) and j < len(right):
+                if left[i] < right[j]:
+                    result.append(left[i])
+                    i += 1
+                else:
+                    result.append(right[j])
+                    j += 1
+            result.extend(left[i:])
+            result.extend(right[j:])
+            return result
+
+        def merge_sort(iterable):
+            if len(iterable) <= 1:
+                return iterable
+            middle = len(iterable) // 2
+            left = merge_sort(iterable[:middle])
+            right = merge_sort(iterable[middle:])
+            return _merge(left, right)
+        ```
+
+    </TabItem>
+    <TabItem value="in">
+
+        ```python
+        def merge_sort(iterable):
+            if len(iterable) <= 1:
+                return iterable
+            middle = len(iterable) // 2
+            left = merge_sort(iterable[:middle])
+            right = merge_sort(iterable[middle:])
+            i = j = k = 0
+            while i < len(left) and j < len(right):
+                if left[i] < right[j]:
+                    iterable[k] = left[i]
+                    i += 1
+                else:
+                    iterable[k] = right[j]
+                    j += 1
+                k += 1
+            while i < len(left):
+                iterable[k] = left[i]
+                i += 1
+                k += 1
+            while j < len(right):
+                iterable[k] = right[j]
+                j += 1
+                k += 1
+            return iterable
+        ```
+
+    </TabItem>
+
+</Tabs>
 
 ## Reference
 
