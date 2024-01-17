@@ -137,6 +137,49 @@ def selection_sort(self, iterable) -> None:
 
 </Tabs>
 
+## Quick Sort
+
+<Tabs
+    groupId="python-sorting"
+    defaultValue="out"
+    values={[
+        { label: "Out of Place", value: "out" },
+        { label: "In Place", value: "in" },
+    ]}
+>
+    <TabItem value="out">
+
+        ```python
+        def quick_sort(iterable):
+            if len(iterable) <= 1:
+                return iterable
+            pivot = iterable[len(iterable) // 2]
+            left = [x for x in iterable if x < pivot]
+            middle = [x for x in iterable if x == pivot]
+            right = [x for x in iterable if x > pivot]
+            return quick_sort(left) + middle + quick_sort(right)
+        ```
+
+    </TabItem>
+    <TabItem value="in">
+
+        ```python
+        def quick_sort(iterable):
+            if len(iterable) <= 1:
+                return iterable
+            pivot = iterable[len(iterable) // 2]
+            left = [x for x in iterable if x < pivot]
+            middle = [x for x in iterable if x == pivot]
+            right = [x for x in iterable if x > pivot]
+            iterable.clear()
+            iterable.extend(quick_sort(left) + middle + quick_sort(right))
+            return iterable
+        ```
+
+    </TabItem>
+
+</Tabs>
+
 ## Reference
 
 - [TimSort](https://en.wikipedia.org/wiki/Timsort)
