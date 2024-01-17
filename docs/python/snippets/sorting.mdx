@@ -1,0 +1,61 @@
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# Sorting
+
+Various implementations of sorting algorithms.
+
+## Tim Sort
+
+Python's default sorting algorithm.
+
+```python
+sorted(iterable)
+```
+
+or
+
+```python
+the_list.sort(*, key=None, reverse=False)
+```
+
+## Heap Sort
+
+<Tabs
+    defaultValue="outofplace"
+    values={[
+        { label: "Out of Place", value: "outofplace" },
+        { label: "In Place", value: "inplace" },
+    ]}
+>
+    <TabItem value="outofplace">
+        ```python
+        import heapq
+
+        def heapsort(iterable):
+            heapq.heapify(iterable)
+            return [heapq.heappop(h) for _ in range(len(h))]
+
+        heapsort(the_list)
+        ```
+    </TabItem>
+    <TabItem value="inplace">
+
+        ```python
+        import heapq
+
+        def heapsort(iterable):
+            heapq.heapify(iterable)
+            iterable += [heapq.heappop(iterable) for _ in range(len(iterable))]
+
+        heapsort(the_list)
+        ```
+
+    </TabItem>
+
+</Tabs>
+
+## Reference
+
+- [TimSort](https://en.wikipedia.org/wiki/Timsort)
+- [Python `heapq` module docs](https://docs.python.org/3/library/bisect.html#examples)
