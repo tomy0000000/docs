@@ -1,0 +1,7 @@
+{
+  "label": "Screen Management",
+  "link": {
+    "type": "generated-index",
+    "description": "CLIs for managing screens"
+  }
+}
