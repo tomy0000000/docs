@@ -6,7 +6,7 @@ Simple guidelines for creating an industry focused, engineering resume.
 
 - **Page Size**: US letter for US and Canada, A4 for the rest of the world
 - **Page Margins**: 0.5 inches on all sides
-- **Number of Pages**: $ \lceil 1 + n/10 \rceil$ page(s), where $n$ is the number of years of experience
+- **Number of Pages**: $ \lfloor 1 + n/10 \rfloor$ page(s), where $n$ is the number of years of experience
 - **Word Count**: 350+ words
 - **Font Size**: 10 points (`10pt`)[^1]
 - **Font Weight**: Bold (`700`) for sub-section heading[^2], Regular (`400`) for all other text
