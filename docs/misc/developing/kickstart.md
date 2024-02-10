@@ -1,5 +1,11 @@
 # Kickstart a Project
 
+## Naming
+
+- **Repository**: Use lowercase[^1], and hyphen (`-`) to separate words. For example, `my-awesome-project`.
+
+[^1]: Although GitHub supports uppercase, but many package managers and tools do not.
+
 ## Branching
 
 The default branch should always be `main`. For existing projects, rename them by following [GitHub's instructions](https://docs.github.com/en/github/administering-a-repository/renaming-a-branch) and the following command on local machine:
