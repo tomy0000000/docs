@@ -26,6 +26,9 @@ Quick index of built-in Python version in each Linux distribution and changes ma
 ## Python 3.11
 
 - Built-in `tomllib` ([ref](https://docs.python.org/3.11/library/tomllib.html))
+- `typing.reveal_type` ([ref](https://docs.python.org/release/3.11.0/library/typing.html#typing.reveal_type))
+- `typing.Self` ([ref](https://docs.python.org/release/3.11.0/library/typing.html#typing.Self))
+- `typing.Never` ([ref](https://docs.python.org/release/3.11.0/library/typing.html#typing.Never))
 
 ## Python 3.10
 
