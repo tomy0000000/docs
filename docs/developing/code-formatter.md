@@ -1,0 +1,37 @@
+# Code Formatter
+
+- Python
+  - Ruff
+  - Black + isort
+- JavaScript
+  - Prettier
+- TypeScript
+  - Prettier
+- HTML
+  - Prettier
+- CSS
+  - Prettier
+- XML
+  - Prettier
+- JSON
+  - Prettier
+- YAML
+  - Prettier
+- Markdown
+  - Prettier
+- SQL
+  - Prettier (`prettier-plugin-sql`)
+- Dockerfile
+  - Hadolint
+- Shell
+  - Shellcheck
+- Terraform
+  - Terraform fmt
+- Go
+  - Go fmt
+- Go template
+  - https://github.com/NiklasPor/prettier-plugin-go-template
+- Java
+  - Red Hat Java Code Formatter from VS Code
+- Protocol Buffers
+  - clang-format

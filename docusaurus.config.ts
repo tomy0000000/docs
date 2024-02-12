@@ -73,6 +73,12 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
+          sidebarId: "developingSidebar",
+          label: "👨🏻‍💻 Developing",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "packageManagerSidebar",
           label: "📦 Package Managers",
           position: "left",
