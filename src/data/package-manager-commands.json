@@ -3,7 +3,7 @@
     "apt": "add-apt-repository _",
     "brew": "brew tap _",
     "gem": "gem sources --add _",
-    "go": "",
+    "go": "# N/A",
     "npm": "",
     "pip": "pip config set global.index-url _"
   },
@@ -51,7 +51,7 @@
     "apt": "apt install _",
     "brew": "brew install _",
     "gem": "gem install _",
-    "go": "",
+    "go": "go get _",
     "npm": "npm install _",
     "pip": "pip install _"
   },
@@ -115,7 +115,7 @@
     "apt": "apt policy",
     "brew": "brew tap",
     "gem": "gem sources --list",
-    "go": "",
+    "go": "# N/A",
     "npm": "",
     "pip": "pip config get global.index-url"
   },
@@ -123,7 +123,7 @@
     "apt": "add-apt-repository --remove _",
     "brew": "brew untap _",
     "gem": "gem sources --remove _",
-    "go": "",
+    "go": "# N/A",
     "npm": "",
     "pip": "pip config unset global.index-url"
   },
@@ -131,7 +131,7 @@
     "apt": "apt rdepends _",
     "brew": "brew uses _",
     "gem": "gem dependency _ --reverse-dependencies",
-    "go": "",
+    "go": "go mod why _",
     "npm": "npm explain _",
     "pip": "pipdeptree --reverse --packages _"
   },
@@ -163,7 +163,7 @@
     "apt": "apt autoremove",
     "brew": "brew autoremove",
     "gem": "gem cleanup",
-    "go": "",
+    "go": "go mod tidy",
     "npm": "",
     "pip": ""
   },
@@ -171,7 +171,7 @@
     "apt": "apt update",
     "brew": "brew update",
     "gem": "gem sources --update",
-    "go": "",
+    "go": "# N/A",
     "npm": "# N/A",
     "pip": "# N/A"
   },
@@ -179,7 +179,7 @@
     "apt": "apt upgrade _",
     "brew": "brew upgrade _",
     "gem": "gem update _",
-    "go": "",
+    "go": "go get -u _",
     "npm": "npm update -g _@latest",
     "pip": "pip install --upgrade _"
   },
