@@ -47,12 +47,12 @@
     "npm": "npm info _",
     "pip": "pip show _"
   },
-  "install": {
+  "install_global": {
     "apt": "apt install _",
     "brew": "brew install _",
     "gem": "gem install _",
-    "go": "go get _",
-    "npm": "npm install _",
+    "go": "go install _",
+    "npm": "npm install -g _",
     "pip": "pip install _"
   },
   "install_list": {
