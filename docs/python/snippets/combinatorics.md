@@ -1,13 +1,13 @@
 # Combinatorics
 
-|                | Linear                                                                                                           | Circular                                                                                              | Non-Ordinal                                                                                                             |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Non-Repetitive | ![Permutation](https://wikimedia.org/api/rest_v1/media/math/render/svg/3fffa6967dcb9faf21389c000ac6fa97d4e74aa3) | ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/aa9e4f710bab4992f92a33220df36ffce879d351) | ![Combination](https://wikimedia.org/api/rest_v1/media/math/render/svg/37eeb6cd5b9062227eb3c5a5965e1d602d95acfb)        |
-| Repetitive     | ![Product](https://wikimedia.org/api/rest_v1/media/math/render/svg/0090b61e9671b6ec5177265d5ddbacab91c687de)     | ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/13f576f1658e4840247d6d55803652e8694c6c3c) | ![Counting multisets](https://wikimedia.org/api/rest_v1/media/math/render/svg/10f7530e7df6e04dac8268fae3c2221f05adfd9c) |
+|                | Linear                      | Circular                                                                | Non-Ordinal                                   |
+| -------------- | --------------------------- | ----------------------------------------------------------------------- | --------------------------------------------- |
+| Non-Repetitive | $P^n_k = \frac{n!}{(n-k)!}$ | $\frac{n!}{k \cdot (n-k)!}$                                             | $C_{k}^{n}={\frac{n!}{k!\cdot (n-k)!}}$       |
+| Repetitive     | $U^n_k = n^k$               | $\frac{\sum_{r \vert k}(r \cdot \varphi (r) \cdot n^{\frac{k}{r}})}{k}$ | $H_{k}^{n}={\frac{(n+k-1)!}{k!\cdot (n-1)!}}$ |
 
 ## Permutation
 
-![Permutation](https://wikimedia.org/api/rest_v1/media/math/render/svg/3fffa6967dcb9faf21389c000ac6fa97d4e74aa3)
+$P^n_k = \frac{n!}{(n-k)!}$
 
 ### Counting
 
@@ -44,7 +44,7 @@ itertools.permutations("ABCD", 2)
 
 ## Product
 
-![Product](https://wikimedia.org/api/rest_v1/media/math/render/svg/0090b61e9671b6ec5177265d5ddbacab91c687de)
+$U^n_k = n^k$
 
 ### Counting
 
@@ -83,7 +83,7 @@ itertools.product("ABCD", repeat=2)
 
 ## Combination
 
-![Combination](https://wikimedia.org/api/rest_v1/media/math/render/svg/37eeb6cd5b9062227eb3c5a5965e1d602d95acfb)
+$C_{k}^{n}={\frac{n!}{k!\cdot (n-k)!}}$
 
 ### Counting
 
@@ -114,7 +114,15 @@ itertools.combinations("ABCD", 2)
 
 ## Counting multisets
 
-![Counting multisets](https://wikimedia.org/api/rest_v1/media/math/render/svg/10f7530e7df6e04dac8268fae3c2221f05adfd9c)
+$H_{k}^{n}={\frac{(n+k-1)!}{k!\cdot (n-1)!}}$
+
+:::tip
+
+Multiset can be used to calculate the number of combinations of non-negative integers that sum to a given number.
+
+E.g. The number of ways to sum 3 non-negative integers to 4 is $H^3_4 = C^6_2 = 15$.
+
+:::
 
 ### Counting
 
