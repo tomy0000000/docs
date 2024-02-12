@@ -3,6 +3,7 @@
     "apt": "add-apt-repository _",
     "brew": "brew tap _",
     "gem": "gem sources --add _",
+    "go": "",
     "npm": "",
     "pip": "pip config set global.index-url _"
   },
@@ -10,6 +11,7 @@
     "apt": "apt clean",
     "brew": "brew cleanup --prune=all",
     "gem": "gem sources --clear-all",
+    "go": "",
     "npm": "npm cache clean",
     "pip": "pip cache purge"
   },
@@ -17,6 +19,7 @@
     "apt": "apt autoclean",
     "brew": "brew cleanup",
     "gem": "# N/A",
+    "go": "",
     "npm": "# N/A",
     "pip": "# N/A"
   },
@@ -24,6 +27,7 @@
     "apt": "apt depends _",
     "brew": "brew deps _",
     "gem": "gem dependency _",
+    "go": "",
     "npm": "npm ls _ --all",
     "pip": "pipdeptree --packages _"
   },
@@ -31,6 +35,7 @@
     "apt": "",
     "brew": "brew doctor",
     "gem": "gem check",
+    "go": "",
     "npm": "npm doctor",
     "pip": "pip check"
   },
@@ -38,6 +43,7 @@
     "apt": "apt show _",
     "brew": "brew info _",
     "gem": "gem info _",
+    "go": "",
     "npm": "npm info _",
     "pip": "pip show _"
   },
@@ -45,6 +51,7 @@
     "apt": "apt install _",
     "brew": "brew install _",
     "gem": "gem install _",
+    "go": "",
     "npm": "npm install _",
     "pip": "pip install _"
   },
@@ -52,6 +59,7 @@
     "apt": "xargs -a Aptfile apt install",
     "brew": "",
     "gem": "",
+    "go": "",
     "npm": "",
     "pip": "pip install -r requirements.txt"
   },
@@ -59,6 +67,7 @@
     "apt": "# N/A",
     "brew": "# N/A",
     "gem": "bundle install",
+    "go": "",
     "npm": "npm install",
     "pip": "# See Install from list"
   },
@@ -66,6 +75,7 @@
     "apt": "apt list --installed",
     "brew": "brew list",
     "gem": "gem list",
+    "go": "",
     "npm": "npm list -g --depth=0",
     "pip": "pip list"
   },
@@ -73,6 +83,7 @@
     "apt": "",
     "brew": "brew leaves",
     "gem": "",
+    "go": "",
     "npm": "",
     "pip": "pip list --not-required"
   },
@@ -80,6 +91,7 @@
     "apt": "apt list --upgradable",
     "brew": "brew outdated",
     "gem": "gem outdated",
+    "go": "",
     "npm": "npm outdated -g --depth=0",
     "pip": "pip list --outdated"
   },
@@ -87,6 +99,7 @@
     "apt": "# N/A",
     "brew": "# N/A",
     "gem": "bundle list",
+    "go": "",
     "npm": "npm list --depth=0",
     "pip": "pip freeze"
   },
@@ -94,6 +107,7 @@
     "apt": "# N/A",
     "brew": "# N/A",
     "gem": "bundle outdated",
+    "go": "",
     "npm": "npm outdated --depth=0",
     "pip": "# N/A"
   },
@@ -101,6 +115,7 @@
     "apt": "apt policy",
     "brew": "brew tap",
     "gem": "gem sources --list",
+    "go": "",
     "npm": "",
     "pip": "pip config get global.index-url"
   },
@@ -108,6 +123,7 @@
     "apt": "add-apt-repository --remove _",
     "brew": "brew untap _",
     "gem": "gem sources --remove _",
+    "go": "",
     "npm": "",
     "pip": "pip config unset global.index-url"
   },
@@ -115,6 +131,7 @@
     "apt": "apt rdepends _",
     "brew": "brew uses _",
     "gem": "gem dependency _ --reverse-dependencies",
+    "go": "",
     "npm": "npm explain _",
     "pip": "pipdeptree --reverse --packages _"
   },
@@ -122,6 +139,7 @@
     "apt": "apt search _",
     "brew": "brew search _",
     "gem": "gem search _",
+    "go": "",
     "npm": "npm search _",
     "pip": "pip search _"
   },
@@ -129,6 +147,7 @@
     "apt": "apt remove _",
     "brew": "brew uninstall _",
     "gem": "gem uninstall _",
+    "go": "",
     "npm": "npm uninstall _",
     "pip": "pip uninstall _"
   },
@@ -136,6 +155,7 @@
     "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
     "brew": "brew uninstall --force $(brew list)",
     "gem": "gem uninstall -aIx",
+    "go": "",
     "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
     "pip": "pip freeze | xargs pip uninstall -y"
   },
@@ -143,6 +163,7 @@
     "apt": "apt autoremove",
     "brew": "brew autoremove",
     "gem": "gem cleanup",
+    "go": "",
     "npm": "",
     "pip": ""
   },
@@ -150,6 +171,7 @@
     "apt": "apt update",
     "brew": "brew update",
     "gem": "gem sources --update",
+    "go": "",
     "npm": "# N/A",
     "pip": "# N/A"
   },
@@ -157,6 +179,7 @@
     "apt": "apt upgrade _",
     "brew": "brew upgrade _",
     "gem": "gem update _",
+    "go": "",
     "npm": "npm update -g _@latest",
     "pip": "pip install --upgrade _"
   },
@@ -164,6 +187,7 @@
     "apt": "apt upgrade",
     "brew": "brew upgrade",
     "gem": "gem update",
+    "go": "",
     "npm": "npm update -g",
     "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U"
   }

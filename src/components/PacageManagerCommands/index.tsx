@@ -36,6 +36,11 @@ export const PackageManagerList: PackageManagerItem[] = [
     title: "Ruby",
     icon: "logos:rubygems",
   },
+  {
+    id: "go",
+    title: "Go",
+    icon: "logos:gopher",
+  },
 ];
 
 export default function PackageManagers({ commands }): JSX.Element {
