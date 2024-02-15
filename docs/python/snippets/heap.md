@@ -2,13 +2,27 @@
 
 Some handful snippets for using heap in Python.
 
-For max heap, use negative numbers.
-
 ## Create a heap
 
+### Empty heap
+
 ```python
-heap = heapq.heapify([])
+heap = []
 ```
+
+### From a list
+
+Complexity: $O(n)$
+
+```python
+heapq.heapify(the_list) # Inplace
+```
+
+:::tip
+
+For max heap, use negative numbers.
+
+:::
 
 ## Push an item
 
@@ -16,19 +30,21 @@ heap = heapq.heapify([])
 heapq.heappush(heap, item)
 ```
 
-## Read the smallest item
+## Read the top (smallest) item
 
 ```python
 item = heapq.heappop(heap)
 ```
 
-without removing it:
+without removing it (peek):
 
 ```python
 item = heap[0]
 ```
 
-## Remove an item from a heap
+## Remove an arbitary item from a heap
+
+Removing the item at index `i`[^1]:
 
 Complexity: $O(n)$
 
@@ -48,6 +64,8 @@ if i < len(h):
     heapq._siftdown(h, 0, i)
 ```
 
+[^1]: [StackOverflow](https://stackoverflow.com/a/10163422/10325430)
+
 ## Keep top K largest items
 
 ```python
@@ -61,5 +79,4 @@ for item in items:
 ## Reference
 
 - [Python `heapq` module docs](https://docs.python.org/3/library/heapq.html)
-- [Heap queue algorithm](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
-- [StackOverflow](https://stackoverflow.com/a/10163422/10325430)
+- [Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
