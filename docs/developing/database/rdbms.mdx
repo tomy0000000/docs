@@ -1,0 +1,50 @@
+# Relational Database
+
+```mdx-code-block
+import { Icon } from "@iconify/react";
+```
+
+_a.k.a. RDBMS (Relational Database Management System)_
+
+This document outline some considerations when choosing a RDBMS for your application.
+
+## <Icon icon="logos:mysql" inline={true} /> MySQL
+
+- Performant and Efficient JSON Support
+  - More efficient JSON operations and storage compared to PostgreSQL
+  - [MySQL Documentation: JSON Data Type](https://dev.mysql.com/doc/refman/8.3/en/json.html)
+- Built-in Replication
+  - [MySQL Documentation: Replication](https://dev.mysql.com/doc/refman/8.3/en/replication.html)
+- Multiple Storage Engines
+  - InnoDB, MyISAM, Memory, CSV, Archive, Blackhole, NDB, etc.
+  - [MySQL Documentation: Storage Engines](https://dev.mysql.com/doc/refman/8.3/en/storage-engines.html)
+
+## <Icon icon="logos:postgresql" inline={true} /> PostgreSQL
+
+- Always ACID Compliant
+  - [PostgreSQL Documentation: Transaction Isolation](https://www.postgresql.org/docs/current/transaction-iso.html)
+- Advanced Data Types
+  - JSON, XML, Arrays, Range, Geometric, Network Address, Bit String, Text Search, UUID, etc.
+  - [PostgreSQL Documentation: Data Types](https://www.postgresql.org/docs/current/datatype.html)
+- Rich JSON Operations
+  - More wide-ranging support for JSON operations compared to MySQL
+  - [PostgreSQL Documentation: JSON Types](https://www.postgresql.org/docs/current/datatype-json.html)
+- Table Inheritance
+  - [PostgreSQL Official Tutorial](https://www.postgresql.org/docs/current/tutorial-inheritance.html)
+- More Extensive Indexing Support
+  - For efficient querying of complex data types
+  - B-Tree, Hash, GiST, SP-GiST, GIN, and BRIN indexes
+  - [PostgreSQL Documentation: Index Types](https://www.postgresql.org/docs/current/indexes-types.html)
+- Full Support for SQL Standard Features
+  - Window functions, common table expressions, lateral joins, etc.
+  - Supports 170/177 mandatory features of the latest SQL:2023 standard
+  - [PostgreSQL Documentation: SQL Conformance](https://www.postgresql.org/docs/current/features.html)
+- Custom Data Types, Functions, and Operators
+  - [PostgreSQL Documentation: User-Defined Types](https://www.postgresql.org/docs/current/xtypes.html)
+  - [PostgreSQL Documentation: User-Defined Functions](https://www.postgresql.org/docs/current/xfunc.html)
+  - [PostgreSQL Documentation: User-Defined Operators](https://www.postgresql.org/docs/current/xoper.html)
+
+## <Icon icon="logos:sqlite" inline={true} /> SQLite
+
+- Plain simple to use
+- _Might_ not be suitable for large-scale applications
