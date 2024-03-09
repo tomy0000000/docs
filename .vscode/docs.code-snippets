@@ -5,5 +5,25 @@
     "prefix": "admonitions",
     "body": [":::${1|note,tip,info,warning,danger|}", "", "${2}", "", ":::"],
     "description": "Admonition info box"
+  },
+  "Tabs": {
+    "scope": "markdown,mdx",
+    "prefix": "tabs",
+    "body": [
+      "```mdx-code-block",
+      "import Tabs from '@theme/Tabs';",
+      "import TabItem from '@theme/TabItem';",
+      "```",
+      "",
+      "<Tabs groupId=\"${1}\">",
+      "  <TabItem value=\"${2}\" label=\"${3}\">",
+      "    ${6}",
+      "  </TabItem>",
+      "  <TabItem value=\"${4}\" label=\"${5}\">",
+      "    ${7}",
+      "  </TabItem>",
+      "</Tabs>"
+    ],
+    "description": "Tabs component"
   }
 }
