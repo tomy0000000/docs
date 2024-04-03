@@ -8,22 +8,31 @@ Quick reference for `git` commands.
 - ✚ means the command is available from [tj/git-extras](https://github.com/tj/git-extras).
 - ⛓️ means the command is available from [nvie/git-toolbelt](https://github.com/nvie/git-toolbelt).
 
-| Subcommand   | Docs                                                                              | Description                                               |
-| ------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| `bulk`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-bulk)              | Run a git command on multiple repositories                |
-| `brv`        | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-brv)               | Pretty-print branches with their last commit              |
-| `coauthor`   | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-coauthor)          | Add a co-author to the last commit                        |
-| `contrib`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-contrib)           | Show a user's contributions to the repository             |
-| `count`      | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-count)             | Count the number of commits                               |
-| `extras`     | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-extras)            | Show the man page of `git-extras`                         |
-| `lock`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-lock)              | Lock a file from being changed in the repository          |
-| `locked`     | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-lock)              | List all locked files                                     |
-| `obliterate` | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-obliterate)        | Remove a file from the entire history of a git repository |
-| `root`       | [⛓️](https://github.com/nvie/git-toolbelt/blob/main/README.md#git-root--git-repo) | Show the root directory of the repository                 |
-| `summary`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-summary)           | Show commit summary                                       |
-| `show-tree`  | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-show-tree)         | Show commit tree                                          |
-| `standup`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-standup)           | Show a user's contributions in the past n days            |
-| `unlock`     | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-unlock)            | Unlock a file from being changed in the repository        |
+| Subcommand     | Docs                                                                              | Description                                                                   |
+| -------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `abort`        | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-abort)             | Abort a revert, rebase, merge or cherry-pick                                  |
+| `alias`        | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-alias)             | Define, search and show aliases                                               |
+| `archive-file` | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-archive-file)      | Zip the repository                                                            |
+| `authors`      | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-authors)           | Generate an AUTHORS file                                                      |
+| `browse`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-browse)            | Open the repository in the browser                                            |
+| `browse-ci`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-browse-ci)         | Open the CI pipeline in the browser                                           |
+| `brv`          | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-brv)               | Pretty-print branches with their last commit                                  |
+| `changelog`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-changelog)         | Generate a HISTORY/CHANGE file content                                        |
+| `clear`        | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-clear)             | Clear unstage changes and remove untracked files (**includes** ignored files) |
+| `clear-soft`   | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-clear-soft)        | Clear unstage changes and remove untracked files (excludes ignored files)     |
+| `count`        | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-count)             | Count the number of commits                                                   |
+| `extras`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-extras)            | Show the man page of `git-extras`                                             |
+| `fork`         | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-fork)              | Fork and clone a repository                                                   |
+| `ignore`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-ignore)            | Show ignored patterns                                                         |
+| `ignore-io`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-ignore-io)         | Generate `.gitignore` from gitignore.io                                       |
+| `lock`         | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-lock)              | Lock a file from being changed in the repository                              |
+| `locked`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-lock)              | List all locked files                                                         |
+| `obliterate`   | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-obliterate)        | Remove a file from the entire history of a git repository                     |
+| `root`         | [⛓️](https://github.com/nvie/git-toolbelt/blob/main/README.md#git-root--git-repo) | Show the root directory of the repository                                     |
+| `summary`      | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-summary)           | Show commit summary                                                           |
+| `show-tree`    | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-show-tree)         | Show commit tree                                                              |
+| `standup`      | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-standup)           | Show a user's contributions in the past n days                                |
+| `unlock`       | [✚](https://github.com/tj/git-extras/blob/main/Commands.md#git-unlock)            | Unlock a file from being changed in the repository                            |
 
 ## Snippets
 
