@@ -4,7 +4,7 @@
 
 ## Tips
 
-- 每年 3 月芝加哥會慶祝聖派翠克節 (St. Patrick's Day)，有染成綠色的芝加哥河 (Chicago River)、遊行、音樂會等活動
+- 每年 3 月芝加哥會慶祝聖派翠克節 (St. Patrick's Day)，有染成綠色的芝加哥河、遊行、音樂會等活動
 - 兩大公園
   - Millennium Park
     - Cloud Gate (The Bean)
@@ -54,17 +54,17 @@
 ### Metro
 
 - 芝加哥捷運稱為 Chicago "L"，是美國第二古老的地鐵系統，於 1892 年開始營運。
-- 除了由機場 (O'Hare) 出發為 $5 外，其他車程皆為 $2.5
+- 除了由機場 (O'Hare) 出發為 \$5 外，其他車程皆為 \$2.5
 - 地鐵站大部分命名方式是所在十字路口的街道，小心不同路線可能有相同名稱但不能轉乘甚至距離很遙遠的站 (e.g. Grand)
 - 使用 Ventra 卡
   - 可在地鐵站購買實體卡
   - 也可以透過 Ventra App 開通虛擬 Ventra 卡加入 Apple Pay 或 Google Pay
-  - 不論形式均須支付 $5 開卡費用，可刷卡，在 App 或網站完成註冊後可退回 $5
+  - 不論形式均須支付 \$5 開卡費用，可刷卡，在 App 或網站完成註冊後可退回 \$5
   - 有 1 日、3 日、7 日等不同期限的通票
 
 ### Bus
 
-- 單趟 $2.25
+- 單趟 \$2.25
 - 兩小時內可免費轉乘最多兩次
 - 付現不找零或使用 Ventra 卡
 
@@ -72,9 +72,9 @@
 
 - [Chicago Water Taxi](https://chicagowatertaxi.com/)
 - [Map](https://www.google.com/maps/d/u/0/viewer?mid=1TZp9wPKksAHaaOG-9pkZ3bFgPhc)
-- 單程票 $6
-- 一日票 $10
-- 十次票 $25
+- 單程票 \$6
+- 一日票 \$10
+- 十次票 \$25
 
 ## Restaurants & Foods
 

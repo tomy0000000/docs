@@ -97,6 +97,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "travelSidebar",
+          label: "🧳 Travel",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "miscSidebar",
           label: "🍥 Misc",
           position: "left",
