@@ -30,3 +30,25 @@ sidebar_position: 4
 **Bellman-Ford** and **Floyd-Warshall** can handle negative weights and detect negative cycles, while **Dijkstra** can not.
 
 :::
+
+## Minimum Spanning Tree
+
+- **Borůvka's**: Greedy algorithm, select the cheapest edge for each component
+- **Prim**: Greedy algorithm, select the cheapest edge that connects exactly one old vertex and one new vertex
+  - Sparse graph, use Adjacency List
+    - with binary heap: $O(\vert E \vert \log \vert V \vert)$
+    - with Fibonacci heap: $O(\vert E \vert + \vert V \vert \log \vert V \vert)$
+  - Dense graph, use Adjacency Matrix: $O(\vert V \vert ^ 2)$
+- **Kruskal**: Greedy algorithm, select the cheapest edge that connects at least one new vertex
+
+| Algorithm | Time Complexity                       |
+| --------- | ------------------------------------- |
+| Borůvka's | $O(\vert E \vert \log \vert V \vert)$ |
+| Prim      | See above                             |
+| Kruskal   | $O(\vert E \vert \log \vert V \vert)$ |
+
+:::tip
+
+See optimization for special cases on [Wikipedia](https://en.wikipedia.org/wiki/Minimum_spanning_tree#Linear-time_algorithms_in_special_cases)
+
+:::
