@@ -27,6 +27,14 @@ const config: Config = {
     },
   ],
 
+  scripts: [
+    {
+      src: "https://a.tomy.me/js/script.js",
+      defer: true,
+      "data-domain": "docs.tomy.me",
+    },
+  ],
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
