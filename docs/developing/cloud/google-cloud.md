@@ -1,0 +1,16 @@
+# Google Cloud
+
+## Shut Down Project
+
+1. Enable [`Cloud Asset API`](https://console.cloud.google.com/flows/enableapi?apiid=cloudasset.googleapis.com&redirect=https://console.cloud.google.com/iam-admin/asset-inventory/resources)
+2. [Browse all resources under the project](https://console.cloud.google.com/iam-admin/asset-inventory/resources)
+   - Make sure there are no critical resources left
+3. Check for [API keys](https://console.cloud.google.com/apis/credentials) and service accounts
+   - Make sure they are not used
+4. Disable billing
+   - Go to [Billing](https://console.cloud.google.com/billing)
+   - Select the billing account
+   - On the left sidebar, click `Account management` (under `Billing management`)
+   - Click `Actions` > `Disable billing`
+5. (Optional) Wait for a few days to see if any production services are affected
+6. Delete the project
