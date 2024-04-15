@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Virtual Machines",
+    "aws": [
+      {
+        "name": "Elastic Compute Cloud",
+        "abbr": "EC2",
+        "url": "https://aws.amazon.com/ec2/"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Compute Engine",
+        "url": "https://cloud.google.com/compute"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Virtual Machines",
+        "url": "https://azure.microsoft.com/en-us/products/virtual-machines"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Droplets",
+        "url": "https://www.digitalocean.com/products/droplets"
+      }
+    ]
+  },
+  {
+    "name": "Managed RDBMS",
+    "aws": [
+      {
+        "name": "Relational Database Service",
+        "abbr": "RDS",
+        "url": "https://aws.amazon.com/rds/"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Cloud SQL",
+        "url": "https://cloud.google.com/sql"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Azure Database",
+        "url": "https://azure.microsoft.com/en-us/services/sql-database"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Managed Databases",
+        "url": "https://www.digitalocean.com/products/managed-databases"
+      }
+    ]
+  },
+  {
+    "name": "Object Storage (Bucket)",
+    "aws": [
+      {
+        "name": "Simple Storage Service",
+        "abbr": "S3",
+        "url": "https://aws.amazon.com/s3/"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Cloud Storage",
+        "url": "https://cloud.google.com/storage"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Azure Blob Storage",
+        "url": "https://azure.microsoft.com/en-us/products/storage/blobs"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Spaces Object Storage",
+        "url": "https://www.digitalocean.com/products/spaces"
+      }
+    ]
+  },
+  {
+    "name": "Function as a Service (FaaS)",
+    "aws": [
+      {
+        "name": "Lambda",
+        "url": "https://aws.amazon.com/lambda/"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Cloud Functions",
+        "url": "https://cloud.google.com/functions"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Azure Functions",
+        "url": "https://azure.microsoft.com/en-us/products/functions"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Functions",
+        "url": "https://www.digitalocean.com/products/functions"
+      }
+    ]
+  },
+  {
+    "name": "Platform as a Service (PaaS)",
+    "aws": [
+      {
+        "name": "Elastic Beanstalk",
+        "url": "https://aws.amazon.com/elasticbeanstalk/"
+      },
+      {
+        "name": "Lightsail",
+        "url": "https://aws.amazon.com/lightsail/"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "App Engine",
+        "url": "https://cloud.google.com/appengine"
+      }
+    ],
+    "azure": [
+      {
+        "name": "App Service",
+        "url": "https://azure.microsoft.com/en-us/products/app-service"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "App Platform",
+        "url": "https://www.digitalocean.com/products/app-platform"
+      }
+    ]
+  }
+]
