@@ -10,10 +10,8 @@
     "scope": "markdown,mdx",
     "prefix": "tabs",
     "body": [
-      "```mdx-code-block",
       "import Tabs from '@theme/Tabs';",
       "import TabItem from '@theme/TabItem';",
-      "```",
       "",
       "<Tabs groupId=\"${1}\">",
       "  <TabItem value=\"${2}\" label=\"${3}\">",
