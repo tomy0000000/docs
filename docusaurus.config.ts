@@ -153,6 +153,7 @@ const config: Config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
+      additionalLanguages: ["bash", "docker"],
     },
     algolia: {
       appId: "RJBX6ZLAHI",
