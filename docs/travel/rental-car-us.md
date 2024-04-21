@@ -1,12 +1,18 @@
-# 🇺🇸🚘 Rental Car in US
+# 🇺🇸 🚘 Rental Car in US
 
-## Chains
+## 三大集團
 
-- [Enterprise](https://www.enterprise.com/en/home.html)
-- [Hertz](https://www.hertz.com/rentacar/reservation/)
-- [Avis](https://www.avis.com/en/home)
-- [Budget](https://www.budget.com/en/home)
-- [National](https://www.nationalcar.com/en/home.html)
+- Enterprise Holdings
+  - [Enterprise](https://www.enterprise.com/)
+  - [National](https://www.nationalcar.com/)
+- Avis Budget Group
+  - [Avis](https://www.avis.com/)
+  - [Budget](https://www.budget.com/)
+- Hertz Global Holdings
+  - [Hertz](https://www.hertz.com/)
+  - Dollar
+  - Firefly
+  - Thrifty
 
 ## 保險
 
