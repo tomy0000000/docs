@@ -18,6 +18,19 @@ Install method ordered by preference:
 - DMG: Download and install the app mounted from the `.dmg` file.
 - PKG Installer: Download and execute the `.pkg` installer. **Be careful when password is prompted.**
 
+<details>
+
+<summary>Install Homebrew on multi-user machine</summary>
+
+```shell
+sudo dseditgroup -o create brew
+sudo dseditgroup -o edit -a tomy0000000 -t user brew
+sudo chgrp -R brew $(brew --prefix)/*
+sudo chmod -R g+w $(brew --prefix)/*
+```
+
+</details>
+
 ### Data
 
 Files, Documents, and other user data.
