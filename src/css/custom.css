@@ -38,3 +38,16 @@ li.tabs__item svg {
   margin-inline-start: 0.25em;
   margin-inline-end: 0.25em;
 }
+
+/**
+  * Disable the max-width on the main container.
+  * https://stackoverflow.com/a/74668016/10325430
+  */
+main > .container {
+  /* 
+    We disable this on the "normal" container, i.e. DocPage/Layout/Main.
+    We want ONLY for this, hence we base our selector on the parent, which is a DOM element: <main>.
+    We want to reuse this class in DocItem/Layout.
+   */
+  max-width: initial !important;
+}
