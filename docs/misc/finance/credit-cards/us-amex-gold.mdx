@@ -1,0 +1,79 @@
+import cards from "@site/src/data/credit-cards.json";
+
+# 🇺🇸 American Express® Gold Card
+
+## Rewards
+
+| Category                 | Reward                                                                      | Notes                                                                 |
+| ------------------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Restaurants & Dining     | {cards["us-amex-gold"]["rewards"]["restaurants-dining"]["multiplier"]}x     | {cards["us-amex-gold"]["rewards"]["restaurants-dining"]["notes"]}     |
+| Groceries & Supermarkets | {cards["us-amex-gold"]["rewards"]["groceries-supermarkets"]["multiplier"]}x | {cards["us-amex-gold"]["rewards"]["groceries-supermarkets"]["notes"]} |
+| Flights                  | {cards["us-amex-gold"]["rewards"]["flights"]["multiplier"]}x                | {cards["us-amex-gold"]["rewards"]["flights"]["notes"]}                |
+| Other                    | {cards["us-amex-gold"]["rewards"]["others"]["multiplier"]}x                 | {cards["us-amex-gold"]["rewards"]["others"]["notes"]}                 |
+
+## Benefits
+
+<ul>
+  {cards["us-amex-gold"]["benefits"].map((benefit, index) => (
+    <li key={index}>
+      <b>
+        {benefit.url ? (
+          <a href={benefit.url} target="_blank" rel="noopener noreferrer">
+            {benefit.title}
+          </a>
+        ) : (
+          benefit.title
+        )}
+      </b>
+      : {benefit.description}
+    </li>
+  ))}
+</ul>
+
+## Insurances
+
+| Type                | Description                                                               |
+| ------------------- | ------------------------------------------------------------------------- |
+| Car Rental          | {cards["us-amex-gold"]["insurances"]["car-rental"]["description"]}        |
+| Baggages            | {cards["us-amex-gold"]["insurances"]["baggages"]["description"]}          |
+| Purchase Protection | {cards["us-amex-gold"]["insurances"]["purchase"]["description"]}          |
+| Extended Warranty   | {cards["us-amex-gold"]["insurances"]["extended-warranty"]["description"]} |
+
+## Services
+
+<ul>
+  {cards["us-amex-gold"]["services"].map((service, index) => (
+    <li key={index}>
+      <b>
+        {service.url ? (
+          <a href={service.url} target="_blank" rel="noopener noreferrer">
+            {service.title}
+          </a>
+        ) : (
+          service.title
+        )}
+      </b>
+      : {service.description}
+    </li>
+  ))}
+</ul>
+
+## Fees
+
+| Fee Type                | Amount                                                        | Notes                                                       |
+| ----------------------- | ------------------------------------------------------------- | ----------------------------------------------------------- |
+| Annual Fee              | ${cards["us-amex-gold"]["fees"]["annual"]["amount"]}          | {cards["us-amex-gold"]["fees"]["annual"]["notes"]}          |
+| Foreign Transaction Fee | {cards["us-amex-gold"]["fees"]["foreign"]["percent"]}%        | {cards["us-amex-gold"]["fees"]["foreign"]["notes"]}         |
+| Additional Card Fee     | ${cards["us-amex-gold"]["fees"]["additional-card"]["amount"]} | {cards["us-amex-gold"]["fees"]["additional-card"]["notes"]} |
+
+## References
+
+<ul>
+  {cards["us-amex-gold"]["references"].map((reference, index) => (
+    <li key={index}>
+      <a href={reference.url} target="_blank" rel="noopener noreferrer">
+        {reference.title}
+      </a>
+    </li>
+  ))}
+</ul>

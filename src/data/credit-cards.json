@@ -1,0 +1,104 @@
+{
+  "us-amex-gold": {
+    "name": "American Express® Gold Card",
+    "country": "us",
+    "rewards": {
+      "restaurants-dining": {
+        "multiplier": 4,
+        "unit": "points",
+        "notes": "Worldwide + US Takeout & Delivery"
+      },
+      "groceries-supermarkets": {
+        "multiplier": 4,
+        "unit": "points",
+        "notes": "US Only, up to $25,000/year"
+      },
+      "flights": {
+        "multiplier": 3,
+        "unit": "points",
+        "notes": "Directly with airlines or through Amex Travel"
+      },
+      "others": {
+        "multiplier": 1,
+        "unit": "points"
+      }
+    },
+    "benefits": [
+      {
+        "title": "$120 Dining Credit",
+        "description": "$10/month dinning credits for Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, Milk Bar, and Shake Shack"
+      },
+      {
+        "title": "$120 Uber Cash",
+        "description": "$10/month Uber Cash for U.S. Uber rides/Uber Eats orders"
+      },
+      {
+        "title": "$100 Hotel Credit",
+        "description": "$100/year for two-night minimum stay at The Hotel Collection"
+      },
+      {
+        "title": "Amex Offers",
+        "description": "Enroll in Amex Offers and get extra rewards",
+        "url": "https://www.americanexpress.com/en-us/benefits/offers/"
+      },
+      {
+        "title": "American Express Experiences",
+        "description": "Card Member-only events, exclusive access to ticket presales",
+        "url": "https://americanexpress.com/entertainment"
+      },
+      {
+        "title": "American Express Preferred Access",
+        "description": "Access to premium seats for select events"
+      }
+    ],
+    "insurances": {
+      "car-rental": {
+        "description": "Collision damage waiver (CDW), and Theft",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/car-rental-loss-and-damage-insurance-terms.html"
+      },
+      "baggages": {
+        "description": "$1,250 for carry-on baggage, $500 for checked baggage"
+      },
+      "purchase": {
+        "description": "Reimburses up to $10,000 per purchase for loss within 90 days of purchase",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/purchase-protection-terms.html"
+      },
+      "extended-warranty": {
+        "description": "Extends the original manufacturer’s warranty up to one year",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/extended-warranty-terms.html"
+      }
+    },
+    "services": [
+      {
+        "title": "Global Assist® Hotline",
+        "description": "24/7 emergency assistance when traveling more than 100 miles from home"
+      },
+      {
+        "title": "Send & Split®",
+        "description": "Split the bill with friends and send money with Venmo or PayPal"
+      }
+    ],
+    "fees": {
+      "annual": {
+        "amount": 250
+      },
+      "foreign": {
+        "percent": 0
+      },
+      "additional-card": {
+        "amount": 35,
+        "notes": "First 5 cards are free"
+      }
+    },
+    "references": [
+      {
+        "title": "Main Page",
+        "url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+      },
+      {
+        "title": "Card Agreements",
+        "url": "https://www.americanexpress.com/en-us/company/legal/cardmember-agreements/"
+      }
+    ]
+  }
+}
