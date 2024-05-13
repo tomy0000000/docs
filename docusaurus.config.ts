@@ -87,12 +87,6 @@ const config: Config = {
         },
         {
           type: "docSidebar",
-          sidebarId: "pythonSidebar",
-          label: "🐍 Python",
-          position: "left",
-        },
-        {
-          type: "docSidebar",
           sidebarId: "travelSidebar",
           label: "🧳 Travel",
           position: "left",
@@ -120,8 +114,12 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "👨🏻‍💻 Developing",
           items: [
+            {
+              label: "🐍 Python",
+              to: "/python/versions",
+            },
             {
               label: "📦 Package Managers",
               to: "/package-managers/glossary",
