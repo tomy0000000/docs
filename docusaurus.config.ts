@@ -99,6 +99,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "financeSidebar",
+          label: "🏦 Finance",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "miscSidebar",
           label: "🍥 Misc",
           position: "left",
