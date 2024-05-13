@@ -87,20 +87,8 @@ const config: Config = {
         },
         {
           type: "docSidebar",
-          sidebarId: "packageManagerSidebar",
-          label: "📦 Package Managers",
-          position: "left",
-        },
-        {
-          type: "docSidebar",
           sidebarId: "pythonSidebar",
           label: "🐍 Python",
-          position: "left",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "specificationsSidebar",
-          label: "📜 Specifications",
           position: "left",
         },
         {
@@ -129,12 +117,12 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Home",
-              to: "/",
+              label: "📦 Package Managers",
+              to: "/package-managers/glossary",
             },
             {
-              label: "Package Managers",
-              to: "/package-managers/glossary",
+              label: "📜 Specifications",
+              to: "/specifications/country",
             },
           ],
         },
