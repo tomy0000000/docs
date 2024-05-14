@@ -1,0 +1,97 @@
+# 🇺🇸 Chase Sapphire Preferred®
+
+import cards from "@site/src/data/credit-cards.json";
+
+export const card = cards["us-chase-sapphire-preferred"];
+
+## Rewards
+
+| Category                 | Reward                                                     | Notes                                                |
+| ------------------------ | ---------------------------------------------------------- | ---------------------------------------------------- |
+| Travels                  | {card["rewards"]["travels"]["multiplier"]}x                | {card["rewards"]["travels"]["notes"]}                |
+| Restaurants & Dining     | {card["rewards"]["restaurants-dining"]["multiplier"]}x     | {card["rewards"]["restaurants-dining"]["notes"]}     |
+| Groceries & Supermarkets | {card["rewards"]["groceries-supermarkets"]["multiplier"]}x | {card["rewards"]["groceries-supermarkets"]["notes"]} |
+| Streaming                | {card["rewards"]["streaming"]["multiplier"]}x              | {card["rewards"]["streaming"]["notes"]}              |
+| Peloton                  | {card["rewards"]["peloton"]["multiplier"]}x                | {card["rewards"]["peloton"]["notes"]}                |
+| Lyft                     | {card["rewards"]["lyft"]["multiplier"]}x                   | {card["rewards"]["lyft"]["notes"]}                   |
+| Others                   | {card["rewards"]["others"]["multiplier"]}x                 | {card["rewards"]["others"]["notes"]}                 |
+
+## Benefits
+
+<ul>
+  {card["benefits"].map((benefit, index) => (
+    <li key={index}>
+      <b>
+        {benefit.url ? (
+          <a href={benefit.url} target="_blank" rel="noopener noreferrer">
+            {benefit.title}
+          </a>
+        ) : (
+          benefit.title
+        )}
+      </b>
+      : {benefit.description}
+    </li>
+  ))}
+</ul>
+
+## Insurances
+
+| Type                | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| Car Rental          | {card["insurances"]["car-rental"]["description"]}        |
+| Travel Delay        | {card["insurances"]["travel-delay"]["description"]}      |
+| Baggage Delay       | {card["insurances"]["baggage-delay"]["description"]}     |
+| Purchase Protection | {card["insurances"]["purchase"]["description"]}          |
+| Extended Warranty   | {card["insurances"]["extended-warranty"]["description"]} |
+
+## Services
+
+<ul>
+  {card["services"].map((service, index) => (
+    <li key={index}>
+      <b>
+        {service.url ? (
+          <a href={service.url} target="_blank" rel="noopener noreferrer">
+            {service.title}
+          </a>
+        ) : (
+          service.title
+        )}
+      </b>
+      : {service.description}
+    </li>
+  ))}
+</ul>
+
+## Fees & Interests
+
+| Fee Type                | Amount                                                                                          | Notes                                       |
+| ----------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Annual Fee              | ${card["fees"]["annual"]["amount"]}                                                             | {card["fees"]["annual"]["notes"]}           |
+| Additional Card Fee     | ${card["fees"]["additional-card"]["amount"]}                                                    | {card["fees"]["additional-card"]["notes"]}  |
+| Foreign Transaction Fee | {card["fees"]["foreign"]["percent"]}%                                                           | {card["fees"]["foreign"]["notes"]}          |
+| Cash Advance Fee        | ${card["fees"]["cash-advance"]["amount"]} or {card["fees"]["cash-advance"]["percent"]}%         | {card["fees"]["cash-advance"]["notes"]}     |
+| Balance Transfer Fee    | ${card["fees"]["balance-transfer"]["amount"]} or {card["fees"]["balance-transfer"]["percent"]}% | {card["fees"]["balance-transfer"]["notes"]} |
+| Late Payment Fee        | Up to ${card["fees"]["late-payment"]["amount"]}                                                 | {card["fees"]["late-payment"]["notes"]}     |
+| Returned Payment Fee    | Up to ${card["fees"]["returned-payment"]["amount"]}                                             | {card["fees"]["returned-payment"]["notes"]} |
+
+| Interest Type        | Amount                                                                                                                               | Notes                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| Purchase APR         | Prime Rates + {card["interests"]["purchases"]["apr"][0]}% to Prime Rates + {card["interests"]["purchases"]["apr"][1]}%               | {card["interests"]["purchases"]["notes"]}        |
+| My Chase Loan APR    | Prime Rates + {card["interests"]["my-chase-loan"]["apr"][0]}% to Prime Rates + {card["interests"]["my-chase-loan"]["apr"][1]}%       | {card["interests"]["my-chase-loan"]["notes"]}    |
+| Cash Advances APR    | Prime Rates + {card["interests"]["cash-advances"]["apr"]}%                                                                           | {card["interests"]["cash-advances"]["notes"]}    |
+| Balance Transfer APR | Prime Rates + {card["interests"]["balance-transfer"]["apr"][0]}% to Prime Rates + {card["interests"]["balance-transfer"]["apr"][1]}% | {card["interests"]["balance-transfer"]["notes"]} |
+| Penalty APR          | Prime Rates + {card["interests"]["penalty"]["apr"]}%                                                                                 | {card["interests"]["penalty"]["notes"]}          |
+
+## References
+
+<ul>
+  {card["references"].map((reference, index) => (
+    <li key={index}>
+      <a href={reference.url} target="_blank" rel="noopener noreferrer">
+        {reference.title}
+      </a>
+    </li>
+  ))}
+</ul>

@@ -128,5 +128,149 @@
         "url": "https://www.americanexpress.com/en-us/company/legal/cardmember-agreements/"
       }
     ]
+  },
+  "us-chase-sapphire-preferred": {
+    "name": "Chase Sapphire Preferred® Credit Card",
+    "country": "us",
+    "rewards": {
+      "travels": {
+        "multiplier": 2,
+        "unit": "points",
+        "notes": "5x for Chase Travel, exclude $50 Annual Chase Travel Hotel Credit"
+      },
+      "restaurants-dining": {
+        "multiplier": 3,
+        "unit": "points",
+        "notes": "Include takeout & delivery"
+      },
+      "groceries-supermarkets": {
+        "multiplier": 3,
+        "unit": "points",
+        "notes": "Online only"
+      },
+      "streaming": {
+        "multiplier": 3,
+        "unit": "points",
+        "notes": "Selected services only"
+      },
+      "peloton": {
+        "multiplier": 5,
+        "unit": "points",
+        "notes": "For purchases over $150, through March 31, 2025"
+      },
+      "lyft": {
+        "multiplier": 5,
+        "unit": "points",
+        "notes": "Through March 31, 2025"
+      },
+      "others": {
+        "multiplier": 1,
+        "unit": "points"
+      }
+    },
+    "benefits": [
+      {
+        "title": "DoorDash DashPass Subscription",
+        "description": "Free 1 year $96 subscription"
+      },
+      {
+        "title": "Instacart+ Membership",
+        "description": "Free 6 months $60 membership"
+      },
+      {
+        "title": "Instacart Quarterly Credit",
+        "description": "Instacart+ members get $15 statement credits each quarter through July 2024"
+      },
+      {
+        "title": "Additional Redeemed Value",
+        "description": "Get 25% more value when redeemed on Chase Travel"
+      }
+    ],
+    "insurances": {
+      "car-rental": {
+        "description": "Collision Damage Waiver (CDW), primary coverage"
+      },
+      "travel-delay": {
+        "description": "More than 12 hours, unreimbursed expenses only, $500 per ticket"
+      },
+      "baggage-delay": {
+        "description": "More than 6 hours, $100 per delay day, 5 days max"
+      },
+      "purchase": {
+        "description": "Reimburses up to $500 per claim for loss within 120 days of purchase"
+      },
+      "extended-warranty": {
+        "description": "Extends the original manufacturer’s warranty up to one year"
+      }
+    },
+    "services": [
+      {
+        "title": "Travel and Emergency Assistance",
+        "description": "Benefit Administrator for legal and medical referrals or other travel and emergency assistance"
+      }
+    ],
+    "fees": {
+      "annual": {
+        "amount": 95
+      },
+      "additional-card": {
+        "amount": 0
+      },
+      "foreign": {
+        "percent": 0
+      },
+      "cash-advance": {
+        "amount": 10,
+        "percent": 5,
+        "notes": "Whichever is greater"
+      },
+      "balance-transfer": {
+        "amount": 5,
+        "percent": 5,
+        "notes": "Whichever is greater"
+      },
+      "late-payment": {
+        "amount": 40
+      },
+      "returned-payment": {
+        "amount": 40
+      }
+    },
+    "interests": {
+      "purchases": {
+        "apr": [12.99, 19.99],
+        "notes": "Variable"
+      },
+      "my-chase-loan": {
+        "apr": [12.99, 19.99],
+        "notes": "Variable"
+      },
+      "cash-advances": {
+        "apr": 21.74,
+        "notes": "Variable"
+      },
+      "balance-transfer": {
+        "apr": [12.99, 19.99],
+        "notes": "Variable"
+      },
+      "penalty": {
+        "apr": 26.99,
+        "notes": "Variable, applied if late or returned payment"
+      }
+    },
+    "references": [
+      {
+        "title": "Main Page",
+        "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
+      },
+      {
+        "title": "Program Agreement",
+        "url": "https://static.chasecdn.com/content/dam/card/rulesregulations/en/RPA0444_0477.pdf"
+      },
+      {
+        "title": "Pricing and Terms",
+        "url": "https://sites.chase.com/services/creatives/pricingandterms.html/content/dam/pricingandterms/LGC59102.html"
+      }
+    ]
   }
 }
