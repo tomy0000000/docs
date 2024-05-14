@@ -53,10 +53,10 @@
     ],
     "insurances": {
       "car-rental": {
-        "description": "Collision damage waiver (CDW), and Theft",
+        "description": "Collision Damage Waiver (CDW) or Theft, $50,000 per agreement, secondary coverage",
         "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/car-rental-loss-and-damage-insurance-terms.html"
       },
-      "baggages": {
+      "baggage-loss": {
         "description": "$1,250 for carry-on baggage, $500 for checked baggage"
       },
       "purchase": {
@@ -82,12 +82,40 @@
       "annual": {
         "amount": 250
       },
-      "foreign": {
-        "percent": 0
-      },
       "additional-card": {
         "amount": 35,
         "notes": "First 5 cards are free"
+      },
+      "foreign": {
+        "percent": 0
+      },
+      "cash-advance": {
+        "amount": 10,
+        "percent": 5,
+        "notes": "Whichever is greater"
+      },
+      "plan": {
+        "percent": 1.33
+      },
+      "late-payment": {
+        "amount": 40
+      },
+      "returned-payment": {
+        "amount": 40
+      }
+    },
+    "interests": {
+      "purchases": {
+        "apr": [12.74, 20.74],
+        "notes": "Variable"
+      },
+      "cash-advances": {
+        "apr": 21.99,
+        "notes": "Variable"
+      },
+      "penalty": {
+        "apr": 26.74,
+        "notes": "Variable, applied if late or returned payment"
       }
     },
     "references": [

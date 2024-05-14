@@ -1,20 +1,22 @@
+# 🇺🇸 American Express® Gold Card
+
 import cards from "@site/src/data/credit-cards.json";
 
-# 🇺🇸 American Express® Gold Card
+export const card = cards["us-amex-gold"];
 
 ## Rewards
 
-| Category                 | Reward                                                                      | Notes                                                                 |
-| ------------------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Restaurants & Dining     | {cards["us-amex-gold"]["rewards"]["restaurants-dining"]["multiplier"]}x     | {cards["us-amex-gold"]["rewards"]["restaurants-dining"]["notes"]}     |
-| Groceries & Supermarkets | {cards["us-amex-gold"]["rewards"]["groceries-supermarkets"]["multiplier"]}x | {cards["us-amex-gold"]["rewards"]["groceries-supermarkets"]["notes"]} |
-| Flights                  | {cards["us-amex-gold"]["rewards"]["flights"]["multiplier"]}x                | {cards["us-amex-gold"]["rewards"]["flights"]["notes"]}                |
-| Other                    | {cards["us-amex-gold"]["rewards"]["others"]["multiplier"]}x                 | {cards["us-amex-gold"]["rewards"]["others"]["notes"]}                 |
+| Category                 | Reward                                                     | Notes                                                |
+| ------------------------ | ---------------------------------------------------------- | ---------------------------------------------------- |
+| Restaurants & Dining     | {card["rewards"]["restaurants-dining"]["multiplier"]}x     | {card["rewards"]["restaurants-dining"]["notes"]}     |
+| Groceries & Supermarkets | {card["rewards"]["groceries-supermarkets"]["multiplier"]}x | {card["rewards"]["groceries-supermarkets"]["notes"]} |
+| Flights                  | {card["rewards"]["flights"]["multiplier"]}x                | {card["rewards"]["flights"]["notes"]}                |
+| Others                   | {card["rewards"]["others"]["multiplier"]}x                 | {card["rewards"]["others"]["notes"]}                 |
 
 ## Benefits
 
 <ul>
-  {cards["us-amex-gold"]["benefits"].map((benefit, index) => (
+  {card["benefits"].map((benefit, index) => (
     <li key={index}>
       <b>
         {benefit.url ? (
@@ -32,17 +34,17 @@ import cards from "@site/src/data/credit-cards.json";
 
 ## Insurances
 
-| Type                | Description                                                               |
-| ------------------- | ------------------------------------------------------------------------- |
-| Car Rental          | {cards["us-amex-gold"]["insurances"]["car-rental"]["description"]}        |
-| Baggages            | {cards["us-amex-gold"]["insurances"]["baggages"]["description"]}          |
-| Purchase Protection | {cards["us-amex-gold"]["insurances"]["purchase"]["description"]}          |
-| Extended Warranty   | {cards["us-amex-gold"]["insurances"]["extended-warranty"]["description"]} |
+| Type                | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| Car Rental          | {card["insurances"]["car-rental"]["description"]}        |
+| Baggage Loss        | {card["insurances"]["baggage-loss"]["description"]}      |
+| Purchase Protection | {card["insurances"]["purchase"]["description"]}          |
+| Extended Warranty   | {card["insurances"]["extended-warranty"]["description"]} |
 
 ## Services
 
 <ul>
-  {cards["us-amex-gold"]["services"].map((service, index) => (
+  {card["services"].map((service, index) => (
     <li key={index}>
       <b>
         {service.url ? (
@@ -58,18 +60,28 @@ import cards from "@site/src/data/credit-cards.json";
   ))}
 </ul>
 
-## Fees
+## Fees & Interests
 
-| Fee Type                | Amount                                                        | Notes                                                       |
-| ----------------------- | ------------------------------------------------------------- | ----------------------------------------------------------- |
-| Annual Fee              | ${cards["us-amex-gold"]["fees"]["annual"]["amount"]}          | {cards["us-amex-gold"]["fees"]["annual"]["notes"]}          |
-| Foreign Transaction Fee | {cards["us-amex-gold"]["fees"]["foreign"]["percent"]}%        | {cards["us-amex-gold"]["fees"]["foreign"]["notes"]}         |
-| Additional Card Fee     | ${cards["us-amex-gold"]["fees"]["additional-card"]["amount"]} | {cards["us-amex-gold"]["fees"]["additional-card"]["notes"]} |
+| Fee Type                | Amount                                                                                  | Notes                                       |
+| ----------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Annual Fee              | ${card["fees"]["annual"]["amount"]}                                                     | {card["fees"]["annual"]["notes"]}           |
+| Additional Card Fee     | ${card["fees"]["additional-card"]["amount"]}                                            | {card["fees"]["additional-card"]["notes"]}  |
+| Foreign Transaction Fee | {card["fees"]["foreign"]["percent"]}%                                                   | {card["fees"]["foreign"]["notes"]}          |
+| Cash Advance Fee        | ${card["fees"]["cash-advance"]["amount"]} or {card["fees"]["cash-advance"]["percent"]}% | {card["fees"]["cash-advance"]["notes"]}     |
+| Plan Fee                | {card["fees"]["plan"]["percent"]}%                                                      | {card["fees"]["plan"]["notes"]}             |
+| Late Payment Fee        | Up to ${card["fees"]["late-payment"]["amount"]}                                         | {card["fees"]["late-payment"]["notes"]}     |
+| Returned Payment Fee    | Up to ${card["fees"]["returned-payment"]["amount"]}                                     | {card["fees"]["returned-payment"]["notes"]} |
+
+| Interest Type     | Amount                                                                                                                 | Notes                                         |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Purchase APR      | Prime Rates + {card["interests"]["purchases"]["apr"][0]}% to Prime Rates + {card["interests"]["purchases"]["apr"][1]}% | {card["interests"]["purchases"]["notes"]}     |
+| Cash Advances APR | Prime Rates + {card["interests"]["cash-advances"]["apr"]}%                                                             | {card["interests"]["cash-advances"]["notes"]} |
+| Penalty APR       | Prime Rates + {card["interests"]["penalty"]["apr"]}%                                                                   | {card["interests"]["penalty"]["notes"]}       |
 
 ## References
 
 <ul>
-  {cards["us-amex-gold"]["references"].map((reference, index) => (
+  {card["references"].map((reference, index) => (
     <li key={index}>
       <a href={reference.url} target="_blank" rel="noopener noreferrer">
         {reference.title}
