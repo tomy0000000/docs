@@ -1,6 +1,6 @@
-# Environment Tools
+# Python Environment Tools
 
-A brief overview of various virtual environment tools available for Python.
+A brief overview of various environment tools available for Python.
 
 ## Manage Python Version
 
