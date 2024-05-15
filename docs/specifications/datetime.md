@@ -2,7 +2,7 @@
 
 Various datetime formats at a glance.
 
-::: tip
+:::tip
 
 1. Store datetimes as UTC in databse and convert to local time when displaying to users.
 2. If you need to store timezone information, store it in a separate column.
