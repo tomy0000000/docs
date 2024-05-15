@@ -12,6 +12,7 @@
 - Wyndham (溫德姆)
 - Best Western (最佳西方)
 - Accor (雅高)
+- [🇯🇵 Lively Hotels](https://www.livelyhotels.com)
 
 ## Hostels Chains
 
