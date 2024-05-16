@@ -1,0 +1,54 @@
+---
+sidebar_position: 1
+---
+
+import SortableTable from "@site/src/components/SortableTable";
+import clis from "@site/src/data/clis.json";
+
+# Glossary
+
+A list of common CLI commands and how they're installed on my system.
+
+<SortableTable
+  columns={[
+    {
+      header: "CLI",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { names, url } = getValue();
+        return url ? (
+          <a href={url} target="blank" rel="noreferrer noopener">
+            {names
+              .map((name, index) => <code key={index}>{name}</code>)
+              .reduce((prev, curr) => [prev, ", ", curr])}
+          </a>
+        ) : (
+          names
+            .map((name, index) => <code key={index}>{name}</code>)
+            .reduce((prev, curr) => [prev, ", ", curr])
+        );
+      },
+    },
+    {
+      header: "Category",
+      accessorKey: "category",
+    },
+    {
+      header: "Completion (zsh)",
+      accessorKey: "zsh-completion",
+      cell: ({ getValue }) => {
+        const completion = getValue();
+        return completion ? completion : "?";
+      },
+    },
+    {
+      header: "Alias",
+      accessorKey: "alias",
+      cell: ({ getValue }) => {
+        const alias = getValue();
+        return alias ? <code>{getValue()}</code> : null;
+      },
+    },
+  ]}
+  data={clis}
+/>

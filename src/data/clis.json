@@ -1,0 +1,127 @@
+[
+  {
+    "names": ["aws"],
+    "category": "Cloud provider",
+    "zsh-completion": "Homebrew"
+  },
+  {
+    "names": ["fly", "flyctl"],
+    "category": "Cloud provider",
+    "zsh-completion": "Homebrew"
+  },
+  {
+    "names": ["gcloud"],
+    "category": "Cloud provider",
+    "zsh-completion": "Homebrew (Need additional setup)"
+  },
+  {
+    "names": ["cheat"],
+    "category": "Command help",
+    "zsh-completion": "Homebrew (Broken)",
+    "url": "https://github.com/cheat/cheat"
+  },
+  { "names": ["man"], "category": "Command help" },
+  { "names": ["tldr"], "category": "Command help" },
+  {
+    "names": ["atuin"],
+    "category": "Command History",
+    "zsh-completion": "Homebrew"
+  },
+  { "names": ["history"], "category": "Command History" },
+  {
+    "names": ["docker"],
+    "category": "Containerization",
+    "zsh-completion": "Homebrew",
+    "alias": "d"
+  },
+  { "names": ["helm"], "category": "Containerization" },
+  {
+    "names": ["kops"],
+    "category": "Containerization",
+    "zsh-completion": "Homebrew"
+  },
+  { "names": ["kubectl"], "category": "Containerization", "alias": "f" },
+  { "names": ["ls"], "category": "File list", "alias": "l" },
+  { "names": ["cat"], "category": "File preview" },
+  { "names": ["head"], "category": "File preview" },
+  { "names": ["less"], "category": "File preview" },
+  { "names": ["more"], "category": "File preview" },
+  { "names": ["tail"], "category": "File preview" },
+  { "names": ["fd"], "category": "File search" },
+  { "names": ["find"], "category": "File search" },
+  { "names": ["fzf"], "category": "File search" },
+  { "names": ["locate"], "category": "File search" },
+  { "names": ["rg"], "category": "File search" },
+  { "names": ["go"], "category": "Go programming language" },
+  { "names": ["jq"], "category": "JSON processor" },
+  {
+    "names": ["autojump"],
+    "category": "Navigation",
+    "zsh-completion": "-",
+    "alias": "j",
+    "url": "https://github.com/wting/autojump"
+  },
+  {
+    "names": ["zoxide"],
+    "category": "Navigation",
+    "alias": "z",
+    "url": "https://github.com/ajeetdsouza/zoxide"
+  },
+  { "names": ["npm"], "category": "Node.js package manager" },
+  { "names": ["pnpm"], "category": "Node.js package manager" },
+  { "names": ["yarn"], "category": "Node.js package manager" },
+  { "names": ["npx"], "category": "Node.js package runner" },
+  { "names": ["node"], "category": "Node.js REPL" },
+  { "names": ["apt"], "category": "Package manager" },
+  {
+    "names": ["brew"],
+    "category": "Package manager",
+    "zsh-completion": "Homebrew",
+    "alias": "b"
+  },
+  { "names": ["yum"], "category": "Package manager" },
+  { "names": ["ipython"], "category": "Python REPL" },
+  { "names": ["jupyter"], "category": "Python notebook" },
+  { "names": ["pip"], "category": "Python package manager" },
+  { "names": ["poetry"], "category": "Python package manager" },
+  {
+    "names": ["pipx"],
+    "category": "Python package runner",
+    "zsh-completion": "Homebrew (broken)"
+  },
+  { "names": ["pyenv"], "category": "Python version manager" },
+  { "names": ["rsync"], "category": "Remote sync" },
+  { "names": ["rbenv"], "category": "Ruby version manager" },
+  { "names": ["scp"], "category": "Secure copy" },
+  { "names": ["ssh"], "category": "Secure shell" },
+  { "names": ["bash"], "category": "Shell" },
+  { "names": ["zsh"], "category": "Shell" },
+  {
+    "names": ["hugo"],
+    "category": "Static site generator",
+    "zsh-completion": "Homebrew"
+  },
+  { "names": ["htop"], "category": "System monitor" },
+  { "names": ["tmux"], "category": "Terminal multiplexer" },
+  { "names": ["atom"], "category": "Text editor" },
+  { "names": ["code"], "category": "Text editor" },
+  { "names": ["emacs"], "category": "Text editor" },
+  { "names": ["gedit"], "category": "Text editor" },
+  { "names": ["nano"], "category": "Text editor" },
+  { "names": ["notepad"], "category": "Text editor" },
+  { "names": ["subl"], "category": "Text editor" },
+  { "names": ["vi"], "category": "Text editor" },
+  { "names": ["vim"], "category": "Text editor" },
+  { "names": ["awk"], "category": "Text processor" },
+  { "names": ["grep"], "category": "Text processor" },
+  { "names": ["sed"], "category": "Text processor" },
+  { "names": ["curl"], "category": "URL transfer" },
+  { "names": ["wget"], "category": "URL transfer" },
+  {
+    "names": ["git"],
+    "category": "Version control system",
+    "zsh-completion": "Homebrew",
+    "alias": "g"
+  },
+  { "names": ["gh"], "category": "", "zsh-completion": "Homebrew" }
+]
