@@ -1,5 +1,6 @@
 import SortableTable from "@site/src/components/SortableTable";
 import airlines from "@site/src/data/airlines.json";
+import countries from "@site/src/data/countries.json";
 
 # Airlines
 
@@ -23,6 +24,7 @@ List of airlines, might not cover all.
     {
       header: "Country",
       accessorKey: "country",
+      cell: ({ getValue }) => countries[getValue().toUpperCase()].emoji,
     },
     {
       header: "IATA Code",
@@ -84,11 +86,16 @@ List of airlines, might not cover all.
     {
       header: "Seatmaps",
       accessorKey: "seatguru",
-      cell: ({ getValue }) => (
-        <a href={getValue()} target="blank" rel="noreferrer noopener">
-          SeatGuru
-        </a>
-      ),
+      cell: ({ getValue }) => {
+        const seatguru = getValue();
+        return (
+          seatguru && (
+            <a href={getValue()} target="blank" rel="noreferrer noopener">
+              SeatGuru
+            </a>
+          )
+        );
+      },
     },
   ]}
   data={Object.values(airlines)}

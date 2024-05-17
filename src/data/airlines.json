@@ -4,6 +4,7 @@
     "country": "us",
     "iata": "UA",
     "icao": "UAL",
+    "lcc": false,
     "url": "https://www.united.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/United_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/United_Airlines/information.php",
@@ -14,6 +15,7 @@
     "country": "us",
     "iata": "AA",
     "icao": "AAL",
+    "lcc": false,
     "url": "https://www.aa.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/American_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/American_Airlines/information.php",
@@ -24,6 +26,7 @@
     "country": "us",
     "iata": "DL",
     "icao": "DAL",
+    "lcc": false,
     "url": "https://www.delta.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Delta_Air_Lines",
     "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php"
@@ -33,15 +36,17 @@
     "country": "sg",
     "iata": "TR",
     "icao": "TGW",
+    "lcc": true,
     "url": "https://www.flyscoot.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Scoot",
-    "seatguru": "https://www.seatguru.com/airlines/Scoot_Airlines/information.php"
+    "seatguru": ""
   },
   "DY-NOZ": {
     "name": "Norwegian Air Shuttle",
     "country": "no",
     "iata": "DY",
     "icao": "NOZ",
+    "lcc": true,
     "url": "https://www.norwegian.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle",
     "seatguru": "https://www.seatguru.com/airlines/Norwegian_Air_Shuttle/information.php"
@@ -51,6 +56,7 @@
     "country": "gb",
     "iata": "BY",
     "icao": "TOM",
+    "lcc": true,
     "url": "https://www.tui.co.uk/",
     "wikipedia": "https://en.wikipedia.org/wiki/TUI_Airways",
     "seatguru": "https://www.seatguru.com/airlines/Thomson_Airways/information.php"
@@ -60,6 +66,7 @@
     "country": "es",
     "iata": "IB",
     "icao": "IBE",
+    "lcc": true,
     "url": "https://www.flylevel.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Level_(airline_brand)",
     "seatguru": null
@@ -69,6 +76,7 @@
     "country": "au",
     "iata": "JQ",
     "icao": "JST",
+    "lcc": true,
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar",
     "seatguru": "https://www.seatguru.com/airlines/Jetstar/information.php"
@@ -78,6 +86,7 @@
     "country": "ca",
     "iata": "WS",
     "icao": "WJA",
+    "lcc": true,
     "url": "https://www.westjet.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/WestJet",
     "seatguru": "https://www.seatguru.com/airlines/Westjet/information.php"
@@ -87,6 +96,7 @@
     "country": "ph",
     "iata": "5J",
     "icao": "CEB",
+    "lcc": true,
     "url": "https://www.cebupacificair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Cebu_Pacific",
     "seatguru": "https://www.seatguru.com/airlines/Cebu_Pacific/information.php"
@@ -96,6 +106,7 @@
     "country": "de",
     "iata": "EW",
     "icao": "EWG",
+    "lcc": true,
     "url": "https://www.eurowings.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Eurowings",
     "seatguru": "https://www.seatguru.com/airlines/Eurowings_Airlines/information.php"
@@ -105,6 +116,7 @@
     "country": "br",
     "iata": "AD",
     "icao": "AZU",
+    "lcc": true,
     "url": "https://www.voeazul.com.br/",
     "wikipedia": "https://en.wikipedia.org/wiki/Azul_Brazilian_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php"
@@ -114,6 +126,7 @@
     "country": "fr",
     "iata": "BF",
     "icao": "FBU",
+    "lcc": true,
     "url": "https://www.frenchbee.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/French_Bee",
     "seatguru": "https://www.seatguru.com/airlines/French_bee_Airlines/information.php"
@@ -123,6 +136,7 @@
     "country": "my",
     "iata": "D7",
     "icao": "XAX",
+    "lcc": true,
     "url": "https://www.airasia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/AirAsia_X",
     "seatguru": "https://www.seatguru.com/airlines/AirAsia_X/information.php"
@@ -132,8 +146,19 @@
     "country": "de",
     "iata": "DE",
     "icao": "CFG",
+    "lcc": true,
     "url": "https://www.condor.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Condor_(airline)",
     "seatguru": "https://www.seatguru.com/airlines/Condor_Flugdienst/information.php"
+  },
+  "YP-APZ": {
+    "name": "Air Premia",
+    "country": "kr",
+    "iata": "YP",
+    "icao": "APZ",
+    "lcc": true,
+    "url": "https://www.airpremia.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Air_Premia",
+    "seatguru": null
   }
 }
