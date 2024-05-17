@@ -94,13 +94,18 @@
     "url": "https://github.com/boyter/scc"
   },
   {
-    "names": ["diff"],
-    "category": "Diff Utility"
+    "names": ["echo"],
+    "category": "Debug Print"
   },
   {
-    "names": ["diff-so-fancy"],
-    "category": "Diff Utility",
-    "url": "https://github.com/so-fancy/diff-so-fancy"
+    "names": ["cowsay"],
+    "category": "Debug Print",
+    "url": "https://github.com/tnalpgge/rank-amateur-cowsay"
+  },
+  {
+    "names": ["figlet"],
+    "category": "Debug Print",
+    "url": "http://www.figlet.org/"
   },
   {
     "names": ["gdb"],
@@ -110,6 +115,15 @@
     "names": ["gdb-dashboard"],
     "category": "Debugger",
     "url": "https://github.com/cyrus-and/gdb-dashboard"
+  },
+  {
+    "names": ["diff"],
+    "category": "Diff Utility"
+  },
+  {
+    "names": ["diff-so-fancy"],
+    "category": "Diff Utility",
+    "url": "https://github.com/so-fancy/diff-so-fancy"
   },
   {
     "names": ["exiftool"],
@@ -129,6 +143,11 @@
     "url": "https://github.com/dduan/tre"
   },
   { "names": ["cat"], "category": "File preview" },
+  {
+    "names": ["lolcat"],
+    "category": "File preview",
+    "url": "https://github.com/busyloop/lolcat"
+  },
   {
     "names": ["bat"],
     "category": "File preview",
@@ -317,6 +336,11 @@
     "names": ["hugo"],
     "category": "Static site generator",
     "zsh-completion": "Homebrew"
+  },
+  {
+    "names": ["neofetch"],
+    "category": "System info",
+    "url": "https://github.com/dylanaraps/neofetch"
   },
   { "names": ["ps"], "category": "System monitor" },
   {
