@@ -1,0 +1,95 @@
+import SortableTable from "@site/src/components/SortableTable";
+import airlines from "@site/src/data/airlines.json";
+
+# Airlines
+
+List of airlines, might not cover all.
+
+<SortableTable
+  columns={[
+    {
+      header: "Name",
+      accessorKey: "name",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { name, url } = getValue();
+        return (
+          <a href={url} target="blank" rel="noreferrer noopener">
+            {name}
+          </a>
+        );
+      },
+    },
+    {
+      header: "Country",
+      accessorKey: "country",
+    },
+    {
+      header: "IATA Code",
+      accessorKey: "iata",
+    },
+    {
+      header: "ICAO Code",
+      accessorKey: "icao",
+    },
+    {
+      header: "Wikipedia",
+      accessorKey: "wikipedia",
+      cell: ({ getValue }) => (
+        <a href={getValue()} target="blank" rel="noreferrer noopener">
+          Wikipedia
+        </a>
+      ),
+    },
+    {
+      header: "Routes",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { iata, icao } = getValue();
+        return (
+          <a
+            href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`}
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            FR24
+          </a>
+        );
+      },
+    },
+    {
+      header: "Fleet",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { name, iata, icao } = getValue();
+        return [
+          <a
+            href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`}
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            FR24
+          </a>,
+          ", ",
+          <a
+            href={`https://www.airfleets.net/flottecie/${name}.htm`}
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            Airfleets
+          </a>,
+        ];
+      },
+    },
+    {
+      header: "Seatmaps",
+      accessorKey: "seatguru",
+      cell: ({ getValue }) => (
+        <a href={getValue()} target="blank" rel="noreferrer noopener">
+          SeatGuru
+        </a>
+      ),
+    },
+  ]}
+  data={Object.values(airlines)}
+/>

@@ -1,0 +1,139 @@
+{
+  "UA-UAL": {
+    "name": "United Airlines",
+    "country": "us",
+    "iata": "UA",
+    "icao": "UAL",
+    "url": "https://www.united.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/United_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/United_Airlines/information.php",
+    "in-flight-entertainment": "https://unitedprivatescreening.com/"
+  },
+  "AA-AAL": {
+    "name": "American Airlines",
+    "country": "us",
+    "iata": "AA",
+    "icao": "AAL",
+    "url": "https://www.aa.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/American_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/American_Airlines/information.php",
+    "in-flight-entertainment": "https://entertainment.aa.com/"
+  },
+  "DL-DAL": {
+    "name": "Delta Air Lines",
+    "country": "us",
+    "iata": "DL",
+    "icao": "DAL",
+    "url": "https://www.delta.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Delta_Air_Lines",
+    "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php"
+  },
+  "TR-TGW": {
+    "name": "Scoot",
+    "country": "sg",
+    "iata": "TR",
+    "icao": "TGW",
+    "url": "https://www.flyscoot.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Scoot",
+    "seatguru": "https://www.seatguru.com/airlines/Scoot_Airlines/information.php"
+  },
+  "DY-NOZ": {
+    "name": "Norwegian Air Shuttle",
+    "country": "no",
+    "iata": "DY",
+    "icao": "NOZ",
+    "url": "https://www.norwegian.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle",
+    "seatguru": "https://www.seatguru.com/airlines/Norwegian_Air_Shuttle/information.php"
+  },
+  "BY-TOM": {
+    "name": "TUI Airways",
+    "country": "gb",
+    "iata": "BY",
+    "icao": "TOM",
+    "url": "https://www.tui.co.uk/",
+    "wikipedia": "https://en.wikipedia.org/wiki/TUI_Airways",
+    "seatguru": "https://www.seatguru.com/airlines/Thomson_Airways/information.php"
+  },
+  "IB-IBE": {
+    "name": "LEVEL",
+    "country": "es",
+    "iata": "IB",
+    "icao": "IBE",
+    "url": "https://www.flylevel.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Level_(airline_brand)",
+    "seatguru": null
+  },
+  "JQ-JST": {
+    "name": "Jetstar",
+    "country": "au",
+    "iata": "JQ",
+    "icao": "JST",
+    "url": "https://www.jetstar.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jetstar",
+    "seatguru": "https://www.seatguru.com/airlines/Jetstar/information.php"
+  },
+  "WS-WJA": {
+    "name": "WestJet Airlines",
+    "country": "ca",
+    "iata": "WS",
+    "icao": "WJA",
+    "url": "https://www.westjet.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/WestJet",
+    "seatguru": "https://www.seatguru.com/airlines/Westjet/information.php"
+  },
+  "5J-CEB": {
+    "name": "Cebu Pacific Airlines",
+    "country": "ph",
+    "iata": "5J",
+    "icao": "CEB",
+    "url": "https://www.cebupacificair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cebu_Pacific",
+    "seatguru": "https://www.seatguru.com/airlines/Cebu_Pacific/information.php"
+  },
+  "EW-EWG": {
+    "name": "Eurowings",
+    "country": "de",
+    "iata": "EW",
+    "icao": "EWG",
+    "url": "https://www.eurowings.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Eurowings",
+    "seatguru": "https://www.seatguru.com/airlines/Eurowings_Airlines/information.php"
+  },
+  "AD-AZU": {
+    "name": "Azul Linhas Aereas",
+    "country": "br",
+    "iata": "AD",
+    "icao": "AZU",
+    "url": "https://www.voeazul.com.br/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Azul_Brazilian_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php"
+  },
+  "BF-FBU": {
+    "name": "French Bee",
+    "country": "fr",
+    "iata": "BF",
+    "icao": "FBU",
+    "url": "https://www.frenchbee.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/French_Bee",
+    "seatguru": "https://www.seatguru.com/airlines/French_bee_Airlines/information.php"
+  },
+  "D7-XAX": {
+    "name": "AirAsia X",
+    "country": "my",
+    "iata": "D7",
+    "icao": "XAX",
+    "url": "https://www.airasia.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/AirAsia_X",
+    "seatguru": "https://www.seatguru.com/airlines/AirAsia_X/information.php"
+  },
+  "DE-CFG": {
+    "name": "Condor",
+    "country": "de",
+    "iata": "DE",
+    "icao": "CFG",
+    "url": "https://www.condor.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Condor_(airline)",
+    "seatguru": "https://www.seatguru.com/airlines/Condor_Flugdienst/information.php"
+  }
+}
