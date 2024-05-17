@@ -1,4 +1,10 @@
 [
+  { "names": ["pbcopy", "pbpaste"], "category": "Clipboard" },
+  {
+    "names": ["xsel"],
+    "category": "Clipboard",
+    "url": "https://github.com/kfish/xsel"
+  },
   {
     "names": ["aws"],
     "category": "Cloud provider",
@@ -20,6 +26,11 @@
     "zsh-completion": "Homebrew (Broken)",
     "url": "https://github.com/cheat/cheat"
   },
+  {
+    "names": ["navi"],
+    "category": "Command help",
+    "url": "https://github.com/denisidoro/navi"
+  },
   { "names": ["man"], "category": "Command help" },
   { "names": ["tldr"], "category": "Command help" },
   {
@@ -34,26 +45,132 @@
     "zsh-completion": "Homebrew",
     "alias": "d"
   },
-  { "names": ["helm"], "category": "Containerization" },
+  {
+    "names": ["ctop"],
+    "category": "Containerization",
+    "url": "https://github.com/bcicen/ctop"
+  },
+  {
+    "names": ["lazydocker"],
+    "category": "Containerization",
+    "url": "https://github.com/jesseduffield/lazydocker"
+  },
+  {
+    "names": ["helm"],
+    "category": "Containerization",
+    "url": "https://github.com/helm/helm"
+  },
+  {
+    "names": ["kubectl"],
+    "category": "Containerization",
+    "alias": "f",
+    "url": "https://github.com/kubernetes/kubernetes"
+  },
   {
     "names": ["kops"],
     "category": "Containerization",
-    "zsh-completion": "Homebrew"
+    "zsh-completion": "Homebrew",
+    "url": "https://github.com/kubernetes/kops"
   },
-  { "names": ["kubectl"], "category": "Containerization", "alias": "f" },
+  {
+    "names": ["k9s"],
+    "category": "Containerization",
+    "url": "https://github.com/derailed/k9s"
+  },
+  {
+    "names": ["kdash"],
+    "category": "Containerization",
+    "url": "https://github.com/kdash-rs/kdash"
+  },
+  { "names": ["wc"], "category": "Counter" },
+  {
+    "names": ["cloc"],
+    "category": "Counter",
+    "url": "https://github.com/AlDanial/cloc"
+  },
+  {
+    "names": ["scc"],
+    "category": "Counter",
+    "url": "https://github.com/boyter/scc"
+  },
+  {
+    "names": ["diff"],
+    "category": "Diff Utility"
+  },
+  {
+    "names": ["diff-so-fancy"],
+    "category": "Diff Utility",
+    "url": "https://github.com/so-fancy/diff-so-fancy"
+  },
+  {
+    "names": ["gdb"],
+    "category": "Debugger"
+  },
+  {
+    "names": ["gdb-dashboard"],
+    "category": "Debugger",
+    "url": "https://github.com/cyrus-and/gdb-dashboard"
+  },
+  {
+    "names": ["exiftool"],
+    "category": "EXIF tool",
+    "url": "https://github.com/exiftool/exiftool"
+  },
   { "names": ["ls"], "category": "File list", "alias": "l" },
+  {
+    "names": ["exa", "eza"],
+    "category": "File list",
+    "url": "https://github.com/eza-community/eza"
+  },
+  { "names": ["tree"], "category": "File list" },
+  {
+    "names": ["tre"],
+    "category": "File list",
+    "url": "https://github.com/dduan/tre"
+  },
   { "names": ["cat"], "category": "File preview" },
+  {
+    "names": ["bat"],
+    "category": "File preview",
+    "url": "https://github.com/sharkdp/bat"
+  },
   { "names": ["head"], "category": "File preview" },
   { "names": ["less"], "category": "File preview" },
   { "names": ["more"], "category": "File preview" },
+  { "names": ["most"], "category": "File preview" },
   { "names": ["tail"], "category": "File preview" },
+  { "names": ["rm"], "category": "File Remove" },
+  {
+    "names": ["rip"],
+    "category": "File Remove",
+    "url": "https://github.com/nivekuil/rip"
+  },
+  {
+    "names": ["trash-cli"],
+    "category": "File Remove",
+    "url": "https://github.com/andreafrancia/trash-cli"
+  },
   { "names": ["fd"], "category": "File search" },
   { "names": ["find"], "category": "File search" },
   { "names": ["fzf"], "category": "File search" },
   { "names": ["locate"], "category": "File search" },
   { "names": ["rg"], "category": "File search" },
+  {
+    "names": ["watchmedo"],
+    "category": "File Watcher",
+    "url": "https://github.com/gorakhargosh/watchdog"
+  },
+  {
+    "names": ["entr"],
+    "category": "File Watcher",
+    "url": "https://github.com/eradman/entr"
+  },
   { "names": ["go"], "category": "Go programming language" },
   { "names": ["jq"], "category": "JSON processor" },
+  {
+    "names": ["cowsay"],
+    "category": "Just For Fun"
+  },
   {
     "names": ["autojump"],
     "category": "Navigation",
@@ -66,6 +183,29 @@
     "category": "Navigation",
     "alias": "z",
     "url": "https://github.com/ajeetdsouza/zoxide"
+  },
+  {
+    "names": ["ping"],
+    "category": "Network"
+  },
+  {
+    "names": ["gping"],
+    "category": "Network",
+    "url": "https://github.com/orf/gping"
+  },
+  {
+    "names": ["dig"],
+    "category": "Network"
+  },
+  {
+    "names": ["dog"],
+    "category": "Network",
+    "url": "https://github.com/ogham/dog"
+  },
+  {
+    "names": ["speedtest-cli"],
+    "category": "Network",
+    "url": "https://github.com/sivel/speedtest-cli"
   },
   { "names": ["npm"], "category": "Node.js package manager" },
   { "names": ["pnpm"], "category": "Node.js package manager" },
@@ -80,6 +220,20 @@
     "alias": "b"
   },
   { "names": ["yum"], "category": "Package manager" },
+  {
+    "names": ["hyperfine"],
+    "category": "Profiling",
+    "url": "https://github.com/sharkdp/hyperfine"
+  },
+  {
+    "names": ["make"],
+    "category": "Project Building/Running"
+  },
+  {
+    "names": ["just"],
+    "category": "Project Building/Running",
+    "url": "https://github.com/casey/just"
+  },
   { "names": ["ipython"], "category": "Python REPL" },
   { "names": ["jupyter"], "category": "Python notebook" },
   { "names": ["pip"], "category": "Python package manager" },
@@ -91,32 +245,135 @@
   },
   { "names": ["pyenv"], "category": "Python version manager" },
   { "names": ["rsync"], "category": "Remote sync" },
+  {
+    "names": ["rclone"],
+    "category": "Remote sync",
+    "url": "https://github.com/rclone/rclone"
+  },
+  {
+    "names": ["curl"],
+    "category": "Request Utility",
+    "url": "https://github.com/curl/curl"
+  },
+  {
+    "names": ["wget"],
+    "category": "Request Utility",
+    "url": "https://gitlab.com/gnuwget/wget2"
+  },
+  {
+    "names": ["aria2"],
+    "category": "Request Utility",
+    "url": "https://github.com/aria2/aria2"
+  },
+  {
+    "names": ["httpie"],
+    "category": "Request Utility",
+    "url": "https://github.com/httpie/cli"
+  },
   { "names": ["rbenv"], "category": "Ruby version manager" },
+  {
+    "names": ["screen"],
+    "category": "Screen Management"
+  },
+  {
+    "names": ["tmux"],
+    "category": "Screen Management"
+  },
+  {
+    "names": ["byobu"],
+    "category": "Screen Management"
+  },
+  {
+    "names": ["tmate"],
+    "category": "Screen Management"
+  },
   { "names": ["scp"], "category": "Secure copy" },
   { "names": ["ssh"], "category": "Secure shell" },
   { "names": ["bash"], "category": "Shell" },
   { "names": ["zsh"], "category": "Shell" },
+  { "names": ["df"], "category": "Space Management" },
+  { "names": ["du"], "category": "Space Management" },
+  {
+    "names": ["duf"],
+    "category": "Space Management",
+    "url": "https://github.com/muesli/duf"
+  },
+  {
+    "names": ["ncdu"],
+    "category": "Space Management",
+    "url": "https://code.blicky.net/yorhel/ncdu"
+  },
+  {
+    "names": ["fdupes"],
+    "category": "Space Management",
+    "url": "https://github.com/adrianlopezroche/fdupes"
+  },
+  {
+    "names": ["dua-cli"],
+    "category": "Space Management",
+    "url": "https://github.com/Byron/dua-cli"
+  },
   {
     "names": ["hugo"],
     "category": "Static site generator",
     "zsh-completion": "Homebrew"
   },
+  { "names": ["ps"], "category": "System monitor" },
+  {
+    "names": ["procs"],
+    "category": "System monitor",
+    "url": "https://github.com/dalance/procs"
+  },
+  {
+    "names": ["bandwhich"],
+    "category": "System monitor",
+    "url": "https://github.com/imsnif/bandwhich"
+  },
+  { "names": ["top"], "category": "System monitor" },
   { "names": ["htop"], "category": "System monitor" },
+  {
+    "names": ["bpytop"],
+    "category": "System monitor",
+    "url": "https://github.com/aristocratos/bpytop"
+  },
+  {
+    "names": ["glances"],
+    "category": "System monitor",
+    "url": "https://github.com/nicolargo/glances"
+  },
   { "names": ["tmux"], "category": "Terminal multiplexer" },
   { "names": ["atom"], "category": "Text editor" },
   { "names": ["code"], "category": "Text editor" },
   { "names": ["emacs"], "category": "Text editor" },
   { "names": ["gedit"], "category": "Text editor" },
   { "names": ["nano"], "category": "Text editor" },
+  {
+    "names": ["micro"],
+    "category": "Text editor",
+    "url": "https://github.com/zyedidia/micro"
+  },
   { "names": ["notepad"], "category": "Text editor" },
   { "names": ["subl"], "category": "Text editor" },
   { "names": ["vi"], "category": "Text editor" },
   { "names": ["vim"], "category": "Text editor" },
   { "names": ["awk"], "category": "Text processor" },
   { "names": ["grep"], "category": "Text processor" },
+  {
+    "names": ["ripgrep"],
+    "category": "Text processor",
+    "url": "https://github.com/BurntSushi/ripgrep"
+  },
+  {
+    "names": ["jq"],
+    "category": "Text processor",
+    "url": "https://github.com/jqlang/jq"
+  },
   { "names": ["sed"], "category": "Text processor" },
-  { "names": ["curl"], "category": "URL transfer" },
-  { "names": ["wget"], "category": "URL transfer" },
+  {
+    "names": ["sd"],
+    "category": "Text processor",
+    "url": "https://github.com/chmln/sd"
+  },
   {
     "names": ["git"],
     "category": "Version control system",
