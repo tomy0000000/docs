@@ -6,7 +6,7 @@ import SortableTable from "@site/src/components/SortableTable";
 import services from "@site/src/data/cloud-services.json";
 import React from "react";
 
-# Quick Index
+# 🗃️ Index
 
 <SortableTable
   columns={[
@@ -19,22 +19,28 @@ import React from "react";
     }).map(([accessorKey, header]) => ({
       header,
       accessorKey,
-      cell: ({ getValue }) => (
-        <>
-          {getValue().map((service, index) => (
-            <React.Fragment key={index}>
-              <a href={service.url} target="blank" rel="noreferrer noopener">
-                {service.abbr ? (
-                  <abbr title={service.name}>{service.abbr}</abbr>
-                ) : (
-                  service.name
-                )}
-              </a>
-              <br />
-            </React.Fragment>
-          ))}
-        </>
-      ),
+      cell: ({ getValue }) => {
+        const services = getValue();
+        return services.length
+          ? services
+              .map((service, index) => (
+                <React.Fragment key={index}>
+                  <a
+                    href={service.url}
+                    target="blank"
+                    rel="noreferrer noopener"
+                  >
+                    {service.abbr ? (
+                      <abbr title={service.name}>{service.abbr}</abbr>
+                    ) : (
+                      service.name
+                    )}
+                  </a>
+                </React.Fragment>
+              ))
+              .reduce((prev, curr) => [prev, ", ", curr])
+          : "-";
+      },
     })),
   ]}
   data={Object.keys(services).map((key) => {
