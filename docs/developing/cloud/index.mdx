@@ -37,7 +37,9 @@ import React from "react";
       ),
     })),
   ]}
-  data={services}
+  data={Object.keys(services).map((key) => {
+    return { name: key, ...services[key] };
+  })}
 />
 
 ## References

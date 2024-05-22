@@ -1,6 +1,5 @@
-[
-  {
-    "name": "Virtual Machines",
+{
+  "Virtual Machines": {
     "aws": [
       {
         "name": "Elastic Compute Cloud",
@@ -27,8 +26,7 @@
       }
     ]
   },
-  {
-    "name": "Managed RDBMS",
+  "Managed RDBMS": {
     "aws": [
       {
         "name": "Relational Database Service",
@@ -55,8 +53,7 @@
       }
     ]
   },
-  {
-    "name": "Object Storage (Bucket)",
+  "Object Storage (Bucket)": {
     "aws": [
       {
         "name": "Simple Storage Service",
@@ -83,8 +80,7 @@
       }
     ]
   },
-  {
-    "name": "Function as a Service (FaaS)",
+  "Function as a Service (FaaS)": {
     "aws": [
       {
         "name": "Lambda",
@@ -110,8 +106,7 @@
       }
     ]
   },
-  {
-    "name": "Platform as a Service (PaaS)",
+  "Platform as a Service (PaaS)": {
     "aws": [
       {
         "name": "Elastic Beanstalk",
@@ -141,4 +136,4 @@
       }
     ]
   }
-]
+}
