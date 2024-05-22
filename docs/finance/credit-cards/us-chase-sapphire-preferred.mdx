@@ -49,18 +49,29 @@ export const card = cards["us-chase-sapphire-preferred"];
 
 <ul>
   {card["services"].map((service, index) => (
-    <li key={index}>
-      <b>
-        {service.url ? (
-          <a href={service.url} target="_blank" rel="noopener noreferrer">
-            {service.title}
-          </a>
-        ) : (
-          service.title
-        )}
-      </b>
-      : {service.description}
-    </li>
+    <>
+      <li key={index}>
+        <b>
+          {service.url ? (
+            <a href={service.url} target="_blank" rel="noopener noreferrer">
+              {service.title}
+            </a>
+          ) : (
+            service.title
+          )}
+        </b>
+        : {service.description}
+      </li>
+      {service.tel && (
+        <ul>
+          {service.tel.map((tel, index) => (
+            <li key={index}>
+              {tel.title}: <a href={`tel:+${tel.number}`}>{tel.number}</a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
   ))}
 </ul>
 

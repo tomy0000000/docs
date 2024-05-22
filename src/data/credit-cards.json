@@ -184,6 +184,10 @@
       {
         "title": "Additional Redeemed Value",
         "description": "Get 25% more value when redeemed on Chase Travel"
+      },
+      {
+        "title": "Anniversary Points Boost",
+        "description": "Reward 10% more points earned in previous year"
       }
     ],
     "insurances": {
@@ -206,7 +210,45 @@
     "services": [
       {
         "title": "Travel and Emergency Assistance",
-        "description": "Benefit Administrator for legal and medical referrals or other travel and emergency assistance"
+        "description": "Benefit Administrator for legal and medical referrals or other travel and emergency assistance",
+        "tel": [
+          {
+            "title": "US",
+            "number": "1-888-320-9961"
+          },
+          {
+            "title": "International",
+            "number": "1-804-673-1691"
+          }
+        ]
+      },
+      {
+        "title": "Visa Signature® Concierge Service",
+        "description": "Dinner reservations, sports/entertainment events, sending gift 24 hours a day",
+        "tel": [
+          {
+            "title": "US",
+            "number": "1-800-953-7392"
+          },
+          {
+            "title": "International",
+            "number": "1-630-350-4551"
+          }
+        ]
+      },
+      {
+        "title": "Customer Service",
+        "description": "General benefit consultation and Travel assistance",
+        "tel": [
+          {
+            "title": "US",
+            "number": "1-800-493-3319"
+          },
+          {
+            "title": "International",
+            "number": "1-614-776-7050"
+          }
+        ]
       }
     ],
     "fees": {
@@ -261,6 +303,10 @@
     "references": [
       {
         "title": "Main Page",
+        "url": "https://chase.com/preferred"
+      },
+      {
+        "title": "Product Page",
         "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
       },
       {
