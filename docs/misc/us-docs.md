@@ -9,3 +9,4 @@ List of US documents and their purpose.
 | I-20/DS-2019 | Form | Form to apply for an F-1/J-1 visa cross the US border.                                               |
 | I-94         | Form | Arrival-Departure Record Card issued by <abbr title="U.S. Customs and Border Protection">CBP</abbr>. |
 | 8843         | Form | Declare non-resident status for tax purposes by F-1 or J-1 visa holders.                             |
+| I-9          | Form | Verify the identity and employment authorization of individuals hired for employment in the US.      |
