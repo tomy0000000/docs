@@ -1,0 +1,85 @@
+import SortableTable from "@site/src/components/SortableTable";
+import countries from "@site/src/data/countries.json";
+import conferences from "@site/src/data/tech-conf.json";
+
+# 🎪 Tech Confereces
+
+List of tech conferences that I'm interested in and tracking.
+
+{/* TODO: Sorting on date is not working as expected */}
+
+<SortableTable
+  columns={[
+    {
+      header: "Name",
+      accessorKey: "name",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { name, url } = getValue();
+        return (
+          <a href={url} target="blank" rel="noreferrer noopener">
+            {name}
+          </a>
+        );
+      },
+    },
+    {
+      header: "Date",
+      accessorKey: "start-date",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const row = getValue();
+        const start = new Date(row["start-date"]);
+        const end = new Date(row["end-date"]);
+        const startYear = start.getFullYear();
+        const startMonth = start.getMonth();
+        const startDay = start.getDate();
+        const endYear = end.getFullYear();
+        const endMonth = end.getMonth();
+        const endDay = end.getDate();
+        if (
+          startYear === endYear &&
+          startMonth === endMonth &&
+          startDay === endDay
+        ) {
+          return start.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+        }
+        if (startYear === endYear && startMonth === endMonth) {
+          return `${start.toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+          })} - ${end.toLocaleDateString("en-US", {
+            day: "numeric",
+          })}, ${startYear}`;
+        }
+        return `${start.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+        })} - ${end.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+        })}`;
+      },
+    },
+    {
+      header: "Location",
+      accessorKey: "country",
+      accessorFn: (row) => row,
+      cell: ({ getValue }) => {
+        const { country, city } = getValue();
+        return `${countries[country.toUpperCase()].emoji} ${city}`;
+      },
+    },
+    { header: "Form", accessorKey: "form" },
+    { header: "Type", accessorKey: "type" },
+    { header: "Series", accessorKey: "series" },
+    { header: "Notes", accessorKey: "notes" },
+  ]}
+  data={Object.keys(conferences).map((key) => {
+    return { name: key, ...conferences[key] };
+  })}
+/>

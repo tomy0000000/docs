@@ -1,0 +1,62 @@
+{
+  "pycon-us": {
+    "name": "PyCon US",
+    "url": "https://us.pycon.org",
+    "start-date": "2024-05-15",
+    "end-date": "2024-05-23",
+    "form": "Hybrid",
+    "country": "us",
+    "city": "Pittsburgh, PA",
+    "type": "Development",
+    "series": "🐍 Python",
+    "notes": "2025 will be in Pittsburgh, PA"
+  },
+  "vercel-ship": {
+    "name": "Vercel Ship",
+    "url": "https://vercel.com/ship",
+    "start-date": "2024-05-23",
+    "end-date": "2024-05-23",
+    "form": "Hybrid",
+    "country": "us",
+    "city": "New York, NY",
+    "notes": "",
+    "type": "Development",
+    "series": ""
+  },
+  "postcon": {
+    "name": "PostCon",
+    "url": "https://www.postman.com/postcon/",
+    "start-date": "2024-05-01",
+    "end-date": "2024-05-01",
+    "form": "In-person",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "notes": "",
+    "type": "Development",
+    "series": ""
+  },
+  "microsoft-ignite": {
+    "name": "Microsoft Ignite",
+    "url": "https://ignite.microsoft.com",
+    "start-date": "2024-11-18",
+    "end-date": "2024-11-22",
+    "form": "Hybrid",
+    "country": "us",
+    "city": "Chicago, IL",
+    "notes": "",
+    "type": "Development",
+    "series": ""
+  },
+  "apple-wwdc": {
+    "name": "Apple WWDC",
+    "url": "https://developer.apple.com/wwdc/",
+    "start-date": "2024-06-10",
+    "end-date": "2024-06-14",
+    "form": "Hybrid",
+    "country": "us",
+    "city": "Cupertino, CA",
+    "notes": "",
+    "type": "Development",
+    "series": ""
+  }
+}
