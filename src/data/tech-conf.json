@@ -58,5 +58,29 @@
     "notes": "",
     "type": "Development",
     "series": ""
+  },
+  "gopherday-tw": {
+    "name": "GopherDay Taiwan 2024",
+    "url": "https://gopherday.golang.tw/",
+    "start-date": "2024-05-24",
+    "end-date": "2024-05-24",
+    "form": "In-person",
+    "country": "tw",
+    "city": "Taipei City",
+    "notes": "",
+    "type": "Development",
+    "series": "🏃🏻 Golang"
+  },
+  "gophercon-us": {
+    "name": "GopherCon",
+    "url": "https://www.gophercon.com/",
+    "start-date": "2024-07-07",
+    "end-date": "2024-07-10",
+    "form": "In-person",
+    "country": "us",
+    "city": "Chicago, IL",
+    "notes": "",
+    "type": "Development",
+    "series": ""
   }
 }
