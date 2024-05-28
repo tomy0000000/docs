@@ -6,6 +6,8 @@ import countries from "@site/src/data/countries.json";
 
 List of airlines, might not cover all.
 
+{/* TODO: in-flight-entertainment is not used */}
+
 <SortableTable
   columns={[
     {
@@ -26,14 +28,8 @@ List of airlines, might not cover all.
       accessorKey: "country",
       cell: ({ getValue }) => countries[getValue().toUpperCase()].emoji,
     },
-    {
-      header: "IATA Code",
-      accessorKey: "iata",
-    },
-    {
-      header: "ICAO Code",
-      accessorKey: "icao",
-    },
+    { header: "IATA Code", accessorKey: "iata" },
+    { header: "ICAO Code", accessorKey: "icao" },
     {
       header: "Wikipedia",
       accessorKey: "wikipedia",

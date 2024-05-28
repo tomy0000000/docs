@@ -5,6 +5,7 @@
     "iata": "UA",
     "icao": "UAL",
     "lcc": false,
+    "defunct": false,
     "url": "https://www.united.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/United_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/United_Airlines/information.php",
@@ -16,6 +17,7 @@
     "iata": "AA",
     "icao": "AAL",
     "lcc": false,
+    "defunct": false,
     "url": "https://www.aa.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/American_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/American_Airlines/information.php",
@@ -27,6 +29,7 @@
     "iata": "DL",
     "icao": "DAL",
     "lcc": false,
+    "defunct": false,
     "url": "https://www.delta.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Delta_Air_Lines",
     "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php"
@@ -37,6 +40,7 @@
     "iata": "TR",
     "icao": "TGW",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.flyscoot.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Scoot",
     "seatguru": ""
@@ -47,6 +51,7 @@
     "iata": "DY",
     "icao": "NOZ",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.norwegian.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle",
     "seatguru": "https://www.seatguru.com/airlines/Norwegian_Air_Shuttle/information.php"
@@ -57,6 +62,7 @@
     "iata": "BY",
     "icao": "TOM",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.tui.co.uk/",
     "wikipedia": "https://en.wikipedia.org/wiki/TUI_Airways",
     "seatguru": "https://www.seatguru.com/airlines/Thomson_Airways/information.php"
@@ -67,6 +73,7 @@
     "iata": "IB",
     "icao": "IBE",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.flylevel.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Level_(airline_brand)",
     "seatguru": null
@@ -77,6 +84,7 @@
     "iata": "JQ",
     "icao": "JST",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar",
     "seatguru": "https://www.seatguru.com/airlines/Jetstar/information.php"
@@ -87,6 +95,7 @@
     "iata": "WS",
     "icao": "WJA",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.westjet.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/WestJet",
     "seatguru": "https://www.seatguru.com/airlines/Westjet/information.php"
@@ -97,6 +106,7 @@
     "iata": "5J",
     "icao": "CEB",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.cebupacificair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Cebu_Pacific",
     "seatguru": "https://www.seatguru.com/airlines/Cebu_Pacific/information.php"
@@ -107,6 +117,7 @@
     "iata": "EW",
     "icao": "EWG",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.eurowings.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Eurowings",
     "seatguru": "https://www.seatguru.com/airlines/Eurowings_Airlines/information.php"
@@ -117,6 +128,7 @@
     "iata": "AD",
     "icao": "AZU",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.voeazul.com.br/",
     "wikipedia": "https://en.wikipedia.org/wiki/Azul_Brazilian_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php"
@@ -127,6 +139,7 @@
     "iata": "BF",
     "icao": "FBU",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.frenchbee.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/French_Bee",
     "seatguru": "https://www.seatguru.com/airlines/French_bee_Airlines/information.php"
@@ -137,6 +150,7 @@
     "iata": "D7",
     "icao": "XAX",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.airasia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/AirAsia_X",
     "seatguru": "https://www.seatguru.com/airlines/AirAsia_X/information.php"
@@ -147,6 +161,7 @@
     "iata": "DE",
     "icao": "CFG",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.condor.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Condor_(airline)",
     "seatguru": "https://www.seatguru.com/airlines/Condor_Flugdienst/information.php"
@@ -157,8 +172,350 @@
     "iata": "YP",
     "icao": "APZ",
     "lcc": true,
+    "defunct": false,
     "url": "https://www.airpremia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Air_Premia",
     "seatguru": null
+  },
+  "JL-JAL": {
+    "name": "Japan Airlines",
+    "country": "jp",
+    "iata": "JL",
+    "icao": "JAL",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.jal.co.jp/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Japan_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Japan_Airlines/information.php"
+  },
+  "QF-QFA": {
+    "name": "Qantas",
+    "country": "au",
+    "iata": "QF",
+    "icao": "QFA",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.qantas.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qantas",
+    "seatguru": null
+  },
+  "CZ-CSN": {
+    "name": "China Southern Airlines",
+    "country": "cn",
+    "iata": "CZ",
+    "icao": "CSN",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.csair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/China_Southern_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/China_Southern/information.php"
+  },
+  "AF-AFR": {
+    "name": "Air France",
+    "country": "fr",
+    "iata": "AF",
+    "icao": "AFR",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://wwws.airfrance.fr/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Air_France",
+    "seatguru": "https://www.seatguru.com/airlines/Air_France/information.php"
+  },
+  "LH-DLH": {
+    "name": "Lufthansa",
+    "country": "de",
+    "iata": "LH",
+    "icao": "DLH",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.lufthansa.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lufthansa",
+    "seatguru": "https://www.seatguru.com/airlines/Lufthansa/information.php"
+  },
+  "NH-ANA": {
+    "name": "All Nippon Airways",
+    "country": "jp",
+    "iata": "NH",
+    "icao": "ANA",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.ana.co.jp/",
+    "wikipedia": "https://en.wikipedia.org/wiki/All_Nippon_Airways",
+    "seatguru": "https://www.seatguru.com/airlines/ANA/information.php"
+  },
+  "MM-APJ": {
+    "name": "Peach Aviation",
+    "country": "jp",
+    "iata": "MM",
+    "icao": "APJ",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.flypeach.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Peach_Aviation",
+    "seatguru": "https://www.seatguru.com/airlines/Peach/information.php"
+  },
+  "JW-VNL": {
+    "name": "Vanilla Air",
+    "country": "jp",
+    "iata": "JW",
+    "icao": "VNL",
+    "lcc": true,
+    "defunct": true,
+    "url": "https://www.vanilla-air.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vanilla_Air",
+    "seatguru": "https://www.seatguru.com/airlines/Vanilla_Air/information.php"
+  },
+  "ZG-TZP": {
+    "name": "Tigerair Taiwan",
+    "country": "tw",
+    "iata": "IT",
+    "icao": "TTW",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.tigerairtw.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tigerair_Taiwan",
+    "seatguru": "https://www.seatguru.com/airlines/Tigerair_Taiwan/information.php"
+  },
+  "MH-MAS": {
+    "name": "Malaysia Airlines",
+    "country": "my",
+    "iata": "MH",
+    "icao": "MAS",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.malaysiaairlines.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Malaysia_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Malaysia_Airlines/information.php"
+  },
+  "Z2-APG": {
+    "name": "Philippines AirAsia",
+    "country": "ph",
+    "iata": "Z2",
+    "icao": "APG",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.airasia.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Philippines_AirAsia",
+    "seatguru": null
+  },
+  "QR-QTR": {
+    "name": "Qatar Airways",
+    "country": "qa",
+    "iata": "QR",
+    "icao": "QTR",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.qatarairways.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qatar_Airways",
+    "seatguru": "https://www.seatguru.com/airlines/Qatar_Airways/information.php"
+  },
+  "SQ-SIA": {
+    "name": "Singapore Airlines",
+    "country": "sg",
+    "iata": "SQ",
+    "icao": "SIA",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.singaporeair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Singapore_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Singapore_Air/information.php"
+  },
+  "3K-JSA": {
+    "name": "Jetstar Asia Airways",
+    "country": "sg",
+    "iata": "3K",
+    "icao": "JSA",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.jetstar.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jetstar_Asia_Airways",
+    "seatguru": null
+  },
+  "OZ-AAR": {
+    "name": "Asiana Airlines",
+    "country": "kr",
+    "iata": "OZ",
+    "icao": "AAR",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://flyasiana.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Asiana_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Asiana/information.php"
+  },
+  "KE-KAL": {
+    "name": "Korean Air",
+    "country": "kr",
+    "iata": "KE",
+    "icao": "KAL",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.koreanair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Korean_Air",
+    "seatguru": "https://www.seatguru.com/airlines/Korean_Air/information.php"
+  },
+  "IT-TTW": {
+    "name": "Tigerair Taiwan",
+    "country": "tw",
+    "iata": "IT",
+    "icao": "TTW",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.tigerairtw.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tigerair_Taiwan",
+    "seatguru": null
+  },
+  "TG-THA": {
+    "name": "Thai Airways",
+    "country": "th",
+    "iata": "TG",
+    "icao": "THA",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.thaiairways.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thai_Airways_International",
+    "seatguru": "https://www.seatguru.com/airlines/Thai_Airways/information.php"
+  },
+  "EK-UAE": {
+    "name": "Emirates",
+    "country": "ae",
+    "iata": "EK",
+    "icao": "UAE",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.emirates.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Emirates_(airline)",
+    "seatguru": "https://www.seatguru.com/airlines/Emirates_Airlines/information.php"
+  },
+  "EY-ETD": {
+    "name": "Etihad Airways",
+    "country": "ae",
+    "iata": "EY",
+    "icao": "ETD",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.etihad.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Etihad_Airways",
+    "seatguru": "https://www.seatguru.com/airlines/Etihad_Airways/information.php"
+  },
+  "BA-BAW": {
+    "name": "British Airways",
+    "country": "gb",
+    "iata": "BA",
+    "icao": "BAW",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.britishairways.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/British_Airways",
+    "seatguru": "https://www.seatguru.com/airlines/British_Airways/information.php"
+  },
+  "AS-ASA": {
+    "name": "Alaska Airlines",
+    "country": "us",
+    "iata": "AS",
+    "icao": "ASA",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.alaskaair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alaska_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Alaska_Airlines/information.php"
+  },
+  "HA-HAL": {
+    "name": "Hawaiian Airlines",
+    "country": "us",
+    "iata": "HA",
+    "icao": "HAL",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.hawaiianairlines.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hawaiian_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Hawaiian_Airlines/information.php"
+  },
+  "G4-AAY": {
+    "name": "Allegiant Air",
+    "country": "us",
+    "iata": "G4",
+    "icao": "AAY",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.allegiantair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Allegiant_Air",
+    "seatguru": "https://www.seatguru.com/airlines/Allegiant_Air/information.php"
+  },
+  "XP-VXP": {
+    "name": "Avelo Airlines",
+    "country": "us",
+    "iata": "XP",
+    "icao": "VXP",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.aveloair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Avelo_Airlines",
+    "seatguru": null
+  },
+  "MX-MXY": {
+    "name": "Breeze Airways",
+    "country": "us",
+    "iata": "MX",
+    "icao": "MXY",
+    "lcc": true,
+    "defunct": true,
+    "url": "https://www.flybreeze.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Breeze_Airways",
+    "seatguru": null
+  },
+  "F9-FFT": {
+    "name": "Frontier Airlines",
+    "country": "us",
+    "iata": "F9",
+    "icao": "FFT",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.flyfrontier.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Frontier_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Frontier_Airlines/information.php"
+  },
+  "B6-JBU": {
+    "name": "JetBlue Airways",
+    "country": "us",
+    "iata": "B6",
+    "icao": "JBU",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.jetblue.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/JetBlue",
+    "seatguru": "https://www.seatguru.com/airlines/JetBlue_Airways/information.php"
+  },
+  "WN-SWA": {
+    "name": "Southwest Airlines",
+    "country": "us",
+    "iata": "WN",
+    "icao": "SWA",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.southwest.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Southwest_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Southwest_Airlines/information.php"
+  },
+  "NK-NKS": {
+    "name": "Spirit Airlines",
+    "country": "us",
+    "iata": "NK",
+    "icao": "NKS",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.spirit.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Spirit_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Spirit_Airlines/information.php"
+  },
+  "SY-SCX": {
+    "name": "Sun Country Airlines",
+    "country": "us",
+    "iata": "SY",
+    "icao": "SCX",
+    "lcc": true,
+    "defunct": false,
+    "url": "https://www.suncountry.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sun_Country_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Sun_Country/information.php"
   }
 }
