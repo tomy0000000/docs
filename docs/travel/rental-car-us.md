@@ -10,9 +10,9 @@
   - [Budget](https://www.budget.com/)
 - Hertz Global Holdings
   - [Hertz](https://www.hertz.com/)
-  - Dollar
-  - Firefly
-  - Thrifty
+  - [Dollar](https://www.dollar.com/)
+  - [Firefly](https://www.fireflycarrental.com/)
+  - [Thrifty](https://www.thrifty.com/)
 
 ## 保險
 
@@ -30,11 +30,30 @@
 | Roadside Assistance  | RAP                                                                                | -                                                                 | Extended Roadside Assistance                                      | -                                                                                                    | RSP                                                                                                     |
 | Personal Effects     | PEC                                                                                | PAE                                                               | PEP                                                               | PAI/PEC                                                                                              | PEC                                                                                                     |
 
-另外可以檢查信用卡的保險，如果涵蓋的範圍夠廣，也許可以省下一筆錢 ✨ (記得檢查理賠金額和地區限制)
+:::tip
+
+大部分信用卡會有包含 DW，但是會有額外的條款和限制，像是
+
+- Primary or Secondary Coverage
+  - Primary: 信用卡負責全部的費用
+  - Secondary: 信用卡只負責超過租車公司保險的部分
+- 租車天數 (通常不超過 30 天)
+- 駕駛地區
+- 出險金額上限
+
+如果涵蓋的範圍夠用，也許可以省下一筆錢 ✨
+
+:::
+
+## 可能的額外費用
+
+- Additional Driver Fee: 額外駕駛費用
+- Young Driver Fee: 未滿 25 歲的額外費用
 
 ## Tips
 
-- 領車：拍照錄影
+- 領車：檢查油箱、問要加哪種油、拍照錄影 (有保 DW 的話可以跳過)
 - 下車：把個人物品放後車廂或看不到的地方，避免不必要的麻煩
 - 出事：報案留底，不然保險可能不理賠
 - 攔停：警察如果問「你知道你為什麼被攔下來」，永遠回答「不知道」
+- 還車：記得先加油
