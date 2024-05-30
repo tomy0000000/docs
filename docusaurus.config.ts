@@ -99,6 +99,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "shoppingSidebar",
+          label: "🛍️ Shopping",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "cookingSidebar",
           label: "🍳 Cooking",
           position: "left",
