@@ -36,6 +36,12 @@ Quick reference for `git` commands.
 
 ## Snippets
 
+### Stage case-sensitive file changes
+
+```bash
+git mv --force old_name NEW_NAME
+```
+
 ### Remove commits after a certain commit
 
 ```bash
