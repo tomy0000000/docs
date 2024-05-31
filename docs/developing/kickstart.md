@@ -1,4 +1,4 @@
-# Kickstart a Project
+# 🎬 Kickstart a Project
 
 ## Naming
 

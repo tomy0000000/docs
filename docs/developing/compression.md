@@ -1,4 +1,4 @@
-# Compression
+# 🗜️ Compression
 
 General glossary of wide-range compression format.
 
