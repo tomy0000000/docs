@@ -82,5 +82,17 @@
     "notes": "",
     "type": "Development",
     "series": ""
+  },
+  "dropbox-work-in-progress": {
+    "name": "Dropbox Work in Progress",
+    "url": "https://www.dropbox-wip.com/",
+    "start-date": "2024-10-15",
+    "end-date": "2024-10-15",
+    "form": "In-person",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "notes": "",
+    "type": "Development",
+    "series": ""
   }
 }
