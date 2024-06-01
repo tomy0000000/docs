@@ -82,6 +82,11 @@
     "category": "Containerization",
     "url": "https://github.com/kdash-rs/kdash"
   },
+  {
+    "names": ["skaffold"],
+    "category": "Containerization",
+    "url": "https://github.com/GoogleConTainerTools/skaffold"
+  },
   { "names": ["wc"], "category": "Counter" },
   {
     "names": ["cloc"],
