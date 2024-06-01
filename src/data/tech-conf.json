@@ -94,5 +94,17 @@
     "notes": "",
     "type": "Development",
     "series": ""
+  },
+  "github-galaxy": {
+    "name": "GitHub Galaxy",
+    "url": "https://galaxy.github.com/",
+    "start-date": "2024-06-05",
+    "end-date": "2024-06-05",
+    "form": "Hybrid",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "notes": "Additional events host around the world",
+    "type": "Development",
+    "series": ""
   }
 }
