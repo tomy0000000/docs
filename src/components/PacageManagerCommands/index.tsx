@@ -44,7 +44,6 @@ export const PackageManagerList: PackageManagerItem[] = [
 ];
 
 export default function PackageManagers({ commands }): JSX.Element {
-  console.log(commands);
   return (
     <Tabs groupId="package-manager">
       {PackageManagerList.map((props, idx) => (
