@@ -191,10 +191,8 @@
   },
   { "names": ["go"], "category": "Go programming language" },
   { "names": ["jq"], "category": "JSON processor" },
-  {
-    "names": ["cowsay"],
-    "category": "Just For Fun"
-  },
+  { "names": ["tty-clock"], "category": "Just For Fun" },
+  { "names": ["cowsay"], "category": "Just For Fun" },
   {
     "names": ["autojump"],
     "category": "Navigation",
@@ -375,7 +373,16 @@
   { "names": ["code"], "category": "Text editor" },
   { "names": ["emacs"], "category": "Text editor" },
   { "names": ["gedit"], "category": "Text editor" },
-  { "names": ["nano"], "category": "Text editor" },
+  {
+    "names": ["pico"],
+    "category": "Text editor",
+    "url": "https://alpineapp.email/"
+  },
+  {
+    "names": ["nano"],
+    "category": "Text editor",
+    "url": "https://www.nano-editor.org/"
+  },
   {
     "names": ["micro"],
     "category": "Text editor",
