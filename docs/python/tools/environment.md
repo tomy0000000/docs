@@ -4,6 +4,24 @@ A brief overview of various environment tools available for Python.
 
 ## Manage Python Version
 
+### Windows Store
+
+Windows Store offers [multiple versions](https://apps.microsoft.com/search?query=Python) of Python.
+
+### Homebrew
+
+Homebrew can install [multiple versions](https://formulae.brew.sh/formula/) of Python, e.g.
+
+```shell
+brew install python@3.12
+```
+
+:::warning
+
+Homebrew pythons exists to serve other formulas. Always use virtual environment and do not install other packages into Homebrew Python.
+
+:::
+
 ### [`pyenv`](https://github.com/pyenv/pyenv)
 
 - Install and managed multiple versions of Python on the same machine.
