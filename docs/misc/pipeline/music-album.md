@@ -1,4 +1,4 @@
-# Music Album
+# 💿 Music Album
 
 ## Process
 
