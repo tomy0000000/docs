@@ -36,12 +36,26 @@ Regarding rename:
 | Track | Track Number             | ❌       | `trkn`    | `TRACKNUMBER`        | `TRCK`  |                                                                                          |
 | Track | Track Explicitness/Clean | ✅       | `rtng`    |                      |         | iTunes custom tag, only supported in MP4<br/>None = [0], Clean = [2], Explicit = [4][^1] |
 | Track | Genre                    |          | `\xa9gen` | `GENRE`              |         | See the list of [genre](#genres)                                                         |
-| Track | Composer                 | ✅       | `\xa9wrt` | `COMPOSER`           | `TCOM`  |                                                                                          |
-| Track | Lyricist                 | ✅       |           | `LYRICIST`           | `TEXT`  |                                                                                          |
+| Track | Composer                 | ✅       | `\xa9wrt` | `COMPOSER`           | `TCOM`  | Also denote as 作曲;                                                                     |
+| Track | Lyricist                 | ✅       |           | `LYRICIST`           | `TEXT`  | Also denote as 作詞; Written By                                                          |
+| Track | Arranger                 | ✅       |           |                      |         | Also denote as 編曲; Arranged By                                                         |
+| Track | Producer                 | ✅       |           |                      |         | Also denote as 製作人                                                                    |
 | Track | Language                 |          |           | `LANGUAGE`           | `TLAN`  |                                                                                          |
 | Track | Lyrics                   | ❌       | `\xa9lyr` | `LYRICS`             | `USLT`  |                                                                                          |
 
 [^1]: [Stack Overflow](https://stackoverflow.com/a/43309195/10325430)
+
+## Genres
+
+TODO
+
+## Future Work
+
+- Add support for linking to MusicBrainz, Discogs, Spotify, Apple Music
+- Add support for multiple artists (e.g. `TPE1`, `TPE2`, `TPE3`, `TPE4`)
+- Add support for Remix and Cover (`TCON`)
+- Add support for ISRC (`TSRC`)
+- Add support for Synchronised lyrics (Section 4.9)
 
 ## References
 
