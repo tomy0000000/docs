@@ -48,7 +48,7 @@ Most commonly used flags:
 TL;DR: Use this starter template:
 
 ```bash
-!#/bin/bash
+#!/bin/bash
 set -xeuo pipefail
 ```
 
