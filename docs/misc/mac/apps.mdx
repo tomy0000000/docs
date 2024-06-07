@@ -1,0 +1,80 @@
+import SortableTable from "@site/src/components/SortableTable";
+import apps from "@site/src/data/mac-apps.json";
+
+# 🪐 Mac Apps
+
+Handful Mac apps. May not always need them, but they are here when I need them.
+
+<SortableTable
+  columns={[
+    {
+      header: "Name",
+      accessorKey: "name",
+      accessorFn: (row) => [row.name, row.url],
+      cell: ({ getValue }) => {
+        const [name, url] = getValue();
+        return url ? (
+          <a href={url} target="blank" rel="noreferrer noopener">
+            {name}
+          </a>
+        ) : (
+          name
+        );
+      },
+    },
+    { header: "Category", accessorKey: "category" },
+    {
+      header: "Preferred Install Method",
+      accessorKey: "install",
+      cell: ({ getValue }) => {
+        const install = getValue();
+        const links = install.map((method, index) => {
+          switch (method.type) {
+            case "cask":
+              return (
+                <a
+                  key={index}
+                  href={`https://formulae.brew.sh/cask/${method.id}`}
+                  target="blank"
+                  rel="noreferrer noopener"
+                >
+                  Homebrew Cask
+                </a>
+              );
+            case "mas":
+              return (
+                <a
+                  key={index}
+                  href={`https://apps.apple.com/app/id${method.id}`}
+                  target="blank"
+                  rel="noreferrer noopener"
+                >
+                  Mac App Store
+                </a>
+              );
+            case "setapp":
+              return (
+                <a
+                  key={index}
+                  href={`https://setapp.com/apps/${method.id}`}
+                  target="blank"
+                  rel="noreferrer noopener"
+                >
+                  Setapp
+                </a>
+              );
+            default:
+              return null;
+          }
+        });
+        return links.reduce((acc, current, index) => {
+          if (index < links.length - 1) {
+            return [...acc, current, ", "];
+          }
+          return [...acc, current];
+        }, []);
+      },
+    },
+  ]}
+  data={apps}
+/>
