@@ -106,5 +106,17 @@
     "notes": "Additional events host around the world",
     "type": "Development",
     "series": ""
+  },
+  "datadog-dash": {
+    "name": "Datadog DASH",
+    "url": "https://www.dashcon.io/",
+    "start-date": "2024-06-25",
+    "end-date": "2024-06-26",
+    "form": "In-person",
+    "country": "us",
+    "city": "New York, NY",
+    "notes": "",
+    "type": "Development",
+    "series": ""
   }
 }
