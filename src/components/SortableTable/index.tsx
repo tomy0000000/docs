@@ -17,14 +17,17 @@ import React from "react";
 
 import "./style.css";
 
-export default function SortableTable({ columns, data }): JSX.Element {
-  const [sorting, setSorting] = React.useState<SortingState>([]);
+export default function SortableTable({
+  columns,
+  data,
+  defaultSorting,
+}): JSX.Element {
+  defaultSorting = defaultSorting ? [defaultSorting] : [];
+  const [sorting, setSorting] = React.useState<SortingState>(defaultSorting);
   const table = useReactTable({
     data,
     columns,
-    state: {
-      sorting,
-    },
+    state: { sorting },
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
