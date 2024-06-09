@@ -10,16 +10,16 @@ import countries from "@site/src/data/countries.json";
 
 List of airlines, might not cover all.
 
-{/* TODO: in-flight-entertainment is not used */}
+{/* TODO: in-flight-entertainment, lcc, defunct is not used */}
 
 <SortableTable
   columns={[
     {
       header: "Name",
       accessorKey: "name",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.name, row.url],
       cell: ({ getValue }) => {
-        const { name, url } = getValue();
+        const [name, url] = getValue();
         return (
           <a href={url} target="blank" rel="noreferrer noopener">
             {name}
@@ -45,9 +45,9 @@ List of airlines, might not cover all.
     },
     {
       header: "Routes",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.iata, row.icao],
       cell: ({ getValue }) => {
-        const { iata, icao } = getValue();
+        const [iata, icao] = getValue();
         return (
           <a
             href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`}
@@ -61,9 +61,9 @@ List of airlines, might not cover all.
     },
     {
       header: "Fleet",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.name, row.iata, row.icao],
       cell: ({ getValue }) => {
-        const { name, iata, icao } = getValue();
+        const [name, iata, icao] = getValue();
         return [
           <a
             href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`}

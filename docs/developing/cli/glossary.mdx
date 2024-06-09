@@ -13,9 +13,9 @@ A list of common CLI commands and how they're installed on my system.
   columns={[
     {
       header: "CLI",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.names, row.url],
       cell: ({ getValue }) => {
-        const { names, url } = getValue();
+        const [names, url] = getValue();
         return url ? (
           <a href={url} target="blank" rel="noreferrer noopener">
             {names

@@ -17,9 +17,9 @@ List of tech conferences that I'm interested in and tracking.
     {
       header: "Name",
       accessorKey: "name",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.name, row.url],
       cell: ({ getValue }) => {
-        const { name, url } = getValue();
+        const [name, url] = getValue();
         return (
           <a href={url} target="blank" rel="noreferrer noopener">
             {name}
@@ -30,11 +30,11 @@ List of tech conferences that I'm interested in and tracking.
     {
       header: "Date",
       accessorKey: "start-date",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row["start-date"], row["end-date"]],
       cell: ({ getValue }) => {
-        const row = getValue();
-        const start = new Date(row["start-date"]);
-        const end = new Date(row["end-date"]);
+        const dates = getValue();
+        const start = new Date(dates[0]);
+        const end = new Date(dates[1]);
         const startYear = start.getFullYear();
         const startMonth = start.getMonth();
         const startDay = start.getDate();
@@ -72,9 +72,9 @@ List of tech conferences that I'm interested in and tracking.
     {
       header: "Location",
       accessorKey: "country",
-      accessorFn: (row) => row,
+      accessorFn: (row) => [row.country, row.city],
       cell: ({ getValue }) => {
-        const { country, city } = getValue();
+        const [country, city] = getValue();
         return `${countries[country.toUpperCase()].emoji} ${city}`;
       },
     },
@@ -86,4 +86,5 @@ List of tech conferences that I'm interested in and tracking.
   data={Object.keys(conferences).map((key) => {
     return { name: key, ...conferences[key] };
   })}
+  defaultSorting={{ desc: true, id: "start-date" }}
 />
