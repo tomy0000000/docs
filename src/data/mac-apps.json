@@ -1,7 +1,7 @@
 [
   {
     "name": "1Blocker",
-    "url": "",
+    "url": "https://1blocker.com/",
     "category": "Safari Extension",
     "note": null,
     "install": [{ "type": "mas", "id": "1365531024" }]
@@ -15,7 +15,7 @@
   },
   {
     "name": "1Password for Safari",
-    "url": "",
+    "url": "https://1password.com/",
     "category": "Safari Extension",
     "note": null,
     "install": [{ "type": "mas", "id": "1569813296" }]
@@ -50,10 +50,13 @@
   },
   {
     "name": "Aquarelo",
-    "url": "",
+    "url": "https://www.cusaro.it/aquarelo",
     "category": "Color Picker",
     "note": null,
-    "install": [{ "type": "setapp", "id": "aquarelo" }]
+    "install": [
+      { "type": "setapp", "id": "aquarelo" },
+      { "type": "mas", "id": "1263012549" }
+    ]
   },
   {
     "name": "Archiver",
@@ -143,10 +146,13 @@
   },
   {
     "name": "CleanMyMac X",
-    "url": "",
+    "url": "https://macpaw.com/cleanmymac",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "cleanmymac" }]
+    "install": [
+      { "type": "setapp", "id": "cleanmymac" },
+      { "type": "cask", "id": "cleanmymac" }
+    ]
   },
   {
     "name": "CleanShot X",
@@ -160,38 +166,51 @@
   },
   {
     "name": "Clobbr",
-    "url": "",
-    "category": "",
+    "url": "https://clobbr.app/",
+    "category": "Dev Tools",
     "note": null,
-    "install": [{ "type": "setapp", "id": "clobbr" }]
+    "install": [
+      { "type": "setapp", "id": "clobbr" },
+      { "type": "mas", "id": "id1629096010" }
+    ]
   },
   {
     "name": "Clop",
-    "url": "",
+    "url": "https://lowtechguys.com/clop",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "clop" }]
+    "install": [
+      { "type": "setapp", "id": "clop" },
+      { "type": "cask", "id": "clop" }
+    ]
   },
   {
     "name": "CloudMounter",
-    "url": "",
+    "url": "https://www.electronic.us/products/cloudmounter/mac/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "cloudmounter" }]
+    "install": [
+      { "type": "setapp", "id": "cloudmounter" },
+      { "type": "cask", "id": "cloudmounter" },
+      { "type": "mas", "id": "1130254674" }
+    ]
   },
   {
     "name": "ColorSlurp",
-    "url": "",
+    "url": "https://colorslurp.com/",
     "category": "Color Picker",
     "note": null,
     "install": [{ "type": "mas", "id": "1287239339" }]
   },
   {
     "name": "Craft",
-    "url": "",
+    "url": "https://www.craft.do/",
     "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "1487937127" }]
+    "install": [
+      { "type": "cask", "id": "craft" },
+      { "type": "mas", "id": "1487937127" }
+    ]
   },
   {
     "name": "Dash",
@@ -205,17 +224,24 @@
   },
   {
     "name": "Dato",
-    "url": "",
+    "url": "https://sindresorhus.com/dato",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "dato" }]
+    "install": [
+      { "type": "setapp", "id": "dato" },
+      { "type": "mas", "id": "1470584107" }
+    ]
   },
   {
     "name": "DevUtils",
-    "url": "",
-    "category": "",
+    "url": "https://devutils.com/",
+    "category": "Dev Tools",
     "note": null,
-    "install": [{ "type": "setapp", "id": "devutils.app" }]
+    "install": [
+      { "type": "setapp", "id": "devutils.app" },
+      { "type": "cask", "id": "devutils" },
+      { "type": "mas", "id": "1533756032" }
+    ]
   },
   {
     "name": "Discord",
@@ -226,14 +252,17 @@
   },
   {
     "name": "Disk Drill",
-    "url": "",
+    "url": "https://www.cleverfiles.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "disk-drill" }]
+    "install": [
+      { "type": "setapp", "id": "disk-drill" },
+      { "type": "cask", "id": "disk-drill" }
+    ]
   },
   {
     "name": "DisplayBuddy",
-    "url": "",
+    "url": "https://displaybuddy.app/",
     "category": "Utilities",
     "note": null,
     "install": [{ "type": "setapp", "id": "displaybuddy" }]
@@ -278,10 +307,13 @@
   },
   {
     "name": "Elmedia Player",
-    "url": "",
+    "url": "https://www.electronic.us/products/elmedia/",
     "category": "Media Player",
-    "note": null,
-    "install": [{ "type": "setapp", "id": "elmedia-player" }]
+    "note": "Many versions available, see [this](https://help.electronic.us/support/solutions/articles/44002278728-what-s-the-difference-between-site-and-mas-elmedia-player-versions-)",
+    "install": [
+      { "type": "setapp", "id": "elmedia-player" },
+      { "type": "cask", "id": "elmedia-player" }
+    ]
   },
   {
     "name": "Expressions",
@@ -323,10 +355,13 @@
   },
   {
     "name": "Folx",
-    "url": "",
-    "category": "",
+    "url": "https://mac.eltima.com/download-manager.html",
+    "category": "File Transfer",
     "note": null,
-    "install": [{ "type": "setapp", "id": "folx" }]
+    "install": [
+      { "type": "cask", "id": "folx" },
+      { "type": "setapp", "id": "folx" }
+    ]
   },
   {
     "name": "Fork",
@@ -337,38 +372,41 @@
   },
   {
     "name": "ForkLift",
-    "url": "",
+    "url": "https://binarynights.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "forklift" }]
+    "install": [
+      { "type": "setapp", "id": "forklift" },
+      { "type": "cask", "id": "forklift" }
+    ]
   },
   {
-    "name": "GIF Brewery 3",
-    "url": "",
-    "category": "Graphics",
-    "note": null,
-    "install": [{ "type": "mas", "id": "1081413713" }]
-  },
-  {
-    "name": "GPG Suite (without GPG Mail)",
+    "name": "GPG Suite",
     "url": "https://gpgtools.org/",
     "category": "",
-    "note": null,
+    "note": "Homebrew cask installs without GPG Mail",
     "install": [{ "type": "cask", "id": "gpg-suite-no-mail" }]
   },
   {
     "name": "Gifox",
-    "url": "",
+    "url": "https://gifox.app/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "gifox" }]
+    "install": [
+      { "type": "setapp", "id": "gifox" },
+      { "type": "cask", "id": "gifox" },
+      { "type": "mas", "id": "1461845568" }
+    ]
   },
   {
     "name": "Gifski",
-    "url": "",
+    "url": "https://gif.ski/",
     "category": "Graphics",
     "note": null,
-    "install": [{ "type": "mas", "id": "1351639930" }]
+    "install": [
+      { "type": "cask", "id": "gifski" },
+      { "type": "mas", "id": "1351639930" }
+    ]
   },
   {
     "name": "GitButler",
@@ -379,10 +417,13 @@
   },
   {
     "name": "Goldie App",
-    "url": "",
+    "url": "https://amicoapps.com/app/goldie/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "goldie-app" }]
+    "install": [
+      { "type": "setapp", "id": "goldie-app" },
+      { "type": "mas", "id": "1375037046" }
+    ]
   },
   {
     "name": "Google Chrome",
@@ -463,17 +504,23 @@
   },
   {
     "name": "IconJar",
-    "url": "",
+    "url": "https://geticonjar.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "iconjar" }]
+    "install": [
+      { "type": "setapp", "id": "iconjar" },
+      { "type": "cask", "id": "iconjar" }
+    ]
   },
   {
     "name": "Image2icon",
-    "url": "",
+    "url": "https://img2icnsapp.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "image2icon" }]
+    "install": [
+      { "type": "setapp", "id": "image2icon" },
+      { "type": "mas", "id": "992115977" }
+    ]
   },
   {
     "name": "Itsycal",
@@ -519,7 +566,7 @@
   },
   {
     "name": "Keynote",
-    "url": "",
+    "url": "https://www.apple.com/apps/#keynote",
     "category": "Office Suite",
     "note": null,
     "install": [{ "type": "mas", "id": "409183694" }]
@@ -533,14 +580,17 @@
   },
   {
     "name": "Keysmith",
-    "url": "",
+    "url": "https://www.keysmith.app/",
     "category": "Automation",
     "note": null,
-    "install": [{ "type": "setapp", "id": "keysmith" }]
+    "install": [
+      { "type": "setapp", "id": "keysmith" },
+      { "type": "cask", "id": "keysmith" }
+    ]
   },
   {
     "name": "LINE",
-    "url": "",
+    "url": "https://line.me/",
     "category": "Social",
     "note": null,
     "install": [{ "type": "mas", "id": "539883307" }]
@@ -568,10 +618,10 @@
   },
   {
     "name": "LyricsX",
-    "url": "",
+    "url": "https://github.com/ddddxxx/LyricsX",
     "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "1254743014" }]
+    "install": [{ "type": "cask", "id": "lyricsx" }]
   },
   {
     "name": "MacTeX",
@@ -617,24 +667,38 @@
   },
   {
     "name": "Marked",
-    "url": "",
+    "url": "https://marked2app.com/",
     "category": "Editor",
     "note": null,
-    "install": [{ "type": "setapp", "id": "marked" }]
+    "install": [
+      { "type": "setapp", "id": "marked" },
+      { "type": "cask", "id": "marked" },
+      { "type": "mas", "id": "890031187" }
+    ]
   },
   {
     "name": "Meta",
-    "url": "",
+    "url": "https://www.nightbirdsevolve.com/meta/",
     "category": "",
     "note": null,
     "install": [{ "type": "setapp", "id": "meta" }]
   },
   {
     "name": "MetaImage",
-    "url": "",
+    "url": "https://neededapps.com/metaimage/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "metaimage" }]
+    "install": [
+      { "type": "setapp", "id": "metaimage" },
+      { "type": "mas", "id": "1397099749" }
+    ]
+  },
+  {
+    "name": "MetaRename",
+    "url": "https://neededapps.com/metarename/",
+    "category": "",
+    "note": null,
+    "install": [{ "type": "mas", "id": "6447451037" }]
   },
   {
     "name": "Microsoft Excel",
@@ -659,10 +723,20 @@
   },
   {
     "name": "MindNode",
-    "url": "",
+    "url": "https://www.mindnode.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "mindnode" }]
+    "install": [
+      { "type": "setapp", "id": "mindnode" },
+      { "type": "mas", "id": "1289197285" }
+    ]
+  },
+  {
+    "name": "MKPlayer",
+    "url": "https://rockysandstudio.com/",
+    "category": "Media Player",
+    "note": null,
+    "install": [{ "type": "mas", "id": "1335612105" }]
   },
   {
     "name": "Mockuuups Studio",
@@ -722,14 +796,14 @@
   },
   {
     "name": "Numbers",
-    "url": "",
+    "url": "https://www.apple.com/apps/#numbers",
     "category": "Office Suite",
     "note": null,
     "install": [{ "type": "mas", "id": "409203825" }]
   },
   {
     "name": "Numerics",
-    "url": "",
+    "url": "https://cynapse.com/numerics",
     "category": "",
     "note": null,
     "install": [{ "type": "setapp", "id": "numerics" }]
@@ -757,7 +831,7 @@
   },
   {
     "name": "Pages",
-    "url": "",
+    "url": "https://www.apple.com/apps/#pages",
     "category": "Office Suite",
     "note": null,
     "install": [{ "type": "mas", "id": "409201541" }]
@@ -774,7 +848,7 @@
   },
   {
     "name": "Photomator",
-    "url": "",
+    "url": "https://www.pixelmator.com/photomator/",
     "category": "Graphics",
     "note": null,
     "install": [{ "type": "mas", "id": "1444636541" }]
@@ -788,7 +862,7 @@
   },
   {
     "name": "Pixelmator Pro",
-    "url": "",
+    "url": "https://www.pixelmator.com/pro/",
     "category": "Graphics",
     "note": null,
     "install": [{ "type": "mas", "id": "1289583905" }]
@@ -802,11 +876,11 @@
   },
   {
     "name": "PopClip",
-    "url": "",
+    "url": "https://www.popclip.app/",
     "category": "Utilities",
-    "note": null,
+    "note": "Previously bought on the Mac App Store, license binded on iCloud, see [this](https://www.popclip.app/kb/mas)",
     "install": [
-      { "type": "mas", "id": "445189367" },
+      { "type": "cask", "id": "popclip" },
       { "type": "setapp", "id": "popclip" }
     ]
   },
@@ -819,7 +893,7 @@
   },
   {
     "name": "Prizmo",
-    "url": "",
+    "url": "https://creaceed.com/prizmo",
     "category": "",
     "note": null,
     "install": [{ "type": "setapp", "id": "prizmo" }]
@@ -830,6 +904,13 @@
     "category": "Cloud Storage",
     "note": null,
     "install": [{ "type": "cask", "id": "proton-drive" }]
+  },
+  {
+    "name": "Proton pass",
+    "url": "https://proton.me/pass",
+    "category": "Password Manager",
+    "note": null,
+    "install": [{ "type": "cask", "id": "proton-pass" }]
   },
   {
     "name": "ProtonVPN",
@@ -878,17 +959,20 @@
   },
   {
     "name": "Reeder",
-    "url": "",
+    "url": "https://reeder.app/",
     "category": "Reader",
     "note": null,
     "install": [{ "type": "mas", "id": "1529448980" }]
   },
   {
     "name": "Renamer",
-    "url": "",
-    "category": "",
+    "url": "https://renamer.com/",
+    "category": "File Management",
     "note": null,
-    "install": [{ "type": "setapp", "id": "renamer" }]
+    "install": [
+      { "type": "setapp", "id": "renamer" },
+      { "type": "cask", "id": "renamer" }
+    ]
   },
   {
     "name": "SF Symbols",
@@ -920,7 +1004,7 @@
   },
   {
     "name": "Secrets",
-    "url": "",
+    "url": "https://secrets.app/",
     "category": "Password Manager",
     "note": null,
     "install": [{ "type": "setapp", "id": "secrets" }]
@@ -934,24 +1018,20 @@
   },
   {
     "name": "Shazam",
-    "url": "",
+    "url": "https://www.shazam.com/",
     "category": "",
     "note": null,
     "install": [{ "type": "mas", "id": "897118787" }]
   },
   {
     "name": "Short Menu",
-    "url": "",
+    "url": "https://shortmenu.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "510109287" }]
-  },
-  {
-    "name": "Short Menu",
-    "url": "",
-    "category": "",
-    "note": null,
-    "install": [{ "type": "setapp", "id": "short-menu" }]
+    "install": [
+      { "type": "mas", "id": "510109287" },
+      { "type": "setapp", "id": "short-menu" }
+    ]
   },
   {
     "name": "Sketch",
@@ -969,10 +1049,13 @@
   },
   {
     "name": "SnippetsLab",
-    "url": "",
+    "url": "https://www.renfei.org/snippets-lab/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "snippetslab" }]
+    "install": [
+      { "type": "setapp", "id": "snippetslab" },
+      { "type": "mas", "id": "1006087419" }
+    ]
   },
   {
     "name": "SourceTree",
@@ -983,10 +1066,13 @@
   },
   {
     "name": "Spark",
-    "url": "",
+    "url": "https://sparkmailapp.com/",
     "category": "Email Client",
     "note": null,
-    "install": [{ "type": "mas", "id": "1176895641" }]
+    "install": [
+      { "type": "cask", "id": "readdle-spark" },
+      { "type": "mas", "id": "1176895641" }
+    ]
   },
   {
     "name": "Spotify",
@@ -997,7 +1083,7 @@
   },
   {
     "name": "Squash",
-    "url": "",
+    "url": "https://www.realmacsoftware.com/squash/",
     "category": "",
     "note": null,
     "install": [{ "type": "setapp", "id": "squash" }]
@@ -1032,21 +1118,24 @@
   },
   {
     "name": "TablePlus",
-    "url": "",
+    "url": "https://tableplus.com/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "tableplus" }]
+    "install": [
+      { "type": "setapp", "id": "tableplus" },
+      { "type": "cask", "id": "tableplus" }
+    ]
   },
   {
     "name": "Tampermonkey",
-    "url": "",
+    "url": "https://www.tampermonkey.net/",
     "category": "Safari Extension",
     "note": null,
     "install": [{ "type": "mas", "id": "1482490089" }]
   },
   {
     "name": "Telegram",
-    "url": "",
+    "url": "https://telegram.org/",
     "category": "Social",
     "note": null,
     "install": [
@@ -1080,7 +1169,7 @@
   },
   {
     "name": "Things",
-    "url": "",
+    "url": "https://culturedcode.com/things/",
     "category": "",
     "note": null,
     "install": [{ "type": "mas", "id": "904280696" }]
@@ -1094,17 +1183,23 @@
   },
   {
     "name": "ToothFairy",
-    "url": "",
+    "url": "https://c-command.com/toothfairy/",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "toothfairy" }]
+    "install": [
+      { "type": "setapp", "id": "toothfairy" },
+      { "type": "mas", "id": "1191449274" }
+    ]
   },
   {
     "name": "TouchRetouch",
-    "url": "",
+    "url": "https://adva-soft.com/app-pageTouch.html",
     "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "touchretouch" }]
+    "install": [
+      { "type": "setapp", "id": "touchretouch" },
+      { "type": "mas", "id": "373311252" }
+    ]
   },
   {
     "name": "Tower",
@@ -1122,14 +1217,14 @@
   },
   {
     "name": "Typeface",
-    "url": "",
+    "url": "https://typefaceapp.com/",
     "category": "Font Manager",
     "note": null,
     "install": [{ "type": "setapp", "id": "typeface" }]
   },
   {
     "name": "Ulysses",
-    "url": "",
+    "url": "https://www.ulysses.app/",
     "category": "",
     "note": null,
     "install": [{ "type": "setapp", "id": "ulysses" }]
@@ -1164,10 +1259,13 @@
   },
   {
     "name": "WeChat",
-    "url": "",
+    "url": "https://mac.weixin.qq.com/",
     "category": "Social",
     "note": null,
-    "install": [{ "type": "mas", "id": "836500024" }]
+    "install": [
+      { "type": "cask", "id": "wechat" },
+      { "type": "mas", "id": "836500024" }
+    ]
   },
   {
     "name": "WhatsApp",
@@ -1205,14 +1303,14 @@
   },
   {
     "name": "Xcode",
-    "url": "",
+    "url": "https://developer.apple.com/xcode/",
     "category": "Dev Tools",
     "note": null,
     "install": [{ "type": "mas", "id": "497799835" }]
   },
   {
     "name": "Xnapper",
-    "url": "",
+    "url": "https://xnapper.com/",
     "category": "Screen Capture",
     "note": null,
     "install": [{ "type": "setapp", "id": "xnapper" }]
