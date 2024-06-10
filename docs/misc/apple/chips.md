@@ -1,4 +1,4 @@
-# Apple Chips
+# 🥔 Chips
 
 Quick lookup table for Apple's chips.
 
