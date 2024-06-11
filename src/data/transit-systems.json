@@ -1,0 +1,92 @@
+{
+  "tw-taipei": {
+    "country": "tw",
+    "city": "Taipei",
+    "transit-system": {
+      "name": "",
+      "url": ""
+    },
+    "passes": [
+      {
+        "name": "EasyCard",
+        "url": "https://www.easycard.com.tw/",
+        "apple-pay": false
+      },
+      {
+        "name": "iPASS",
+        "url": "https://www.i-pass.com.tw/",
+        "apple-pay": false
+      },
+      {
+        "name": "iCash",
+        "url": "https://www.icash.com.tw/",
+        "apple-pay": false
+      }
+    ],
+    "contactless": false
+  },
+  "au-sydney": {
+    "country": "au",
+    "city": "Sydney",
+    "transit-system": {
+      "name": "Transport for NSW",
+      "url": "https://transportnsw.info/"
+    },
+    "passes": [
+      {
+        "name": "Opal Card",
+        "url": "https://transportnsw.info/tickets-opal/opal-card",
+        "apple-pay": false
+      }
+    ],
+    "contactless": true
+  },
+  "us-new-york": {
+    "country": "us",
+    "city": "New York",
+    "transit-system": {
+      "name": "Metropolitan Transportation Authority (MTA)",
+      "url": "http://www.mta.info/"
+    },
+    "passes": [
+      {
+        "name": "OMNY",
+        "url": "https://omny.info/",
+        "apple-pay": false
+      }
+    ],
+    "contactless": true
+  },
+  "gb-london": {
+    "country": "gb",
+    "city": "London",
+    "transit-system": {
+      "name": "Transport for London (TfL)",
+      "url": "https://tfl.gov.uk/"
+    },
+    "passes": [
+      {
+        "name": "Oyster Card",
+        "url": "https://oyster.tfl.gov.uk/oyster/entry.do",
+        "apple-pay": false
+      }
+    ],
+    "contactless": true
+  },
+  "fr-paris": {
+    "country": "fr",
+    "city": "Paris",
+    "transit-system": {
+      "name": "RATP",
+      "url": "https://www.ratp.fr/"
+    },
+    "passes": [
+      {
+        "name": "Navigo",
+        "url": "https://www.navigo.fr/",
+        "apple-pay": true
+      }
+    ],
+    "contactless": false
+  }
+}
