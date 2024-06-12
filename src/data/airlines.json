@@ -1,4 +1,28 @@
 {
+  "TK-THY": {
+    "name": "Turkish Airlines",
+    "country": "tr",
+    "iata": "TK",
+    "icao": "THY",
+    "lcc": false,
+    "defunct": false,
+    "url": "https://www.turkishairlines.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Turkish_Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/Turkish_Airlines/information.php",
+    "apple-wallet-pass": true
+  },
+  "CA-ACA": {
+    "name": "Air Canada",
+    "country": "ca",
+    "iata": "AC",
+    "icao": "ACA",
+    "lcc": false,
+    "defunct": false,
+    "url": "http://www.aircanada.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Air_Canada",
+    "seatguru": "https://www.seatguru.com/airlines/Air_Canada/information.php",
+    "apple-wallet-pass": true
+  },
   "UA-UAL": {
     "name": "United Airlines",
     "country": "us",
@@ -9,7 +33,8 @@
     "url": "https://www.united.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/United_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/United_Airlines/information.php",
-    "in-flight-entertainment": "https://unitedprivatescreening.com/"
+    "in-flight-entertainment": "https://unitedprivatescreening.com/",
+    "apple-wallet-pass": true
   },
   "AA-AAL": {
     "name": "American Airlines",
@@ -21,7 +46,8 @@
     "url": "https://www.aa.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/American_Airlines",
     "seatguru": "https://www.seatguru.com/airlines/American_Airlines/information.php",
-    "in-flight-entertainment": "https://entertainment.aa.com/"
+    "in-flight-entertainment": "https://entertainment.aa.com/",
+    "apple-wallet-pass": true
   },
   "DL-DAL": {
     "name": "Delta Air Lines",
@@ -32,7 +58,8 @@
     "defunct": false,
     "url": "https://www.delta.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Delta_Air_Lines",
-    "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php",
+    "apple-wallet-pass": true
   },
   "TR-TGW": {
     "name": "Scoot",
@@ -43,7 +70,8 @@
     "defunct": false,
     "url": "https://www.flyscoot.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Scoot",
-    "seatguru": ""
+    "seatguru": "",
+    "apple-wallet-pass": null
   },
   "DY-NOZ": {
     "name": "Norwegian Air Shuttle",
@@ -54,7 +82,8 @@
     "defunct": false,
     "url": "https://www.norwegian.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle",
-    "seatguru": "https://www.seatguru.com/airlines/Norwegian_Air_Shuttle/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Norwegian_Air_Shuttle/information.php",
+    "apple-wallet-pass": null
   },
   "BY-TOM": {
     "name": "TUI Airways",
@@ -65,7 +94,8 @@
     "defunct": false,
     "url": "https://www.tui.co.uk/",
     "wikipedia": "https://en.wikipedia.org/wiki/TUI_Airways",
-    "seatguru": "https://www.seatguru.com/airlines/Thomson_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Thomson_Airways/information.php",
+    "apple-wallet-pass": null
   },
   "IB-IBE": {
     "name": "LEVEL",
@@ -76,7 +106,8 @@
     "defunct": false,
     "url": "https://www.flylevel.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Level_(airline_brand)",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "JQ-JST": {
     "name": "Jetstar",
@@ -87,7 +118,8 @@
     "defunct": false,
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar",
-    "seatguru": "https://www.seatguru.com/airlines/Jetstar/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Jetstar/information.php",
+    "apple-wallet-pass": null
   },
   "WS-WJA": {
     "name": "WestJet Airlines",
@@ -98,7 +130,8 @@
     "defunct": false,
     "url": "https://www.westjet.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/WestJet",
-    "seatguru": "https://www.seatguru.com/airlines/Westjet/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Westjet/information.php",
+    "apple-wallet-pass": null
   },
   "5J-CEB": {
     "name": "Cebu Pacific Airlines",
@@ -109,7 +142,8 @@
     "defunct": false,
     "url": "https://www.cebupacificair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Cebu_Pacific",
-    "seatguru": "https://www.seatguru.com/airlines/Cebu_Pacific/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Cebu_Pacific/information.php",
+    "apple-wallet-pass": null
   },
   "EW-EWG": {
     "name": "Eurowings",
@@ -120,7 +154,8 @@
     "defunct": false,
     "url": "https://www.eurowings.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Eurowings",
-    "seatguru": "https://www.seatguru.com/airlines/Eurowings_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Eurowings_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "AD-AZU": {
     "name": "Azul Linhas Aereas",
@@ -131,7 +166,8 @@
     "defunct": false,
     "url": "https://www.voeazul.com.br/",
     "wikipedia": "https://en.wikipedia.org/wiki/Azul_Brazilian_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "BF-FBU": {
     "name": "French Bee",
@@ -142,7 +178,8 @@
     "defunct": false,
     "url": "https://www.frenchbee.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/French_Bee",
-    "seatguru": "https://www.seatguru.com/airlines/French_bee_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/French_bee_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "D7-XAX": {
     "name": "AirAsia X",
@@ -153,7 +190,8 @@
     "defunct": false,
     "url": "https://www.airasia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/AirAsia_X",
-    "seatguru": "https://www.seatguru.com/airlines/AirAsia_X/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/AirAsia_X/information.php",
+    "apple-wallet-pass": true
   },
   "DE-CFG": {
     "name": "Condor",
@@ -164,7 +202,8 @@
     "defunct": false,
     "url": "https://www.condor.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Condor_(airline)",
-    "seatguru": "https://www.seatguru.com/airlines/Condor_Flugdienst/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Condor_Flugdienst/information.php",
+    "apple-wallet-pass": null
   },
   "YP-APZ": {
     "name": "Air Premia",
@@ -175,7 +214,8 @@
     "defunct": false,
     "url": "https://www.airpremia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Air_Premia",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "JL-JAL": {
     "name": "Japan Airlines",
@@ -186,7 +226,8 @@
     "defunct": false,
     "url": "https://www.jal.co.jp/",
     "wikipedia": "https://en.wikipedia.org/wiki/Japan_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Japan_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Japan_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "QF-QFA": {
     "name": "Qantas",
@@ -197,7 +238,8 @@
     "defunct": false,
     "url": "https://www.qantas.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Qantas",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "CZ-CSN": {
     "name": "China Southern Airlines",
@@ -208,7 +250,8 @@
     "defunct": false,
     "url": "https://www.csair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/China_Southern_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/China_Southern/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/China_Southern/information.php",
+    "apple-wallet-pass": null
   },
   "AF-AFR": {
     "name": "Air France",
@@ -219,7 +262,8 @@
     "defunct": false,
     "url": "https://wwws.airfrance.fr/",
     "wikipedia": "https://en.wikipedia.org/wiki/Air_France",
-    "seatguru": "https://www.seatguru.com/airlines/Air_France/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Air_France/information.php",
+    "apple-wallet-pass": true
   },
   "LH-DLH": {
     "name": "Lufthansa",
@@ -230,7 +274,8 @@
     "defunct": false,
     "url": "https://www.lufthansa.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Lufthansa",
-    "seatguru": "https://www.seatguru.com/airlines/Lufthansa/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Lufthansa/information.php",
+    "apple-wallet-pass": null
   },
   "NH-ANA": {
     "name": "All Nippon Airways",
@@ -241,7 +286,8 @@
     "defunct": false,
     "url": "https://www.ana.co.jp/",
     "wikipedia": "https://en.wikipedia.org/wiki/All_Nippon_Airways",
-    "seatguru": "https://www.seatguru.com/airlines/ANA/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/ANA/information.php",
+    "apple-wallet-pass": null
   },
   "MM-APJ": {
     "name": "Peach Aviation",
@@ -252,7 +298,8 @@
     "defunct": false,
     "url": "https://www.flypeach.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Peach_Aviation",
-    "seatguru": "https://www.seatguru.com/airlines/Peach/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Peach/information.php",
+    "apple-wallet-pass": null
   },
   "JW-VNL": {
     "name": "Vanilla Air",
@@ -263,7 +310,8 @@
     "defunct": true,
     "url": "https://www.vanilla-air.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Vanilla_Air",
-    "seatguru": "https://www.seatguru.com/airlines/Vanilla_Air/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Vanilla_Air/information.php",
+    "apple-wallet-pass": null
   },
   "ZG-TZP": {
     "name": "Tigerair Taiwan",
@@ -274,7 +322,8 @@
     "defunct": false,
     "url": "https://www.tigerairtw.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Tigerair_Taiwan",
-    "seatguru": "https://www.seatguru.com/airlines/Tigerair_Taiwan/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Tigerair_Taiwan/information.php",
+    "apple-wallet-pass": null
   },
   "MH-MAS": {
     "name": "Malaysia Airlines",
@@ -285,7 +334,8 @@
     "defunct": false,
     "url": "https://www.malaysiaairlines.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Malaysia_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Malaysia_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Malaysia_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "Z2-APG": {
     "name": "Philippines AirAsia",
@@ -296,7 +346,8 @@
     "defunct": false,
     "url": "https://www.airasia.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Philippines_AirAsia",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": true
   },
   "QR-QTR": {
     "name": "Qatar Airways",
@@ -307,7 +358,8 @@
     "defunct": false,
     "url": "https://www.qatarairways.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Qatar_Airways",
-    "seatguru": "https://www.seatguru.com/airlines/Qatar_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Qatar_Airways/information.php",
+    "apple-wallet-pass": null
   },
   "SQ-SIA": {
     "name": "Singapore Airlines",
@@ -318,7 +370,8 @@
     "defunct": false,
     "url": "https://www.singaporeair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Singapore_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Singapore_Air/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Singapore_Air/information.php",
+    "apple-wallet-pass": null
   },
   "3K-JSA": {
     "name": "Jetstar Asia Airways",
@@ -329,7 +382,8 @@
     "defunct": false,
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar_Asia_Airways",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "OZ-AAR": {
     "name": "Asiana Airlines",
@@ -340,7 +394,8 @@
     "defunct": false,
     "url": "https://flyasiana.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Asiana_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Asiana/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Asiana/information.php",
+    "apple-wallet-pass": null
   },
   "KE-KAL": {
     "name": "Korean Air",
@@ -351,7 +406,8 @@
     "defunct": false,
     "url": "https://www.koreanair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Korean_Air",
-    "seatguru": "https://www.seatguru.com/airlines/Korean_Air/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Korean_Air/information.php",
+    "apple-wallet-pass": null
   },
   "IT-TTW": {
     "name": "Tigerair Taiwan",
@@ -362,7 +418,8 @@
     "defunct": false,
     "url": "https://www.tigerairtw.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Tigerair_Taiwan",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "TG-THA": {
     "name": "Thai Airways",
@@ -373,7 +430,8 @@
     "defunct": false,
     "url": "https://www.thaiairways.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Thai_Airways_International",
-    "seatguru": "https://www.seatguru.com/airlines/Thai_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Thai_Airways/information.php",
+    "apple-wallet-pass": null
   },
   "EK-UAE": {
     "name": "Emirates",
@@ -384,7 +442,8 @@
     "defunct": false,
     "url": "https://www.emirates.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Emirates_(airline)",
-    "seatguru": "https://www.seatguru.com/airlines/Emirates_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Emirates_Airlines/information.php",
+    "apple-wallet-pass": true
   },
   "EY-ETD": {
     "name": "Etihad Airways",
@@ -395,7 +454,8 @@
     "defunct": false,
     "url": "https://www.etihad.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Etihad_Airways",
-    "seatguru": "https://www.seatguru.com/airlines/Etihad_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Etihad_Airways/information.php",
+    "apple-wallet-pass": null
   },
   "BA-BAW": {
     "name": "British Airways",
@@ -406,7 +466,8 @@
     "defunct": false,
     "url": "https://www.britishairways.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/British_Airways",
-    "seatguru": "https://www.seatguru.com/airlines/British_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/British_Airways/information.php",
+    "apple-wallet-pass": null
   },
   "AS-ASA": {
     "name": "Alaska Airlines",
@@ -417,7 +478,8 @@
     "defunct": false,
     "url": "https://www.alaskaair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Alaska_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Alaska_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Alaska_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "HA-HAL": {
     "name": "Hawaiian Airlines",
@@ -428,7 +490,8 @@
     "defunct": false,
     "url": "https://www.hawaiianairlines.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Hawaiian_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Hawaiian_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Hawaiian_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "G4-AAY": {
     "name": "Allegiant Air",
@@ -439,7 +502,8 @@
     "defunct": false,
     "url": "https://www.allegiantair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Allegiant_Air",
-    "seatguru": "https://www.seatguru.com/airlines/Allegiant_Air/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Allegiant_Air/information.php",
+    "apple-wallet-pass": null
   },
   "XP-VXP": {
     "name": "Avelo Airlines",
@@ -450,7 +514,8 @@
     "defunct": false,
     "url": "https://www.aveloair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Avelo_Airlines",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "MX-MXY": {
     "name": "Breeze Airways",
@@ -461,7 +526,8 @@
     "defunct": true,
     "url": "https://www.flybreeze.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Breeze_Airways",
-    "seatguru": null
+    "seatguru": null,
+    "apple-wallet-pass": null
   },
   "F9-FFT": {
     "name": "Frontier Airlines",
@@ -472,7 +538,8 @@
     "defunct": false,
     "url": "https://www.flyfrontier.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Frontier_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Frontier_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Frontier_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "B6-JBU": {
     "name": "JetBlue Airways",
@@ -483,7 +550,8 @@
     "defunct": false,
     "url": "https://www.jetblue.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/JetBlue",
-    "seatguru": "https://www.seatguru.com/airlines/JetBlue_Airways/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/JetBlue_Airways/information.php",
+    "apple-wallet-pass": true
   },
   "WN-SWA": {
     "name": "Southwest Airlines",
@@ -494,7 +562,8 @@
     "defunct": false,
     "url": "https://www.southwest.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Southwest_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Southwest_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Southwest_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "NK-NKS": {
     "name": "Spirit Airlines",
@@ -505,7 +574,8 @@
     "defunct": false,
     "url": "https://www.spirit.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Spirit_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Spirit_Airlines/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Spirit_Airlines/information.php",
+    "apple-wallet-pass": null
   },
   "SY-SCX": {
     "name": "Sun Country Airlines",
@@ -516,6 +586,7 @@
     "defunct": false,
     "url": "https://www.suncountry.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Sun_Country_Airlines",
-    "seatguru": "https://www.seatguru.com/airlines/Sun_Country/information.php"
+    "seatguru": "https://www.seatguru.com/airlines/Sun_Country/information.php",
+    "apple-wallet-pass": null
   }
 }
