@@ -28,12 +28,23 @@ List of airlines, might not cover all.
       },
     },
     {
-      header: "Country",
-      accessorKey: "country",
-      cell: ({ getValue }) => countries[getValue().toUpperCase()].emoji,
+      header: "Countries",
+      accessorKey: "countries",
+      cell: ({ getValue }) => {
+        const airlineCountries = getValue();
+        return airlineCountries.map((countryCode, index) => {
+          const country = countries[countryCode.toUpperCase()];
+          return (
+            <span key={index} title={country.name}>
+              {country.emoji}
+            </span>
+          );
+        });
+      },
     },
     { header: "IATA Code", accessorKey: "iata" },
     { header: "ICAO Code", accessorKey: "icao" },
+    { header: "Alliance", accessorKey: "alliance" },
     {
       header: "Wikipedia",
       accessorKey: "wikipedia",
@@ -99,4 +110,5 @@ List of airlines, might not cover all.
     },
   ]}
   data={Object.values(airlines)}
+  defaultSorting={{ id: "name", desc: false }}
 />
