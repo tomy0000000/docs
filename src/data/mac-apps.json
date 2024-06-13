@@ -49,6 +49,14 @@
     "install": [{ "type": "cask", "id": "appcleaner" }]
   },
   {
+    "name": "AppFlowy",
+    "url": "https://www.appflowy.io/",
+    "category": "Productivity",
+    "note": null,
+    "github": "AppFlowy-IO/AppFlowy",
+    "install": [{ "type": "cask", "id": "appflowy" }]
+  },
+  {
     "name": "Aquarelo",
     "url": "https://www.cusaro.it/aquarelo",
     "category": "Color Picker",
@@ -69,6 +77,14 @@
     ]
   },
   {
+    "name": "Background Music",
+    "url": "https://github.com/kyleneideck/BackgroundMusic",
+    "category": "",
+    "note": null,
+    "github": "kyleneideck/BackgroundMusic",
+    "install": [{ "type": "cask", "id": "background-music" }]
+  },
+  {
     "name": "BackupLoupe",
     "url": "https://www.soma-zone.com/BackupLoupe/",
     "category": "",
@@ -78,7 +94,7 @@
   {
     "name": "Bartender",
     "url": "https://www.macbartender.com/",
-    "category": "",
+    "category": "Menu Bar",
     "note": null,
     "install": [
       { "type": "cask", "id": "bartender" },
@@ -121,6 +137,7 @@
     "url": "https://brave.com/",
     "category": "Browser",
     "note": null,
+    "github": "brave/brave-browser",
     "install": [{ "type": "cask", "id": "brave-browser" }]
   },
   {
@@ -128,6 +145,7 @@
     "url": "https://buttercup.pw/",
     "category": "Password Manager",
     "note": null,
+    "github": "buttercup/buttercup-desktop",
     "install": [{ "type": "cask", "id": "buttercup" }]
   },
   {
@@ -169,6 +187,7 @@
     "url": "https://clobbr.app/",
     "category": "Dev Tools",
     "note": null,
+    "github": "parsecph/clobbr",
     "install": [
       { "type": "setapp", "id": "clobbr" },
       { "type": "mas", "id": "id1629096010" }
@@ -179,6 +198,7 @@
     "url": "https://lowtechguys.com/clop",
     "category": "",
     "note": null,
+    "github": "FuzzyIdeas/Clop",
     "install": [
       { "type": "setapp", "id": "clop" },
       { "type": "cask", "id": "clop" }
@@ -233,10 +253,19 @@
     ]
   },
   {
+    "name": "DB Browser for SQLite",
+    "url": "https://sqlitebrowser.org/",
+    "category": "SQL Client",
+    "note": null,
+    "github": "sqlitebrowser/sqlitebrowser",
+    "install": [{ "type": "cask", "id": "db-browser-for-sqlite" }]
+  },
+  {
     "name": "DevUtils",
     "url": "https://devutils.com/",
     "category": "Dev Tools",
     "note": null,
+    "github": "DevUtilsApp/DevUtils-app",
     "install": [
       { "type": "setapp", "id": "devutils.app" },
       { "type": "cask", "id": "devutils" },
@@ -314,6 +343,14 @@
       { "type": "setapp", "id": "elmedia-player" },
       { "type": "cask", "id": "elmedia-player" }
     ]
+  },
+  {
+    "name": "Etcher",
+    "url": "https://etcher.balena.io/",
+    "category": "Utilities",
+    "note": null,
+    "github": "balena-io/etcher",
+    "install": [{ "type": "cask", "id": "balenaetcher" }]
   },
   {
     "name": "Expressions",
@@ -403,6 +440,7 @@
     "url": "https://gif.ski/",
     "category": "Graphics",
     "note": null,
+    "github": "sindresorhus/Gifski",
     "install": [
       { "type": "cask", "id": "gifski" },
       { "type": "mas", "id": "1351639930" }
@@ -413,7 +451,16 @@
     "url": "https://gitbutler.com/",
     "category": "Git Client",
     "note": null,
+    "github": "gitbutlerapp/gitbutler",
     "install": [{ "type": "cask", "id": "gitbutler" }]
+  },
+  {
+    "name": "GitHub Desktop",
+    "url": "https://desktop.github.com/",
+    "category": "Git Client",
+    "note": null,
+    "github": "desktop/desktop",
+    "install": [{ "type": "cask", "id": "github" }]
   },
   {
     "name": "Goldie App",
@@ -458,6 +505,7 @@
     "url": "https://www.hammerspoon.org/",
     "category": "",
     "note": null,
+    "github": "Hammerspoon/hammerspoon",
     "install": [{ "type": "cask", "id": "hammerspoon" }]
   },
   {
@@ -465,6 +513,7 @@
     "url": "https://handbrake.fr/",
     "category": "",
     "note": null,
+    "github": "HandBrake/HandBrake",
     "install": [{ "type": "cask", "id": "handbrake" }]
   },
   {
@@ -489,6 +538,17 @@
     "install": [{ "type": "cask", "id": "hookshot" }]
   },
   {
+    "name": "Hidden Bar",
+    "url": "https://github.com/dwarvesf/hidden",
+    "category": "Menu Bar",
+    "note": null,
+    "github": "dwarvesf/hidden",
+    "install": [
+      { "type": "cask", "id": "hiddenbar" },
+      { "type": "mas", "id": "1452453066" }
+    ]
+  },
+  {
     "name": "Hyper",
     "url": "https://hyper.is/",
     "category": "Terminal",
@@ -500,7 +560,16 @@
     "url": "https://iina.io/",
     "category": "Media Player",
     "note": null,
+    "github": "iina/iina",
     "install": [{ "type": "cask", "id": "iina" }]
+  },
+  {
+    "name": "Ice",
+    "url": "https://icemenubar.app/",
+    "category": "Menu Bar",
+    "note": null,
+    "github": "jordanbaird/Ice",
+    "install": [{ "type": "cask", "id": "jordanbaird-ice" }]
   },
   {
     "name": "IconJar",
@@ -610,6 +679,14 @@
     "install": [{ "type": "cask", "id": "logitech-options" }]
   },
   {
+    "name": "Lapce",
+    "url": "https://lapce.dev/",
+    "category": "Code Editor",
+    "note": null,
+    "github": "lapce/lapce",
+    "install": [{ "type": "cask", "id": "lapce" }]
+  },
+  {
     "name": "Logitech Options+",
     "url": "https://www.logitech.com/en-us/software/logi-options-plus.html",
     "category": "Driver",
@@ -621,6 +698,7 @@
     "url": "https://github.com/ddddxxx/LyricsX",
     "category": "",
     "note": null,
+    "github": "ddddxxx/LyricsX",
     "install": [{ "type": "cask", "id": "lyricsx" }]
   },
   {
@@ -645,6 +723,14 @@
     "install": [{ "type": "cask", "id": "mactracker" }]
   },
   {
+    "name": "Maestral",
+    "url": "https://maestral.app/",
+    "category": "Cloud Storage",
+    "note": null,
+    "github": "samschott/maestral",
+    "install": [{ "type": "cask", "id": "maestral" }]
+  },
+  {
     "name": "Magnet",
     "url": "https://magnet.crowdcafe.com/",
     "category": "Window Manager",
@@ -661,14 +747,15 @@
   {
     "name": "MarkEdit",
     "url": "https://github.com/MarkEdit-app/MarkEdit",
-    "category": "Editor",
+    "category": "Markdown Editor",
     "note": null,
+    "github": "MarkEdit-app/MarkEdit",
     "install": [{ "type": "cask", "id": "markedit" }]
   },
   {
     "name": "Marked",
     "url": "https://marked2app.com/",
-    "category": "Editor",
+    "category": "Markdown Editor",
     "note": null,
     "install": [
       { "type": "setapp", "id": "marked" },
@@ -771,6 +858,7 @@
     "url": "https://motrix.app/",
     "category": "File Transfer",
     "note": null,
+    "github": "agalwood/Motrix",
     "install": [{ "type": "cask", "id": "motrix" }]
   },
   {
@@ -779,6 +867,14 @@
     "category": "",
     "note": null,
     "install": [{ "type": "cask", "id": "musicbrainz-picard" }]
+  },
+  {
+    "name": "Notepad Next",
+    "url": "https://github.com/dail8859/NotepadNext",
+    "category": "Code Editor",
+    "note": null,
+    "github": "dail8859/NotepadNext",
+    "install": []
   },
   {
     "name": "Notion",
@@ -892,6 +988,14 @@
     "install": [{ "type": "cask", "id": "postman" }]
   },
   {
+    "name": "Pretzel",
+    "url": "https://www.amie-chen.com/pretzel",
+    "category": "Utilities",
+    "note": null,
+    "github": "amiechen/pretzel",
+    "install": []
+  },
+  {
     "name": "Prizmo",
     "url": "https://creaceed.com/prizmo",
     "category": "",
@@ -941,6 +1045,7 @@
     "url": "https://github.com/sbarex/QLMarkdown",
     "category": "Quick Look",
     "note": null,
+    "github": "sbarex/QLMarkdown",
     "install": [{ "type": "cask", "id": "qlmarkdown" }]
   },
   {
@@ -973,6 +1078,13 @@
       { "type": "setapp", "id": "renamer" },
       { "type": "cask", "id": "renamer" }
     ]
+  },
+  {
+    "name": "Rocket",
+    "url": "https://matthewpalmer.net/rocket/",
+    "category": "",
+    "note": null,
+    "install": [{ "type": "cask", "id": "rocket" }]
   },
   {
     "name": "SF Symbols",
@@ -1082,6 +1194,26 @@
     "install": [{ "type": "cask", "id": "spotify" }]
   },
   {
+    "name": "Sequel Ace",
+    "url": "https://sequel-ace.com/",
+    "category": "SQL Client",
+    "note": null,
+    "github": "Sequel-Ace/Sequel-Ace",
+    "install": [
+      { "type": "cask", "id": "sequel-ace" },
+      { "type": "mas", "id": "1518036000" }
+    ]
+  },
+  {
+    "name": "Sequel Pro",
+    "url": "https://www.sequelpro.com/",
+    "category": "SQL Client",
+    "note": "Use Sequel Ace instead",
+    "deprecated": true,
+    "github": "sequelpro/sequelpro",
+    "install": [{ "type": "cask", "id": "sequel-pro" }]
+  },
+  {
     "name": "Squash",
     "url": "https://www.realmacsoftware.com/squash/",
     "category": "",
@@ -1119,8 +1251,9 @@
   {
     "name": "TablePlus",
     "url": "https://tableplus.com/",
-    "category": "",
+    "category": "SQL Client",
     "note": null,
+    "github": "TablePlus/TablePlus",
     "install": [
       { "type": "setapp", "id": "tableplus" },
       { "type": "cask", "id": "tableplus" }
@@ -1209,6 +1342,14 @@
     "install": [{ "type": "cask", "id": "tower" }]
   },
   {
+    "name": "Transmission",
+    "url": "https://transmissionbt.com/",
+    "category": "Torrent Client",
+    "note": null,
+    "github": "transmission/transmission",
+    "install": [{ "type": "cask", "id": "transmit" }]
+  },
+  {
     "name": "Transmit",
     "url": "https://panic.com/transmit/",
     "category": "File Transfer",
@@ -1237,6 +1378,13 @@
     "install": [{ "type": "cask", "id": "uninstallpkg" }]
   },
   {
+    "name": "Vanilla",
+    "url": "https://matthewpalmer.net/vanilla/",
+    "category": "Menu Bar",
+    "note": null,
+    "install": [{ "type": "cask", "id": "vanilla" }]
+  },
+  {
     "name": "VLC media player",
     "url": "https://www.videolan.org/vlc/",
     "category": "Media Player",
@@ -1246,7 +1394,7 @@
   {
     "name": "VS Code",
     "url": "https://code.visualstudio.com/",
-    "category": "Editor",
+    "category": "Code Editor",
     "note": null,
     "install": [{ "type": "cask", "id": "visual-studio-code" }]
   },
@@ -1256,6 +1404,14 @@
     "category": "",
     "note": null,
     "install": [{ "type": "cask", "id": "wakatime" }]
+  },
+  {
+    "name": "Warp",
+    "url": "https://www.warp.dev/",
+    "category": "Terminal",
+    "note": null,
+    "github": "warpdotdev/Warp",
+    "install": [{ "type": "cask", "id": "warp" }]
   },
   {
     "name": "WeChat",
