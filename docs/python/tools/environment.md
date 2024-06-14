@@ -61,4 +61,12 @@ Think about where you'd like to store your virtual environments.
 
 ## Manage Project Dependencies
 
-TBA
+TODO
+
+### [`pipenv`](https://github.com/pypa/pipenv)
+
+### [`poetry`](https://github.com/python-poetry/poetry)
+
+### [`pdm`](https://github.com/pdm-project/pdm)
+
+### [`hatch`](https://github.com/pypa/hatch)
