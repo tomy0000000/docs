@@ -165,6 +165,11 @@ const config: Config = {
       indexName: "tomy",
       contextualSearch: true,
     },
+    mermaid: {
+      options: {
+        securityLevel: "loose",
+      },
+    },
   } satisfies Preset.ThemeConfig,
 };
 
