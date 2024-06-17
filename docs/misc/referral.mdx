@@ -1,93 +1,66 @@
-import { Icon } from "@iconify/react";
+# 🔗 Referral
 
-# Referral
+import { Icon } from "@iconify/react";
+import referrals from "@site/src/data/referral.json";
+import CodeBlock from "@theme/CodeBlock";
+
+export function ReferralItem(props) {
+  const { id, item } = props;
+  return (
+    <>
+      <h2 id={id} className={id}>
+        {item.icon && (
+          <>
+            <Icon icon={item.icon} inline={true} />{" "}
+          </>
+        )}
+        {item.name}
+      </h2>
+      <p>
+        {item.dynamic ? (
+          "Please reach out to me for the latest referral link or code."
+        ) : (
+          <>
+            <ul>
+              <li>
+                What you get: {item["for-you"] ? item["for-you"] : "Nothing 🥲"}
+              </li>
+              <li>What I get: {item["for-me"]}</li>
+              <li>
+                How to redeem:{" "}
+                {item.url && (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    Link
+                  </a>
+                )}
+                {item.url && item.code && " or "}
+                {item.code && "code"}
+              </li>
+            </ul>
+            {item.code && <CodeBlock>{item.code}</CodeBlock>}
+          </>
+        )}
+      </p>
+    </>
+  );
+}
+
+export function ReferralItems(props) {
+  return (
+    <>
+      {Object.keys(props.referrals).map((key) => (
+        <ReferralItem id={key} item={props.referrals[key]} />
+      ))}
+    </>
+  );
+}
+
+export const toc = Object.keys(referrals).map((key) => ({
+  value: referrals[key].name,
+  id: key,
+  level: 2,
+}));
 
 A list of referral link of code to support me 🫶🏻
 
-## <Icon icon="logos:dropbox" inline={true} /> Dropbox
-
-- What you get: 500 MB
-- What I get: 1 GB if you install the Dropbox Desktop App
-- How to redeem: [Link](https://www.dropbox.com/referrals/AACp4-9zGJ_dj4AK2PdDjNKt2WKhivTlKDM?src=global9)
-
-## <Icon icon="simple-icons:proton" inline={true} /> Proton
-
-- What you get: 1 month of Proton Mail Plus
-- What I get: \$5 / \$15 credit if you subscribe for 1 month / 12 months
-- How to redeem: [Link](https://pr.tn/ref/3M9CQN84JRPG)
-
-## Privacy.com
-
-- What you get: Nothing 🥲
-- What I get: \$5 after you make your first purchase
-- How to redeem: [Link](https://app.privacy.com/join/Q6XPD)
-
-## <Icon icon="simple-icons:honey" inline={true} /> Honey
-
-- What you get: Likely Nothing 🥲
-- What I get: 500 PayPal Rewards points
-- How to redeem: [Link](https://joinhoney.com/ref/0e65ns6)
-
-## <Icon icon="simple-icons:n26" inline={true} /> N26
-
-- What you get: Nothing 🥲
-- What I get: €20 if you make a purchase >= €20
-- How to redeem: [Link](https://n26.com/r/chiweih7858) or Code
-
-```
-chiweih7858
-```
-
-## MaxRewards
-
-- What you get: 1 month of Gold Subscription
-- What I get: 1 month of Gold Subscription if you connect 1 account
-- How to redeem: [Link](https://maxrewards.app.link/tomyhsieh) or Code
-
-```
-tomyhsieh
-```
-
-## Roame.Travel
-
-- What you get: Nothing 🥲
-- What I get: 1 month of Friends of Roame
-- How to redeem: [Link](https://roame.travel?referral=xBZb7KoluJN1xvUPq0ws9Va9Y9v2)
-
-## <Icon icon="arcticons:airalo" inline={true} /> Airalo
-
-- What you get: US\$3 off for your first purchase
-- What I get: US\$3 credit after you complete a purchase
-- How to redeem: [Link](https://ref.airalo.com/urBC) or Code
-
-```
-TOMY4211
-```
-
-## <Icon icon="simple-icons:railway" inline={true} /> Railway
-
-- What you get: Nothing 🥲
-- What I get: \$5 if you pay your first \$10
-- How to redeem: [Link](https://railway.app?referralCode=tomyhsieh) or Code
-
-```
-tomyhsieh
-```
-
-## <Icon icon="devicon:digitalocean" inline={true} /> DigitalOcean
-
-- What you get: \$200 credit
-- What I get: \$25 if you reach \$25 spending
-- How to redeem: [Link](https://m.do.co/c/a4dc22504068)
-
-## <Icon icon="logos:cloudinary-icon" inline={true} /> Cloudinary
-
-- What you get: Nothing 🥲
-- What I get: 3 credits
-- How to redeem: [Link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/jd4licchz577acnfsmkw?t=default)
-
-## <Icon icon="simple-icons:setapp" inline={true} /> Setapp
-
-- What you get: 1 month of Setapp
-- What I get: 1 month of Setapp if you start your paid subscription
-- How to redeem: [Link](https://go.setapp.com/invite/bkbeikto)
+<ReferralItems referrals={referrals} />

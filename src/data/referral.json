@@ -1,0 +1,139 @@
+{
+  "airalo": {
+    "code": "TOMY4211",
+    "dynamic": false,
+    "for-me": "US$3 credit after you complete a purchase",
+    "for-you": "US$3 off for your first purchase",
+    "icon": "arcticons:airalo",
+    "name": "Airalo",
+    "url": "https://ref.airalo.com/urBC"
+  },
+  "amex-us": {
+    "dynamic": true,
+    "icon": "logos:amex-digital",
+    "name": "American Express 🇺🇸"
+  },
+  "chase-sapphire": {
+    "dynamic": true,
+    "icon": "simple-icons:chase",
+    "name": "Chase Sapphire Credit Card 🇺🇸"
+  },
+  "cloudinary": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "3 credits",
+    "for-you": null,
+    "icon": "logos:cloudinary-icon",
+    "name": "Cloudinary",
+    "url": "https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/jd4licchz577acnfsmkw?t=default"
+  },
+  "digitalocean": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$25 if you reach $25 spending",
+    "for-you": "$200 credit",
+    "icon": "devicon:digitalocean",
+    "name": "DigitalOcean",
+    "url": "https://m.do.co/c/a4dc22504068"
+  },
+  "dropbox": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "1 GB if you install the Dropbox Desktop App",
+    "for-you": "500 MB",
+    "icon": "logos:dropbox",
+    "name": "Dropbox",
+    "url": "https://www.dropbox.com/referrals/AACp4-9zGJ_dj4AK2PdDjNKt2WKhivTlKDM?src=global9"
+  },
+  "honey": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "500 PayPal Rewards points",
+    "for-you": null,
+    "icon": "simple-icons:honey",
+    "name": "Honey",
+    "url": "https://joinhoney.com/ref/0e65ns6"
+  },
+  "lyft": {
+    "dynamic": true,
+    "icon": "simple-icons:lyft",
+    "name": "Lyft"
+  },
+  "maxrewards": {
+    "code": "tomyhsieh",
+    "dynamic": false,
+    "for-me": "1 month of Gold Subscription if you connect 1 account",
+    "for-you": "1 month of Gold Subscription",
+    "icon": null,
+    "name": "MaxRewards",
+    "url": "https://maxrewards.app.link/tomyhsieh"
+  },
+  "n26": {
+    "code": "chiweih7858",
+    "dynamic": false,
+    "for-me": "€20 if you make a purchase >= €20",
+    "for-you": null,
+    "icon": "simple-icons:n26",
+    "name": "N26",
+    "url": "https://n26.com/r/chiweih7858"
+  },
+  "privacy.com": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$5 after you make your first purchase",
+    "for-you": null,
+    "icon": null,
+    "name": "Privacy.com",
+    "url": "https://app.privacy.com/join/Q6XPD"
+  },
+  "proton": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$5 / $15 credit if you subscribe for 1 month / 12 months",
+    "for-you": "1 month of Proton Mail Plus",
+    "icon": "simple-icons:proton",
+    "name": "Proton",
+    "url": "https://pr.tn/ref/3M9CQN84JRPG"
+  },
+  "railway": {
+    "code": "tomyhsieh",
+    "dynamic": false,
+    "for-me": "$5 if you pay your first $10",
+    "for-you": null,
+    "icon": "simple-icons:railway",
+    "name": "Railway",
+    "url": "https://railway.app?referralCode=tomyhsieh"
+  },
+  "revolut": {
+    "dynamic": true,
+    "icon": "simple-icons:revolut",
+    "name": "Revolut"
+  },
+  "roame-travel": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "1 month of Friends of Roame",
+    "for-you": null,
+    "icon": null,
+    "name": "Roame.Travel",
+    "url": "https://roame.travel?referral=xBZb7KoluJN1xvUPq0ws9Va9Y9v2"
+  },
+  "setapp": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "1 month of Setapp if you start your paid subscription",
+    "for-you": "1 month of Setapp",
+    "icon": "simple-icons:setapp",
+    "name": "Setapp",
+    "url": "https://go.setapp.com/invite/bkbeikto"
+  },
+  "uber": {
+    "code": "y2w1uxnhwvep",
+    "dynamic": false,
+    "for-me": "70% off 2 Reserve trips after you complete a trip",
+    "for-you": "70% off 2 Reserve trips",
+    "icon": "simple-icons:uber",
+    "name": "Uber",
+    "url": "https://referrals.uber.com/refer?id=y2w1uxnhwvep"
+  }
+}
