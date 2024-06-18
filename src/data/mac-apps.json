@@ -1080,6 +1080,27 @@
     ]
   },
   {
+    "name": "A Better Finder Rename",
+    "url": "https://www.publicspace.net/ABetterFinderRename/",
+    "category": "File Management",
+    "note": null,
+    "install": [{ "type": "cask", "id": "a-better-finder-rename" }]
+  },
+  {
+    "name": "A Better Finder Attributes",
+    "url": "https://www.publicspace.net/ABetterFinderAttributes/",
+    "category": "File Management",
+    "note": null,
+    "install": [{ "type": "cask", "id": "a-better-finder-attributes" }]
+  },
+  {
+    "name": "pgAdmin",
+    "url": "https://www.pgadmin.org/",
+    "category": "SQL Client",
+    "note": null,
+    "install": [{ "type": "cask", "id": "pgadmin4" }]
+  },
+  {
     "name": "Rocket",
     "url": "https://matthewpalmer.net/rocket/",
     "category": "",
