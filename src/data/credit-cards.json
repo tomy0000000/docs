@@ -1,114 +1,78 @@
 {
   "us-amex-gold": {
-    "name": "American Express® Gold Card",
-    "country": "us",
-    "rewards": {
-      "restaurants-dining": {
-        "multiplier": 4,
-        "unit": "points",
-        "notes": "Worldwide + US Takeout & Delivery"
-      },
-      "groceries-supermarkets": {
-        "multiplier": 4,
-        "unit": "points",
-        "notes": "US Only, up to $25,000/year"
-      },
-      "flights": {
-        "multiplier": 3,
-        "unit": "points",
-        "notes": "Directly with airlines or through Amex Travel"
-      },
-      "others": {
-        "multiplier": 1,
-        "unit": "points"
-      }
-    },
     "benefits": [
       {
-        "title": "$120 Dining Credit",
-        "description": "$10/month dinning credits for Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, Milk Bar, and Shake Shack"
+        "description": "$10/month dinning credits for Grubhub, The Cheesecake Factory, Goldbelly, Wine.com, Milk Bar, and Shake Shack",
+        "title": "$120 Dining Credit"
       },
       {
-        "title": "$120 Uber Cash",
-        "description": "$10/month Uber Cash for U.S. Uber rides/Uber Eats orders"
+        "description": "$10/month Uber Cash for U.S. Uber rides/Uber Eats orders",
+        "title": "$120 Uber Cash"
       },
       {
-        "title": "$100 Hotel Credit",
-        "description": "$100/year for two-night minimum stay at The Hotel Collection"
+        "description": "$100/year for two-night minimum stay at The Hotel Collection",
+        "title": "$100 Hotel Credit"
       },
       {
-        "title": "Amex Offers",
         "description": "Enroll in Amex Offers and get extra rewards",
+        "title": "Amex Offers",
         "url": "https://www.americanexpress.com/en-us/benefits/offers/"
       },
       {
-        "title": "American Express Experiences",
         "description": "Card Member-only events, exclusive access to ticket presales",
+        "title": "American Express Experiences",
         "url": "https://americanexpress.com/entertainment"
       },
       {
-        "title": "American Express Preferred Access",
-        "description": "Access to premium seats for select events"
+        "description": "Access to premium seats for select events",
+        "title": "American Express Preferred Access"
       }
     ],
-    "insurances": {
-      "car-rental": {
-        "description": "Collision Damage Waiver (CDW) or Theft, $50,000 per agreement, secondary coverage",
-        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/car-rental-loss-and-damage-insurance-terms.html"
-      },
-      "baggage-loss": {
-        "description": "$1,250 for carry-on baggage, $500 for checked baggage"
-      },
-      "purchase": {
-        "description": "Reimburses up to $10,000 per purchase for loss within 90 days of purchase",
-        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/purchase-protection-terms.html"
-      },
-      "extended-warranty": {
-        "description": "Extends the original manufacturer’s warranty up to one year",
-        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/extended-warranty-terms.html"
-      }
-    },
-    "services": [
-      {
-        "title": "Global Assist® Hotline",
-        "description": "24/7 emergency assistance when traveling more than 100 miles from home"
-      },
-      {
-        "title": "Send & Split®",
-        "description": "Split the bill with friends and send money with Venmo or PayPal"
-      }
-    ],
+    "country": "us",
     "fees": {
-      "annual": {
-        "amount": 250
-      },
       "additional-card": {
         "amount": 35,
         "notes": "First 5 cards are free"
       },
-      "foreign": {
-        "percent": 0
+      "annual": {
+        "amount": 250
       },
       "cash-advance": {
         "amount": 10,
-        "percent": 5,
-        "notes": "Whichever is greater"
+        "notes": "Whichever is greater",
+        "percent": 5
       },
-      "plan": {
-        "percent": 1.33
+      "foreign": {
+        "percent": 0
       },
       "late-payment": {
         "amount": 40
+      },
+      "plan": {
+        "percent": 1.33
       },
       "returned-payment": {
         "amount": 40
       }
     },
-    "interests": {
-      "purchases": {
-        "apr": [12.74, 20.74],
-        "notes": "Variable"
+    "insurances": {
+      "baggage-loss": {
+        "description": "$1,250 for carry-on baggage, $500 for checked baggage"
       },
+      "car-rental": {
+        "description": "Collision Damage Waiver (CDW) or Theft, $50,000 per agreement, secondary coverage",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/car-rental-loss-and-damage-insurance-terms.html"
+      },
+      "extended-warranty": {
+        "description": "Extends the original manufacturer’s warranty up to one year",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/extended-warranty-terms.html"
+      },
+      "purchase": {
+        "description": "Reimburses up to $10,000 per purchase for loss within 90 days of purchase",
+        "url": "https://www.americanexpress.com/us/credit-cards/features-benefits/policies/purchase-protection-terms.html"
+      }
+    },
+    "interests": {
       "cash-advances": {
         "apr": 21.99,
         "notes": "Variable"
@@ -116,8 +80,13 @@
       "penalty": {
         "apr": 26.74,
         "notes": "Variable, applied if late or returned payment"
+      },
+      "purchases": {
+        "apr": [12.74, 20.74],
+        "notes": "Variable"
       }
     },
+    "name": "American Express® Gold Card",
     "references": [
       {
         "title": "Main Page",
@@ -127,149 +96,82 @@
         "title": "Card Agreements",
         "url": "https://www.americanexpress.com/en-us/company/legal/cardmember-agreements/"
       }
-    ]
-  },
-  "us-chase-sapphire-preferred": {
-    "name": "Chase Sapphire Preferred® Credit Card",
-    "country": "us",
+    ],
     "rewards": {
-      "travels": {
-        "multiplier": 2,
-        "unit": "points",
-        "notes": "5x for Chase Travel, exclude $50 Annual Chase Travel Hotel Credit"
-      },
-      "restaurants-dining": {
+      "flights": {
         "multiplier": 3,
-        "unit": "points",
-        "notes": "Include takeout & delivery"
+        "notes": "Directly with airlines or through Amex Travel",
+        "unit": "points"
       },
       "groceries-supermarkets": {
-        "multiplier": 3,
-        "unit": "points",
-        "notes": "Online only"
-      },
-      "streaming": {
-        "multiplier": 3,
-        "unit": "points",
-        "notes": "Selected services only"
-      },
-      "peloton": {
-        "multiplier": 5,
-        "unit": "points",
-        "notes": "For purchases over $150, through March 31, 2025"
-      },
-      "lyft": {
-        "multiplier": 5,
-        "unit": "points",
-        "notes": "Through March 31, 2025"
+        "multiplier": 4,
+        "notes": "US Only, up to $25,000/year",
+        "unit": "points"
       },
       "others": {
         "multiplier": 1,
         "unit": "points"
-      }
-    },
-    "benefits": [
-      {
-        "title": "DoorDash DashPass Subscription",
-        "description": "Free 1 year $96 subscription"
       },
-      {
-        "title": "Instacart+ Membership",
-        "description": "Free 6 months $60 membership"
-      },
-      {
-        "title": "Instacart Quarterly Credit",
-        "description": "Instacart+ members get $15 statement credits each quarter through July 2024"
-      },
-      {
-        "title": "Additional Redeemed Value",
-        "description": "Get 25% more value when redeemed on Chase Travel"
-      },
-      {
-        "title": "Anniversary Points Boost",
-        "description": "Reward 10% more points earned in previous year"
-      }
-    ],
-    "insurances": {
-      "car-rental": {
-        "description": "Collision Damage Waiver (CDW), primary coverage"
-      },
-      "travel-delay": {
-        "description": "More than 12 hours, unreimbursed expenses only, $500 per ticket"
-      },
-      "baggage-delay": {
-        "description": "More than 6 hours, $100 per delay day, 5 days max"
-      },
-      "purchase": {
-        "description": "Reimburses up to $500 per claim for loss within 120 days of purchase"
-      },
-      "extended-warranty": {
-        "description": "Extends the original manufacturer’s warranty up to one year"
+      "restaurants-dining": {
+        "multiplier": 4,
+        "notes": "Worldwide + US Takeout & Delivery",
+        "unit": "points"
       }
     },
     "services": [
       {
-        "title": "Travel and Emergency Assistance",
-        "description": "Benefit Administrator for legal and medical referrals or other travel and emergency assistance",
-        "tel": [
-          {
-            "title": "US",
-            "number": "1-888-320-9961"
-          },
-          {
-            "title": "International",
-            "number": "1-804-673-1691"
-          }
-        ]
+        "description": "24/7 emergency assistance when traveling more than 100 miles from home",
+        "title": "Global Assist® Hotline"
       },
       {
-        "title": "Visa Signature® Concierge Service",
-        "description": "Dinner reservations, sports/entertainment events, sending gift 24 hours a day",
-        "tel": [
-          {
-            "title": "US",
-            "number": "1-800-953-7392"
-          },
-          {
-            "title": "International",
-            "number": "1-630-350-4551"
-          }
-        ]
+        "description": "Split the bill with friends and send money with Venmo or PayPal",
+        "title": "Send & Split®"
+      }
+    ]
+  },
+  "us-chase-sapphire-preferred": {
+    "benefits": [
+      {
+        "description": "Free 1 year $96 subscription",
+        "title": "DoorDash DashPass Subscription"
       },
       {
-        "title": "Customer Service",
-        "description": "General benefit consultation and Travel assistance",
-        "tel": [
-          {
-            "title": "US",
-            "number": "1-800-493-3319"
-          },
-          {
-            "title": "International",
-            "number": "1-614-776-7050"
-          }
-        ]
+        "description": "Free 6 months $60 membership",
+        "title": "Instacart+ Membership"
+      },
+      {
+        "description": "Instacart+ members get $15 statement credits each quarter through July 2024",
+        "title": "Instacart Quarterly Credit"
+      },
+      {
+        "description": "Get 25% more value when redeemed on Chase Travel",
+        "title": "Additional Redeemed Value"
+      },
+      {
+        "description": "Reward 10% more points earned in previous year",
+        "title": "Anniversary Points Boost"
       }
     ],
+    "country": "us",
     "fees": {
-      "annual": {
-        "amount": 95
-      },
       "additional-card": {
         "amount": 0
       },
-      "foreign": {
-        "percent": 0
-      },
-      "cash-advance": {
-        "amount": 10,
-        "percent": 5,
-        "notes": "Whichever is greater"
+      "annual": {
+        "amount": 95
       },
       "balance-transfer": {
         "amount": 5,
-        "percent": 5,
-        "notes": "Whichever is greater"
+        "notes": "Whichever is greater",
+        "percent": 5
+      },
+      "cash-advance": {
+        "amount": 10,
+        "notes": "Whichever is greater",
+        "percent": 5
+      },
+      "foreign": {
+        "percent": 0
       },
       "late-payment": {
         "amount": 40
@@ -278,12 +180,25 @@
         "amount": 40
       }
     },
-    "interests": {
-      "purchases": {
-        "apr": [12.99, 19.99],
-        "notes": "Variable"
+    "insurances": {
+      "baggage-delay": {
+        "description": "More than 6 hours, $100 per delay day, 5 days max"
       },
-      "my-chase-loan": {
+      "car-rental": {
+        "description": "Collision Damage Waiver (CDW), primary coverage"
+      },
+      "extended-warranty": {
+        "description": "Extends the original manufacturer’s warranty up to one year"
+      },
+      "purchase": {
+        "description": "Reimburses up to $500 per claim for loss within 120 days of purchase"
+      },
+      "travel-delay": {
+        "description": "More than 12 hours, unreimbursed expenses only, $500 per ticket"
+      }
+    },
+    "interests": {
+      "balance-transfer": {
         "apr": [12.99, 19.99],
         "notes": "Variable"
       },
@@ -291,15 +206,20 @@
         "apr": 21.74,
         "notes": "Variable"
       },
-      "balance-transfer": {
+      "my-chase-loan": {
         "apr": [12.99, 19.99],
         "notes": "Variable"
       },
       "penalty": {
         "apr": 26.99,
         "notes": "Variable, applied if late or returned payment"
+      },
+      "purchases": {
+        "apr": [12.99, 19.99],
+        "notes": "Variable"
       }
     },
+    "name": "Chase Sapphire Preferred® Credit Card",
     "references": [
       {
         "title": "Main Page",
@@ -316,6 +236,86 @@
       {
         "title": "Pricing and Terms",
         "url": "https://sites.chase.com/services/creatives/pricingandterms.html/content/dam/pricingandterms/LGC59102.html"
+      }
+    ],
+    "rewards": {
+      "groceries-supermarkets": {
+        "multiplier": 3,
+        "notes": "Online only",
+        "unit": "points"
+      },
+      "lyft": {
+        "multiplier": 5,
+        "notes": "Through March 31, 2025",
+        "unit": "points"
+      },
+      "others": {
+        "multiplier": 1,
+        "unit": "points"
+      },
+      "peloton": {
+        "multiplier": 5,
+        "notes": "For purchases over $150, through March 31, 2025",
+        "unit": "points"
+      },
+      "restaurants-dining": {
+        "multiplier": 3,
+        "notes": "Include takeout & delivery",
+        "unit": "points"
+      },
+      "streaming": {
+        "multiplier": 3,
+        "notes": "Selected services only",
+        "unit": "points"
+      },
+      "travels": {
+        "multiplier": 2,
+        "notes": "5x for Chase Travel, exclude $50 Annual Chase Travel Hotel Credit",
+        "unit": "points"
+      }
+    },
+    "services": [
+      {
+        "description": "Benefit Administrator for legal and medical referrals or other travel and emergency assistance",
+        "tel": [
+          {
+            "number": "1-888-320-9961",
+            "title": "US"
+          },
+          {
+            "number": "1-804-673-1691",
+            "title": "International"
+          }
+        ],
+        "title": "Travel and Emergency Assistance"
+      },
+      {
+        "description": "Dinner reservations, sports/entertainment events, sending gift 24 hours a day",
+        "tel": [
+          {
+            "number": "1-800-953-7392",
+            "title": "US"
+          },
+          {
+            "number": "1-630-350-4551",
+            "title": "International"
+          }
+        ],
+        "title": "Visa Signature® Concierge Service"
+      },
+      {
+        "description": "General benefit consultation and Travel assistance",
+        "tel": [
+          {
+            "number": "1-800-493-3319",
+            "title": "US"
+          },
+          {
+            "number": "1-614-776-7050",
+            "title": "International"
+          }
+        ],
+        "title": "Customer Service"
       }
     ]
   }

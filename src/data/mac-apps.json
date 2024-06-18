@@ -1,1516 +1,2523 @@
 [
   {
+    "category": "Safari Extension",
+    "install": [
+      {
+        "id": "1365531024",
+        "type": "mas"
+      }
+    ],
     "name": "1Blocker",
-    "url": "https://1blocker.com/",
-    "category": "Safari Extension",
     "note": null,
-    "install": [{ "type": "mas", "id": "1365531024" }]
+    "url": "https://1blocker.com/"
   },
   {
+    "category": "Password Manager",
+    "install": [
+      {
+        "id": "1password",
+        "type": "cask"
+      }
+    ],
     "name": "1Password",
-    "url": "https://1password.com/",
-    "category": "Password Manager",
     "note": null,
-    "install": [{ "type": "cask", "id": "1password" }]
+    "url": "https://1password.com/"
   },
   {
-    "name": "1Password for Safari",
-    "url": "https://1password.com/",
     "category": "Safari Extension",
+    "install": [
+      {
+        "id": "1569813296",
+        "type": "mas"
+      }
+    ],
+    "name": "1Password for Safari",
     "note": null,
-    "install": [{ "type": "mas", "id": "1569813296" }]
+    "url": "https://1password.com/"
   },
   {
-    "name": "Aerial Screensaver",
-    "url": "https://aerialscreensaver.github.io/",
     "category": "Screensaver",
+    "install": [
+      {
+        "id": "aerial",
+        "type": "cask"
+      }
+    ],
+    "name": "Aerial Screensaver",
     "note": null,
-    "install": [{ "type": "cask", "id": "aerial" }]
+    "url": "https://aerialscreensaver.github.io/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "airtable",
+        "type": "cask"
+      }
+    ],
     "name": "Airtable",
-    "url": "https://airtable.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "airtable" }]
+    "url": "https://airtable.com/"
   },
   {
-    "name": "Alfred",
-    "url": "https://www.alfredapp.com/",
     "category": "Launcher",
+    "install": [
+      {
+        "id": "alfred",
+        "type": "cask"
+      }
+    ],
+    "name": "Alfred",
     "note": null,
-    "install": [{ "type": "cask", "id": "alfred" }]
+    "url": "https://www.alfredapp.com/"
   },
   {
-    "name": "AppCleaner",
-    "url": "https://freemacsoft.net/appcleaner/",
     "category": "Uninstaller",
+    "install": [
+      {
+        "id": "appcleaner",
+        "type": "cask"
+      }
+    ],
+    "name": "AppCleaner",
     "note": null,
-    "install": [{ "type": "cask", "id": "appcleaner" }]
+    "url": "https://freemacsoft.net/appcleaner/"
   },
   {
-    "name": "AppFlowy",
-    "url": "https://www.appflowy.io/",
     "category": "Productivity",
-    "note": null,
     "github": "AppFlowy-IO/AppFlowy",
-    "install": [{ "type": "cask", "id": "appflowy" }]
+    "install": [
+      {
+        "id": "appflowy",
+        "type": "cask"
+      }
+    ],
+    "name": "AppFlowy",
+    "note": null,
+    "url": "https://www.appflowy.io/"
   },
   {
-    "name": "Aquarelo",
-    "url": "https://www.cusaro.it/aquarelo",
     "category": "Color Picker",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "aquarelo" },
-      { "type": "mas", "id": "1263012549" }
-    ]
+      {
+        "id": "aquarelo",
+        "type": "setapp"
+      },
+      {
+        "id": "1263012549",
+        "type": "mas"
+      }
+    ],
+    "name": "Aquarelo",
+    "note": null,
+    "url": "https://www.cusaro.it/aquarelo"
   },
   {
-    "name": "Archiver",
-    "url": "https://archiverapp.com/",
     "category": "Unarchiver",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "archiver" },
-      { "type": "setapp", "id": "archiver" }
-    ]
+      {
+        "id": "archiver",
+        "type": "cask"
+      },
+      {
+        "id": "archiver",
+        "type": "setapp"
+      }
+    ],
+    "name": "Archiver",
+    "note": null,
+    "url": "https://archiverapp.com/"
   },
   {
-    "name": "Background Music",
-    "url": "https://github.com/kyleneideck/BackgroundMusic",
     "category": "",
-    "note": null,
     "github": "kyleneideck/BackgroundMusic",
-    "install": [{ "type": "cask", "id": "background-music" }]
+    "install": [
+      {
+        "id": "background-music",
+        "type": "cask"
+      }
+    ],
+    "name": "Background Music",
+    "note": null,
+    "url": "https://github.com/kyleneideck/BackgroundMusic"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "backuploupe",
+        "type": "cask"
+      }
+    ],
     "name": "BackupLoupe",
-    "url": "https://www.soma-zone.com/BackupLoupe/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "backuploupe" }]
+    "url": "https://www.soma-zone.com/BackupLoupe/"
   },
   {
-    "name": "Bartender",
-    "url": "https://www.macbartender.com/",
     "category": "Menu Bar",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "bartender" },
-      { "type": "setapp", "id": "bartender" }
-    ]
+      {
+        "id": "bartender",
+        "type": "cask"
+      },
+      {
+        "id": "bartender",
+        "type": "setapp"
+      }
+    ],
+    "name": "Bartender",
+    "note": null,
+    "url": "https://www.macbartender.com/"
   },
   {
-    "name": "Beeper",
-    "url": "https://www.beeper.com/",
     "category": "Social",
+    "install": [
+      {
+        "id": "beeper",
+        "type": "cask"
+      }
+    ],
+    "name": "Beeper",
     "note": null,
-    "install": [{ "type": "cask", "id": "beeper" }]
+    "url": "https://www.beeper.com/"
   },
   {
-    "name": "BetterTouchTool",
-    "url": "https://folivora.ai/",
     "category": "Gestures",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "bettertouchtool" },
-      { "type": "setapp", "id": "bettertouchtool" }
-    ]
+      {
+        "id": "bettertouchtool",
+        "type": "cask"
+      },
+      {
+        "id": "bettertouchtool",
+        "type": "setapp"
+      }
+    ],
+    "name": "BetterTouchTool",
+    "note": null,
+    "url": "https://folivora.ai/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "binance",
+        "type": "cask"
+      }
+    ],
     "name": "Binance",
-    "url": "https://binance.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "binance" }]
+    "url": "https://binance.com/"
   },
   {
+    "category": "Password Manager",
+    "install": [
+      {
+        "id": "bitwarden",
+        "type": "cask"
+      }
+    ],
     "name": "Bitwarden",
-    "url": "https://bitwarden.com/",
-    "category": "Password Manager",
     "note": null,
-    "install": [{ "type": "cask", "id": "bitwarden" }]
+    "url": "https://bitwarden.com/"
   },
   {
-    "name": "Brave",
-    "url": "https://brave.com/",
     "category": "Browser",
-    "note": null,
     "github": "brave/brave-browser",
-    "install": [{ "type": "cask", "id": "brave-browser" }]
+    "install": [
+      {
+        "id": "brave-browser",
+        "type": "cask"
+      }
+    ],
+    "name": "Brave",
+    "note": null,
+    "url": "https://brave.com/"
   },
   {
-    "name": "Buttercup",
-    "url": "https://buttercup.pw/",
     "category": "Password Manager",
-    "note": null,
     "github": "buttercup/buttercup-desktop",
-    "install": [{ "type": "cask", "id": "buttercup" }]
+    "install": [
+      {
+        "id": "buttercup",
+        "type": "cask"
+      }
+    ],
+    "name": "Buttercup",
+    "note": null,
+    "url": "https://buttercup.pw/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "carbon-copy-cloner",
+        "type": "cask"
+      }
+    ],
     "name": "Carbon Copy Cloner",
-    "url": "https://bombich.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "carbon-copy-cloner" }]
+    "url": "https://bombich.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "cardhop",
+        "type": "cask"
+      }
+    ],
     "name": "Cardhop",
-    "url": "https://flexibits.com/cardhop",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "cardhop" }]
+    "url": "https://flexibits.com/cardhop"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "cleanmymac",
+        "type": "setapp"
+      },
+      {
+        "id": "cleanmymac",
+        "type": "cask"
+      }
+    ],
     "name": "CleanMyMac X",
-    "url": "https://macpaw.com/cleanmymac",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "cleanmymac" },
-      { "type": "cask", "id": "cleanmymac" }
-    ]
+    "url": "https://macpaw.com/cleanmymac"
   },
   {
-    "name": "CleanShot X",
-    "url": "https://cleanshot.com/",
     "category": "Screen Capture",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "cleanshot" },
-      { "type": "cask", "id": "cleanshot" }
-    ]
+      {
+        "id": "cleanshot",
+        "type": "setapp"
+      },
+      {
+        "id": "cleanshot",
+        "type": "cask"
+      }
+    ],
+    "name": "CleanShot X",
+    "note": null,
+    "url": "https://cleanshot.com/"
   },
   {
-    "name": "Clobbr",
-    "url": "https://clobbr.app/",
     "category": "Dev Tools",
-    "note": null,
     "github": "parsecph/clobbr",
     "install": [
-      { "type": "setapp", "id": "clobbr" },
-      { "type": "mas", "id": "id1629096010" }
-    ]
+      {
+        "id": "clobbr",
+        "type": "setapp"
+      },
+      {
+        "id": "id1629096010",
+        "type": "mas"
+      }
+    ],
+    "name": "Clobbr",
+    "note": null,
+    "url": "https://clobbr.app/"
   },
   {
-    "name": "Clop",
-    "url": "https://lowtechguys.com/clop",
     "category": "",
-    "note": null,
     "github": "FuzzyIdeas/Clop",
     "install": [
-      { "type": "setapp", "id": "clop" },
-      { "type": "cask", "id": "clop" }
-    ]
+      {
+        "id": "clop",
+        "type": "setapp"
+      },
+      {
+        "id": "clop",
+        "type": "cask"
+      }
+    ],
+    "name": "Clop",
+    "note": null,
+    "url": "https://lowtechguys.com/clop"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "cloudmounter",
+        "type": "setapp"
+      },
+      {
+        "id": "cloudmounter",
+        "type": "cask"
+      },
+      {
+        "id": "1130254674",
+        "type": "mas"
+      }
+    ],
     "name": "CloudMounter",
-    "url": "https://www.electronic.us/products/cloudmounter/mac/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "cloudmounter" },
-      { "type": "cask", "id": "cloudmounter" },
-      { "type": "mas", "id": "1130254674" }
-    ]
+    "url": "https://www.electronic.us/products/cloudmounter/mac/"
   },
   {
-    "name": "ColorSlurp",
-    "url": "https://colorslurp.com/",
     "category": "Color Picker",
+    "install": [
+      {
+        "id": "1287239339",
+        "type": "mas"
+      }
+    ],
+    "name": "ColorSlurp",
     "note": null,
-    "install": [{ "type": "mas", "id": "1287239339" }]
+    "url": "https://colorslurp.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "craft",
+        "type": "cask"
+      },
+      {
+        "id": "1487937127",
+        "type": "mas"
+      }
+    ],
     "name": "Craft",
-    "url": "https://www.craft.do/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "craft" },
-      { "type": "mas", "id": "1487937127" }
-    ]
+    "url": "https://www.craft.do/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "dash",
+        "type": "cask"
+      },
+      {
+        "id": "dash",
+        "type": "setapp"
+      }
+    ],
     "name": "Dash",
-    "url": "https://kapeli.com/dash",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "dash" },
-      { "type": "setapp", "id": "dash" }
-    ]
+    "url": "https://kapeli.com/dash"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "dato",
+        "type": "setapp"
+      },
+      {
+        "id": "1470584107",
+        "type": "mas"
+      }
+    ],
     "name": "Dato",
-    "url": "https://sindresorhus.com/dato",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "dato" },
-      { "type": "mas", "id": "1470584107" }
-    ]
+    "url": "https://sindresorhus.com/dato"
   },
   {
-    "name": "DB Browser for SQLite",
-    "url": "https://sqlitebrowser.org/",
     "category": "SQL Client",
-    "note": null,
     "github": "sqlitebrowser/sqlitebrowser",
-    "install": [{ "type": "cask", "id": "db-browser-for-sqlite" }]
+    "install": [
+      {
+        "id": "db-browser-for-sqlite",
+        "type": "cask"
+      }
+    ],
+    "name": "DB Browser for SQLite",
+    "note": null,
+    "url": "https://sqlitebrowser.org/"
   },
   {
-    "name": "DevUtils",
-    "url": "https://devutils.com/",
     "category": "Dev Tools",
-    "note": null,
     "github": "DevUtilsApp/DevUtils-app",
     "install": [
-      { "type": "setapp", "id": "devutils.app" },
-      { "type": "cask", "id": "devutils" },
-      { "type": "mas", "id": "1533756032" }
-    ]
+      {
+        "id": "devutils.app",
+        "type": "setapp"
+      },
+      {
+        "id": "devutils",
+        "type": "cask"
+      },
+      {
+        "id": "1533756032",
+        "type": "mas"
+      }
+    ],
+    "name": "DevUtils",
+    "note": null,
+    "url": "https://devutils.com/"
   },
   {
-    "name": "Discord",
-    "url": "https://discord.com/",
     "category": "Social",
+    "install": [
+      {
+        "id": "discord",
+        "type": "cask"
+      }
+    ],
+    "name": "Discord",
     "note": null,
-    "install": [{ "type": "cask", "id": "discord" }]
+    "url": "https://discord.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "disk-drill",
+        "type": "setapp"
+      },
+      {
+        "id": "disk-drill",
+        "type": "cask"
+      }
+    ],
     "name": "Disk Drill",
-    "url": "https://www.cleverfiles.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "disk-drill" },
-      { "type": "cask", "id": "disk-drill" }
-    ]
+    "url": "https://www.cleverfiles.com/"
   },
   {
+    "category": "Utilities",
+    "install": [
+      {
+        "id": "displaybuddy",
+        "type": "setapp"
+      }
+    ],
     "name": "DisplayBuddy",
-    "url": "https://displaybuddy.app/",
-    "category": "Utilities",
     "note": null,
-    "install": [{ "type": "setapp", "id": "displaybuddy" }]
+    "url": "https://displaybuddy.app/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "docker",
+        "type": "cask"
+      }
+    ],
     "name": "Docker Desktop",
-    "url": "https://www.docker.com/products/docker-desktop",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "docker" }]
+    "url": "https://www.docker.com/products/docker-desktop"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "doppler",
+        "type": "cask"
+      }
+    ],
     "name": "Doppler",
-    "url": "https://brushedtype.co/doppler/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "doppler" }]
+    "url": "https://brushedtype.co/doppler/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "downie",
+        "type": "cask"
+      },
+      {
+        "id": "downie",
+        "type": "setapp"
+      }
+    ],
     "name": "Downie",
-    "url": "https://software.charliemonroe.net/downie.php",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "downie" },
-      { "type": "setapp", "id": "downie" }
-    ]
+    "url": "https://software.charliemonroe.net/downie.php"
   },
   {
-    "name": "Dropbox",
-    "url": "https://www.dropbox.com/",
     "category": "Cloud Storage",
+    "install": [
+      {
+        "id": "dropbox",
+        "type": "cask"
+      }
+    ],
+    "name": "Dropbox",
     "note": null,
-    "install": [{ "type": "cask", "id": "dropbox" }]
+    "url": "https://www.dropbox.com/"
   },
   {
+    "category": "Graphics",
+    "install": [
+      {
+        "id": "ogdesign-eagle",
+        "type": "cask"
+      }
+    ],
     "name": "Eagle",
-    "url": "https://eagle.cool/",
-    "category": "Graphics",
     "note": null,
-    "install": [{ "type": "cask", "id": "ogdesign-eagle" }]
+    "url": "https://eagle.cool/"
   },
   {
-    "name": "Elmedia Player",
-    "url": "https://www.electronic.us/products/elmedia/",
     "category": "Media Player",
+    "install": [
+      {
+        "id": "elmedia-player",
+        "type": "setapp"
+      },
+      {
+        "id": "elmedia-player",
+        "type": "cask"
+      }
+    ],
+    "name": "Elmedia Player",
     "note": "Many versions available, see [this](https://help.electronic.us/support/solutions/articles/44002278728-what-s-the-difference-between-site-and-mas-elmedia-player-versions-)",
-    "install": [
-      { "type": "setapp", "id": "elmedia-player" },
-      { "type": "cask", "id": "elmedia-player" }
-    ]
+    "url": "https://www.electronic.us/products/elmedia/"
   },
   {
-    "name": "Etcher",
-    "url": "https://etcher.balena.io/",
     "category": "Utilities",
-    "note": null,
     "github": "balena-io/etcher",
-    "install": [{ "type": "cask", "id": "balenaetcher" }]
+    "install": [
+      {
+        "id": "balenaetcher",
+        "type": "cask"
+      }
+    ],
+    "name": "Etcher",
+    "note": null,
+    "url": "https://etcher.balena.io/"
   },
   {
-    "name": "Expressions",
-    "url": "https://www.apptorium.com/expressions",
     "category": "Dev Tools",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "elmedia-player" },
-      { "type": "mas", "id": "913158085" }
-    ]
+      {
+        "id": "elmedia-player",
+        "type": "setapp"
+      },
+      {
+        "id": "913158085",
+        "type": "mas"
+      }
+    ],
+    "name": "Expressions",
+    "note": null,
+    "url": "https://www.apptorium.com/expressions"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "fantastical",
+        "type": "cask"
+      }
+    ],
     "name": "Fantastical",
-    "url": "https://flexibits.com/fantastical",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "fantastical" }]
+    "url": "https://flexibits.com/fantastical"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "figma",
+        "type": "cask"
+      }
+    ],
     "name": "Figma",
-    "url": "https://www.figma.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "figma" }]
+    "url": "https://www.figma.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "find-any-file",
+        "type": "cask"
+      }
+    ],
     "name": "Find Any File",
-    "url": "https://apps.tempel.org/FindAnyFile/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "find-any-file" }]
+    "url": "https://apps.tempel.org/FindAnyFile/"
   },
   {
-    "name": "Firefox",
-    "url": "https://www.mozilla.org/firefox/",
     "category": "Browser",
+    "install": [
+      {
+        "id": "firefox",
+        "type": "cask"
+      }
+    ],
+    "name": "Firefox",
     "note": null,
-    "install": [{ "type": "cask", "id": "firefox" }]
+    "url": "https://www.mozilla.org/firefox/"
   },
   {
-    "name": "Folx",
-    "url": "https://mac.eltima.com/download-manager.html",
     "category": "File Transfer",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "folx" },
-      { "type": "setapp", "id": "folx" }
-    ]
+      {
+        "id": "folx",
+        "type": "cask"
+      },
+      {
+        "id": "folx",
+        "type": "setapp"
+      }
+    ],
+    "name": "Folx",
+    "note": null,
+    "url": "https://mac.eltima.com/download-manager.html"
   },
   {
-    "name": "Fork",
-    "url": "https://fork.dev/",
     "category": "Git Client",
+    "install": [
+      {
+        "id": "fork",
+        "type": "cask"
+      }
+    ],
+    "name": "Fork",
     "note": null,
-    "install": [{ "type": "cask", "id": "fork" }]
+    "url": "https://fork.dev/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "forklift",
+        "type": "setapp"
+      },
+      {
+        "id": "forklift",
+        "type": "cask"
+      }
+    ],
     "name": "ForkLift",
-    "url": "https://binarynights.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "forklift" },
-      { "type": "cask", "id": "forklift" }
-    ]
+    "url": "https://binarynights.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "gpg-suite-no-mail",
+        "type": "cask"
+      }
+    ],
     "name": "GPG Suite",
-    "url": "https://gpgtools.org/",
-    "category": "",
     "note": "Homebrew cask installs without GPG Mail",
-    "install": [{ "type": "cask", "id": "gpg-suite-no-mail" }]
+    "url": "https://gpgtools.org/"
   },
   {
-    "name": "Gifox",
-    "url": "https://gifox.app/",
     "category": "",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "gifox" },
-      { "type": "cask", "id": "gifox" },
-      { "type": "mas", "id": "1461845568" }
-    ]
+      {
+        "id": "gifox",
+        "type": "setapp"
+      },
+      {
+        "id": "gifox",
+        "type": "cask"
+      },
+      {
+        "id": "1461845568",
+        "type": "mas"
+      }
+    ],
+    "name": "Gifox",
+    "note": null,
+    "url": "https://gifox.app/"
   },
   {
-    "name": "Gifski",
-    "url": "https://gif.ski/",
     "category": "Graphics",
-    "note": null,
     "github": "sindresorhus/Gifski",
     "install": [
-      { "type": "cask", "id": "gifski" },
-      { "type": "mas", "id": "1351639930" }
-    ]
+      {
+        "id": "gifski",
+        "type": "cask"
+      },
+      {
+        "id": "1351639930",
+        "type": "mas"
+      }
+    ],
+    "name": "Gifski",
+    "note": null,
+    "url": "https://gif.ski/"
   },
   {
-    "name": "GitButler",
-    "url": "https://gitbutler.com/",
     "category": "Git Client",
-    "note": null,
     "github": "gitbutlerapp/gitbutler",
-    "install": [{ "type": "cask", "id": "gitbutler" }]
-  },
-  {
-    "name": "GitHub Desktop",
-    "url": "https://desktop.github.com/",
-    "category": "Git Client",
-    "note": null,
-    "github": "desktop/desktop",
-    "install": [{ "type": "cask", "id": "github" }]
-  },
-  {
-    "name": "Goldie App",
-    "url": "https://amicoapps.com/app/goldie/",
-    "category": "",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "goldie-app" },
-      { "type": "mas", "id": "1375037046" }
-    ]
+      {
+        "id": "gitbutler",
+        "type": "cask"
+      }
+    ],
+    "name": "GitButler",
+    "note": null,
+    "url": "https://gitbutler.com/"
   },
   {
-    "name": "Google Chrome",
-    "url": "https://www.google.com/chrome/",
+    "category": "Git Client",
+    "github": "desktop/desktop",
+    "install": [
+      {
+        "id": "github",
+        "type": "cask"
+      }
+    ],
+    "name": "GitHub Desktop",
+    "note": null,
+    "url": "https://desktop.github.com/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "goldie-app",
+        "type": "setapp"
+      },
+      {
+        "id": "1375037046",
+        "type": "mas"
+      }
+    ],
+    "name": "Goldie App",
+    "note": null,
+    "url": "https://amicoapps.com/app/goldie/"
+  },
+  {
     "category": "Browser",
+    "install": [
+      {
+        "id": "google-chrome",
+        "type": "cask"
+      }
+    ],
+    "name": "Google Chrome",
     "note": null,
-    "install": [{ "type": "cask", "id": "google-chrome" }]
+    "url": "https://www.google.com/chrome/"
   },
   {
-    "name": "Google Drive",
-    "url": "https://www.google.com/drive/",
     "category": "Cloud Storage",
+    "install": [
+      {
+        "id": "google-drive",
+        "type": "cask"
+      }
+    ],
+    "name": "Google Drive",
     "note": null,
-    "install": [{ "type": "cask", "id": "google-drive" }]
+    "url": "https://www.google.com/drive/"
   },
   {
-    "name": "Google Trends Screensaver",
-    "url": "https://trends.google.com/trends/hottrends/visualize",
     "category": "Screensaver",
+    "install": [
+      {
+        "id": "google-trends",
+        "type": "cask"
+      }
+    ],
+    "name": "Google Trends Screensaver",
     "note": null,
-    "install": [{ "type": "cask", "id": "google-trends" }]
+    "url": "https://trends.google.com/trends/hottrends/visualize"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "graphiql",
+        "type": "cask"
+      }
+    ],
     "name": "GraphiQL App",
-    "url": "https://github.com/skevy/graphiql-app",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "graphiql" }]
+    "url": "https://github.com/skevy/graphiql-app"
   },
   {
-    "name": "Hammerspoon",
-    "url": "https://www.hammerspoon.org/",
     "category": "",
-    "note": null,
     "github": "Hammerspoon/hammerspoon",
-    "install": [{ "type": "cask", "id": "hammerspoon" }]
+    "install": [
+      {
+        "id": "hammerspoon",
+        "type": "cask"
+      }
+    ],
+    "name": "Hammerspoon",
+    "note": null,
+    "url": "https://www.hammerspoon.org/"
   },
   {
-    "name": "HandBrake",
-    "url": "https://handbrake.fr/",
     "category": "",
-    "note": null,
     "github": "HandBrake/HandBrake",
-    "install": [{ "type": "cask", "id": "handbrake" }]
+    "install": [
+      {
+        "id": "handbrake",
+        "type": "cask"
+      }
+    ],
+    "name": "HandBrake",
+    "note": null,
+    "url": "https://handbrake.fr/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "hazel",
+        "type": "cask"
+      }
+    ],
     "name": "Hazel",
-    "url": "https://www.noodlesoft.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "hazel" }]
+    "url": "https://www.noodlesoft.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "hex-fiend",
+        "type": "cask"
+      }
+    ],
     "name": "Hex Fiend",
-    "url": "https://ridiculousfish.com/hexfiend/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "hex-fiend" }]
+    "url": "https://ridiculousfish.com/hexfiend/"
   },
   {
-    "name": "Hookshot",
-    "url": "https://hookshot.app/",
     "category": "Window Manager",
+    "install": [
+      {
+        "id": "hookshot",
+        "type": "cask"
+      }
+    ],
+    "name": "Hookshot",
     "note": null,
-    "install": [{ "type": "cask", "id": "hookshot" }]
+    "url": "https://hookshot.app/"
   },
   {
-    "name": "Hidden Bar",
-    "url": "https://github.com/dwarvesf/hidden",
     "category": "Menu Bar",
-    "note": null,
     "github": "dwarvesf/hidden",
     "install": [
-      { "type": "cask", "id": "hiddenbar" },
-      { "type": "mas", "id": "1452453066" }
-    ]
+      {
+        "id": "hiddenbar",
+        "type": "cask"
+      },
+      {
+        "id": "1452453066",
+        "type": "mas"
+      }
+    ],
+    "name": "Hidden Bar",
+    "note": null,
+    "url": "https://github.com/dwarvesf/hidden"
   },
   {
-    "name": "Hyper",
-    "url": "https://hyper.is/",
     "category": "Terminal",
+    "install": [
+      {
+        "id": "hyper",
+        "type": "cask"
+      }
+    ],
+    "name": "Hyper",
     "note": null,
-    "install": [{ "type": "cask", "id": "hyper" }]
+    "url": "https://hyper.is/"
   },
   {
-    "name": "IINA",
-    "url": "https://iina.io/",
     "category": "Media Player",
-    "note": null,
     "github": "iina/iina",
-    "install": [{ "type": "cask", "id": "iina" }]
+    "install": [
+      {
+        "id": "iina",
+        "type": "cask"
+      }
+    ],
+    "name": "IINA",
+    "note": null,
+    "url": "https://iina.io/"
   },
   {
-    "name": "Ice",
-    "url": "https://icemenubar.app/",
     "category": "Menu Bar",
-    "note": null,
     "github": "jordanbaird/Ice",
-    "install": [{ "type": "cask", "id": "jordanbaird-ice" }]
+    "install": [
+      {
+        "id": "jordanbaird-ice",
+        "type": "cask"
+      }
+    ],
+    "name": "Ice",
+    "note": null,
+    "url": "https://icemenubar.app/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "iconjar",
+        "type": "setapp"
+      },
+      {
+        "id": "iconjar",
+        "type": "cask"
+      }
+    ],
     "name": "IconJar",
-    "url": "https://geticonjar.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "iconjar" },
-      { "type": "cask", "id": "iconjar" }
-    ]
+    "url": "https://geticonjar.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "image2icon",
+        "type": "setapp"
+      },
+      {
+        "id": "992115977",
+        "type": "mas"
+      }
+    ],
     "name": "Image2icon",
-    "url": "https://img2icnsapp.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "image2icon" },
-      { "type": "mas", "id": "992115977" }
-    ]
+    "url": "https://img2icnsapp.com/"
   },
   {
-    "name": "Itsycal",
-    "url": "https://www.mowglii.com/itsycal/",
     "category": "Toolbar",
+    "install": [
+      {
+        "id": "itsycal",
+        "type": "cask"
+      }
+    ],
+    "name": "Itsycal",
     "note": null,
-    "install": [{ "type": "cask", "id": "itsycal" }]
+    "url": "https://www.mowglii.com/itsycal/"
   },
   {
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "jupyter-notebook-viewer",
+        "type": "cask"
+      }
+    ],
     "name": "Jupyter Notebook Viewer",
-    "url": "https://github.com/tuxu/nbviewer-app",
-    "category": "Dev Tools",
     "note": null,
-    "install": [{ "type": "cask", "id": "jupyter-notebook-viewer" }]
+    "url": "https://github.com/tuxu/nbviewer-app"
   },
   {
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "kaleidoscope",
+        "type": "cask"
+      }
+    ],
     "name": "Kaleidoscope",
-    "url": "https://kaleidoscope.app/",
-    "category": "Dev Tools",
     "note": null,
-    "install": [{ "type": "cask", "id": "kaleidoscope" }]
+    "url": "https://kaleidoscope.app/"
   },
   {
+    "category": "Utilities",
+    "install": [
+      {
+        "id": "karabiner-elements",
+        "type": "cask"
+      }
+    ],
     "name": "Karabiner Elements",
-    "url": "https://karabiner-elements.pqrs.org/",
-    "category": "Utilities",
     "note": null,
-    "install": [{ "type": "cask", "id": "karabiner-elements" }]
+    "url": "https://karabiner-elements.pqrs.org/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "keybase",
+        "type": "cask"
+      }
+    ],
     "name": "Keybase",
-    "url": "https://keybase.io/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "keybase" }]
+    "url": "https://keybase.io/"
   },
   {
+    "category": "Automation",
+    "install": [
+      {
+        "id": "keyboard-maestro",
+        "type": "cask"
+      }
+    ],
     "name": "Keyboard Maestro",
-    "url": "https://www.keyboardmaestro.com/main/",
-    "category": "Automation",
     "note": null,
-    "install": [{ "type": "cask", "id": "keyboard-maestro" }]
+    "url": "https://www.keyboardmaestro.com/main/"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "409183694",
+        "type": "mas"
+      }
+    ],
     "name": "Keynote",
-    "url": "https://www.apple.com/apps/#keynote",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "mas", "id": "409183694" }]
+    "url": "https://www.apple.com/apps/#keynote"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": null,
+        "type": "home"
+      }
+    ],
     "name": "Keynote Extractor",
-    "url": "https://keynote-extractor.com/",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "home", "id": null }]
+    "url": "https://keynote-extractor.com/"
   },
   {
-    "name": "Keysmith",
-    "url": "https://www.keysmith.app/",
     "category": "Automation",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "keysmith" },
-      { "type": "cask", "id": "keysmith" }
-    ]
+      {
+        "id": "keysmith",
+        "type": "setapp"
+      },
+      {
+        "id": "keysmith",
+        "type": "cask"
+      }
+    ],
+    "name": "Keysmith",
+    "note": null,
+    "url": "https://www.keysmith.app/"
   },
   {
-    "name": "LINE",
-    "url": "https://line.me/",
     "category": "Social",
+    "install": [
+      {
+        "id": "539883307",
+        "type": "mas"
+      }
+    ],
+    "name": "LINE",
     "note": null,
-    "install": [{ "type": "mas", "id": "539883307" }]
+    "url": "https://line.me/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "linear-linear",
+        "type": "cask"
+      }
+    ],
     "name": "Linear",
-    "url": "https://linear.app/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "linear-linear" }]
+    "url": "https://linear.app/"
   },
   {
+    "category": "Driver",
+    "install": [
+      {
+        "id": "logitech-options",
+        "type": "cask"
+      }
+    ],
     "name": "Logitech Options",
-    "url": "https://support.logitech.com/software/options",
-    "category": "Driver",
     "note": null,
-    "install": [{ "type": "cask", "id": "logitech-options" }]
+    "url": "https://support.logitech.com/software/options"
   },
   {
-    "name": "Lapce",
-    "url": "https://lapce.dev/",
     "category": "Code Editor",
-    "note": null,
     "github": "lapce/lapce",
-    "install": [{ "type": "cask", "id": "lapce" }]
+    "install": [
+      {
+        "id": "lapce",
+        "type": "cask"
+      }
+    ],
+    "name": "Lapce",
+    "note": null,
+    "url": "https://lapce.dev/"
   },
   {
-    "name": "Logitech Options+",
-    "url": "https://www.logitech.com/en-us/software/logi-options-plus.html",
     "category": "Driver",
+    "install": [
+      {
+        "id": "logi-options-plus",
+        "type": "cask"
+      }
+    ],
+    "name": "Logitech Options+",
     "note": null,
-    "install": [{ "type": "cask", "id": "logi-options-plus" }]
+    "url": "https://www.logitech.com/en-us/software/logi-options-plus.html"
   },
   {
-    "name": "LyricsX",
-    "url": "https://github.com/ddddxxx/LyricsX",
     "category": "",
-    "note": null,
     "github": "ddddxxx/LyricsX",
-    "install": [{ "type": "cask", "id": "lyricsx" }]
+    "install": [
+      {
+        "id": "lyricsx",
+        "type": "cask"
+      }
+    ],
+    "name": "LyricsX",
+    "note": null,
+    "url": "https://github.com/ddddxxx/LyricsX"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "mactex-no-gui",
+        "type": "cask"
+      }
+    ],
     "name": "MacTeX",
-    "url": "https://www.tug.org/mactex/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "mactex-no-gui" }]
+    "url": "https://www.tug.org/mactex/"
   },
   {
+    "category": "Utilities",
+    "install": [
+      {
+        "id": "macs-fan-control",
+        "type": "cask"
+      }
+    ],
     "name": "Macs Fan Control",
-    "url": "https://crystalidea.com/macs-fan-control",
-    "category": "Utilities",
     "note": null,
-    "install": [{ "type": "cask", "id": "macs-fan-control" }]
+    "url": "https://crystalidea.com/macs-fan-control"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "mactracker",
+        "type": "cask"
+      }
+    ],
     "name": "Mactracker",
-    "url": "https://mactracker.ca/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "mactracker" }]
+    "url": "https://mactracker.ca/"
   },
   {
-    "name": "Maestral",
-    "url": "https://maestral.app/",
     "category": "Cloud Storage",
-    "note": null,
     "github": "samschott/maestral",
-    "install": [{ "type": "cask", "id": "maestral" }]
+    "install": [
+      {
+        "id": "maestral",
+        "type": "cask"
+      }
+    ],
+    "name": "Maestral",
+    "note": null,
+    "url": "https://maestral.app/"
   },
   {
+    "category": "Window Manager",
+    "install": [
+      {
+        "id": "441258766",
+        "type": "mas"
+      }
+    ],
     "name": "Magnet",
-    "url": "https://magnet.crowdcafe.com/",
-    "category": "Window Manager",
     "note": null,
-    "install": [{ "type": "mas", "id": "441258766" }]
+    "url": "https://magnet.crowdcafe.com/"
   },
   {
+    "category": "Email Client",
+    "install": [
+      {
+        "id": "mailspring",
+        "type": "cask"
+      }
+    ],
     "name": "Mailspring",
-    "url": "https://getmailspring.com/",
-    "category": "Email Client",
     "note": null,
-    "install": [{ "type": "cask", "id": "mailspring" }]
+    "url": "https://getmailspring.com/"
   },
   {
-    "name": "MarkEdit",
-    "url": "https://github.com/MarkEdit-app/MarkEdit",
     "category": "Markdown Editor",
-    "note": null,
     "github": "MarkEdit-app/MarkEdit",
-    "install": [{ "type": "cask", "id": "markedit" }]
+    "install": [
+      {
+        "id": "markedit",
+        "type": "cask"
+      }
+    ],
+    "name": "MarkEdit",
+    "note": null,
+    "url": "https://github.com/MarkEdit-app/MarkEdit"
   },
   {
-    "name": "Marked",
-    "url": "https://marked2app.com/",
     "category": "Markdown Editor",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "marked" },
-      { "type": "cask", "id": "marked" },
-      { "type": "mas", "id": "890031187" }
-    ]
+      {
+        "id": "marked",
+        "type": "setapp"
+      },
+      {
+        "id": "marked",
+        "type": "cask"
+      },
+      {
+        "id": "890031187",
+        "type": "mas"
+      }
+    ],
+    "name": "Marked",
+    "note": null,
+    "url": "https://marked2app.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "meta",
+        "type": "setapp"
+      }
+    ],
     "name": "Meta",
-    "url": "https://www.nightbirdsevolve.com/meta/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "meta" }]
+    "url": "https://www.nightbirdsevolve.com/meta/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "metaimage",
+        "type": "setapp"
+      },
+      {
+        "id": "1397099749",
+        "type": "mas"
+      }
+    ],
     "name": "MetaImage",
-    "url": "https://neededapps.com/metaimage/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "metaimage" },
-      { "type": "mas", "id": "1397099749" }
-    ]
+    "url": "https://neededapps.com/metaimage/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "6447451037",
+        "type": "mas"
+      }
+    ],
     "name": "MetaRename",
-    "url": "https://neededapps.com/metarename/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "6447451037" }]
+    "url": "https://neededapps.com/metarename/"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "microsoft-excel",
+        "type": "cask"
+      }
+    ],
     "name": "Microsoft Excel",
-    "url": "https://www.microsoft.com/en-US/microsoft-365/excel",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "cask", "id": "microsoft-excel" }]
+    "url": "https://www.microsoft.com/en-US/microsoft-365/excel"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "microsoft-powerpoint",
+        "type": "cask"
+      }
+    ],
     "name": "Microsoft PowerPoint",
-    "url": "https://www.microsoft.com/en-US/microsoft-365/powerpoint",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "cask", "id": "microsoft-powerpoint" }]
+    "url": "https://www.microsoft.com/en-US/microsoft-365/powerpoint"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "microsoft-word",
+        "type": "cask"
+      }
+    ],
     "name": "Microsoft Word",
-    "url": "https://www.microsoft.com/en-US/microsoft-365/word",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "cask", "id": "microsoft-word" }]
+    "url": "https://www.microsoft.com/en-US/microsoft-365/word"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "mindnode",
+        "type": "setapp"
+      },
+      {
+        "id": "1289197285",
+        "type": "mas"
+      }
+    ],
     "name": "MindNode",
-    "url": "https://www.mindnode.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "mindnode" },
-      { "type": "mas", "id": "1289197285" }
-    ]
+    "url": "https://www.mindnode.com/"
   },
   {
+    "category": "Media Player",
+    "install": [
+      {
+        "id": "1335612105",
+        "type": "mas"
+      }
+    ],
     "name": "MKPlayer",
-    "url": "https://rockysandstudio.com/",
-    "category": "Media Player",
     "note": null,
-    "install": [{ "type": "mas", "id": "1335612105" }]
+    "url": "https://rockysandstudio.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "mockuuups-studio",
+        "type": "setapp"
+      }
+    ],
     "name": "Mockuuups Studio",
-    "url": "https://mockuuups.studio/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "mockuuups-studio" }]
+    "url": "https://mockuuups.studio/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "972572731",
+        "type": "mas"
+      }
+    ],
     "name": "Money Pro",
-    "url": "https://money.pro/mac/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "972572731" }]
+    "url": "https://money.pro/mac/"
   },
   {
+    "category": "Utilities",
+    "install": [
+      {
+        "id": "monitorcontrol",
+        "type": "cask"
+      }
+    ],
     "name": "MonitorControl",
-    "url": "https://github.com/MonitorControl/MonitorControl",
-    "category": "Utilities",
     "note": null,
-    "install": [{ "type": "cask", "id": "monitorcontrol" }]
+    "url": "https://github.com/MonitorControl/MonitorControl"
   },
   {
-    "name": "Mosaic",
-    "url": "https://www.lightpillar.com/mosaic.html",
     "category": "Window Manager",
+    "install": [
+      {
+        "id": "mosaic",
+        "type": "setapp"
+      }
+    ],
+    "name": "Mosaic",
     "note": null,
-    "install": [{ "type": "setapp", "id": "mosaic" }]
+    "url": "https://www.lightpillar.com/mosaic.html"
   },
   {
-    "name": "Motrix",
-    "url": "https://motrix.app/",
     "category": "File Transfer",
-    "note": null,
     "github": "agalwood/Motrix",
-    "install": [{ "type": "cask", "id": "motrix" }]
+    "install": [
+      {
+        "id": "motrix",
+        "type": "cask"
+      }
+    ],
+    "name": "Motrix",
+    "note": null,
+    "url": "https://motrix.app/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "musicbrainz-picard",
+        "type": "cask"
+      }
+    ],
     "name": "MusicBrainz Picard",
-    "url": "https://picard.musicbrainz.org/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "musicbrainz-picard" }]
+    "url": "https://picard.musicbrainz.org/"
   },
   {
-    "name": "Notepad Next",
-    "url": "https://github.com/dail8859/NotepadNext",
     "category": "Code Editor",
-    "note": null,
     "github": "dail8859/NotepadNext",
-    "install": []
+    "install": [],
+    "name": "Notepad Next",
+    "note": null,
+    "url": "https://github.com/dail8859/NotepadNext"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "notion",
+        "type": "cask"
+      }
+    ],
     "name": "Notion",
-    "url": "https://www.notion.so/",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "cask", "id": "notion" }]
+    "url": "https://www.notion.so/"
   },
   {
+    "category": "Editor",
+    "install": [
+      {
+        "id": "nova",
+        "type": "cask"
+      }
+    ],
     "name": "Nova",
-    "url": "https://nova.app/",
-    "category": "Editor",
     "note": null,
-    "install": [{ "type": "cask", "id": "nova" }]
+    "url": "https://nova.app/"
   },
   {
+    "category": "Office Suite",
+    "install": [
+      {
+        "id": "409203825",
+        "type": "mas"
+      }
+    ],
     "name": "Numbers",
-    "url": "https://www.apple.com/apps/#numbers",
-    "category": "Office Suite",
     "note": null,
-    "install": [{ "type": "mas", "id": "409203825" }]
+    "url": "https://www.apple.com/apps/#numbers"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "numerics",
+        "type": "setapp"
+      }
+    ],
     "name": "Numerics",
-    "url": "https://cynapse.com/numerics",
-    "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "numerics" }]
+    "url": "https://cynapse.com/numerics"
   },
   {
-    "name": "Obsidian",
-    "url": "https://obsidian.md/",
     "category": "Editor",
+    "install": [
+      {
+        "id": "obsidian",
+        "type": "cask"
+      }
+    ],
+    "name": "Obsidian",
     "note": null,
-    "install": [{ "type": "cask", "id": "obsidian" }]
+    "url": "https://obsidian.md/"
   },
   {
+    "category": "Cloud Storage",
+    "install": [
+      {
+        "id": "onedrive",
+        "type": "cask"
+      }
+    ],
     "name": "OneDrive",
-    "url": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
-    "category": "Cloud Storage",
     "note": null,
-    "install": [{ "type": "cask", "id": "onedrive" }]
+    "url": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "pdf-expert",
+        "type": "cask"
+      }
+    ],
     "name": "PDF Expert",
-    "url": "https://pdfexpert.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "pdf-expert" }]
+    "url": "https://pdfexpert.com/"
   },
   {
-    "name": "Pages",
-    "url": "https://www.apple.com/apps/#pages",
     "category": "Office Suite",
+    "install": [
+      {
+        "id": "409201541",
+        "type": "mas"
+      }
+    ],
+    "name": "Pages",
     "note": null,
-    "install": [{ "type": "mas", "id": "409201541" }]
+    "url": "https://www.apple.com/apps/#pages"
   },
   {
-    "name": "Permute",
-    "url": "https://software.charliemonroe.net/permute/",
     "category": "File Transfer",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "permute" },
-      { "type": "setapp", "id": "permute" }
-    ]
+      {
+        "id": "permute",
+        "type": "cask"
+      },
+      {
+        "id": "permute",
+        "type": "setapp"
+      }
+    ],
+    "name": "Permute",
+    "note": null,
+    "url": "https://software.charliemonroe.net/permute/"
   },
   {
+    "category": "Graphics",
+    "install": [
+      {
+        "id": "1444636541",
+        "type": "mas"
+      }
+    ],
     "name": "Photomator",
-    "url": "https://www.pixelmator.com/photomator/",
-    "category": "Graphics",
     "note": null,
-    "install": [{ "type": "mas", "id": "1444636541" }]
+    "url": "https://www.pixelmator.com/photomator/"
   },
   {
-    "name": "PixelSnap",
-    "url": "https://getpixelsnap.com/",
     "category": "Screen Capture",
+    "install": [
+      {
+        "id": "pixelsnap",
+        "type": "setapp"
+      }
+    ],
+    "name": "PixelSnap",
     "note": null,
-    "install": [{ "type": "setapp", "id": "pixelsnap" }]
+    "url": "https://getpixelsnap.com/"
   },
   {
+    "category": "Graphics",
+    "install": [
+      {
+        "id": "1289583905",
+        "type": "mas"
+      }
+    ],
     "name": "Pixelmator Pro",
-    "url": "https://www.pixelmator.com/pro/",
-    "category": "Graphics",
     "note": null,
-    "install": [{ "type": "mas", "id": "1289583905" }]
+    "url": "https://www.pixelmator.com/pro/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "podman-desktop",
+        "type": "cask"
+      }
+    ],
     "name": "Podman Desktop",
-    "url": "https://podman-desktop.io/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "podman-desktop" }]
+    "url": "https://podman-desktop.io/"
   },
   {
+    "category": "Utilities",
+    "install": [
+      {
+        "id": "popclip",
+        "type": "cask"
+      },
+      {
+        "id": "popclip",
+        "type": "setapp"
+      }
+    ],
     "name": "PopClip",
-    "url": "https://www.popclip.app/",
-    "category": "Utilities",
     "note": "Previously bought on the Mac App Store, license binded on iCloud, see [this](https://www.popclip.app/kb/mas)",
-    "install": [
-      { "type": "cask", "id": "popclip" },
-      { "type": "setapp", "id": "popclip" }
-    ]
+    "url": "https://www.popclip.app/"
   },
   {
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "postman",
+        "type": "cask"
+      }
+    ],
     "name": "Postman",
-    "url": "https://www.postman.com/",
-    "category": "Dev Tools",
     "note": null,
-    "install": [{ "type": "cask", "id": "postman" }]
+    "url": "https://www.postman.com/"
   },
   {
-    "name": "Pretzel",
-    "url": "https://www.amie-chen.com/pretzel",
     "category": "Utilities",
-    "note": null,
     "github": "amiechen/pretzel",
-    "install": []
+    "install": [],
+    "name": "Pretzel",
+    "note": null,
+    "url": "https://www.amie-chen.com/pretzel"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "prizmo",
+        "type": "setapp"
+      }
+    ],
     "name": "Prizmo",
-    "url": "https://creaceed.com/prizmo",
-    "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "prizmo" }]
+    "url": "https://creaceed.com/prizmo"
   },
   {
-    "name": "Proton Drive",
-    "url": "https://proton.me/drive",
     "category": "Cloud Storage",
+    "install": [
+      {
+        "id": "proton-drive",
+        "type": "cask"
+      }
+    ],
+    "name": "Proton Drive",
     "note": null,
-    "install": [{ "type": "cask", "id": "proton-drive" }]
+    "url": "https://proton.me/drive"
   },
   {
+    "category": "Password Manager",
+    "install": [
+      {
+        "id": "proton-pass",
+        "type": "cask"
+      }
+    ],
     "name": "Proton pass",
-    "url": "https://proton.me/pass",
-    "category": "Password Manager",
     "note": null,
-    "install": [{ "type": "cask", "id": "proton-pass" }]
+    "url": "https://proton.me/pass"
   },
   {
-    "name": "ProtonVPN",
-    "url": "https://protonvpn.com/",
     "category": "VPN",
+    "install": [
+      {
+        "id": "protonvpn",
+        "type": "cask"
+      }
+    ],
+    "name": "ProtonVPN",
     "note": null,
-    "install": [{ "type": "cask", "id": "protonvpn" }]
+    "url": "https://protonvpn.com/"
   },
   {
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "proxyman",
+        "type": "cask"
+      },
+      {
+        "id": "proxyman",
+        "type": "setapp"
+      }
+    ],
     "name": "Proxyman",
-    "url": "https://proxyman.io/",
-    "category": "Dev Tools",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "proxyman" },
-      { "type": "setapp", "id": "proxyman" }
-    ]
+    "url": "https://proxyman.io/"
   },
   {
+    "category": "Quick Look",
+    "install": [
+      {
+        "id": "qlcolorcode",
+        "type": "cask"
+      }
+    ],
     "name": "QLColorCode",
-    "url": "https://github.com/anthonygelibert/QLColorCode",
-    "category": "Quick Look",
     "note": null,
-    "install": [{ "type": "cask", "id": "qlcolorcode" }]
+    "url": "https://github.com/anthonygelibert/QLColorCode"
   },
   {
-    "name": "QLMarkdown",
-    "url": "https://github.com/sbarex/QLMarkdown",
     "category": "Quick Look",
-    "note": null,
     "github": "sbarex/QLMarkdown",
-    "install": [{ "type": "cask", "id": "qlmarkdown" }]
+    "install": [
+      {
+        "id": "qlmarkdown",
+        "type": "cask"
+      }
+    ],
+    "name": "QLMarkdown",
+    "note": null,
+    "url": "https://github.com/sbarex/QLMarkdown"
   },
   {
+    "category": "Quick Look",
+    "install": [
+      {
+        "id": "qlstephen",
+        "type": "cask"
+      }
+    ],
     "name": "QLStephen",
-    "url": "https://whomwah.github.io/qlstephen/",
-    "category": "Quick Look",
     "note": null,
-    "install": [{ "type": "cask", "id": "qlstephen" }]
+    "url": "https://whomwah.github.io/qlstephen/"
   },
   {
+    "category": "Quick Look",
+    "install": [
+      {
+        "id": "quicklookase",
+        "type": "cask"
+      }
+    ],
     "name": "QuickLookASE",
-    "url": "https://github.com/rsodre/QuickLookASE",
-    "category": "Quick Look",
     "note": null,
-    "install": [{ "type": "cask", "id": "quicklookase" }]
+    "url": "https://github.com/rsodre/QuickLookASE"
   },
   {
-    "name": "Reeder",
-    "url": "https://reeder.app/",
     "category": "Reader",
+    "install": [
+      {
+        "id": "1529448980",
+        "type": "mas"
+      }
+    ],
+    "name": "Reeder",
     "note": null,
-    "install": [{ "type": "mas", "id": "1529448980" }]
+    "url": "https://reeder.app/"
   },
   {
+    "category": "File Management",
+    "install": [
+      {
+        "id": "renamer",
+        "type": "setapp"
+      },
+      {
+        "id": "renamer",
+        "type": "cask"
+      }
+    ],
     "name": "Renamer",
-    "url": "https://renamer.com/",
-    "category": "File Management",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "renamer" },
-      { "type": "cask", "id": "renamer" }
-    ]
+    "url": "https://renamer.com/"
   },
   {
+    "category": "File Management",
+    "install": [
+      {
+        "id": "a-better-finder-rename",
+        "type": "cask"
+      }
+    ],
     "name": "A Better Finder Rename",
-    "url": "https://www.publicspace.net/ABetterFinderRename/",
-    "category": "File Management",
     "note": null,
-    "install": [{ "type": "cask", "id": "a-better-finder-rename" }]
+    "url": "https://www.publicspace.net/ABetterFinderRename/"
   },
   {
+    "category": "File Management",
+    "install": [
+      {
+        "id": "a-better-finder-attributes",
+        "type": "cask"
+      }
+    ],
     "name": "A Better Finder Attributes",
-    "url": "https://www.publicspace.net/ABetterFinderAttributes/",
-    "category": "File Management",
     "note": null,
-    "install": [{ "type": "cask", "id": "a-better-finder-attributes" }]
+    "url": "https://www.publicspace.net/ABetterFinderAttributes/"
   },
   {
+    "category": "SQL Client",
+    "install": [
+      {
+        "id": "pgadmin4",
+        "type": "cask"
+      }
+    ],
     "name": "pgAdmin",
-    "url": "https://www.pgadmin.org/",
-    "category": "SQL Client",
     "note": null,
-    "install": [{ "type": "cask", "id": "pgadmin4" }]
+    "url": "https://www.pgadmin.org/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "rocket",
+        "type": "cask"
+      }
+    ],
     "name": "Rocket",
-    "url": "https://matthewpalmer.net/rocket/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "rocket" }]
+    "url": "https://matthewpalmer.net/rocket/"
   },
   {
-    "name": "SF Symbols",
-    "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/",
     "category": "Dev Tools",
+    "install": [
+      {
+        "id": "sf-symbols",
+        "type": "cask"
+      }
+    ],
+    "name": "SF Symbols",
     "note": null,
-    "install": [{ "type": "cask", "id": "sf-symbols" }]
+    "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/"
   },
   {
-    "name": "SaveHollywood Screensaver",
-    "url": "http://s.sudre.free.fr/Software/SaveHollywood/about.html",
     "category": "Screensaver",
+    "install": [
+      {
+        "id": "save-hollywood",
+        "type": "cask"
+      }
+    ],
+    "name": "SaveHollywood Screensaver",
     "note": null,
-    "install": [{ "type": "cask", "id": "save-hollywood" }]
+    "url": "http://s.sudre.free.fr/Software/SaveHollywood/about.html"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "screenflow",
+        "type": "cask"
+      }
+    ],
     "name": "ScreenFlow",
-    "url": "https://www.telestream.net/screenflow/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "screenflow" }]
+    "url": "https://www.telestream.net/screenflow/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "screens",
+        "type": "cask"
+      }
+    ],
     "name": "Screens",
-    "url": "https://edovia.com/screens-mac/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "screens" }]
+    "url": "https://edovia.com/screens-mac/"
   },
   {
-    "name": "Secrets",
-    "url": "https://secrets.app/",
     "category": "Password Manager",
+    "install": [
+      {
+        "id": "secrets",
+        "type": "setapp"
+      }
+    ],
+    "name": "Secrets",
     "note": null,
-    "install": [{ "type": "setapp", "id": "secrets" }]
+    "url": "https://secrets.app/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "setapp",
+        "type": "cask"
+      }
+    ],
     "name": "Setapp",
-    "url": "https://setapp.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "setapp" }]
+    "url": "https://setapp.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "897118787",
+        "type": "mas"
+      }
+    ],
     "name": "Shazam",
-    "url": "https://www.shazam.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "897118787" }]
+    "url": "https://www.shazam.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "510109287",
+        "type": "mas"
+      },
+      {
+        "id": "short-menu",
+        "type": "setapp"
+      }
+    ],
     "name": "Short Menu",
-    "url": "https://shortmenu.com/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "mas", "id": "510109287" },
-      { "type": "setapp", "id": "short-menu" }
-    ]
+    "url": "https://shortmenu.com/"
   },
   {
-    "name": "Sketch",
-    "url": "https://www.sketch.com/",
     "category": "Graphics",
+    "install": [
+      {
+        "id": "sketch",
+        "type": "cask"
+      }
+    ],
+    "name": "Sketch",
     "note": null,
-    "install": [{ "type": "cask", "id": "sketch" }]
+    "url": "https://www.sketch.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "slack",
+        "type": "cask"
+      }
+    ],
     "name": "Slack",
-    "url": "https://slack.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "slack" }]
+    "url": "https://slack.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "snippetslab",
+        "type": "setapp"
+      },
+      {
+        "id": "1006087419",
+        "type": "mas"
+      }
+    ],
     "name": "SnippetsLab",
-    "url": "https://www.renfei.org/snippets-lab/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "snippetslab" },
-      { "type": "mas", "id": "1006087419" }
-    ]
+    "url": "https://www.renfei.org/snippets-lab/"
   },
   {
-    "name": "SourceTree",
-    "url": "https://www.sourcetreeapp.com/",
     "category": "Git Client",
-    "note": null,
-    "install": [{ "type": "cask", "id": "sourcetree" }]
-  },
-  {
-    "name": "Spark",
-    "url": "https://sparkmailapp.com/",
-    "category": "Email Client",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "readdle-spark" },
-      { "type": "mas", "id": "1176895641" }
-    ]
+      {
+        "id": "sourcetree",
+        "type": "cask"
+      }
+    ],
+    "name": "SourceTree",
+    "note": null,
+    "url": "https://www.sourcetreeapp.com/"
   },
   {
-    "name": "Spotify",
-    "url": "https://www.spotify.com/",
+    "category": "Email Client",
+    "install": [
+      {
+        "id": "readdle-spark",
+        "type": "cask"
+      },
+      {
+        "id": "1176895641",
+        "type": "mas"
+      }
+    ],
+    "name": "Spark",
+    "note": null,
+    "url": "https://sparkmailapp.com/"
+  },
+  {
     "category": "Media Player",
+    "install": [
+      {
+        "id": "spotify",
+        "type": "cask"
+      }
+    ],
+    "name": "Spotify",
     "note": null,
-    "install": [{ "type": "cask", "id": "spotify" }]
+    "url": "https://www.spotify.com/"
   },
   {
-    "name": "Sequel Ace",
-    "url": "https://sequel-ace.com/",
     "category": "SQL Client",
-    "note": null,
     "github": "Sequel-Ace/Sequel-Ace",
     "install": [
-      { "type": "cask", "id": "sequel-ace" },
-      { "type": "mas", "id": "1518036000" }
-    ]
+      {
+        "id": "sequel-ace",
+        "type": "cask"
+      },
+      {
+        "id": "1518036000",
+        "type": "mas"
+      }
+    ],
+    "name": "Sequel Ace",
+    "note": null,
+    "url": "https://sequel-ace.com/"
   },
   {
-    "name": "Sequel Pro",
-    "url": "https://www.sequelpro.com/",
     "category": "SQL Client",
-    "note": "Use Sequel Ace instead",
     "deprecated": true,
     "github": "sequelpro/sequelpro",
-    "install": [{ "type": "cask", "id": "sequel-pro" }]
+    "install": [
+      {
+        "id": "sequel-pro",
+        "type": "cask"
+      }
+    ],
+    "name": "Sequel Pro",
+    "note": "Use Sequel Ace instead",
+    "url": "https://www.sequelpro.com/"
   },
   {
-    "name": "Squash",
-    "url": "https://www.realmacsoftware.com/squash/",
     "category": "",
+    "install": [
+      {
+        "id": "squash",
+        "type": "setapp"
+      }
+    ],
+    "name": "Squash",
     "note": null,
-    "install": [{ "type": "setapp", "id": "squash" }]
+    "url": "https://www.realmacsoftware.com/squash/"
   },
   {
-    "name": "Steam",
-    "url": "https://store.steampowered.com/about/",
     "category": "Games",
+    "install": [
+      {
+        "id": "steam",
+        "type": "cask"
+      }
+    ],
+    "name": "Steam",
     "note": null,
-    "install": [{ "type": "cask", "id": "steam" }]
+    "url": "https://store.steampowered.com/about/"
   },
   {
-    "name": "Sublime Text",
-    "url": "https://www.sublimetext.com/",
     "category": "Editor",
+    "install": [
+      {
+        "id": "sublime-text",
+        "type": "cask"
+      }
+    ],
+    "name": "Sublime Text",
     "note": null,
-    "install": [{ "type": "cask", "id": "sublime-text" }]
+    "url": "https://www.sublimetext.com/"
   },
   {
-    "name": "Surge",
-    "url": "https://nssurge.com/",
     "category": "Dev Tools",
+    "install": [
+      {
+        "id": "surge",
+        "type": "cask"
+      }
+    ],
+    "name": "Surge",
     "note": null,
-    "install": [{ "type": "cask", "id": "surge" }]
+    "url": "https://nssurge.com/"
   },
   {
-    "name": "Tabby",
-    "url": "https://eugeny.github.io/tabby/",
     "category": "Terminal",
+    "install": [
+      {
+        "id": "tabby",
+        "type": "cask"
+      }
+    ],
+    "name": "Tabby",
     "note": null,
-    "install": [{ "type": "cask", "id": "tabby" }]
+    "url": "https://eugeny.github.io/tabby/"
   },
   {
-    "name": "TablePlus",
-    "url": "https://tableplus.com/",
     "category": "SQL Client",
-    "note": null,
     "github": "TablePlus/TablePlus",
     "install": [
-      { "type": "setapp", "id": "tableplus" },
-      { "type": "cask", "id": "tableplus" }
-    ]
+      {
+        "id": "tableplus",
+        "type": "setapp"
+      },
+      {
+        "id": "tableplus",
+        "type": "cask"
+      }
+    ],
+    "name": "TablePlus",
+    "note": null,
+    "url": "https://tableplus.com/"
   },
   {
-    "name": "Tampermonkey",
-    "url": "https://www.tampermonkey.net/",
     "category": "Safari Extension",
+    "install": [
+      {
+        "id": "1482490089",
+        "type": "mas"
+      }
+    ],
+    "name": "Tampermonkey",
     "note": null,
-    "install": [{ "type": "mas", "id": "1482490089" }]
+    "url": "https://www.tampermonkey.net/"
   },
   {
+    "category": "Social",
+    "install": [
+      {
+        "id": "telegram",
+        "type": "cask"
+      },
+      {
+        "id": "747648890",
+        "type": "mas"
+      }
+    ],
     "name": "Telegram",
-    "url": "https://telegram.org/",
-    "category": "Social",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "telegram" },
-      { "type": "mas", "id": "747648890" }
-    ]
+    "url": "https://telegram.org/"
   },
   {
+    "category": "Terminal",
+    "install": [
+      {
+        "id": "termius",
+        "type": "cask"
+      }
+    ],
     "name": "Termius",
-    "url": "https://www.termius.com/",
-    "category": "Terminal",
     "note": null,
-    "install": [{ "type": "cask", "id": "termius" }]
+    "url": "https://www.termius.com/"
   },
   {
+    "category": "Social",
+    "install": [
+      {
+        "id": "textual",
+        "type": "cask"
+      }
+    ],
     "name": "Textual",
-    "url": "https://www.codeux.com/textual/",
-    "category": "Social",
     "note": null,
-    "install": [{ "type": "cask", "id": "textual" }]
+    "url": "https://www.codeux.com/textual/"
   },
   {
-    "name": "The Unarchiver",
-    "url": "https://theunarchiver.com/",
     "category": "Unarchiver",
-    "note": null,
     "install": [
-      { "type": "cask", "id": "the-unarchiver" },
-      { "type": "mas", "id": "425424353" }
-    ]
+      {
+        "id": "the-unarchiver",
+        "type": "cask"
+      },
+      {
+        "id": "425424353",
+        "type": "mas"
+      }
+    ],
+    "name": "The Unarchiver",
+    "note": null,
+    "url": "https://theunarchiver.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "904280696",
+        "type": "mas"
+      }
+    ],
     "name": "Things",
-    "url": "https://culturedcode.com/things/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "mas", "id": "904280696" }]
+    "url": "https://culturedcode.com/things/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "charlessoft-timetracker",
+        "type": "cask"
+      }
+    ],
     "name": "TimeTracker",
-    "url": "https://charlessoft.com/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "charlessoft-timetracker" }]
+    "url": "https://charlessoft.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "toothfairy",
+        "type": "setapp"
+      },
+      {
+        "id": "1191449274",
+        "type": "mas"
+      }
+    ],
     "name": "ToothFairy",
-    "url": "https://c-command.com/toothfairy/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "toothfairy" },
-      { "type": "mas", "id": "1191449274" }
-    ]
+    "url": "https://c-command.com/toothfairy/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "touchretouch",
+        "type": "setapp"
+      },
+      {
+        "id": "373311252",
+        "type": "mas"
+      }
+    ],
     "name": "TouchRetouch",
-    "url": "https://adva-soft.com/app-pageTouch.html",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "touchretouch" },
-      { "type": "mas", "id": "373311252" }
-    ]
+    "url": "https://adva-soft.com/app-pageTouch.html"
   },
   {
-    "name": "Tower",
-    "url": "https://www.git-tower.com/",
     "category": "Git Client",
+    "install": [
+      {
+        "id": "tower",
+        "type": "cask"
+      }
+    ],
+    "name": "Tower",
     "note": null,
-    "install": [{ "type": "cask", "id": "tower" }]
+    "url": "https://www.git-tower.com/"
   },
   {
-    "name": "Transmission",
-    "url": "https://transmissionbt.com/",
     "category": "Torrent Client",
-    "note": null,
     "github": "transmission/transmission",
-    "install": [{ "type": "cask", "id": "transmit" }]
+    "install": [
+      {
+        "id": "transmit",
+        "type": "cask"
+      }
+    ],
+    "name": "Transmission",
+    "note": null,
+    "url": "https://transmissionbt.com/"
   },
   {
-    "name": "Transmit",
-    "url": "https://panic.com/transmit/",
     "category": "File Transfer",
+    "install": [
+      {
+        "id": "transmit",
+        "type": "cask"
+      }
+    ],
+    "name": "Transmit",
     "note": null,
-    "install": [{ "type": "cask", "id": "transmit" }]
+    "url": "https://panic.com/transmit/"
   },
   {
-    "name": "Typeface",
-    "url": "https://typefaceapp.com/",
     "category": "Font Manager",
+    "install": [
+      {
+        "id": "typeface",
+        "type": "setapp"
+      }
+    ],
+    "name": "Typeface",
     "note": null,
-    "install": [{ "type": "setapp", "id": "typeface" }]
+    "url": "https://typefaceapp.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "ulysses",
+        "type": "setapp"
+      }
+    ],
     "name": "Ulysses",
-    "url": "https://www.ulysses.app/",
-    "category": "",
     "note": null,
-    "install": [{ "type": "setapp", "id": "ulysses" }]
+    "url": "https://www.ulysses.app/"
   },
   {
-    "name": "UninstallPKG",
-    "url": "https://www.corecode.io/uninstallpkg/",
     "category": "Uninstaller",
+    "install": [
+      {
+        "id": "uninstallpkg",
+        "type": "cask"
+      }
+    ],
+    "name": "UninstallPKG",
     "note": null,
-    "install": [{ "type": "cask", "id": "uninstallpkg" }]
+    "url": "https://www.corecode.io/uninstallpkg/"
   },
   {
-    "name": "Vanilla",
-    "url": "https://matthewpalmer.net/vanilla/",
     "category": "Menu Bar",
+    "install": [
+      {
+        "id": "vanilla",
+        "type": "cask"
+      }
+    ],
+    "name": "Vanilla",
     "note": null,
-    "install": [{ "type": "cask", "id": "vanilla" }]
+    "url": "https://matthewpalmer.net/vanilla/"
   },
   {
-    "name": "VLC media player",
-    "url": "https://www.videolan.org/vlc/",
     "category": "Media Player",
+    "install": [
+      {
+        "id": "vlc",
+        "type": "cask"
+      }
+    ],
+    "name": "VLC media player",
     "note": null,
-    "install": [{ "type": "cask", "id": "vlc" }]
+    "url": "https://www.videolan.org/vlc/"
   },
   {
-    "name": "VS Code",
-    "url": "https://code.visualstudio.com/",
     "category": "Code Editor",
+    "install": [
+      {
+        "id": "visual-studio-code",
+        "type": "cask"
+      }
+    ],
+    "name": "VS Code",
     "note": null,
-    "install": [{ "type": "cask", "id": "visual-studio-code" }]
+    "url": "https://code.visualstudio.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "wakatime",
+        "type": "cask"
+      }
+    ],
     "name": "Wakatime",
-    "url": "https://wakatime.com/mac",
-    "category": "",
     "note": null,
-    "install": [{ "type": "cask", "id": "wakatime" }]
+    "url": "https://wakatime.com/mac"
   },
   {
-    "name": "Warp",
-    "url": "https://www.warp.dev/",
     "category": "Terminal",
-    "note": null,
     "github": "warpdotdev/Warp",
-    "install": [{ "type": "cask", "id": "warp" }]
+    "install": [
+      {
+        "id": "warp",
+        "type": "cask"
+      }
+    ],
+    "name": "Warp",
+    "note": null,
+    "url": "https://www.warp.dev/"
   },
   {
+    "category": "Social",
+    "install": [
+      {
+        "id": "wechat",
+        "type": "cask"
+      },
+      {
+        "id": "836500024",
+        "type": "mas"
+      }
+    ],
     "name": "WeChat",
-    "url": "https://mac.weixin.qq.com/",
-    "category": "Social",
     "note": null,
-    "install": [
-      { "type": "cask", "id": "wechat" },
-      { "type": "mas", "id": "836500024" }
-    ]
+    "url": "https://mac.weixin.qq.com/"
   },
   {
+    "category": "Social",
+    "install": [
+      {
+        "id": "whatsapp",
+        "type": "cask"
+      }
+    ],
     "name": "WhatsApp",
-    "url": "https://www.whatsapp.com/",
-    "category": "Social",
     "note": null,
-    "install": [{ "type": "cask", "id": "whatsapp" }]
+    "url": "https://www.whatsapp.com/"
   },
   {
+    "category": "",
+    "install": [
+      {
+        "id": "wifi-signal",
+        "type": "setapp"
+      },
+      {
+        "id": "525912054",
+        "type": "mas"
+      }
+    ],
     "name": "WiFi Signal",
-    "url": "https://www.intuitibits.com/products/wifisignal/",
-    "category": "",
     "note": null,
-    "install": [
-      { "type": "setapp", "id": "wifi-signal" },
-      { "type": "mas", "id": "525912054" }
-    ]
+    "url": "https://www.intuitibits.com/products/wifisignal/"
   },
   {
-    "name": "WireGuard",
-    "url": "https://www.wireguard.com/",
     "category": "VPN",
-    "note": null,
-    "install": [{ "type": "mas", "id": "1451685025" }]
-  },
-  {
-    "name": "Workspaces",
-    "url": "https://www.apptorium.com/workspaces",
-    "category": "",
-    "note": null,
     "install": [
-      { "type": "setapp", "id": "workspaces" },
-      { "type": "mas", "id": "1540284555" }
-    ]
-  },
-  {
-    "name": "Xcode",
-    "url": "https://developer.apple.com/xcode/",
-    "category": "Dev Tools",
+      {
+        "id": "1451685025",
+        "type": "mas"
+      }
+    ],
+    "name": "WireGuard",
     "note": null,
-    "install": [{ "type": "mas", "id": "497799835" }]
+    "url": "https://www.wireguard.com/"
   },
   {
-    "name": "Xnapper",
-    "url": "https://xnapper.com/",
-    "category": "Screen Capture",
-    "note": null,
-    "install": [{ "type": "setapp", "id": "xnapper" }]
-  },
-  {
-    "name": "Yubikey Manager",
-    "url": "https://developers.yubico.com/yubikey-manager-qt/",
     "category": "",
+    "install": [
+      {
+        "id": "workspaces",
+        "type": "setapp"
+      },
+      {
+        "id": "1540284555",
+        "type": "mas"
+      }
+    ],
+    "name": "Workspaces",
     "note": null,
-    "install": [{ "type": "cask", "id": "yubico-yubikey-manager" }]
+    "url": "https://www.apptorium.com/workspaces"
   },
   {
-    "name": "Zoom",
-    "url": "https://www.zoom.us/",
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "497799835",
+        "type": "mas"
+      }
+    ],
+    "name": "Xcode",
+    "note": null,
+    "url": "https://developer.apple.com/xcode/"
+  },
+  {
+    "category": "Screen Capture",
+    "install": [
+      {
+        "id": "xnapper",
+        "type": "setapp"
+      }
+    ],
+    "name": "Xnapper",
+    "note": null,
+    "url": "https://xnapper.com/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "yubico-yubikey-manager",
+        "type": "cask"
+      }
+    ],
+    "name": "Yubikey Manager",
+    "note": null,
+    "url": "https://developers.yubico.com/yubikey-manager-qt/"
+  },
+  {
     "category": "Social",
+    "install": [
+      {
+        "id": "zoom",
+        "type": "cask"
+      }
+    ],
+    "name": "Zoom",
     "note": null,
-    "install": [{ "type": "cask", "id": "zoom" }]
+    "url": "https://www.zoom.us/"
   },
   {
-    "name": "quick look JSON",
-    "url": "http://www.sagtau.com/quicklookjson.html",
     "category": "Quick Look",
+    "install": [
+      {
+        "id": "quicklook-json",
+        "type": "cask"
+      }
+    ],
+    "name": "quick look JSON",
     "note": null,
-    "install": [{ "type": "cask", "id": "quicklook-json" }]
+    "url": "http://www.sagtau.com/quicklookjson.html"
   }
 ]

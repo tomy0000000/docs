@@ -1,55 +1,26 @@
 {
-  "Virtual Machines": {
+  "Column-oriented DBMS": {
     "aws": [
       {
-        "name": "Elastic Compute Cloud",
-        "abbr": "EC2",
-        "url": "https://aws.amazon.com/ec2/"
-      }
-    ],
-    "google-cloud": [
-      {
-        "name": "Compute Engine",
-        "url": "https://cloud.google.com/compute"
+        "name": "Keyspaces",
+        "url": "https://aws.amazon.com/keyspaces"
       }
     ],
     "azure": [
       {
-        "name": "Virtual Machines",
-        "url": "https://azure.microsoft.com/en-us/products/virtual-machines"
+        "name": "Cosmos DB with Cassandra API",
+        "url": "https://azure.microsoft.com/en-us/products/cosmos-db"
+      },
+      {
+        "name": "Managed Instance for Apache Cassandra",
+        "url": "https://azure.microsoft.com/en-us/products/managed-instance-apache-cassandra"
       }
     ],
-    "digital-ocean": [
-      {
-        "name": "Droplets",
-        "url": "https://www.digitalocean.com/products/droplets"
-      }
-    ]
-  },
-  "RDBMS": {
-    "aws": [
-      {
-        "name": "Relational Database Service",
-        "abbr": "RDS",
-        "url": "https://aws.amazon.com/rds"
-      }
-    ],
+    "digital-ocean": [],
     "google-cloud": [
       {
-        "name": "Cloud SQL",
-        "url": "https://cloud.google.com/sql"
-      }
-    ],
-    "azure": [
-      {
-        "name": "Database",
-        "url": "https://azure.microsoft.com/en-us/services/sql-database"
-      }
-    ],
-    "digital-ocean": [
-      {
-        "name": "Managed Databases",
-        "url": "https://www.digitalocean.com/products/managed-databases"
+        "name": "Bigtable",
+        "url": "https://cloud.google.com/bigtable"
       }
     ]
   },
@@ -58,12 +29,6 @@
       {
         "name": "DocumentDB",
         "url": "https://aws.amazon.com/documentdb"
-      }
-    ],
-    "google-cloud": [
-      {
-        "name": "Cloud Firestore",
-        "url": "https://firebase.google.com/products/firestore"
       }
     ],
     "azure": [
@@ -77,40 +42,45 @@
         "name": "Managed Databases",
         "url": "https://www.digitalocean.com/products/managed-databases-mongodb"
       }
-    ]
-  },
-  "Key-Value Store": {
-    "aws": [
-      {
-        "name": "DynamoDB",
-        "url": "https://aws.amazon.com/dynamodb"
-      }
     ],
     "google-cloud": [
       {
-        "name": "Datastore",
-        "url": "https://cloud.google.com/datastore"
+        "name": "Cloud Firestore",
+        "url": "https://firebase.google.com/products/firestore"
+      }
+    ]
+  },
+  "Function as a Service (FaaS)": {
+    "aws": [
+      {
+        "name": "Lambda",
+        "url": "https://aws.amazon.com/lambda/"
       }
     ],
     "azure": [
       {
-        "name": "Cosmos DB",
-        "url": "https://azure.microsoft.com/en-us/products/cosmos-db"
+        "name": "Functions",
+        "url": "https://azure.microsoft.com/en-us/products/functions"
       }
     ],
-    "digital-ocean": []
+    "digital-ocean": [
+      {
+        "name": "Functions",
+        "url": "https://www.digitalocean.com/products/functions"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Cloud Functions",
+        "url": "https://cloud.google.com/functions"
+      }
+    ]
   },
   "Key-Value Cache": {
     "aws": [
       {
         "name": "ElastiCache",
         "url": "https://aws.amazon.com/elasticache"
-      }
-    ],
-    "google-cloud": [
-      {
-        "name": "Memorystore",
-        "url": "https://cloud.google.com/memorystore"
       }
     ],
     "azure": [
@@ -124,20 +94,41 @@
         "name": "Managed Databases for Redis",
         "url": "https://www.digitalocean.com/products/managed-databases-redis"
       }
+    ],
+    "google-cloud": [
+      {
+        "name": "Memorystore",
+        "url": "https://cloud.google.com/memorystore"
+      }
+    ]
+  },
+  "Key-Value Store": {
+    "aws": [
+      {
+        "name": "DynamoDB",
+        "url": "https://aws.amazon.com/dynamodb"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Cosmos DB",
+        "url": "https://azure.microsoft.com/en-us/products/cosmos-db"
+      }
+    ],
+    "digital-ocean": [],
+    "google-cloud": [
+      {
+        "name": "Datastore",
+        "url": "https://cloud.google.com/datastore"
+      }
     ]
   },
   "Object Storage (Bucket)": {
     "aws": [
       {
-        "name": "Simple Storage Service",
         "abbr": "S3",
+        "name": "Simple Storage Service",
         "url": "https://aws.amazon.com/s3"
-      }
-    ],
-    "google-cloud": [
-      {
-        "name": "Cloud Storage",
-        "url": "https://cloud.google.com/storage"
       }
     ],
     "azure": [
@@ -151,56 +142,11 @@
         "name": "Spaces Object Storage",
         "url": "https://www.digitalocean.com/products/spaces"
       }
-    ]
-  },
-  "Column-oriented DBMS": {
-    "aws": [
-      {
-        "name": "Keyspaces",
-        "url": "https://aws.amazon.com/keyspaces"
-      }
     ],
     "google-cloud": [
       {
-        "name": "Bigtable",
-        "url": "https://cloud.google.com/bigtable"
-      }
-    ],
-    "azure": [
-      {
-        "name": "Cosmos DB with Cassandra API",
-        "url": "https://azure.microsoft.com/en-us/products/cosmos-db"
-      },
-      {
-        "name": "Managed Instance for Apache Cassandra",
-        "url": "https://azure.microsoft.com/en-us/products/managed-instance-apache-cassandra"
-      }
-    ],
-    "digital-ocean": []
-  },
-  "Function as a Service (FaaS)": {
-    "aws": [
-      {
-        "name": "Lambda",
-        "url": "https://aws.amazon.com/lambda/"
-      }
-    ],
-    "google-cloud": [
-      {
-        "name": "Cloud Functions",
-        "url": "https://cloud.google.com/functions"
-      }
-    ],
-    "azure": [
-      {
-        "name": "Functions",
-        "url": "https://azure.microsoft.com/en-us/products/functions"
-      }
-    ],
-    "digital-ocean": [
-      {
-        "name": "Functions",
-        "url": "https://www.digitalocean.com/products/functions"
+        "name": "Cloud Storage",
+        "url": "https://cloud.google.com/storage"
       }
     ]
   },
@@ -215,12 +161,6 @@
         "url": "https://aws.amazon.com/lightsail/"
       }
     ],
-    "google-cloud": [
-      {
-        "name": "App Engine",
-        "url": "https://cloud.google.com/appengine"
-      }
-    ],
     "azure": [
       {
         "name": "App Service",
@@ -231,6 +171,66 @@
       {
         "name": "App Platform",
         "url": "https://www.digitalocean.com/products/app-platform"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "App Engine",
+        "url": "https://cloud.google.com/appengine"
+      }
+    ]
+  },
+  "RDBMS": {
+    "aws": [
+      {
+        "abbr": "RDS",
+        "name": "Relational Database Service",
+        "url": "https://aws.amazon.com/rds"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Database",
+        "url": "https://azure.microsoft.com/en-us/services/sql-database"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Managed Databases",
+        "url": "https://www.digitalocean.com/products/managed-databases"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Cloud SQL",
+        "url": "https://cloud.google.com/sql"
+      }
+    ]
+  },
+  "Virtual Machines": {
+    "aws": [
+      {
+        "abbr": "EC2",
+        "name": "Elastic Compute Cloud",
+        "url": "https://aws.amazon.com/ec2/"
+      }
+    ],
+    "azure": [
+      {
+        "name": "Virtual Machines",
+        "url": "https://azure.microsoft.com/en-us/products/virtual-machines"
+      }
+    ],
+    "digital-ocean": [
+      {
+        "name": "Droplets",
+        "url": "https://www.digitalocean.com/products/droplets"
+      }
+    ],
+    "google-cloud": [
+      {
+        "name": "Compute Engine",
+        "url": "https://cloud.google.com/compute"
       }
     ]
   }
