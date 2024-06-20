@@ -29,7 +29,7 @@ flowchart LR
 
     %% Hotels
     HILTON[[Hilton Honors]]
-    %% MARRIOTT[[Marriott Bonvoy]]
+    MARRIOTT[[Marriott Bonvoy]]
     %% IHG[[IHG Rewards Club]]
     %% HYATT[[World of Hyatt]]
     BESTWESTERN[[Best Western]]
@@ -53,6 +53,7 @@ flowchart LR
     STARBUCKS{{Starbucks}}
     STARBUCKS -- <a href="#STARBUCKS-DL">Rules</a> --> DL
     STARBUCKS -- <a href="#STARBUCKS-BOA">Rules</a> --> BOA
+    STARBUCKS -- <a href="#STARBUCKS-MARRIOTT">Rules</a> --> MARRIOTT
 
     LYFT{{Lyft}}
     LYFT -- <a href="https://help.lyft.com/hc/en-us/all/articles/4546040548-Alaska-Airlines-and-Lyft-partnership" target="_blank" rel="noopener noreferrer">1 Mile/$</a> --> AS
@@ -77,3 +78,8 @@ flowchart LR
 
 - 1 Bonus Star per $2
 - 2% Cash Back
+
+### [Starbucks → Marriott Bonvoy](https://www.starbucks.com/rewards/partnerships/marriottbonvoy) {#STARBUCKS-MARRIOTT}
+
+- 100 Marriott Bonvoy® points for 3 purchases during Marriott Bonvoy® Week
+- Double stars during stays at Marriott Bonvoy® hotels
