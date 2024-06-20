@@ -5,7 +5,8 @@ sidebar_position: 1
 import { Icon } from "@iconify/react";
 import SortableTable from "@site/src/components/SortableTable";
 import countries from "@site/src/data/countries.json";
-import transitSystem from "@site/src/data/transit-systems.json";
+import transitPasses from "@site/src/data/transit-passes.json";
+import transitSystems from "@site/src/data/transit-systems.json";
 
 # 🕸️ System
 
@@ -38,8 +39,8 @@ A list of transit systems and passes around the world.
       header: "Pass",
       accessorKey: "passes",
       cell: ({ getValue }) => {
-        const passes = getValue();
-        const links = passes.map((pass, index) => {
+        const links = getValue().map((passName, index) => {
+          const pass = transitPasses[passName];
           return (
             <>
               <a
@@ -73,7 +74,7 @@ A list of transit systems and passes around the world.
       cell: ({ getValue }) => (getValue() ? "✅" : "❌"),
     },
   ]}
-  data={Object.values(transitSystem)}
+  data={Object.values(transitSystems)}
 />
 
 ## References

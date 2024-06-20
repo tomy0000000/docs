@@ -1,0 +1,51 @@
+{
+  "au-opal": {
+    "apple-pay": false,
+    "country": "au",
+    "name": "Opal",
+    "name-en": "Opal",
+    "url": "https://transportnsw.info/tickets-opal/opal-card"
+  },
+  "fr-navigo": {
+    "apple-pay": true,
+    "country": "fr",
+    "name": "Navigo",
+    "name-en": "Navigo",
+    "url": "https://www.navigo.fr/"
+  },
+  "gb-oyster": {
+    "apple-pay": false,
+    "country": "gb",
+    "name": "Oyster",
+    "name-en": "Oyster",
+    "url": "https://oyster.tfl.gov.uk/oyster/entry.do"
+  },
+  "tw-easycard": {
+    "apple-pay": false,
+    "country": "tw",
+    "name": "悠遊卡",
+    "name-en": "EasyCard",
+    "url": "https://www.easycard.com.tw/"
+  },
+  "tw-icash": {
+    "apple-pay": false,
+    "country": "tw",
+    "name": "愛金卡",
+    "name-en": "iCash",
+    "url": "https://www.icash.com.tw/"
+  },
+  "tw-ipass": {
+    "apple-pay": false,
+    "country": "tw",
+    "name": "一卡通",
+    "name-en": "iPASS",
+    "url": "https://www.i-pass.com.tw/"
+  },
+  "us-omny": {
+    "apple-pay": false,
+    "country": "us",
+    "name": "OMNY",
+    "name-en": "OMNY",
+    "url": "https://omny.info/"
+  }
+}

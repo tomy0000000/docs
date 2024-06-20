@@ -3,13 +3,7 @@
     "city": "Sydney",
     "contactless": true,
     "country": "au",
-    "passes": [
-      {
-        "apple-pay": false,
-        "name": "Opal Card",
-        "url": "https://transportnsw.info/tickets-opal/opal-card"
-      }
-    ],
+    "passes": ["au-opal"],
     "transit-system": {
       "name": "Transport for NSW",
       "url": "https://transportnsw.info/"
@@ -19,13 +13,7 @@
     "city": "Paris",
     "contactless": false,
     "country": "fr",
-    "passes": [
-      {
-        "apple-pay": true,
-        "name": "Navigo",
-        "url": "https://www.navigo.fr/"
-      }
-    ],
+    "passes": ["fr-navigo"],
     "transit-system": {
       "name": "RATP",
       "url": "https://www.ratp.fr/"
@@ -35,13 +23,7 @@
     "city": "London",
     "contactless": true,
     "country": "gb",
-    "passes": [
-      {
-        "apple-pay": false,
-        "name": "Oyster Card",
-        "url": "https://oyster.tfl.gov.uk/oyster/entry.do"
-      }
-    ],
+    "passes": ["gb-oyster"],
     "transit-system": {
       "name": "Transport for London (TfL)",
       "url": "https://tfl.gov.uk/"
@@ -51,23 +33,7 @@
     "city": "Taipei",
     "contactless": false,
     "country": "tw",
-    "passes": [
-      {
-        "apple-pay": false,
-        "name": "EasyCard",
-        "url": "https://www.easycard.com.tw/"
-      },
-      {
-        "apple-pay": false,
-        "name": "iPASS",
-        "url": "https://www.i-pass.com.tw/"
-      },
-      {
-        "apple-pay": false,
-        "name": "iCash",
-        "url": "https://www.icash.com.tw/"
-      }
-    ],
+    "passes": ["tw-easycard", "tw-ipass", "tw-icash"],
     "transit-system": {
       "name": "",
       "url": ""
@@ -77,13 +43,7 @@
     "city": "New York",
     "contactless": true,
     "country": "us",
-    "passes": [
-      {
-        "apple-pay": false,
-        "name": "OMNY",
-        "url": "https://omny.info/"
-      }
-    ],
+    "passes": ["us-omny"],
     "transit-system": {
       "name": "Metropolitan Transportation Authority (MTA)",
       "url": "http://www.mta.info/"
