@@ -1,6 +1,6 @@
-# 🗺️ Mileage Map
+# 🗺️ Point Map
 
-How does miles accumulate and flow between different accounts?
+How does points/miles accumulate and flow between different accounts?
 
 TODO: This is a huge projects that require investigations on how to scale this chart.
 
