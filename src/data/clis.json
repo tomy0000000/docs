@@ -20,8 +20,15 @@
   },
   {
     "category": "Cloud provider",
-    "names": ["gcloud"],
-    "zsh-completion": "Homebrew (Need additional setup)"
+    "names": [
+      "gcloud",
+      "docker-credential-gcloud",
+      "bq",
+      "git-credential-gcloud",
+      "gsutil"
+    ],
+    "zsh-completion": "Homebrew (Need additional setup)",
+    "install": [{ "type": "cask", "id": "google-cloud-sdk" }]
   },
   {
     "category": "Command help",
@@ -366,7 +373,7 @@
   {
     "category": "Python package runner",
     "names": ["pipx"],
-    "zsh-completion": "Homebrew (broken)"
+    "zsh-completion": "Homebrew"
   },
   {
     "category": "Python version manager",
@@ -466,6 +473,11 @@
     "url": "https://github.com/Byron/dua-cli"
   },
   {
+    "category": "",
+    "names": ["fileicon"],
+    "url": "https://github.com/mklement0/fileicon"
+  },
+  {
     "category": "Static site generator",
     "names": ["hugo"],
     "zsh-completion": "Homebrew"
@@ -496,6 +508,10 @@
   {
     "category": "System monitor",
     "names": ["htop"]
+  },
+  {
+    "category": "System monitor",
+    "names": ["gotop"]
   },
   {
     "category": "System monitor",
@@ -595,5 +611,20 @@
     "category": "",
     "names": ["gh"],
     "zsh-completion": "Homebrew"
+  },
+  {
+    "category": "",
+    "names": ["flutter", "dart"],
+    "install": [{ "type": "cask", "id": "flutter" }]
+  },
+  {
+    "category": "",
+    "names": ["chromedriver"],
+    "install": [{ "type": "cask", "id": "chromedriver" }]
+  },
+  {
+    "category": "",
+    "names": ["wkhtmltopdf"],
+    "install": [{ "type": "cask", "id": "wkhtmltopdf" }]
   }
 ]
