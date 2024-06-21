@@ -8,6 +8,15 @@
     "name": "Airalo",
     "url": "https://ref.airalo.com/urBC"
   },
+  "point.me": {
+    "code": null,
+    "name": "point.me",
+    "dynamic": false,
+    "for-me": "$5 gift card",
+    "for-you": "$5 for first month",
+    "icon": null,
+    "url": "https://blue.mbsy.co/6DQT6Q"
+  },
   "amex-us": {
     "dynamic": true,
     "icon": "logos:amex-digital",
