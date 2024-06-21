@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # 📡 eSIM
 
 The guide and cheat sheet for finding the best eSIM provider for your trip.

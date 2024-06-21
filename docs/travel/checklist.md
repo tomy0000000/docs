@@ -1,4 +1,8 @@
-# Checklist
+---
+sidebar_position: 1
+---
+
+# 📋 Checklist
 
 A Checklist / Brain Map / Rubric for planning to travel somewhere.
 
