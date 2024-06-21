@@ -402,7 +402,7 @@
     "url": "https://kapeli.com/dash"
   },
   {
-    "category": "",
+    "category": "Status Bar",
     "install": [
       {
         "id": "dato",
@@ -414,7 +414,7 @@
       }
     ],
     "name": "Dato",
-    "note": null,
+    "note": "Status bar calendar",
     "url": "https://sindresorhus.com/dato"
   },
   {
@@ -981,7 +981,7 @@
     "url": "https://img2icnsapp.com/"
   },
   {
-    "category": "Toolbar",
+    "category": "Status Bar",
     "install": [
       {
         "id": "itsycal",
@@ -989,7 +989,7 @@
       }
     ],
     "name": "Itsycal",
-    "note": null,
+    "note": "Status bar calendar",
     "url": "https://www.mowglii.com/itsycal/"
   },
   {
@@ -1273,7 +1273,7 @@
     "url": "https://marked2app.com/"
   },
   {
-    "category": "",
+    "category": "Metadata Editor",
     "install": [
       {
         "id": "meta",
@@ -1285,7 +1285,7 @@
     "url": "https://www.nightbirdsevolve.com/meta/"
   },
   {
-    "category": "",
+    "category": "Metadata Editor",
     "install": [
       {
         "id": "metaimage",
@@ -1363,6 +1363,18 @@
     "name": "MindNode",
     "note": null,
     "url": "https://www.mindnode.com/"
+  },
+  {
+    "category": "Password Manager",
+    "install": [
+      {
+        "id": "1523397704",
+        "type": "mas"
+      }
+    ],
+    "name": "Minimalist",
+    "note": null,
+    "url": "https://minimalistpassword.com/"
   },
   {
     "category": "Media Player",
@@ -2076,6 +2088,18 @@
     "name": "Steam",
     "note": null,
     "url": "https://store.steampowered.com/about/"
+  },
+  {
+    "category": "Metadata Editor",
+    "install": [
+      {
+        "id": "subler",
+        "type": "cask"
+      }
+    ],
+    "name": "Subler",
+    "note": null,
+    "url": "https://subler.org/"
   },
   {
     "category": "Editor",
