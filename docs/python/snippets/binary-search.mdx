@@ -1,0 +1,115 @@
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# Binary Search
+
+The magical search algorithm I may never fully understand.
+
+### TL;DR Example
+
+<Tabs groupId="python-binary-search">
+  <TabItem value="py39" label="Python 3.9">
+    
+    ```python
+    def valid(self, *args, **kwargs) -> bool:
+        # Implement your condition
+        return True or False
+
+    def find_valid(self, begin: int, end: int, *args, **kwargs) -> int:
+        while begin < end:
+            mid = (begin + end) // 2
+            if self.valid(a, *args, **kwargs):
+                end = mid
+            else:
+                begin = mid + 1
+        return begin if self.possible(a, *args, **kwargs) else -1
+    ```
+
+  </TabItem>
+  <TabItem value="py310" label="Python 3.10+">
+
+    ```python
+    def valid(self, *args, **kwargs) -> bool:
+        # Implement your condition
+        return True or False
+
+    def find_valid(self, begin: int, end: int, *args, **kwargs) -> int:
+        ans = bisect_left(
+            range(begin, end + 1), # The range of possible answers: [begin, end]
+            True, # The value to search for
+            key=lambda x: self.valid(a, *args, **kwargs) # Call your condition function
+        )
+        return ans if ans <= max(bloomDay) else -1
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Use `bisect` module
+
+```python
+from bisect import bisect_left
+
+a = list(range(1, 10))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+bisect_left(a, 3) # 2
+```
+
+:::warning
+
+`bisect_left()` is not the same as `bisect()` and `bisect_right()`!
+
+:::
+
+## Handcrafted
+
+:::tip
+
+Keys to remember:
+
+- Continuous condition: `lo < hi`
+- Midpoint calculation: `mid = (lo + hi) // 2`
+- Evaluation: `a[mid] < x`
+- Update method: `lo = mid + 1` or `hi = mid`
+- Return value: `lo`
+
+For special cases, make sure to evaluate condition one last time before returning.
+
+:::
+
+### with while loop
+
+```python
+def binary_search(a, x):
+    """Return the index of the leftmost value exactly equal to x."""
+    lo = 0
+    hi = len(a)
+    while lo < hi:
+        # mid = math.floor((lo + hi) / 2)
+        mid = (lo + hi) // 2
+        if a[mid] < x:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo
+```
+
+### with recursion
+
+```python
+def binary_search(a, x, lo=0, hi=None):
+    """Return the index of the leftmost value exactly equal to x."""
+    if hi is None:
+        hi = len(a)
+    if lo < hi:
+        mid = (lo + hi) // 2
+        if a[mid] < x:
+            return binary_search(a, x, mid + 1, hi)
+        else:
+            return binary_search(a, x, lo, mid)
+    return lo
+```
+
+## Reference
+
+- [Python `bisect` module docs](https://docs.python.org/3/library/bisect.html)
