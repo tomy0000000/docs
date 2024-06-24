@@ -1,6 +1,6 @@
 # `bisect`
 
-Native binary search algorithm. See also [`Binary Search`](../snippets/binary-search.md).
+Native binary search algorithm. See also [`Binary Search`](../snippets/binary-search).
 
 :::info
 
