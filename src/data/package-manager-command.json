@@ -1,41 +1,36 @@
 {
-  "add_source": {
+  "$schema": "https://schema.tomy.tech/package-manager-commands.json",
+  "addSource": {
     "apt": "add-apt-repository _",
     "brew": "brew tap _",
     "gem": "gem sources --add _",
-    "go": "# N/A",
-    "npm": "",
+    "go": null,
     "pip": "pip config set global.index-url _"
   },
-  "cleanup_all": {
+  "cleanupAll": {
     "apt": "apt clean",
     "brew": "brew cleanup --prune=all",
     "gem": "gem sources --clear-all",
-    "go": "",
     "npm": "npm cache clean",
     "pip": "pip cache purge"
   },
-  "cleanup_useless": {
+  "cleanupUseless": {
     "apt": "apt autoclean",
     "brew": "brew cleanup",
-    "gem": "# N/A",
-    "go": "",
-    "npm": "# N/A",
-    "pip": "# N/A"
+    "gem": null,
+    "npm": null,
+    "pip": null
   },
   "dependency": {
     "apt": "apt depends _",
     "brew": "brew deps _",
     "gem": "gem dependency _",
-    "go": "",
     "npm": "npm ls _ --all",
     "pip": "pipdeptree --packages _"
   },
   "healthcheck": {
-    "apt": "",
     "brew": "brew doctor",
     "gem": "gem check",
-    "go": "",
     "npm": "npm doctor",
     "pip": "pip check"
   },
@@ -43,11 +38,10 @@
     "apt": "apt show _",
     "brew": "brew info _",
     "gem": "gem info _",
-    "go": "",
     "npm": "npm info _",
     "pip": "pip show _"
   },
-  "install_global": {
+  "installGlobal": {
     "apt": "apt install _",
     "brew": "brew install _",
     "gem": "gem install _",
@@ -55,79 +49,64 @@
     "npm": "npm install -g _",
     "pip": "pip install _"
   },
-  "install_list": {
+  "installList": {
     "apt": "xargs -a Aptfile apt install",
-    "brew": "",
-    "gem": "",
-    "go": "",
-    "npm": "",
     "pip": "pip install -r requirements.txt"
   },
-  "install_project": {
-    "apt": "# N/A",
-    "brew": "# N/A",
+  "installProject": {
+    "apt": null,
+    "brew": null,
     "gem": "bundle install",
-    "go": "",
     "npm": "npm install",
     "pip": "# See Install from list"
   },
-  "list_global_installed": {
+  "listGlobalInstalled": {
     "apt": "apt list --installed",
     "brew": "brew list",
     "gem": "gem list",
-    "go": "",
     "npm": "npm list -g --depth=0",
     "pip": "pip list"
   },
-  "list_global_undepend": {
-    "apt": "",
+  "listGlobalUndepend": {
     "brew": "brew leaves",
-    "gem": "",
-    "go": "",
-    "npm": "",
     "pip": "pip list --not-required"
   },
-  "list_global_upgradable": {
+  "listGlobalUpgradable": {
     "apt": "apt list --upgradable",
     "brew": "brew outdated",
     "gem": "gem outdated",
-    "go": "",
     "npm": "npm outdated -g --depth=0",
     "pip": "pip list --outdated"
   },
-  "list_project_installed": {
-    "apt": "# N/A",
-    "brew": "# N/A",
+  "listProjectInstalled": {
+    "apt": null,
+    "brew": null,
     "gem": "bundle list",
-    "go": "",
     "npm": "npm list --depth=0",
     "pip": "pip freeze"
   },
-  "list_project_upgradable": {
-    "apt": "# N/A",
-    "brew": "# N/A",
+  "listProjectUpgradable": {
+    "apt": null,
+    "brew": null,
     "gem": "bundle outdated",
-    "go": "",
     "npm": "npm outdated --depth=0",
-    "pip": "# N/A"
+    "pip": null
   },
-  "list_source": {
+  "listSource": {
     "apt": "apt policy",
     "brew": "brew tap",
     "gem": "gem sources --list",
-    "go": "# N/A",
-    "npm": "",
+    "go": null,
     "pip": "pip config get global.index-url"
   },
-  "remove_source": {
+  "removeSource": {
     "apt": "add-apt-repository --remove _",
     "brew": "brew untap _",
     "gem": "gem sources --remove _",
-    "go": "# N/A",
-    "npm": "",
+    "go": null,
     "pip": "pip config unset global.index-url"
   },
-  "reverse_dependency": {
+  "reverseDependency": {
     "apt": "apt rdepends _",
     "brew": "brew uses _",
     "gem": "gem dependency _ --reverse-dependencies",
@@ -139,7 +118,6 @@
     "apt": "apt search _",
     "brew": "brew search _",
     "gem": "gem search _",
-    "go": "",
     "npm": "npm search _",
     "pip": "pip search _"
   },
@@ -147,33 +125,30 @@
     "apt": "apt remove _",
     "brew": "brew uninstall _",
     "gem": "gem uninstall _",
-    "go": "",
     "npm": "npm uninstall _",
     "pip": "pip uninstall _"
   },
-  "uninstall_global_all": {
+  "uninstallGlobalAll": {
     "apt": "apt remove --purge $(dpkg -l | grep '^rc' | awk '{print $2}')",
     "brew": "brew uninstall --force $(brew list)",
     "gem": "gem uninstall -aIx",
-    "go": "",
     "npm": "npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\\/npm$/ {print $NF}' | xargs npm -g uninstall",
     "pip": "pip freeze | xargs pip uninstall -y"
   },
-  "uninstall_useless": {
+  "uninstallUseless": {
     "apt": "apt autoremove",
     "brew": "brew autoremove",
     "gem": "gem cleanup",
     "go": "go mod tidy",
-    "npm": "",
     "pip": ""
   },
-  "update_source": {
+  "updateSource": {
     "apt": "apt update",
     "brew": "brew update",
     "gem": "gem sources --update",
-    "go": "# N/A",
-    "npm": "# N/A",
-    "pip": "# N/A"
+    "go": null,
+    "npm": null,
+    "pip": null
   },
   "upgrade": {
     "apt": "apt upgrade _",
@@ -183,11 +158,10 @@
     "npm": "npm update -g _@latest",
     "pip": "pip install --upgrade _"
   },
-  "upgrade_global_all": {
+  "upgradeGlobalAll": {
     "apt": "apt upgrade",
     "brew": "brew upgrade",
     "gem": "gem update",
-    "go": "",
     "npm": "npm update -g",
     "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U"
   }

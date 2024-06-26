@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import PacageManagerCommands from "@site/src/components/PacageManagerCommands";
-import commands from "@site/src/data/package-manager-commands.json";
+import commands from "@site/src/data/package-manager-command.json";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
@@ -10,4 +10,4 @@ List all dependent installables of a installable.
 
 In another word, find out which installables are using / depend by a installable specified.
 
-<PacageManagerCommands commands={commands.reverse_dependency} />
+<PacageManagerCommands commands={commands.reverseDependency} />

@@ -11,43 +11,18 @@ type PackageManagerItem = {
 };
 
 export const PackageManagerList: PackageManagerItem[] = [
-  {
-    id: "apt",
-    title: "apt",
-    icon: "logos:debian",
-  },
-  {
-    id: "brew",
-    title: "Homebrew",
-    icon: "logos:homebrew",
-  },
-  {
-    id: "pip",
-    title: "Python",
-    icon: "logos:python",
-  },
-  {
-    id: "npm",
-    title: "npm",
-    icon: "logos:npm-icon",
-  },
-  {
-    id: "gem",
-    title: "Ruby",
-    icon: "logos:rubygems",
-  },
-  {
-    id: "go",
-    title: "Go",
-    icon: "logos:gopher",
-  },
+  { id: "apt", title: "apt", icon: "logos:debian" },
+  { id: "brew", title: "Homebrew", icon: "logos:homebrew" },
+  { id: "pip", title: "Python", icon: "logos:python" },
+  { id: "npm", title: "npm", icon: "logos:npm-icon" },
+  { id: "gem", title: "Ruby", icon: "logos:rubygems" },
+  { id: "go", title: "Go", icon: "logos:gopher" },
 ];
 
 export default function PackageManagers({ commands }): JSX.Element {
   return (
     <Tabs groupId="package-manager">
       {PackageManagerList.map((props, idx) => (
-        // <PackageManager key={idx} {...props} />
         <TabItem
           key={idx}
           value={props.id}
@@ -61,7 +36,9 @@ export default function PackageManagers({ commands }): JSX.Element {
           <CodeBlock language="shell">
             {commands[props.id]
               ? commands[props.id]
-              : "# Open a PR to complete this 🫶🏻"}
+              : commands[props.id] === null
+                ? "# N/A"
+                : "# Open a PR to complete this 🫶🏻"}
           </CodeBlock>
         </TabItem>
       ))}
