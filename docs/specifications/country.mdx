@@ -1,3 +1,4 @@
+import JoinLineBreak from "@site/src/components/JoinLineBreak";
 import SortableTable from "@site/src/components/SortableTable";
 import countries from "@site/src/data/countries.json";
 
@@ -37,34 +38,23 @@ Clicking the ISO 3166-1 Alpha 2 code will open the Wikipedia page with a more co
     {
       header: "ISO 3166-1 Alpha 2",
       accessorKey: "iso",
-      cell: ({ getValue }) => (
-        <a
-          href={`https://en.wikipedia.org/wiki/ISO_3166-2:${getValue()}`}
-          target="blank"
-          rel="noreferrer noopener"
-        >
-          {getValue()}
-        </a>
-      ),
+      cell: ({ getValue }) => {
+        const iso = getValue();
+        return (
+          <a
+            href={`https://en.wikipedia.org/wiki/ISO_3166-2:${iso}`}
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            {iso}
+          </a>
+        );
+      },
     },
     {
       header: "ITU-T E.164",
       accessorKey: "itut",
-      cell: ({ getValue }) => (
-        <>
-          {getValue()
-            .split("\n")
-            .map(function (item, idx) {
-              return (
-                <span key={idx}>
-                  {item}
-                  <br />
-                </span>
-              );
-            })}
-          {/* .map((line) => <p>{line}</p>) */}
-        </>
-      ),
+      cell: ({ getValue }) => JoinLineBreak(getValue().split("\n")),
     },
   ]}
   data={Object.values(countries)}
