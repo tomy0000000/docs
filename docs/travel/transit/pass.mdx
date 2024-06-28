@@ -3,8 +3,8 @@ sidebar_position: 2
 ---
 
 import { Icon } from "@iconify/react";
+import Country from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
-import countries from "@site/src/data/countries.json";
 import transitPasses from "@site/src/data/transit-passes.json";
 
 # 💳 Pass
@@ -31,10 +31,7 @@ A list of transit passes around the world.
     {
       header: "Country",
       accessorKey: "country",
-      cell: ({ getValue }) => {
-        const { name, emoji } = countries[getValue().toUpperCase()];
-        return `${emoji} ${name}`;
-      },
+      cell: ({ getValue }) => <Country iso={getValue()} />,
     },
   ]}
   data={Object.values(transitPasses)}

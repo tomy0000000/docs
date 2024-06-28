@@ -2,6 +2,7 @@
 hide_table_of_contents: true
 ---
 
+import Country from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
 import airlines from "@site/src/data/airlines.json";
 import countries from "@site/src/data/countries.json";
@@ -30,17 +31,8 @@ List of airlines, might not cover all.
     {
       header: "Countries",
       accessorKey: "countries",
-      cell: ({ getValue }) => {
-        const airlineCountries = getValue();
-        return airlineCountries.map((countryCode, index) => {
-          const country = countries[countryCode.toUpperCase()];
-          return (
-            <span key={index} title={country.name}>
-              {country.emoji}
-            </span>
-          );
-        });
-      },
+      cell: ({ getValue }) =>
+        getValue().map((country) => <Country key={country} iso={country} />),
     },
     { header: "IATA Code", accessorKey: "iata" },
     { header: "ICAO Code", accessorKey: "icao" },
