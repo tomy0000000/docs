@@ -9,15 +9,6 @@
     "name": "Airalo",
     "url": "https://ref.airalo.com/urBC"
   },
-  "point.me": {
-    "code": null,
-    "name": "point.me",
-    "dynamic": false,
-    "for-me": "$5 gift card",
-    "for-you": "$5 for first month",
-    "icon": null,
-    "url": "https://blue.mbsy.co/6DQT6Q"
-  },
   "amex-us": {
     "dynamic": true,
     "icon": "logos:amex-digital",
@@ -87,6 +78,15 @@
     "name": "N26",
     "url": "https://n26.com/r/chiweih7858"
   },
+  "point.me": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$5 gift card",
+    "for-you": "$5 for first month",
+    "icon": null,
+    "name": "point.me",
+    "url": "https://blue.mbsy.co/6DQT6Q"
+  },
   "privacy.com": {
     "code": null,
     "dynamic": false,
@@ -127,6 +127,15 @@
     "icon": null,
     "name": "Roame.Travel",
     "url": "https://roame.travel?referral=xBZb7KoluJN1xvUPq0ws9Va9Y9v2"
+  },
+  "seated": {
+    "code": "tomy4",
+    "dynamic": false,
+    "for-me": "$10 after your first meal",
+    "for-you": "$10 after your first meal",
+    "icon": null,
+    "name": "Seated",
+    "url": "https://seated.app.link/Z0jBDTUN8Jb"
   },
   "setapp": {
     "code": null,
