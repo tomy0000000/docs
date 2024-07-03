@@ -20,6 +20,12 @@
   },
   {
     "category": "Cloud provider",
+    "install": [
+      {
+        "id": "google-cloud-sdk",
+        "type": "cask"
+      }
+    ],
     "names": [
       "gcloud",
       "docker-credential-gcloud",
@@ -27,8 +33,7 @@
       "git-credential-gcloud",
       "gsutil"
     ],
-    "zsh-completion": "Homebrew (Need additional setup)",
-    "install": [{ "type": "cask", "id": "google-cloud-sdk" }]
+    "zsh-completion": "Homebrew (Need additional setup)"
   },
   {
     "category": "Command help",
@@ -614,17 +619,32 @@
   },
   {
     "category": "",
-    "names": ["flutter", "dart"],
-    "install": [{ "type": "cask", "id": "flutter" }]
+    "install": [
+      {
+        "id": "flutter",
+        "type": "cask"
+      }
+    ],
+    "names": ["flutter", "dart"]
   },
   {
     "category": "",
-    "names": ["chromedriver"],
-    "install": [{ "type": "cask", "id": "chromedriver" }]
+    "install": [
+      {
+        "id": "chromedriver",
+        "type": "cask"
+      }
+    ],
+    "names": ["chromedriver"]
   },
   {
     "category": "",
-    "names": ["wkhtmltopdf"],
-    "install": [{ "type": "cask", "id": "wkhtmltopdf" }]
+    "install": [
+      {
+        "id": "wkhtmltopdf",
+        "type": "cask"
+      }
+    ],
+    "names": ["wkhtmltopdf"]
   }
 ]
