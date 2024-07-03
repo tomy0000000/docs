@@ -299,6 +299,16 @@
   },
   {
     "category": "Network",
+    "names": ["doggo"],
+    "url": "https://github.com/mr-karan/doggo"
+  },
+  {
+    "category": "Network",
+    "names": ["nmap"],
+    "url": "https://github.com/nmap/nmap"
+  },
+  {
+    "category": "Network",
     "names": ["dig"]
   },
   {
