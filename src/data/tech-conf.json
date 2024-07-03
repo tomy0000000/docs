@@ -118,5 +118,17 @@
     "start-date": "2024-05-23",
     "type": "Development",
     "url": "https://vercel.com/ship"
+  },
+  "local-first-conf": {
+    "city": "Berlin, Germany",
+    "country": "de",
+    "end-date": "2024-05-31",
+    "form": "In-person",
+    "name": "Local-First Conf",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-05-30",
+    "type": "Development",
+    "url": "https://www.localfirstconf.com/"
   }
 }
