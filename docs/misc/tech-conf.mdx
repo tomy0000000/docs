@@ -10,8 +10,6 @@ import conferences from "@site/src/data/tech-conf.json";
 
 List of tech conferences that I'm interested in and tracking.
 
-{/* TODO: Sorting on date is not working as expected */}
-
 <SortableTable
   columns={[
     {
@@ -28,45 +26,39 @@ List of tech conferences that I'm interested in and tracking.
       },
     },
     {
-      header: "Date",
+      header: "Start Date",
       accessorKey: "start-date",
-      accessorFn: (row) => [row["start-date"], row["end-date"]],
+      accessorFn: (row) => new Date(row["start-date"]),
+      sortingFn: "datetime",
       cell: ({ getValue }) => {
-        const dates = getValue();
-        const start = new Date(dates[0]);
-        const end = new Date(dates[1]);
-        const startYear = start.getFullYear();
-        const startMonth = start.getMonth();
-        const startDay = start.getDate();
-        const endYear = end.getFullYear();
-        const endMonth = end.getMonth();
-        const endDay = end.getDate();
-        if (
-          startYear === endYear &&
-          startMonth === endMonth &&
-          startDay === endDay
-        ) {
-          return start.toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          });
-        }
-        if (startYear === endYear && startMonth === endMonth) {
-          return `${start.toLocaleDateString("en-US", {
-            month: "short",
-            day: "numeric",
-          })} - ${end.toLocaleDateString("en-US", {
-            day: "numeric",
-          })}, ${startYear}`;
-        }
-        return `${start.toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-        })} - ${end.toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-        })}`;
+        const date = getValue();
+        return (
+          <span style={{ color: date < new Date() ? "grey" : "inherit" }}>
+            {date.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </span>
+        );
+      },
+    },
+    {
+      header: "End Date",
+      accessorKey: "end-date",
+      accessorFn: (row) => new Date(row["end-date"]),
+      sortingFn: "datetime",
+      cell: ({ getValue }) => {
+        const date = getValue();
+        return (
+          <span style={{ color: date < new Date() ? "grey" : "inherit" }}>
+            {date.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </span>
+        );
       },
     },
     {
