@@ -16,6 +16,20 @@ List of airlines, might not cover all.
 <SortableTable
   columns={[
     {
+      header: "Logo",
+      accessorKey: "logo",
+      accessorFn: (row) => [row.name, row.iata],
+      cell: ({ getValue }) => {
+        const [name, iata] = getValue();
+        return (
+          <img
+            src={`https://www.gstatic.com/flights/airline_logos/70px/${iata}.png`}
+            alt={`Logo of ${name}`}
+          />
+        );
+      },
+    },
+    {
       header: "Name",
       accessorKey: "name",
       accessorFn: (row) => [row.name, row.url],
