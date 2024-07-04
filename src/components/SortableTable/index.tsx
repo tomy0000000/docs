@@ -1,11 +1,3 @@
-// ----------------------------------------------------------------------------
-// Please note that this component is deliberately NOT using a CCS stylesheet
-// because react-table is ui-agnostic and the table will therefore inherit
-// Docusaurus table styling. If additional styling ever becomes required please
-// consider using either "css modules" or "styled components".
-//
-// Code sandbox at https://codesandbox.io/s/pester-data-table-basic-1x0mw
-// ----------------------------------------------------------------------------
 import {
   flexRender,
   getCoreRowModel,
@@ -28,30 +20,63 @@ export default function SortableTable({
     data,
     columns,
     state: { sorting },
+    columnResizeMode: "onEnd",
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });
 
   return (
-    <table>
+    <table
+      {...{
+        style: {
+          width: table.getCenterTotalSize(),
+        },
+      }}
+    >
       <thead>
         {table.getHeaderGroups().map((headerGroup) => (
           <tr key={headerGroup.id}>
             {headerGroup.headers.map((header) => (
               <th
-                key={header.id}
-                colSpan={header.colSpan}
-                onClick={header.column.getToggleSortingHandler()}
+                {...{
+                  key: header.id,
+                  colSpan: header.colSpan,
+                  style: {
+                    width: header.getSize(),
+                  },
+                }}
               >
-                {flexRender(
-                  header.column.columnDef.header,
-                  header.getContext(),
-                )}
-                {{
-                  asc: " 🔼",
-                  desc: " 🔽",
-                }[header.column.getIsSorted() as string] ?? null}
+                <div
+                  className="content"
+                  onClick={header.column.getToggleSortingHandler()}
+                >
+                  {flexRender(
+                    header.column.columnDef.header,
+                    header.getContext(),
+                  )}
+                  {{
+                    asc: " 🔼",
+                    desc: " 🔽",
+                  }[header.column.getIsSorted() as string] ?? null}
+                </div>
+                <div
+                  {...{
+                    onDoubleClick: () => header.column.resetSize(),
+                    onMouseDown: header.getResizeHandler(),
+                    onTouchStart: header.getResizeHandler(),
+                    className: `resizer ltr ${
+                      header.column.getIsResizing() ? "isResizing" : ""
+                    }`,
+                    style: {
+                      transform: header.column.getIsResizing()
+                        ? `translateX(${
+                            table.getState().columnSizingInfo.deltaOffset ?? 0
+                          }px)`
+                        : "",
+                    },
+                  }}
+                />
               </th>
             ))}
           </tr>
@@ -61,7 +86,14 @@ export default function SortableTable({
         {table.getRowModel().rows.map((row) => (
           <tr key={row.id} id={row.id}>
             {row.getVisibleCells().map((cell) => (
-              <td key={cell.id}>
+              <td
+                {...{
+                  key: cell.id,
+                  style: {
+                    width: cell.column.getSize(),
+                  },
+                }}
+              >
                 {flexRender(cell.column.columnDef.cell, cell.getContext())}
               </td>
             ))}
