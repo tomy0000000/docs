@@ -1,0 +1,86 @@
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# 🔐 RSA Encryption
+
+Best practices for RSA encryption.
+
+## Glossary
+
+- Encryption/Decryption: Use v1.5/OAEP
+- Signature/Verification: Use v1.5/PSS
+
+## Key Generation
+
+- Storage Format
+  - Recommended: Encode in base64 with `PEM (Privacy Enhanced Mail)` format.
+  - Alternatively, store in binary with `DER (Distinguished Encoding Rules)` format.
+- Bit length
+  - Recommended: `2048` bits. Good balance between security and performance.
+  - Alternatively, consider `3072` or `4096` for higher security. Note that this will slow down encryption/decryption.
+
+### Private key
+
+<Tabs groupId="rsa-gen-key">
+  <TabItem value="modern" label="PKCS#8">
+
+    Recommended. More modern and flexible.
+
+    ```shell
+    openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+    ```
+
+    The output key header will be `-----BEGIN PRIVATE KEY-----`.
+
+  </TabItem>
+  <TabItem value="legacy" label="PKCS#1">
+
+    Specific to RSA (Legacy)
+
+    ```shell
+    openssl genrsa -out private_key.pem 2048
+    ```
+
+    The output key header may be `-----BEGIN PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----`.
+
+  </TabItem>
+</Tabs>
+
+### Public key
+
+**Public key are derived from private key.**
+
+<Tabs groupId="rsa-gen-key">
+  <TabItem value="modern" label="PKIX">
+
+    Recommended. PKIX (Public Key Infrastructure) also known as X.509 or SPKI (Subject Public Key Info)
+
+    ```shell
+    openssl rsa -pubout -in private_key.pem -out public_key.pem
+    ```
+
+  </TabItem>
+  <TabItem value="legacy" label="PKCS#1">
+
+    Legacy format specific to RSA
+
+    ```shell
+    openssl rsa -in private_key.pem -RSAPublicKey_out -out public_key.pem
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Hashing
+
+- `SHA-256`: Recommended
+- `SHA-1`: Cryptographically broken, and should not be used.
+
+## Padding
+
+- OAEP (Optimal Asymmetric Encryption Padding): Recommended
+- PKCS#1 v1.5: Legacy
+
+## References
+
+- [PKCS](https://en.wikipedia.org/wiki/PKCS)
