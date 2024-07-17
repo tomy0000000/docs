@@ -69,6 +69,12 @@ TODO
 
 TODO
 
+### Base64 encoded string
+
+```regex
+^[a-zA-Z0-9+/]*={0,2}$
+```
+
 ### Chinese Characters
 
 ```regex
