@@ -1,4 +1,4 @@
-# Data Modeling
+# 🏗️ Data Modeling
 
 TODO: Add more details, examples, comparisons and references.
 

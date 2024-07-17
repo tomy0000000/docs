@@ -1,0 +1,7 @@
+{
+  "label": "🔐 Encryption",
+  "link": {
+    "type": "generated-index",
+    "description": "Best practices for encrypting data in your application."
+  }
+}

@@ -1,0 +1,124 @@
+---
+sidebar_position: 4
+---
+
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# Asymmetric Encryption
+
+Asymmetric encryption is a type of encryption where a pair of keys is used to encrypt and decrypt electronic information. The key pair consists of a public key and a private key. The public key is used to encrypt the information and the private key is used to decrypt it.
+
+## Order of preference
+
+1. <a href="./glossary#libraries">Well-Known Libraries</a>
+2. <abbr title="Elliptic Curve Cryptography">`ECC`</abbr>
+3. `RSA-KEM`: RSA Key Encapsulation Mechanism
+4. `RSA-OAEP`: RSA Optimal Asymmetric Encryption Padding
+
+:::danger
+
+The latter part of this document will cover the RSA encryption process, but getting RSA right is hard and **SHOULD BE AVOIDED**, even with the right libraries. Prefer the first two options whenever possible.
+
+:::
+
+## RSA Key Generation
+
+- Storage Format
+  - Recommended: Encode in base64 with <abbr title="Privacy Enhanced Mail">`PEM`</abbr> format.
+  - Alternatively, store in binary with <abbr title="Distinguished Encoding Rules">`DER`</abbr> format.
+- Bit length
+  - Recommended: `2048` bits. Good balance between security and performance.
+  - Alternatively, consider `3072` or `4096` for higher security. Note that this will slow down encryption/decryption.
+
+### Private key
+
+<Tabs groupId="rsa-gen-key">
+  <TabItem value="modern" label="PKCS#8">
+
+    Recommended. More modern and flexible.
+
+    ```shell
+    openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+    ```
+
+    The output key header will be `-----BEGIN PRIVATE KEY-----`.
+
+  </TabItem>
+  <TabItem value="legacy" label="PKCS#1">
+
+    Specific to RSA (Legacy)
+
+    ```shell
+    openssl genrsa -out private_key.pem 2048
+    ```
+
+    The output key header may be `-----BEGIN PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----`.
+
+  </TabItem>
+</Tabs>
+
+### Public key
+
+:::info
+
+Public key are derived from private key.
+
+:::
+
+<Tabs groupId="rsa-gen-key">
+  <TabItem value="modern" label="PKIX">
+
+    Recommended. PKIX (Public Key Infrastructure) also known as X.509 or SPKI (Subject Public Key Info)
+
+    ```shell
+    openssl rsa -pubout -in private_key.pem -out public_key.pem
+    ```
+
+  </TabItem>
+  <TabItem value="legacy" label="PKCS#1">
+
+    Legacy format specific to RSA
+
+    ```shell
+    openssl rsa -in private_key.pem -RSAPublicKey_out -out public_key.pem
+    ```
+
+  </TabItem>
+</Tabs>
+
+## `RSA-KEM`
+
+High level overview:
+
+1. Create a random symmetric key
+2. Encrypt it with RSA public key
+3. Encrypt the data with the symmetric key
+4. Send the encrypted symmetric key and the encrypted data
+
+## `RSA-OAEP`
+
+### Hashing
+
+- `SHA-256`: Recommended
+- `SHA-1`: Cryptographically broken, and should not be used.
+
+### Padding
+
+- <abbr title="Optimal Asymmetric Encryption Padding">`OAEP`</abbr>: Recommended
+- PKCS#1 v1.5: Legacy
+
+### Label
+
+By default the label is empty, but it can be set to a specific value. Both the encryptor and decryptor must use the same label.
+
+## ☠️ AVOID THESE
+
+- `RSA` in general
+- `ElGamal`
+- `OpenPGP`, `OpenSSL`, `BouncyCastle`, etc.
+
+## References
+
+- [Cryptographic Best Practices](https://gist.github.com/atoponce/07d8d4c833873be2f68c34f9afc5a78a#asymmetric-encryption)
+- [PKCS](https://en.wikipedia.org/wiki/PKCS)
