@@ -70,3 +70,7 @@ TODO
 ### [`pdm`](https://github.com/pdm-project/pdm)
 
 ### [`hatch`](https://github.com/pypa/hatch)
+
+### [`uv`](https://github.com/astral-sh/uv)
+
+### [`rye`](https://github.com/astral-sh/rye)
