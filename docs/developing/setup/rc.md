@@ -1,4 +1,4 @@
-# RC Files
+# 🐚 Shell RC
 
 Guide on maintaining good startup scripts. Also known as rc files, such as `.bashrc`, `.zshrc`, etc.
 

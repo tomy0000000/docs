@@ -1,4 +1,4 @@
-# Scripting
+# 🐚 Shell
 
 Guide to writing good shell scripts.
 
