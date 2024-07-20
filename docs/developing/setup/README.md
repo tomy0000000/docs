@@ -2,31 +2,22 @@
 
 SOP for setting up new computer/server.
 
-## Steps
+## Steps & How they are done
 
-1. **Setup hardware**: Get machine ready for use.
-2. **Networking**: Configure static IP, DNS.
-3. Configure SSH
-4. Configure Non-root User
-5. Configure Firewall
-6. Install Core Utilities
-7. Configure Dotfiles
-8. Install Core Applications
-9. Install Application Suite
+| #   | Step                      | Bare server       | Cloud VM          | Container | Device            |
+| --- | ------------------------- | ----------------- | ----------------- | --------- | ----------------- |
+| 1   | Setup Hardware            | 🐒 Monkey         | terraform         | -         | -                 |
+| 2   | Networking                | 🐒 Monkey         |                   | -         | -                 |
+| 3   | Configure SSH             | dotfiles (script) | -                 | -         | dotfiles (script) |
+| 4   | Configure Non-root User   | dotfiles (script) | dotfiles (script) | -         | dotfiles (script) |
+| 5   | Configure Firewall        | playbook          | playbook          | -         | -                 |
+| 6   | Install Core Utilities    | playbook          | playbook          | dotfiles  | dotfiles          |
+| 7   | Configure Dotfiles        | playbook          | playbook          | dotfiles  | dotfiles          |
+| 8   | Install Core Applications | playbook          | playbook          | dotfiles  | dotfiles          |
+| 9   | Install Application Suite | playbook          | playbook          | dotfiles  | dotfiles          |
 
-### How they are done
-
-| Step | Bare server       | Cloud VM          | Container | Device            |
-| ---- | ----------------- | ----------------- | --------- | ----------------- |
-| 1    | 🐒 Monkey         | terraform         | -         | -                 |
-| 2    | 🐒 Monkey         |                   | -         | -                 |
-| 3    | dotfiles (script) | -                 | -         | dotfiles (script) |
-| 4    | dotfiles (script) | dotfiles (script) | -         | dotfiles (script) |
-| 5    | playbook          | playbook          | -         | -                 |
-| 6    | playbook          | playbook          | dotfiles  | dotfiles          |
-| 7    | playbook          | playbook          | dotfiles  | dotfiles          |
-| 8    | playbook          | playbook          | dotfiles  | dotfiles          |
-| 9    | playbook          | playbook          | dotfiles  | dotfiles          |
+- **Setup hardware**: Get machine ready for use.
+- **Networking**: Configure static IP for server, hosts, DNS.
 
 ### Principles
 
