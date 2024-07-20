@@ -154,6 +154,12 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Tomy Hsieh. Built with Docusaurus.`,
     },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
