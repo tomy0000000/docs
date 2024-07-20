@@ -1,10 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
-# Glossary
+# 🧮 Algorithms
 
-## Notation
+Cheat sheets for picking the right algorithm for the job.
+
+## Complexity Notation
 
 | Symbol   | Name               | Used for                                                |
 | -------- | ------------------ | ------------------------------------------------------- |

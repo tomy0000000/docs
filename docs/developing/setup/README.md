@@ -1,4 +1,6 @@
-# Glossary
+# 🚀 Setup
+
+SOP for setting up new computer/server.
 
 ## Steps
 

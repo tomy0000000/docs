@@ -1,12 +1,8 @@
----
-sidebar_position: 1
----
-
-# Glossary
+# 🗃️ Database
 
 Some general ideas about databases and how to choose the right one
 
-## Decision Tree
+## 🌳 Decision Tree
 
 ```mermaid
 graph LR

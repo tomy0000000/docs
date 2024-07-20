@@ -1,8 +1,4 @@
----
-sidebar_position: 1
----
-
-# Glossary
+# 🔐 Encryption
 
 How to determine the kind of encryption you should use.
 
