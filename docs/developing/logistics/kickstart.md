@@ -18,14 +18,6 @@ git remote set-head origin -a
 git remote prune origin
 ```
 
-## Versioning
-
-Select from the following options:
-
-- [Semantic Versioning](https://semver.org/): No-brainer, most projects use this and don't have too many issues with it.
-- [ZeroVer](https://0ver.org/): When you believe that this project is just for fun and it might never reach `1.0.0`.
-- [CalVer](https://calver.org/): When a project has a very short release cycle or date is a key information for the users of the project (e.g. A constantly updated data, API, or SDK).
-
 ## Development Flow
 
 For smaller projects, use [GitHub Flow](https://githubflow.github.io/). For larger projects, use [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/).
