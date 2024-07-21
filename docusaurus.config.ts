@@ -123,28 +123,29 @@ const config: Config = {
       ],
     },
     footer: {
+      logo: {
+        alt: "Tomy's Docs Logo",
+        src: "img/tomy-circle-white.png",
+        width: 25,
+        height: 25,
+      },
       style: "dark",
       links: [
         {
-          title: "👨🏻‍💻 Developing",
-          items: [
-            {
-              label: "🐍 Python",
-              to: "/python/versions",
-            },
-            {
-              label: "📦 Package Managers",
-              to: "/package-managers/glossary",
-            },
-            {
-              label: "📜 Specifications",
-              to: "/specifications/country",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
+            {
+              label: "About",
+              to: "/about",
+            },
+            {
+              label: "Rules",
+              to: "/rules",
+            },
+            {
+              label: "Privacy Policy",
+              to: "/privacy-policy",
+            },
             {
               label: "GitHub",
               href: "https://github.com/tomy0000000/docs",
