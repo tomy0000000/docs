@@ -1,8 +1,10 @@
 # 💼 Onboarding New Job
 
-The un-documented to-do list for onboarding a new job.
+The un-documented check list for onboarding a new job.
 
 ## 💡 Knowledges
+
+Know these well on D1/W1:
 
 - Payroll
   - Schedule, period, and method of payment
@@ -23,6 +25,35 @@ The un-documented to-do list for onboarding a new job.
 ## Tips
 
 - Write a personal doc for your work[^1]
+  - Product, service, team, project, platform, and tool names
+  - **Acronyms / Jargons**: Make sure you denote if it's internal or industry-wide.
 - Customize internal tools for your workflow
+  - Shell RC files
+  - IDE settings
+  - Automation scripts
+- Identify the go-to persons
+  - **Day-to-day task**: Payroll, PTO, benefits, IT, HR, and manager
+  - **Un-blockers for high-level goals**: Team lead, project manager, and executive
+- Plan your first 30/60/90 days
+  - **30 days**: Understand the team, project, and platform
+  - **60 days**: Contribute to the team and project
+  - **90 days**: Deliver a project or a feature
+- Keep a work journal
+  - Daily log of tasks, blockers, and achievements
+  - Weekly summary of progress and plan (for 1:1, stand-up, or retrospective)
+- Develop communication plan
+  - For every person you work with
+  - When is the best time to reach out? (Morning email, afternoon chat, or evening call?)
+  - Where do they prefer to communicate? (Pentry or Slack?)
+  - How to communicate? (Cut-to-the-chase, small talk, or formal?)
+- Personal development plan
+  - What are the main takeaways from this position? (Salary, skill, network, experience, or achievement?)
+  - Boundaries between work and personal life (Overtime, weekend, or vacation?)
+- <abbr title="Get the F**k Out">GTFO</abbr> plan
+  - **Vertically**: What is your main blocker for promotion?
+  - **Horizontally**: Always stay informed about internal opportunities
+  - **Externally**
+    - Positively: What pulls you to another company?
+    - Negatively: What pushes you to another company?
 
-[^1]: This doc should be retained within the company's system, especially if it contains confidential information.
+[^1]: This doc should be retained within the company's system, especially if it contains confidential information. Even if you set it as private, expect it to be read by IT or HR someday.
