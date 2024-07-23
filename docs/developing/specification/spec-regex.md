@@ -75,6 +75,12 @@ TODO
 ^[a-zA-Z0-9+/]*={0,2}$
 ```
 
+### Semantic Version
+
+```regex
+^(\d+)\.(\d+)\.(\d+)$
+```
+
 ### Chinese Characters
 
 ```regex
