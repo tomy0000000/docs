@@ -153,7 +153,7 @@ const config: Config = {
             },
             {
               label: "Rules",
-              to: "/rules",
+              to: "/docs-rules",
             },
             {
               label: "Privacy Policy",

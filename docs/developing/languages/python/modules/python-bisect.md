@@ -1,6 +1,6 @@
 # `bisect`
 
-Native binary search algorithm. See also [`Binary Search`](../snippets/binary-search.mdx).
+Native binary search algorithm. See also [`Binary Search`](../snippets/python-binary-search.mdx).
 
 :::info
 
