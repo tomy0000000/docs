@@ -4,19 +4,20 @@ How to send images while preserving the original quality and metadata.
 
 ## Table
 
-| Method                  | Resolution | No Compression | Timestamp | Location | Metadata | File Name | Last Test |
-| ----------------------- | ---------- | -------------- | --------- | -------- | -------- | --------- | --------- |
-| Email                   | ✅         | ✅ [^1]        | ✅        | ✅       | ✅       | ✅        | -         |
-| SMS                     |            |                |           |          |          |           |           |
-| AirDrop                 |            |                |           |          |          |           |           |
-| iMessage                |            |                |           |          |          |           |           |
-| LINE (picture)          |            |                |           |          |          |           |           |
-| LINE (album)            |            |                |           |          |          |           |           |
-| WhatsApp                |            |                |           |          |          |           |           |
-| Telegram                |            |                |           |          |          |           |           |
-| Dropbox Request (web)   |            |                |           |          |          |           |           |
-| Google Photos (web)     |            |                |           |          |          |           |           |
-| Google Photos (iOS app) |            |                |           |          |          |           |           |
+| Method                                | Resolution | No Compression | Timestamp | Location | Metadata | File Name | Last Test |
+| ------------------------------------- | ---------- | -------------- | --------- | -------- | -------- | --------- | --------- |
+| Email                                 | ✅         | ✅ [^1]        | ✅        | ✅       | ✅       | ✅        | -         |
+| SMS                                   |            |                |           |          |          |           |           |
+| AirDrop                               |            |                |           |          |          |           |           |
+| iMessage                              |            |                |           |          |          |           |           |
+| LINE (picture)                        |            |                |           |          |          |           |           |
+| LINE (album)                          |            |                |           |          |          |           |           |
+| WhatsApp                              |            |                |           |          |          |           |           |
+| Telegram                              |            |                |           |          |          |           |           |
+| Dropbox Request (web)                 |            |                |           |          |          |           |           |
+| Google Photos (web)                   |            |                |           |          |          |           |           |
+| Google Photos (iOS app)               |            |                |           |          |          |           |           |
+| [cubeupload](https://cubeupload.com/) |            |                |           |          |          |           |           |
 
 [^1]: Image should be sent as an attachment, not embedded in the email. Even so, some email clients might compress the image.
 
