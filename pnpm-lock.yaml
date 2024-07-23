@@ -29,6 +29,9 @@ importers:
       clsx:
         specifier: ^1.2.1
         version: 1.2.1
+      github-slugger:
+        specifier: ^2.0.0
+        version: 2.0.0
       prism-react-renderer:
         specifier: ^2.2.0
         version: 2.2.0(react@18.2.0)
@@ -2722,6 +2725,9 @@ packages:
 
   github-slugger@1.5.0:
     resolution: {integrity: sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==}
+
+  github-slugger@2.0.0:
+    resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -6207,7 +6213,7 @@ snapshots:
       terser-webpack-plugin: 5.3.10(webpack@5.90.0)
       tslib: 2.6.2
       update-notifier: 6.0.2
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.91.0))(webpack@5.90.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.90.0))(webpack@5.90.0)
       webpack: 5.90.0
       webpack-bundle-analyzer: 4.10.1
       webpack-dev-server: 4.15.1(webpack@5.90.0)
@@ -6268,7 +6274,7 @@ snapshots:
       tslib: 2.6.2
       unified: 11.0.4
       unist-util-visit: 5.0.0
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.91.0))(webpack@5.90.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.90.0))(webpack@5.90.0)
       vfile: 6.0.1
       webpack: 5.90.0
     transitivePeerDependencies:
@@ -6801,7 +6807,7 @@ snapshots:
       resolve-pathname: 3.0.0
       shelljs: 0.8.5
       tslib: 2.6.2
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.91.0))(webpack@5.90.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.90.0))(webpack@5.90.0)
       utility-types: 3.11.0
       webpack: 5.90.0
     optionalDependencies:
@@ -7281,7 +7287,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.12.8
 
   '@types/scheduler@0.16.7': {}
 
@@ -8807,6 +8813,8 @@ snapshots:
   get-stream@6.0.1: {}
 
   github-slugger@1.5.0: {}
+
+  github-slugger@2.0.0: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -11817,7 +11825,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  url-loader@4.1.1(file-loader@6.2.0(webpack@5.91.0))(webpack@5.90.0):
+  url-loader@4.1.1(file-loader@6.2.0(webpack@5.90.0))(webpack@5.90.0):
     dependencies:
       loader-utils: 2.0.4
       mime-types: 2.1.35

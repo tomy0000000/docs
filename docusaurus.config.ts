@@ -1,5 +1,6 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
+import { slug } from "github-slugger";
 import { themes } from "prism-react-renderer";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
@@ -45,6 +46,18 @@ const config: Config = {
 
   markdown: {
     mermaid: true,
+    parseFrontMatter: async (params) => {
+      const result = await params.defaultParseFrontMatter(params);
+      const filePaths = params.filePath.split("/");
+      const fileName = filePaths.pop();
+      let name = fileName.split(".").shift();
+      if (name === "README") {
+        name = filePaths.pop();
+      }
+      // NOTE: Check console to see if there are any duplicated slugs
+      result.frontMatter.slug = `/${slug(name)}`;
+      return result;
+    },
   },
   themes: ["@docusaurus/theme-mermaid"],
 
