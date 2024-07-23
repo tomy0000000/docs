@@ -1,7 +1,6 @@
 import countries from "@site/src/data/countries.json";
 
 export default function Country({ iso, noEmoji }): JSX.Element {
-  console.log(iso);
   const country = countries[iso.toUpperCase()];
   return (
     <>
