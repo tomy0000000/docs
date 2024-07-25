@@ -2,6 +2,18 @@
 
 The old fashioned that never gets old.
 
+> "In C++ it's harder to shoot yourself in the foot, but when you do, you blow off your whole leg."
+>
+> — Bjarne Stroustrup (creator of C++)
+
+TODO: Import useful content from the references.
+
 ## Misc
 
 - [Include What You Use (IWYU)](https://github.com/include-what-you-use/include-what-you-use): Automatically find the dependencies of your C/C++ source files.
+
+## References
+
+- [How to C in 2016](https://matt.sh/howto-c)
+- [NUS CS1010 C Style](https://nus-cs1010.github.io/2223-s1/style.html)
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
