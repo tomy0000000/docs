@@ -1,15 +1,22 @@
 import countries from "@site/src/data/countries.json";
 
-export default function Country({ iso, noEmoji }): JSX.Element {
+// 'tw' → '🇹🇼'
+export function CountryEmoji({ iso }): JSX.Element {
   const country = countries[iso.toUpperCase()];
+  return <span title={country.name}>{country.emoji}</span>;
+}
+
+// 'tw' → 'Taiwan'
+export function CountryNameEn({ iso }): JSX.Element {
+  const country = countries[iso.toUpperCase()];
+  return <>{country.name}</>;
+}
+
+// 'tw' → '🇹🇼 Taiwan'
+export default function Country({ iso }): JSX.Element {
   return (
     <>
-      {!noEmoji && (
-        <>
-          <span title={country.name}>{country.emoji}</span>{" "}
-        </>
-      )}
-      {country.name}
+      <CountryEmoji iso={iso} /> <CountryNameEn iso={iso} />
     </>
   );
 }
