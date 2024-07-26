@@ -360,6 +360,16 @@
     "icao": "DAL",
     "lcc": false,
     "name": "Delta Air Lines",
+    "offers": [
+      {
+        "name": "Flight Deals",
+        "url": "https://www.delta.com/us/en/flight-deals/current-flight-deals"
+      },
+      {
+        "name": "Premium Deals",
+        "url": "https://www.delta.com/us/en/flight-deals/premium-cabin-flight-deals"
+      }
+    ],
     "seatguru": "https://www.seatguru.com/airlines/Delta_Airlines/information.php",
     "url": "https://www.delta.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Delta_Air_Lines"
@@ -1024,6 +1034,13 @@
     "in-flight-entertainment": "https://unitedprivatescreening.com/",
     "lcc": false,
     "name": "United Airlines",
+    "offers": [
+      { "name": "Flight deals", "url": "https://www.united.com/en-us/flights" },
+      {
+        "name": "Weekly deals from San Francisco",
+        "url": "https://www.united.com/en-us/weekly-deals-from-san-francisco"
+      }
+    ],
     "seatguru": "https://www.seatguru.com/airlines/United_Airlines/information.php",
     "url": "https://www.united.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/United_Airlines"
@@ -1074,6 +1091,7 @@
     "defunct": false,
     "iata": "WN",
     "icao": "SWA",
+    "in-flight-entertainment": "https://www.southwest.com/inflight-entertainment-portal/",
     "lcc": true,
     "name": "Southwest Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Southwest_Airlines/information.php",

@@ -1,0 +1,18 @@
+import airlines from "@site/src/data/airlines.json";
+
+# Delta Air Lines
+
+<ul>
+  {airlines["DL-DAL"].offers.map((offerLink, index) => (
+    <li>
+      <a
+        href={offerLink.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        key={index}
+      >
+        {offerLink.name}
+      </a>
+    </li>
+  ))}
+</ul>
