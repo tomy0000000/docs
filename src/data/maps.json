@@ -1,0 +1,128 @@
+{
+  "amap": {
+    "android-docs": "https://lbs.amap.com/api/android-sdk",
+    "country": "cn",
+    "icon": null,
+    "ios-docs": "https://lbs.amap.com/api/ios-sdk",
+    "name": "高德地图",
+    "web-app": "https://ditu.amap.com/",
+    "web-docs": "https://lbs.amap.com/api/javascript-api-v2"
+  },
+  "apple-maps": {
+    "android-docs": null,
+    "country": null,
+    "icon": "logos:apple",
+    "ios-docs": "https://developer.apple.com/documentation/mapkit/",
+    "name": "Apple Maps",
+    "web-app": "https://beta.maps.apple.com/",
+    "web-docs": "https://developer.apple.com/documentation/mapkitjs/"
+  },
+  "baidu-ditu": {
+    "android-docs": "https://lbsyun.baidu.com/faq/api?title=androidsdk",
+    "country": "cn",
+    "icon": null,
+    "ios-docs": "https://lbsyun.baidu.com/faq/api?title=iossdk",
+    "name": "百度地图",
+    "web-app": "https://map.baidu.com/",
+    "web-docs": "https://lbsyun.baidu.com/index.php?title=jspopular3.0"
+  },
+  "google-maps": {
+    "android-docs": "https://developers.google.com/maps/documentation/android-sdk",
+    "country": null,
+    "icon": "logos:google-maps",
+    "ios-docs": "https://developers.google.com/maps/documentation/ios-sdk",
+    "name": "Google Maps",
+    "web-app": "https://www.google.com/maps",
+    "web-docs": "https://developers.google.com/maps/documentation/javascript"
+  },
+  "here-wego": {
+    "android-docs": "https://www.here.com/docs/category/here-sdk-android",
+    "country": null,
+    "icon": "simple-icons:here",
+    "ios-docs": "https://www.here.com/docs/category/here-sdk-ios",
+    "name": "HERE WeGo",
+    "web-app": "https://wego.here.com/",
+    "web-docs": "https://www.here.com/docs/category/here-sdk-for-js"
+  },
+  "kakao-map": {
+    "android-docs": "https://apis.map.kakao.com/android_v2/",
+    "country": "kr",
+    "icon": null,
+    "ios-docs": "https://apis.map.kakao.com/ios_v2/",
+    "name": "Kakao Map",
+    "web-app": "https://map.kakao.com/",
+    "web-docs": "https://apis.map.kakao.com/web/"
+  },
+  "mapbox": {
+    "android-docs": "https://docs.mapbox.com/android/",
+    "country": null,
+    "icon": "logos:mapbox-icon",
+    "ios-docs": "https://docs.mapbox.com/ios/",
+    "name": "Mapbox",
+    "web-app": null,
+    "web-docs": "https://docs.mapbox.com/mapbox-gl-js/api/"
+  },
+  "mapillary": {
+    "android-docs": null,
+    "country": null,
+    "icon": "arcticons:mapillary",
+    "ios-docs": null,
+    "name": "Mapillary",
+    "web-app": "https://www.mapillary.com/app/",
+    "web-docs": null
+  },
+  "navar-map": {
+    "android-docs": "https://navermaps.github.io/android-map-sdk/guide-en/",
+    "country": "kr",
+    "icon": null,
+    "ios-docs": "https://navermaps.github.io/ios-map-sdk/guide-en/",
+    "name": "NAVER Map",
+    "web-app": "https://map.naver.com/",
+    "web-docs": "https://navermaps.github.io/maps.js.en/docs/"
+  },
+  "open-street-map": {
+    "android-docs": null,
+    "country": null,
+    "icon": "simple-icons:openstreetmap",
+    "ios-docs": null,
+    "name": "OpenStreetMap",
+    "web-app": "https://www.openstreetmap.org",
+    "web-docs": null
+  },
+  "overture-maps": {
+    "android-docs": null,
+    "country": null,
+    "icon": null,
+    "ios-docs": null,
+    "name": "Overture Maps",
+    "web-app": "https://explore.overturemaps.org/",
+    "web-docs": null
+  },
+  "tencent": {
+    "android-docs": "https://lbs.qq.com/mobile/androidMapSDK/developerGuide/androidSummary",
+    "country": "cn",
+    "icon": null,
+    "ios-docs": "https://lbs.qq.com/mobile/iOSMapSDK/mapGuide/summary",
+    "name": "腾讯地图",
+    "web-app": "https://map.qq.com/",
+    "web-docs": "https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview"
+  },
+  "wikimedia-maps": {
+    "android-docs": null,
+    "country": null,
+    "icon": "simple-icons:wikimediafoundation",
+    "ios-docs": null,
+    "name": "Wikimedia Maps",
+    "web-app": "https://maps.wikimedia.org/",
+    "web-docs": null
+  },
+  "yandex-map": {
+    "android-docs": "https://yandex.com/dev/mapkit/doc/en/",
+    "country": "ru",
+    "icon": null,
+    "ios-docs": "https://yandex.com/dev/mapkit/doc/en/",
+    "name": "Yandex Map",
+    "web-app": "https://yandex.com/maps/",
+    "web-docs": "https://yandex.com/dev/jsapi30/doc/en/"
+  }
+}
