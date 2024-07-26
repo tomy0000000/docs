@@ -23,5 +23,57 @@
       "</Tabs>"
     ],
     "description": "Tabs component"
+  },
+  "Icon": {
+    "scope": "markdown,mdx",
+    "prefix": "icon",
+    "body": [
+      "import { Icon } from '@iconify/react';",
+      "",
+      "<Icon icon=\"${1}\" inline={true} />"
+    ],
+    "description": "Iconify icon"
+  },
+  "Country": {
+    "scope": "markdown,mdx",
+    "prefix": "country",
+    "body": [
+      "import Country from '@site/src/components/Country';",
+      "",
+      "<Country key={country} iso={country} />"
+    ],
+    "description": "Render Country"
+  },
+  "Table": {
+    "scope": "markdown,mdx",
+    "prefix": "table",
+    "body": [
+      "import Country from '@site/src/components/Country';",
+      "",
+      "<SortableTable",
+      "  columns={[",
+      "    {",
+      "      header: \"title\",",
+      "      accessorKey: \"key\",",
+      "      accessorFn: (row) => [row.key_one, row.key_two],",
+      "      size: 200,",
+      "      minSize: 50,",
+      "      maxSize: 500,",
+      "      enableResizing: false,",
+      "      cell: ({ getValue }) => {",
+      "        const [key_one, key_two] = getValue();",
+      "        return <></>;",
+      "      },",
+      "    }",
+      "  ]}",
+      "  data={data}",
+      "  data={Object.values(data)}",
+      "  data={Object.keys(data).map((key) => {",
+      "    return { name: key, ...services[key] };",
+      "  })}",
+      "  defaultSorting={{ id: \"key\", desc: false }}",
+      "/>"
+    ],
+    "description": "Table"
   }
 }
