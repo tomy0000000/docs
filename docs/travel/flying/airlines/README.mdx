@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-import Country from "@site/src/components/Country";
+import { CountryEmoji } from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
 import airlines from "@site/src/data/airlines.json";
 import countries from "@site/src/data/countries.json";
@@ -17,6 +17,7 @@ List of airlines, might not cover all.
   columns={[
     {
       header: "Logo",
+      size: 50,
       accessorKey: "logo",
       accessorFn: (row) => [row.name, row.iata],
       cell: ({ getValue }) => {
@@ -25,34 +26,37 @@ List of airlines, might not cover all.
           <img
             src={`https://www.gstatic.com/flights/airline_logos/70px/${iata}.png`}
             alt={`Logo of ${name}`}
+            width={25}
+            height={25}
           />
         );
       },
     },
     {
       header: "Name",
+      size: 250,
       accessorKey: "name",
-      accessorFn: (row) => [row.name, row.url],
+      accessorFn: (row) => [row.name, row.url, row.countries],
       cell: ({ getValue }) => {
-        const [name, url] = getValue();
+        const [name, url, countries] = getValue();
         return (
-          <a href={url} target="blank" rel="noreferrer noopener">
-            {name}
-          </a>
+          <>
+            {countries.map((country) => (
+              <CountryEmoji key={country} iso={country} />
+            ))}{" "}
+            <a href={url} target="blank" rel="noreferrer noopener">
+              {name}
+            </a>
+          </>
         );
       },
     },
-    {
-      header: "Countries",
-      accessorKey: "countries",
-      cell: ({ getValue }) =>
-        getValue().map((country) => <Country key={country} iso={country} />),
-    },
-    { header: "IATA Code", accessorKey: "iata" },
-    { header: "ICAO Code", accessorKey: "icao" },
+    { header: "IATA", size: 100, accessorKey: "iata" },
+    { header: "ICAO", size: 100, accessorKey: "icao" },
     { header: "Alliance", accessorKey: "alliance" },
     {
       header: "Wikipedia",
+      size: 100,
       accessorKey: "wikipedia",
       cell: ({ getValue }) => (
         <a href={getValue()} target="blank" rel="noreferrer noopener">
@@ -62,6 +66,7 @@ List of airlines, might not cover all.
     },
     {
       header: "Routes",
+      size: 100,
       accessorFn: (row) => [row.iata, row.icao],
       cell: ({ getValue }) => {
         const [iata, icao] = getValue();
@@ -102,6 +107,7 @@ List of airlines, might not cover all.
     },
     {
       header: "Seatmaps",
+      size: 100,
       accessorKey: "seatguru",
       cell: ({ getValue }) => {
         const seatguru = getValue();
