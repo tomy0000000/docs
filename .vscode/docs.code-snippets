@@ -4,7 +4,7 @@
     "scope": "markdown,mdx",
     "prefix": "admonitions",
     "body": [":::${1|note,tip,info,warning,danger|}", "", "${2}", "", ":::"],
-    "description": "Admonition info box"
+    "description": "Admonition info box",
   },
   "Tabs": {
     "scope": "markdown,mdx",
@@ -20,9 +20,9 @@
       "  <TabItem value=\"${4}\" label=\"${5}\">",
       "    ${7}",
       "  </TabItem>",
-      "</Tabs>"
+      "</Tabs>",
     ],
-    "description": "Tabs component"
+    "description": "Tabs component",
   },
   "Icon": {
     "scope": "markdown,mdx",
@@ -30,9 +30,9 @@
     "body": [
       "import { Icon } from '@iconify/react';",
       "",
-      "<Icon icon=\"${1}\" inline={true} />"
+      "<Icon icon=\"${1}\" inline={true} />",
     ],
-    "description": "Iconify icon"
+    "description": "Iconify icon",
   },
   "Country": {
     "scope": "markdown,mdx",
@@ -40,15 +40,15 @@
     "body": [
       "import Country from '@site/src/components/Country';",
       "",
-      "<Country key={country} iso={country} />"
+      "<Country key={country} iso={country} />",
     ],
-    "description": "Render Country"
+    "description": "Render Country",
   },
   "Table": {
     "scope": "markdown,mdx",
     "prefix": "table",
     "body": [
-      "import Country from '@site/src/components/Country';",
+      "import SortableTable from \"@site/src/components/SortableTable\";",
       "",
       "<SortableTable",
       "  columns={[",
@@ -72,8 +72,8 @@
       "    return { name: key, ...services[key] };",
       "  })}",
       "  defaultSorting={{ id: \"key\", desc: false }}",
-      "/>"
+      "/>",
     ],
-    "description": "Table"
-  }
+    "description": "Table",
+  },
 }
