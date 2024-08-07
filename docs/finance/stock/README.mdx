@@ -1,0 +1,64 @@
+---
+hide_table_of_contents: true
+full_width: true
+---
+
+import Country from "@site/src/components/Country";
+import JoinLineBreak from "@site/src/components/JoinLineBreak";
+import SortableTable from "@site/src/components/SortableTable";
+import stockExchanges from "@site/src/data/stock-exchanges.json";
+
+# 📈 Stock
+
+## World Exchanges
+
+<SortableTable
+  columns={[
+    {
+      header: "Name",
+      accessorKey: "name",
+      accessorFn: (row) => [row.name, row.abbr],
+      size: 350,
+      cell: ({ getValue }) => {
+        const [name, abbr] = getValue();
+        return (
+          <>
+            {name} (<abbr title={name}>{abbr}</abbr>)
+          </>
+        );
+      },
+    },
+    {
+      header: "MIC",
+      accessorKey: "mic",
+      cell: ({ getValue }) => JoinLineBreak(getValue()),
+    },
+    {
+      header: "Countries",
+      accessorKey: "countries",
+      size: 200,
+      cell: ({ getValue }) =>
+        JoinLineBreak(
+          getValue().map((country) => <Country key={country} iso={country} />),
+        ),
+    },
+  ]}
+  data={Object.values(stockExchanges)}
+/>
+
+# Indices
+
+| Country        | Top Index                    | Median Index            | Composite Index      |
+| -------------- | ---------------------------- | ----------------------- | -------------------- |
+| United States  | Dow Jones Industrial Average | S&P 500                 | NYSE Composite       |
+| United States  | Nasdaq-100                   |                         | Nasdaq Composite     |
+| Europe         | Euronext 100                 |                         |                      |
+| United Kingdom | FTSE 100                     | FTSE SmallCap Index     | FTSE All-Share Index |
+| China          | SSE 50                       |                         | SSE Composite        |
+| China          | SZSE 100                     |                         | SZSE Component       |
+| Japan          | Nikkei 225                   | Tokyo Stock Price Index |                      |
+| Hong Kong      |                              | Hang Seng               |                      |
+| Taiwan         |                              |                         | TAIEX                |
+| South Korea    |                              |                         | KOSPI                |
+| Singapore      | Straits Times Index          |                         |                      |
+| Australia      | S&P/ASX 200                  | S&P/ASX 300             | All Ordinaries       |
