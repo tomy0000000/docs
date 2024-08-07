@@ -1,0 +1,74 @@
+{
+  "NYSE": {
+    "name": "New York Stock Exchange",
+    "abbr": "NYSE",
+    "mic": ["XNYS"],
+    "countries": ["us"]
+  },
+  "NASDAQ": {
+    "name": "Nasdaq Stock Market",
+    "abbr": "NASDAQ",
+    "mic": ["XNAS"],
+    "countries": ["us"]
+  },
+  "EURONEXT": {
+    "name": "Euronext",
+    "abbr": "EURONEXT",
+    "mic": ["XAMS", "XBRU", "XMSM", "XLIS", "XMIL", "XOSL", "XPAR"],
+    "countries": ["nl", "be", "ie", "pt", "it", "no", "fr"]
+  },
+  "LSE": {
+    "name": "London Stock Exchange",
+    "abbr": "LSE",
+    "mic": ["XLON"],
+    "countries": ["gb"]
+  },
+  "SSE": {
+    "name": "Shanghai Stock Exchange",
+    "abbr": "SSE",
+    "mic": ["XSHG"],
+    "countries": ["cn"]
+  },
+  "SZSE": {
+    "name": "Shenzhen Stock Exchange",
+    "abbr": "SZSE",
+    "mic": ["XSHE"],
+    "countries": ["cn"]
+  },
+  "TYO": {
+    "name": "Tokyo Stock Exchange",
+    "abbr": "TYO",
+    "mic": ["XJPX"],
+    "countries": ["jp"]
+  },
+  "HKEX": {
+    "name": "Hong Kong Stock Exchange",
+    "abbr": "HKEX",
+    "mic": ["XHKG"],
+    "countries": ["hk"]
+  },
+  "TWSE": {
+    "name": "Taiwan Stock Exchange",
+    "abbr": "TWSE",
+    "mic": ["XTAI"],
+    "countries": ["tw"]
+  },
+  "KRX": {
+    "name": "Korea Exchange",
+    "abbr": "KRX",
+    "mic": ["XKOS"],
+    "countries": ["kr"]
+  },
+  "SGX": {
+    "name": "Singapore Exchange",
+    "abbr": "SGX",
+    "mic": ["XSES"],
+    "countries": ["sg"]
+  },
+  "ASX": {
+    "name": "Australian Securities Exchange",
+    "abbr": "ASX",
+    "mic": ["XASX"],
+    "countries": ["au"]
+  }
+}
