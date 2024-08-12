@@ -14,6 +14,15 @@
     "icon": "logos:amex-digital",
     "name": "American Express 🇺🇸"
   },
+  "bilt": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "2500 points you got approved for a card",
+    "for-you": null,
+    "icon": null,
+    "name": "Bilt",
+    "url": "https://bilt.page/r/UQ7M-2381"
+  },
   "chase-sapphire": {
     "dynamic": true,
     "icon": "simple-icons:chase",
@@ -36,6 +45,15 @@
     "icon": "devicon:digitalocean",
     "name": "DigitalOcean",
     "url": "https://m.do.co/c/a4dc22504068"
+  },
+  "doordash": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$10 credit after you places the first order over $25",
+    "for-you": "$5 off for your first order",
+    "icon": "simple-icons:doordash",
+    "name": "DoorDash",
+    "url": "https://drd.sh/kxJHEFkXcEKaUG1m"
   },
   "dropbox": {
     "code": null,
