@@ -130,5 +130,17 @@
     "start-date": "2024-05-30",
     "type": "Development",
     "url": "https://www.localfirstconf.com/"
+  },
+  "mapbox-build": {
+    "city": null,
+    "country": "us",
+    "end-date": "2024-09-13",
+    "form": "Virtual",
+    "name": "Mapbox Build",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-09",
+    "type": "Development",
+    "url": "https://www.mapbox.com/build/"
   }
 }
