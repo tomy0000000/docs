@@ -44,8 +44,6 @@ Atom specification is defined by the following two RFC:
 1. [RFC 4287: The Atom Syndication Format](https://datatracker.ietf.org/doc/html/rfc4287)
 2. [RFC 5023: The Atom Publishing Protocol](https://datatracker.ietf.org/doc/html/rfc5023)
 
-###
-
 ## Feed Location for Specific Sites
 
 | Site    | Example site                               | Feed location                                    |
