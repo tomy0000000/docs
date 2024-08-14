@@ -86,6 +86,31 @@ The above examples are safe because the script is fetched first and then execute
 
 :::
 
+## Tips
+
+### Don't use `cd` in scripts
+
+Refrain from using `cd` in scripts. Because:
+
+- It makes the script harder to understand and maintain
+- The script becomes less portable and highly dependent on the environment
+
+If you really need to change the directory, use subshell and handle missing directory error:
+
+```bash
+(
+  cd /path/to/dir || exit
+  # do something
+)
+```
+
+### Use `mktemp` for temporary files
+
+```bash
+tempfile=$(mktemp)
+echo "Hello, world!" > "${tempfile}"
+```
+
 ## References
 
 - [Bash `set` flags list](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
