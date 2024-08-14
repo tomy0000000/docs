@@ -1,0 +1,319 @@
+# macOS Built-in Font
+
+List of fonts that are pre-installed on macOS Sonoma (14.6).
+
+- Academy Engraved LET
+- Adelle Sans Devanagari
+- AkayaKanadaka
+- AkayaTelivigala
+- Al Bayan
+- Al Nile
+- Al Tarikh
+- American Typewriter
+- Andale Mono
+- Annai MN
+- Apple Braille
+- Apple Chancery
+- Apple Color Emoji
+- Apple LiGothic
+- Apple Lisung
+- Apple SD Gothic Neo
+- Apple Symbols
+- AppleGothic
+- AppleMyungjo
+- Arial
+- Arial Black
+- Arial Hebrew
+- Arial Hebrew Scholar
+- Arial Narrow
+- Arial Rounded MT Bold
+- Arial Unicode MS
+- Arima Koshi
+- Arima Madurai
+- Avenir
+- Avenir Next
+- Avenir Next Condensed
+- Ayuthaya
+- Bagndad
+- Bal Jamjuree
+- Baloo 2
+- Baloo Bhai 2
+- Baloo Bhaijaan
+- Baloo Bhaina 2
+- Baloo Chettan 2
+- Baloo Da 2
+- Baloo Paaji 2
+- Baloo Tamma 2
+- Baloo Tammudu 2
+- Baloo Thambi 2
+- Bangla MN
+- Bangla Sangam MN
+- Baoli SC
+- Baoli TC
+- Baskerville
+- Beirut
+- BiauKaiHK
+- BiauKaiTC
+- Big Caslon
+- BIZ UDGothic
+- BIZ UDMincho
+- BM Dohyeon
+- BM Hanna 11yrs Old
+- BM Hanna Air
+- BM Hanna Pro
+- BM Jua
+- BM Kirang Haerang
+- BM Yeonsung
+- Bodoni 72
+- Bodoni 72 Oldstyle
+- Bodoni 72 Smallcaps
+- Bodoni Ornaments
+- Bradley Hand
+- Brush Script MT
+- Cambay Devanagari
+- Chakra Petch
+- Chalkboard
+- Chalkboard SE
+- Chalkduster
+- Charm
+- Charmonman
+- Charter
+- Cochin
+- Comic Sans MS
+- Copperplate
+- Corsiva Hebrew
+- Courler New
+- Damascus
+- Decolype Naskh
+- Devanagari MT
+- Devanagari Sangam MN
+- Didot
+- DIN Alternate
+- DIN Condensed
+- Diwan Kufi
+- Diwan Thuluth
+- Euphemia UCAS
+- Fankwang
+- Faran
+- Farisi
+- Futura
+- Galvji
+- GB18030 Bitmap
+- Geeza Pro
+- Geneva
+- Georgia
+- Gill Sans
+- Gotu
+- Grantha Sangam MN
+- Gujarati MT
+- Gujarati Sangam MN
+- GungSeo
+- Gurmukhi MN
+- Gurmukhi MT
+- Gurmukhi Sangam MN
+- Hannotate SC
+- Hannotate TC
+- HanziPen SC
+- HanziPen TC
+- HeadLineA
+- Hei
+- Heiti SC
+- Heiti TC
+- Helvetica
+- Helvetica Neue
+- Herculanum
+- Hiragino Maru Gothic ProN
+- Hiragino Mincho ProN
+- Hiragino Sans
+- Hiragino Sans CNS
+- Hiragino Sans GB
+- Hoefler Text
+- Hubballi
+- Impact
+- InaiMathi
+- ITF Devanagari
+- ITF Devanagari Marathi
+- Jaini
+- Jaini Purva
+- K2D
+- Kai
+- Kailasa
+- Kaiti SC
+- Kaiti TC
+- Kannada MN
+- Kannada Sangam MN
+- Katari
+- Kavivanar
+- Kefa
+- Khmer MN
+- Khmer Sangam MN
+- Klee
+- Kodchasan
+- Kohinoor Bangla
+- Kohinoor Devanagari
+- Kohinoor Gujarati
+- Kohinoor Telugu
+- KOHO
+- Kokonor
+- Krub
+- Krungthep
+- KufiStandardGK
+- Lahore Gurmukhi
+- Lantinghei SC
+- Lantinghei TC
+- Lao MN
+- Lao Sangam MN
+- Lava Devanagari
+- Lava Kannada
+- Lava Telugu
+- Libian SC
+- Libian TC
+- LiHei Pro
+- Ling Wai SC
+- Ling Wai TC
+- LiSong Pro
+- Lucida Grande
+- Luminari
+- Maku
+- Malayalam MN
+- Malayalam Sangam MN
+- Mali
+- Marker Felt
+- Menlo
+- Microsoft Sans Serif
+- Mishafi
+- Mishafi Gold
+- Modak
+- Monaco
+- Mshtakan
+- Mukta
+- Mukta Mahee
+- Mukta Malar
+- Mukta Vaani
+- Muna
+- Myanmar MN
+- Myanmar Sangam MN
+- Myriad Arabic
+- Nadeem
+- Nanum Brush Script
+- Nanum Gothic
+- Nanum Myeongjo
+- Nanum Pen Script
+- New Peninim MT
+- Niramit
+- Noteworthy
+- Noto Nastaliq Urdu
+- Noto Sans Batak
+- Noto Sans Kannada
+- Noto Sans Myanmar
+- Noto Sans NKO
+- Noto Sans Oriya
+- Noto Sans Tagalog
+- Noto Serit Kannada
+- Noto Serif Myanmar
+- October Compressed Devanagari
+- October Compressed Tamil
+- October Condensed Devanagari
+- October Condensed Tamil
+- October Devanagari
+- October Tamil
+- Optima
+- Oriya MN
+- Oriya Sangam MN
+- Osaka
+- Padyakke Expanded One
+- Palatino
+- Papyrus
+- Party LET
+- PCMyungjo
+- Phosphate
+- PilGi
+- Ping Fang HK
+- PingFang SC
+- PingFang TC
+- Plantagenet Cherokee
+- PSL Ornanong Pro
+- PT Mono
+- PT Sans
+- PT Sans Caption
+- PT Sans Narrow
+- PT Serif
+- PT Serif Caption
+- Raanana
+- Rockwell
+- Sama Devanagari
+- Sama Gujarati
+- Sama Gurmukhi
+- Sama Kannada
+- Sama Malayalam
+- Sama Tamil
+- Sana
+- Sarabun
+- Sathu
+- Savoye LET
+- Shobhika
+- Shree Devanagari 714
+- SignPainter
+- Silom
+- SimSong
+- Sinhala MN
+- Sinhala Sangam MN
+- Skia
+- Snell Roundhand
+- Songti SC
+- Songti TC
+- Srisakdi
+- STFangsong
+- STHeiti
+- STIX Two Math
+- STIX TWo Text
+- STKaiti
+- STSong
+- Sukhumvit Set
+- Symbol
+- Tahoma
+- Tamil MN
+- Tamil Sangam MN
+- Telugu MN
+- Telugu Sangam MN
+- Thonburi
+- Times New Roman
+- Tiro Bangla
+- Tiro Devanagari Hindi
+- Tiro Devanagari Marathi
+- Tiro Devanagari Sanskrit
+- Tiro Gurmukhi
+- Tiro Kannada
+- Tiro Tamil
+- Tiro Telugu
+- Toppan Bunkyu Gothic
+- Toppan Bunkyu Midashi Gothic
+- Toppan Bunkyu Midashi Mincho
+- Toppan Bunkyu Mincho
+- Trattatello
+- Trebuchet MS
+- Tsukushi A Round Gothic
+- Tsukushi B Round Gothic
+- Verdana
+- Waseem
+- Wawati SC
+- Wawati TC
+- Webdings
+- Weibei SC
+- Weibei TC
+- Wingdings
+- Wingdings 2
+- Wingdings 3
+- Xingkai SC
+- Xingkai TC
+- Yuanti SC
+- Yuanti TC
+- YuGothic
+- YuKyokasho
+- YuKyokasho Yoko
+- YuMincho
+- YuMincho +36p Kana
+- Yuppy SC
+- Yuppy TC
+- Zapf Dingbats
+- Zapfino

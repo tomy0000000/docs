@@ -100,6 +100,12 @@ const config: Config = {
         },
         {
           type: "docSidebar",
+          sidebarId: "designSidebar",
+          label: "🎨 Design",
+          position: "left",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "travelSidebar",
           label: "🧳 Travel",
           position: "left",

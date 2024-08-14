@@ -1,0 +1,94 @@
+# Font
+
+How to choose the right font.
+
+## Serif vs. Sans-Serif
+
+![Serif vs. Sans-Serif](https://img.tomy.me/docs/serif-vs-sans-serif.jpg)
+
+<figcaption>
+  <small>
+    <a href="https://www.cdgi.com/2016/09/serif-vs-sans-serif-fonts/" target="_blank" rel="noopener noreferrer">
+      Source: Difference Between Serif & Sans-Serif | Clockwork Design Group Inc.
+    </a>
+  </small>
+</figcaption>
+
+## Web Safe Fonts
+
+Fonts that are pre-installed by many operating systems.
+
+- `sans-serif`
+  - Arial
+  - Verdana
+  - Tahoma
+  - Trebuchet MS
+- `serif`
+  - Times New Roman
+  - Georgia
+  - Garamond
+- `monospace`
+  - Courier New
+- `cursive`
+  - Brush Script MT
+
+:::tip
+
+- [CSS Font Stack](https://www.cssfontstack.com/) shows all web safe fonts in one page.
+- [Modern Font Stacks](https://modernfontstacks.com/) provides a list of great font pairings that are beautiful, yet widely supported.
+
+:::
+
+## Noto Fonts
+
+[Noto](https://fonts.google.com/noto) is an open source font family created by Google aims to support all languages with a harmonious look and feel.
+
+## Source
+
+[Source](https://www.adobe.com/type) is a series of open source fonts created by Adobe.
+
+:::info
+
+Google and Adobe collaborated to create the Noto CJK and Source Han fonts.
+
+- Source Han Sans == Noto Sans CJK
+- Source Han Serif == Noto Serif CJK
+
+:::
+
+## <abbr title="Reserved Font Name">RFN</abbr>
+
+Some font used reserved font name to:
+
+- Avoid collisions
+- Protect authors
+- Minimize support
+- Encourage derivatives
+
+Hence there could be similar derivative fonts with slightly different names.
+
+:::info
+
+You can search for font name on [fontdata](https://namecheck.fontdata.com/) to check if the name is in used.
+
+:::
+
+## Pairing
+
+Pairing fonts is an art, just like pairing wine and cheese. Here are some useful resources:
+
+- [Fontpair](https://fontpair.co/) provides font pairings using Google Fonts.
+- [Fontjoy](https://fontjoy.com/) lets you test font pairings.
+
+## Where to look for fonts
+
+- [Google Fonts](https://fonts.google.com/)
+- [Adobe Fonts](https://fonts.adobe.com/)
+- [Fontshare](https://www.fontshare.com/)
+- [justfont](https://justfont.com/)
+
+## References
+
+- [CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+- [フォントフリー](https://fontfree.me/)
+- [Managing Reserved Font Names (RFNs)](https://openfontlicense.org/ofl-reserved-font-names/)
