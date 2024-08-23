@@ -12,6 +12,18 @@
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar_Asia_Airways"
   },
+  "N0-NBT": {
+    "alliance": null,
+    "countries": ["no"],
+    "defunct": false,
+    "iata": "N0",
+    "icao": "NBT",
+    "lcc": true,
+    "name": "Norse Atlantic Airways",
+    "seatguru": null,
+    "url": "https://www.flynorse.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norse_Atlantic_Airways"
+  },
   "5J-CEB": {
     "alliance": "Value Alliance",
     "apple-wallet-pass": null,
