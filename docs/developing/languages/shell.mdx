@@ -111,6 +111,28 @@ tempfile=$(mktemp)
 echo "Hello, world!" > "${tempfile}"
 ```
 
+### Don't read and write to the same file
+
+Beacuse it will be cleared before the read operation is done.
+
+```bash
+head -1 some-file > some-file
+```
+
+Use pipe:
+
+```bash
+head -1 some-file | sponge some-file # `sponge` is from moreutils, or use `tee`
+```
+
+or temporary file:
+
+```bash
+head -1 some-file > some-file.tmp
+mv some-file.tmp some-file
+```
+
 ## References
 
 - [Bash `set` flags list](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
+- [Unix & Linux Stack Exchange - IO redirection and the head command](https://unix.stackexchange.com/a/15838/339896)
