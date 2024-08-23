@@ -1,5 +1,5 @@
 // https://stackoverflow.com/a/74668016/10325430
-import { useDoc } from "@docusaurus/theme-common/internal";
+import { useDoc } from "@docusaurus/plugin-content-docs/client";
 import type { WrapperProps } from "@docusaurus/types";
 import Layout from "@theme-original/DocItem/Layout";
 import type LayoutType from "@theme/DocItem/Layout";
