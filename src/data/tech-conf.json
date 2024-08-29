@@ -11,6 +11,18 @@
     "type": "Development",
     "url": "https://developer.apple.com/wwdc/"
   },
+  "cppcon": {
+    "city": "Aurora, CO",
+    "country": "us",
+    "end-date": "2024-09-20",
+    "form": "In-person",
+    "name": "CppCon",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-15",
+    "type": "Development",
+    "url": "https://cppcon.org/"
+  },
   "datadog-dash": {
     "city": "New York, NY",
     "country": "us",
@@ -71,6 +83,30 @@
     "type": "Development",
     "url": "https://gopherday.golang.tw/"
   },
+  "local-first-conf": {
+    "city": "Berlin, Germany",
+    "country": "de",
+    "end-date": "2024-05-31",
+    "form": "In-person",
+    "name": "Local-First Conf",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-05-30",
+    "type": "Development",
+    "url": "https://www.localfirstconf.com/"
+  },
+  "mapbox-build": {
+    "city": null,
+    "country": "us",
+    "end-date": "2024-09-13",
+    "form": "Virtual",
+    "name": "Mapbox Build",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-09",
+    "type": "Development",
+    "url": "https://www.mapbox.com/build/"
+  },
   "microsoft-ignite": {
     "city": "Chicago, IL",
     "country": "us",
@@ -118,29 +154,5 @@
     "start-date": "2024-05-23",
     "type": "Development",
     "url": "https://vercel.com/ship"
-  },
-  "local-first-conf": {
-    "city": "Berlin, Germany",
-    "country": "de",
-    "end-date": "2024-05-31",
-    "form": "In-person",
-    "name": "Local-First Conf",
-    "notes": "",
-    "series": "",
-    "start-date": "2024-05-30",
-    "type": "Development",
-    "url": "https://www.localfirstconf.com/"
-  },
-  "mapbox-build": {
-    "city": null,
-    "country": "us",
-    "end-date": "2024-09-13",
-    "form": "Virtual",
-    "name": "Mapbox Build",
-    "notes": "",
-    "series": "",
-    "start-date": "2024-09-09",
-    "type": "Development",
-    "url": "https://www.mapbox.com/build/"
   }
 }
