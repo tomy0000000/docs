@@ -72,6 +72,15 @@
     "name": "Honey",
     "url": "https://joinhoney.com/ref/0e65ns6"
   },
+  "instacart": {
+    "code": "THSIEH1A744",
+    "dynamic": false,
+    "for-me": "$10 credit after you places the first order",
+    "for-you": "$10 off for your first order",
+    "icon": "simple-icons:instacart",
+    "name": "Instacart",
+    "url": "https://inst.cr/t/2cddf647a"
+  },
   "lyft": {
     "dynamic": true,
     "icon": "simple-icons:lyft",
