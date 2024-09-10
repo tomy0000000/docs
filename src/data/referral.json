@@ -180,5 +180,14 @@
     "icon": "simple-icons:uber",
     "name": "Uber",
     "url": "https://referrals.uber.com/refer?id=y2w1uxnhwvep"
+  },
+  "weee": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$10 credit per your first two order",
+    "for-you": "$10 off for your first two orders",
+    "icon": null,
+    "name": "Weee!",
+    "url": "https://www.sayweee.com/zht/account/referral/landing?t=1&referral_id=13831657"
   }
 }
