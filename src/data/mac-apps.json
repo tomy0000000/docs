@@ -1879,7 +1879,7 @@
     "url": "http://s.sudre.free.fr/Software/SaveHollywood/about.html"
   },
   {
-    "category": "",
+    "category": "Screen Recording",
     "install": [
       {
         "id": "screenflow",
@@ -1901,6 +1901,18 @@
     "name": "Screens",
     "note": null,
     "url": "https://edovia.com/screens-mac/"
+  },
+  {
+    "category": "Screen Recording",
+    "install": [
+      {
+        "id": "screen-studio",
+        "type": "cask"
+      }
+    ],
+    "name": "Screen Studio",
+    "note": null,
+    "url": "https://www.screen.studio/"
   },
   {
     "category": "Password Manager",
