@@ -1,5 +1,65 @@
 [
   {
+    "category": "",
+    "install": [
+      {
+        "id": "farrago",
+        "type": "brew"
+      }
+    ],
+    "name": "Farrago",
+    "note": null,
+    "url": "https://rogueamoeba.com/farrago/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "loopback",
+        "type": "brew"
+      }
+    ],
+    "name": "Loopback",
+    "note": null,
+    "url": "https://rogueamoeba.com/loopback/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "audio-hijack",
+        "type": "brew"
+      }
+    ],
+    "name": "Audio Hijack",
+    "note": null,
+    "url": "https://rogueamoeba.com/audiohijack/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "soundsource",
+        "type": "brew"
+      }
+    ],
+    "name": "SoundSource",
+    "note": null,
+    "url": "https://rogueamoeba.com/soundsource/"
+  },
+  {
+    "category": "Uninstaller",
+    "install": [
+      {
+        "id": "pearcleaner",
+        "type": "brew"
+      }
+    ],
+    "name": "Pearcleaner",
+    "note": null,
+    "url": "https://github.com/alienator88/Pearcleaner"
+  },
+  {
     "category": "Safari Extension",
     "install": [
       {
