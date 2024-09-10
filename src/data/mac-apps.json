@@ -885,13 +885,29 @@
     "category": "Window Manager",
     "install": [
       {
-        "id": "hookshot",
+        "id": "rectangle-pro",
         "type": "cask"
       }
     ],
-    "name": "Hookshot",
+    "name": "Rectangle Pro",
+    "note": "Previously named Hookshot",
+    "url": "https://rectangleapp.com/pro"
+  },
+  {
+    "category": "Window Manager",
+    "install": [
+      {
+        "id": "moom",
+        "type": "cask"
+      },
+      {
+        "id": "419330170",
+        "type": "mas"
+      }
+    ],
+    "name": "Moom",
     "note": null,
-    "url": "https://hookshot.app/"
+    "url": "https://manytricks.com/moom/"
   },
   {
     "category": "Menu Bar",
