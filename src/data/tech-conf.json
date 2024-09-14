@@ -1,4 +1,16 @@
 {
+  "airflow-summit": {
+    "city": "San Francisco, CA",
+    "country": "us",
+    "end-date": "2024-09-12",
+    "form": "In-person",
+    "name": "Airflow Summit",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-10",
+    "type": "Development",
+    "url": "https://airflowsummit.org/"
+  },
   "apple-wwdc": {
     "city": "Cupertino, CA",
     "country": "us",
@@ -46,6 +58,18 @@
     "start-date": "2024-10-15",
     "type": "Development",
     "url": "https://www.dropbox-wip.com/"
+  },
+  "duocon": {
+    "city": null,
+    "country": "us",
+    "end-date": "2024-09-24",
+    "form": "Virtual",
+    "name": "Duocon",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-24",
+    "type": "Development",
+    "url": "https://duocon.duolingo.com/"
   },
   "github-galaxy": {
     "city": "San Francisco, CA",
