@@ -63,6 +63,15 @@
     "name": "Dropbox",
     "url": "https://www.dropbox.com/referrals/AACp4-9zGJ_dj4AK2PdDjNKt2WKhivTlKDM?src=global9"
   },
+  "grammarly": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "1 month of Grammarly Premium",
+    "for-you": "1 month of Grammarly Premium",
+    "icon": "logos:grammarly-icon",
+    "name": "Grammarly",
+    "url": "https://www.grammarly.com/referrals/redeem?key=x1nie4u3872rsh18"
+  },
   "honey": {
     "code": null,
     "dynamic": false,
@@ -139,6 +148,15 @@
     "icon": "simple-icons:railway",
     "name": "Railway",
     "url": "https://railway.app?referralCode=tomyhsieh"
+  },
+  "read-cv": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "Stickers after 10 people join, Tote bag after 25 people join",
+    "for-you": null,
+    "icon": "ph:read-cv-logo",
+    "name": "Read.cv",
+    "url": "https://read.cv/join/tomyhsieh"
   },
   "revolut": {
     "dynamic": true,
