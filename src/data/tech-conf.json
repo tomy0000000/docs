@@ -131,6 +131,18 @@
     "type": "Development",
     "url": "https://www.mapbox.com/build/"
   },
+  "meta-connect": {
+    "city": "Menlo Park, CA",
+    "country": "us",
+    "end-date": "2024-09-25",
+    "form": "Hybrid",
+    "name": "Meta Connect",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-09-25",
+    "type": "Development",
+    "url": "https://www.meta.com/connect/"
+  },
   "microsoft-ignite": {
     "city": "Chicago, IL",
     "country": "us",
