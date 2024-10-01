@@ -5,3 +5,7 @@
 ## 住宿
 
 - [Kiki NYC](https://kiki.club): 便宜短租學生公寓
+
+## Misc
+
+- [Take a selfie with Traffic Cam](https://trafficcamphotobooth.com/)

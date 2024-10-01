@@ -35,3 +35,4 @@ sidebar_position: 2
 - [Relux](https://rlx.jp)
 - [Jalan](https://www.jalan.net)
 - [一休](https://www.ikyu.com)
+- [Hoshino Resorts](https://www.hoshinoresorts.com/en/)

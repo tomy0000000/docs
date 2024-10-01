@@ -45,3 +45,7 @@ The table gives clues to the size of a geographical area. It does not represent 
 | 🇹🇼 Taiwan         |                     |                             | 縣、市、直轄市                         | 鄉、鎮、縣轄市、區 |
 | 🇺🇸 United States  | State               | County                      | City                                   |                    |
 | 🇬🇧 United Kingdom | Country             | County                      | District, Borough, City                |                    |
+
+## References
+
+- [Wikipedia - NUTS](https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics)

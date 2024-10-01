@@ -95,6 +95,7 @@
 - [Apple Carnegie Library](https://www.apple.com/retail/carnegielibrary/) 於 1903 年由 Andrew Carnegie 捐贈建造，現在翻修為 Apple Store、歷史中心及藝廊
 - [REI Washington DC](https://www.rei.com/stores/washington-dc) 是全美 5 間 REI Flagship Store 之一
 - [Shop Made in DC](https://www.shopmadeindc.com/) 有許多本地手工藝品
+- [季风书园](https://zh.wikipedia.org/zh-cn/%E5%AD%A3%E9%A3%8E%E4%B9%A6%E5%9B%AD)
 - 其他商圈
   - Georgetown：精品店、餐廳
   - Metro Center：百貨公司、連鎖店

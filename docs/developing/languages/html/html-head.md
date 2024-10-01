@@ -166,3 +166,4 @@ Scripts that must be in `<head>` should always be placed at the bottom of it to 
 - [MDN - What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 - [MDN - `<base>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
 - [HTML attribute: rel](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel)
+- [AddyOsmani.com - JavaScript Loading Priorities in Chrome](https://addyosmani.com/blog/script-priorities/)
