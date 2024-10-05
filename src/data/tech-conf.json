@@ -71,6 +71,18 @@
     "type": "Development",
     "url": "https://duocon.duolingo.com/"
   },
+  "figma-config": {
+    "city": "San Francisco, CA",
+    "country": "us",
+    "end-date": "2024-06-27",
+    "form": "Hybrid",
+    "name": "Figma Config",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-06-26",
+    "type": "Development",
+    "url": "https://developer.apple.com/wwdc/"
+  },
   "github-galaxy": {
     "city": "San Francisco, CA",
     "country": "us",
