@@ -12,18 +12,6 @@
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar_Asia_Airways"
   },
-  "N0-NBT": {
-    "alliance": null,
-    "countries": ["no"],
-    "defunct": false,
-    "iata": "N0",
-    "icao": "NBT",
-    "lcc": true,
-    "name": "Norse Atlantic Airways",
-    "seatguru": null,
-    "url": "https://www.flynorse.com/",
-    "wikipedia": "https://en.wikipedia.org/wiki/Norse_Atlantic_Airways"
-  },
   "5J-CEB": {
     "alliance": "Value Alliance",
     "apple-wallet-pass": null,
@@ -763,6 +751,18 @@
     "url": "https://www.flybreeze.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Breeze_Airways"
   },
+  "N0-NBT": {
+    "alliance": null,
+    "countries": ["no"],
+    "defunct": false,
+    "iata": "N0",
+    "icao": "NBT",
+    "lcc": true,
+    "name": "Norse Atlantic Airways",
+    "seatguru": null,
+    "url": "https://www.flynorse.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norse_Atlantic_Airways"
+  },
   "NH-ANA": {
     "alliance": "Star Alliance",
     "apple-wallet-pass": null,
@@ -1035,6 +1035,18 @@
     "seatguru": "",
     "url": "https://www.flyscoot.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Scoot"
+  },
+  "TW-TWB": {
+    "alliance": null,
+    "countries": ["kr"],
+    "defunct": false,
+    "iata": "TW",
+    "icao": "TWB",
+    "lcc": true,
+    "name": "T'way Air",
+    "seatguru": null,
+    "url": "https://www.twayair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/T'way_Air"
   },
   "UA-UAL": {
     "alliance": "Star Alliance",

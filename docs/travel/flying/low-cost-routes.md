@@ -21,11 +21,13 @@ List of low-cost flights that are currently operating.
 
 - **Scoot**: SIN ↔︎ BER ↔︎ ATH
 - **Air Premia**: ICN ↔︎ BCN
+- **T'Way**: ICN ↔︎ BCN/CDG/FRA/FCO/ZAG
 
 ### Asia ↔︎ Oceania
 
 - **Jetstar**
 - **Cebu Pacific**: MNL ↔︎ SYD/MEL
+- **T'Way**: ICN ↔︎ SYD
 
 ### North America ↔︎ Europe
 
