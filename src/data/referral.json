@@ -90,6 +90,15 @@
     "name": "Instacart",
     "url": "https://inst.cr/t/2cddf647a"
   },
+  "lime": {
+    "code": "RK2Z3XA",
+    "dynamic": false,
+    "for-me": "$3 ride credit",
+    "for-you": "$3 ride credit",
+    "icon": null,
+    "name": "Lime",
+    "url": "https://lime.bike/referral_signin/RK2Z3XA"
+  },
   "lyft": {
     "dynamic": true,
     "icon": "simple-icons:lyft",
