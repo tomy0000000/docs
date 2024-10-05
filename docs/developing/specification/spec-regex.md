@@ -1,4 +1,4 @@
-# 🗣️ Regular Expressions
+# 🎰 Regular Expressions
 
 Various useful tools and resources for working with regular expressions.
 
