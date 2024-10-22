@@ -36,6 +36,12 @@ Quick reference for `git` commands.
 
 ## Snippets
 
+:::warning
+
+Some of the snippets changes commit history. Use with caution.
+
+:::
+
 ### Stage case-sensitive file changes
 
 ```bash
@@ -46,4 +52,25 @@ git mv --force old_name NEW_NAME
 
 ```bash
 git rebase --committer-date-is-author-date -i <commit-hash>^
+```
+
+### Reset author
+
+1. Configure the author name and email. (Add `--global` to set the author globally.)
+
+```bash
+git config user.name "New Author Name"
+git config user.email "<email@address.example>"
+```
+
+2. Rewrite the commit history.
+
+```bash
+git rebase -r '<since-commit-hash>' --exec 'git commit --amend --no-edit --reset-author'
+```
+
+or from the top
+
+```bash
+git rebase -r --root --exec 'git commit --amend --no-edit --reset-author'
 ```
