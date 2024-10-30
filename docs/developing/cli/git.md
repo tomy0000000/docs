@@ -74,3 +74,22 @@ or from the top
 ```bash
 git rebase -r --root --exec 'git commit --amend --no-edit --reset-author'
 ```
+
+### Remove ignored files from local file system
+
+This resets the local file system to a clean state. e.g. Remove installed `node_modules` or built files.
+
+```bash
+git clean -fdX
+```
+
+### Remove checked-in ignored files
+
+1. Update `.gitignore` to exclude the files.
+2. Remove the files from the repository.
+
+```bash
+git rm --cached `git ls-files -i -c --exclude-from=.gitignore`
+```
+
+3. Commit the changes.
