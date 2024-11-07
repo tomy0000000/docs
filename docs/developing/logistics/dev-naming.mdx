@@ -1,0 +1,106 @@
+import { Icon } from "@iconify/react";
+
+# 📛 Naming
+
+> There are 2 hard problems in computer science:
+>
+> - cache invalidation
+> - naming things
+> - off-by-1 errors
+
+Let's take a look at the second one.
+
+## Conventions
+
+| Name                 | Example                | _a.k.a._                                         |
+| -------------------- | ---------------------- | ------------------------------------------------ |
+| Camel Case           | `camelCase`            | Dromedary Case, Hump Case                        |
+| Pascal Case          | `PascalCase`           | Upper Camel Case                                 |
+| Snake Case           | `snake_case`           | Pothole Case                                     |
+| Pascal Snake Case    | `Pascal_Snake_Case`    |                                                  |
+| Screaming Snake Case | `SCREAMING_SNAKE_CASE` | Upper Case Snake Case, Macro Case, Constant Case |
+| Kebab Case           | `kebab-case`           |                                                  |
+| Cobol Case           | `COBOL-CASE`           | Screaming Kebab Case                             |
+| Train Case           | `Train-Case`           |                                                  |
+| Flat Case            | `flatcase`             |                                                  |
+| Title Case           | `Title Case`           |                                                  |
+| Sentence Case        | `Sentence case`        |                                                  |
+
+## <Icon icon="logos:python" inline={true} /> Python
+
+- Variable: `snake_case`
+- Constant: `SCREAMING_SNAKE_CASE`
+- Function: `snake_case`
+- Class: `PascalCase`
+- Method: `snake_case`
+- Module: `snake_case`
+- PyPI Project: `Train-Case` of the module name [^1]
+
+PyPI allows `[a-z0-9_.-]` in project name, with additional normalization rules.
+
+### References
+
+- [PEP 8 - Style Guide for Python Code](https://pep8.org/)
+- [PEP 257 - Docstring Conventions](https://peps.python.org/pep-0257/)
+- [PEP 423 - Naming conventions and recipes related to packaging](https://peps.python.org/pep-0423/)
+- [PyPI Names and normalization](https://packaging.python.org/en/latest/specifications/name-normalization/)
+
+## <Icon icon="logos:java" inline={true} /> Java
+
+- Variable: `camelCase`
+- Constant: `SCREAMING_SNAKE_CASE`
+- Class: `PascalCase`
+- Method: `camelCase`
+- Interface: `PascalCase`
+- Enum: `PascalCase`
+
+## <Icon icon="logos:javascript" inline={true} /> JavaScript
+
+- Variable: `camelCase`
+- Constant: `SCREAMING_SNAKE_CASE`
+- Function: `camelCase`
+- Class: `PascalCase`
+- Method: `camelCase`
+- npm Package: `kebab-case` of the package name [^2]
+
+npm allows `[a-z0-9-_]` in package name.
+
+### References
+
+- [npm pcakage name](https://docs.npmjs.com/cli/v7/configuring-npm/package-json#name)
+
+## HTTP
+
+- Headers: `Train-Case`
+
+## <Icon icon="logos:html-5" inline={true} /> HTML + <Icon icon="logos:css-3" inline={true} /> CSS
+
+:::note
+
+HTML tag and attribute names are case-insensitive. The following conventions are just for readability.
+
+:::
+
+- HTML Tag: `flatcase`
+- HTML Attribute: `flatcase`
+- HTML/CSS ID: `kebab-case`
+- HTML/CSS Class: `kebab-case`
+
+## SQL
+
+:::info
+
+In PostgreSQL, all identifiers are case-sensitive, but unless you quote them, they are folded to lower case.
+
+:::
+
+- Table name: Singular `snake_case`
+- Column name: Singular `snake_case`
+
+### References
+
+- [SQL Style Guide](https://www.sqlstyle.guide/)
+
+## References
+
+- [Quick Guide to Programming Case Types – Amy's Programming Corner](https://amydegregorio.com/2020/10/25/programming-case-types/)
