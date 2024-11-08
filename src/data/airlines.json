@@ -556,6 +556,19 @@
     "url": "https://www.jetstar.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Jetstar"
   },
+  "JT-LNI": {
+    "alliance": null,
+    "apple-wallet-pass": null,
+    "countries": ["id"],
+    "defunct": false,
+    "iata": "JT",
+    "icao": "MXD",
+    "lcc": true,
+    "name": "Lion Air",
+    "seatguru": "https://www.seatguru.com/airlines/Lion_Air/information.php",
+    "url": "http://www.lionair.co.id/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lion_Air"
+  },
   "JW-VNL": {
     "alliance": "Value Alliance",
     "apple-wallet-pass": null,
@@ -801,6 +814,19 @@
     "seatguru": "https://www.seatguru.com/airlines/Air_New_Zealand/information.php",
     "url": "https://www.airnewzealand.co.nz/",
     "wikipedia": "https://en.wikipedia.org/wiki/Air_New_Zealand"
+  },
+  "OD-MXD": {
+    "alliance": null,
+    "apple-wallet-pass": null,
+    "countries": ["my"],
+    "defunct": false,
+    "iata": "OD",
+    "icao": "MXD",
+    "lcc": true,
+    "name": "Batik Air Malaysia",
+    "seatguru": null,
+    "url": "https://www.malindoair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Batik_Air_Malaysia"
   },
   "OK-CSA": {
     "alliance": "SkyTeam",
@@ -1059,7 +1085,10 @@
     "lcc": false,
     "name": "United Airlines",
     "offers": [
-      { "name": "Flight deals", "url": "https://www.united.com/en-us/flights" },
+      {
+        "name": "Flight deals",
+        "url": "https://www.united.com/en-us/flights"
+      },
       {
         "name": "Weekly deals from San Francisco",
         "url": "https://www.united.com/en-us/weekly-deals-from-san-francisco"
