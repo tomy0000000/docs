@@ -16,11 +16,11 @@
     "bump-docusaurus": "pnpm up @docusaurus/*"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/plugin-content-docs": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
-    "@docusaurus/theme-common": "^3.5.2",
-    "@docusaurus/theme-mermaid": "^3.5.2",
+    "@docusaurus/core": "^3.6.1",
+    "@docusaurus/plugin-content-docs": "^3.6.1",
+    "@docusaurus/preset-classic": "^3.6.1",
+    "@docusaurus/theme-common": "^3.6.1",
+    "@docusaurus/theme-mermaid": "^3.6.1",
     "@mdx-js/react": "^3.0.0",
     "@tanstack/react-table": "^8.19.3",
     "clsx": "^1.2.1",
@@ -33,9 +33,9 @@
     "remark-math": "6"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.5.2",
-    "@docusaurus/tsconfig": "^3.5.2",
-    "@docusaurus/types": "^3.5.2",
+    "@docusaurus/module-type-aliases": "^3.6.1",
+    "@docusaurus/tsconfig": "^3.6.1",
+    "@docusaurus/types": "^3.6.1",
     "@iconify/react": "^4.1.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@tsconfig/docusaurus": "^1.0.7",
