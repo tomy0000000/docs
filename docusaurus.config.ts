@@ -183,7 +183,9 @@ const config: Config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
-      additionalLanguages: ["bash", "docker"],
+      // https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9
+      // https://prismjs.com/#supported-languages
+      additionalLanguages: ["bash", "docker", "ini"],
     },
     algolia: {
       appId: "RJBX6ZLAHI",
