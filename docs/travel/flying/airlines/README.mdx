@@ -12,7 +12,6 @@ import countries from "@site/src/data/countries.json";
 List of airlines, might not cover all.
 
 {/* TODO: in-flight-entertainment, lcc, defunct is not used */}
-{/* TODO: Add https://www.flightconnections.com/ to Routes */}
 
 <SortableTable
   columns={[
@@ -71,14 +70,34 @@ List of airlines, might not cover all.
       accessorFn: (row) => [row.iata, row.icao],
       cell: ({ getValue }) => {
         const [iata, icao] = getValue();
+        const openRoutes = (event) => {
+          switch (event.target.value) {
+            case "flightradar24":
+              window.open(
+                `https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+              break;
+            case "flightsfrom":
+              window.open(
+                `https://www.flightsfrom.com/${iata}`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+              break;
+            default:
+              break;
+          }
+        };
         return (
-          <a
-            href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`}
-            target="blank"
-            rel="noreferrer noopener"
-          >
-            FR24
-          </a>
+          <select name="routes" onChange={openRoutes}>
+            <option value="" disabled selected>
+              Select a provider
+            </option>
+            <option value="flightradar24">FlightRadar24</option>
+            <option value="flightsfrom">FlightsFrom</option>
+          </select>
         );
       },
     },
@@ -87,23 +106,35 @@ List of airlines, might not cover all.
       accessorFn: (row) => [row.name, row.iata, row.icao],
       cell: ({ getValue }) => {
         const [name, iata, icao] = getValue();
-        return [
-          <a
-            href={`https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`}
-            target="blank"
-            rel="noreferrer noopener"
-          >
-            FR24
-          </a>,
-          ", ",
-          <a
-            href={`https://www.airfleets.net/flottecie/${name}.htm`}
-            target="blank"
-            rel="noreferrer noopener"
-          >
-            Airfleets
-          </a>,
-        ];
+        const openFleet = (event) => {
+          switch (event.target.value) {
+            case "flightradar24":
+              window.open(
+                `https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+              break;
+            case "airfleets":
+              window.open(
+                `https://www.airfleets.net/flottecie/${name}.htm`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+              break;
+            default:
+              break;
+          }
+        };
+        return (
+          <select name="fleet" onChange={openFleet}>
+            <option value="" disabled selected>
+              Select a provider
+            </option>
+            <option value="flightradar24">FlightRadar24</option>
+            <option value="airfleets">Airfleets</option>
+          </select>
+        );
       },
     },
     {
