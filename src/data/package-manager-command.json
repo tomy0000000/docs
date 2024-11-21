@@ -18,7 +18,7 @@
     "apt": "apt autoclean",
     "brew": "brew cleanup",
     "gem": null,
-    "npm": null,
+    "npm": "npm prune",
     "pip": null
   },
   "dependency": {
@@ -140,6 +140,7 @@
     "brew": "brew autoremove",
     "gem": "gem cleanup",
     "go": "go mod tidy",
+    "npm": "npx npm-check # or npx depcheck",
     "pip": ""
   },
   "updateSource": {
