@@ -181,6 +181,15 @@
     "name": "Roame.Travel",
     "url": "https://roame.travel?referral=xBZb7KoluJN1xvUPq0ws9Va9Y9v2"
   },
+  "robinhood": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$5-$200 worth of fractional shares from America's leading companies",
+    "for-you": "$5-$200 worth of fractional shares from America's leading companies",
+    "icon": "simple-icons:robinhood",
+    "name": "Robinhood",
+    "url": "https://join.robinhood.com/chiweih-12c9ae"
+  },
   "seated": {
     "code": "tomy4",
     "dynamic": false,
