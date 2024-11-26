@@ -5,7 +5,10 @@ import { themes } from "prism-react-renderer";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
-const config: Config = {
+import tailwindPlugin from "./plugins/tailwind-plugin";
+
+// https://docusaurus.io/docs/api/docusaurus-config
+export default {
   title: "Tomy's Docs",
   tagline: "Tomy's Personal Documents Library",
   favicon: "img/favicon.ico",
@@ -199,6 +202,6 @@ const config: Config = {
       },
     },
   } satisfies Preset.ThemeConfig,
-};
 
-export default config;
+  plugins: [tailwindPlugin],
+} satisfies Config;
