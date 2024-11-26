@@ -1,8 +1,0 @@
-{
-  "label": "Exploring",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Commands for exploring installables and query informations"
-  }
-}

@@ -1,0 +1,227 @@
+import { Icon } from "@iconify/react";
+import PacageManagerCommands, {
+  PackageManagerList,
+} from "@site/src/components/PacageManagerCommands";
+import commands from "@site/src/data/package-manager-command.json";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# 📦 Package Managers
+
+This page defines the fundation of the package manager ecosystem.
+
+| Pacakage Manager                                                  | CLIs           | Installable                    | Source | Global | Project | Website                                                |
+| ----------------------------------------------------------------- | -------------- | ------------------------------ | ------ | ------ | ------- | ------------------------------------------------------ |
+| <Icon icon={PackageManagerList[0].icon} inline={true} /> Debian   | `apt`          | Package                        | PPA    | ✅     | ❌      | [Ubuntu Packages Search](https://packages.ubuntu.com/) |
+| <Icon icon={PackageManagerList[1].icon} inline={true} /> Homebrew | `brew`         | Formula / Formulae / Cask [^1] | Tap    | ✅     | ❌      | [Homebrew](https://formulae.brew.sh/)                  |
+| <Icon icon={PackageManagerList[2].icon} inline={true} /> Python   | `pip`          | Module                         | URL    | ✅     | ❌      | [PyPI](https://pypi.org/)                              |
+| <Icon icon={PackageManagerList[3].icon} inline={true} /> npm      | `npm`          | Package                        |        | ✅     | ✅      | [npm](https://www.npmjs.com/)                          |
+| <Icon icon={PackageManagerList[4].icon} inline={true} /> Ruby     | `gem`, `bndle` | Gem                            | URI    | ✅     | ✅      | [RubyGems](https://rubygems.org/)                      |
+| <Icon icon={PackageManagerList[5].icon} inline={true} /> Go       | `go`           | Package                        |        |        |         | [Go Packages](https://pkg.go.dev/)                     |
+
+[^1]: Homebrew refers to its installables as `formula`/`formulae`, which is normally a CLI tool, and `cask` for everything else, like apps, fonts, and such.
+
+## Exploring
+
+### Dependency
+
+List all dependencies of an installable.
+
+In another word, find out a package depend on which other packages.
+
+<PacageManagerCommands commands={commands.dependency} />
+
+:::warning
+
+For `npm`, you need to install the package first before you can list its dependencies.
+In addition, [this command is expected change in the future](https://docs.npmjs.com/cli/v10/commands/npm-ls#note-design-changes-pending).
+
+:::
+
+### Information
+
+Show or view the information of an installable.
+
+<PacageManagerCommands commands={commands.information} />
+
+### Reverse Dependency
+
+List all dependent installables of a installable.
+
+In another word, find out which installables are using / depend by a installable specified.
+
+<PacageManagerCommands commands={commands.reverseDependency} />
+
+### Search
+
+Find an installable.
+
+<PacageManagerCommands commands={commands.search} />
+
+:::caution
+
+[PyPI no longer supports 'pip search' (or XML-RPC search)](https://warehouse.pypa.io/api-reference/xml-rpc.html#deprecated-methods)
+
+:::
+
+## Install
+
+### Install Globally
+
+Globally install an installable on the environment.
+
+<PacageManagerCommands commands={commands.installGlobal} />
+
+### Install from List
+
+Install installables from a list of file, file name varies by convention.
+
+<PacageManagerCommands commands={commands.installList} />
+
+### Install Project
+
+Install installables for a project, file name varies by convention.
+
+<PacageManagerCommands commands={commands.installProject} />
+
+## Upgrade
+
+### Upgrade
+
+Upgrade an installable.
+
+<PacageManagerCommands commands={commands.upgrade} />
+
+### Upgrade All Globally
+
+Upgrade all global installables.
+
+<PacageManagerCommands commands={commands.upgradeGlobalAll} />
+
+:::info
+
+The pip commands is modified from [this](https://stackoverflow.com/a/3452888/10325430) StackOverflow answer.
+
+:::
+
+## Uninstall
+
+### Uninstall
+
+Uninstall an installable.
+
+<PacageManagerCommands commands={commands.uninstall} />
+
+### Uninstall All
+
+Uninstall all global installables.
+
+<PacageManagerCommands commands={commands.uninstallGlobalAll} />
+
+:::info
+
+The credits for npm commands go to [this](https://stackoverflow.com/a/9283646/10325430) StackOverflow answer.
+
+:::
+
+### Uninstall Useless
+
+Uninstall useless packages that are not required or not used.
+
+:::warning
+
+Always manually test after running this command to ensure that your project still works as expected.
+
+:::
+
+<PacageManagerCommands commands={commands.uninstallUseless} />
+
+## Listing
+
+### List Globally Installed
+
+List all globally installed packages.
+
+<PacageManagerCommands commands={commands.listGlobalInstalled} />
+
+### List Globally Undepend
+
+List all global packages that are not dependencies of any other global package.
+
+:::tip
+
+Installable listed by this command typically are not needed anymore and can be removed.
+
+:::
+
+<PacageManagerCommands commands={commands.listGlobalUndepend} />
+
+### List Globally Upgradable
+
+List all global packages that have updates available.
+
+<PacageManagerCommands commands={commands.listGlobalUpgradable} />
+
+### List Installed (Project)
+
+List all installed packages in the current project.
+
+<PacageManagerCommands commands={commands.listProjectInstalled} />
+
+### List Upgradable (Project)
+
+List all upgradable packages in the current project.
+
+<PacageManagerCommands commands={commands.listProjectUpgradable} />
+
+## Source
+
+### Add Source
+
+Add sources to the package manager to install packages from the new source.
+
+<PacageManagerCommands commands={commands.addSource} />
+
+### List Sources
+
+List all sources where installables can be installed from.
+
+<PacageManagerCommands commands={commands.listSource} />
+
+:::info
+
+If the `pip` command yield `ERROR: No such key`, it means the source is the default index url, which is https://pypi.org/simple.
+
+:::
+
+### Remove Source
+
+Remove a source from the list of sources used to resolve packages.
+
+<PacageManagerCommands commands={commands.removeSource} />
+
+### Update
+
+Update installable information from the sources.
+
+<PacageManagerCommands commands={commands.updateSource} />
+
+## Mainenance
+
+### Cleanup All Cache
+
+Clean up all cache. Does not remove any packages.
+
+<PacageManagerCommands commands={commands.cleanupAll} />
+
+### Cleanup Useless Cache
+
+Clean up useless cache. Does not remove any packages.
+
+<PacageManagerCommands commands={commands.cleanupUseless} />
+
+### Healthcheck
+
+Run a healthcheck / diagnosis to verify the package manager / installation is working correctly.
+
+<PacageManagerCommands commands={commands.healthcheck} />

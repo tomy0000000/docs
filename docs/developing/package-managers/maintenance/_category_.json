@@ -1,8 +1,0 @@
-{
-  "label": "Mainenance",
-  "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "Commands for maintaining the package manager and the environment"
-  }
-}
