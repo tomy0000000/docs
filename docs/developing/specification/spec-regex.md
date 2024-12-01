@@ -58,6 +58,7 @@ In possessive match mode, the regex engine will not backtrack to find a match. T
 - [Debuggex](https://www.debuggex.com/)
 - [RegExr](https://regexr.com/)
 - [Rubular](https://rubular.com/)
+- [Pyrexp](https://pythonium.net/regex)
 
 ## Snippets
 
