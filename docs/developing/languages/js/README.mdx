@@ -5,3 +5,16 @@ title: 🦊 JavaScript
 import { Icon } from "@iconify/react";
 
 # <Icon icon="logos:javascript" inline={true} /> JavaScript
+
+## CommonJS vs. ES Modules (ESM)
+
+The main differences between CommonJS and ES Modules are:
+
+- Import
+  - CommonJS: `const fs = require("fs");`
+  - ES Modules: `import fs from "fs";`
+- Export
+  - CommonJS: `module.exports = { fs };`
+  - ES Modules: `export { fs };`
+
+All modern browsers, and Node.js 12+ now support ES Modules. CommonJS and extension `.cjs` should be avoided in favor of ES Modules and extension `.mjs` whenever possible.
