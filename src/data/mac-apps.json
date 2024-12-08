@@ -12,6 +12,30 @@
     "url": "https://rogueamoeba.com/farrago/"
   },
   {
+    "category": "Quick Look",
+    "install": [
+      {
+        "id": "suspicious-package",
+        "type": "brew"
+      }
+    ],
+    "name": "Suspicious Package",
+    "note": null,
+    "url": "https://www.mothersruin.com/software/SuspiciousPackage/"
+  },
+  {
+    "category": "Quick Look",
+    "install": [
+      {
+        "id": "apparency",
+        "type": "brew"
+      }
+    ],
+    "name": "Apparency",
+    "note": null,
+    "url": "https://www.mothersruin.com/software/Apparency/"
+  },
+  {
     "category": "",
     "install": [
       {
@@ -707,6 +731,18 @@
     "name": "Firefox",
     "note": null,
     "url": "https://www.mozilla.org/firefox/"
+  },
+  {
+    "category": "Browser",
+    "install": [
+      {
+        "id": "zen-browser",
+        "type": "cask"
+      }
+    ],
+    "name": "Zen Browser",
+    "note": null,
+    "url": "https://zen-browser.app/"
   },
   {
     "category": "File Transfer",
@@ -1970,8 +2006,8 @@
     "category": "",
     "install": [
       {
-        "id": "screens",
-        "type": "cask"
+        "id": "1663047912",
+        "type": "mas"
       }
     ],
     "name": "Screens",
