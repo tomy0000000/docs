@@ -15,6 +15,10 @@ Be mindful about details:
 - **Import tax**: Does your country have import tax?
 - **Shipping**: Is there a shipping fee? How long will it take before you receive the product? (in store, or at your hotel)
 
+##  Apple Watch Band
+
+Checkout all bands ever released by Apple with the [Bandbreite](https://apps.apple.com/app/id1528561380) App.
+
 ## Refurbished
 
 TODO
