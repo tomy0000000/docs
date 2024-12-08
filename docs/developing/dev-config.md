@@ -61,3 +61,100 @@ indent_size = 2
 indent_style = space
 indent_size = 4
 ```
+
+## ESLint
+
+Use `eslint.config.js` and change to `eslint.config.ts` once the feature is stable.
+
+```javascript
+// eslint.config.js
+// https://eslint.org/docs/latest/use/configure/configuration-files
+import js from "@eslint/js";
+import reactHooks from "eslint-plugin-react-hooks";
+import reactRefresh from "eslint-plugin-react-refresh";
+import globals from "globals";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config(
+  { ignores: ["dist"] },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    plugins: {
+      "react-hooks": reactHooks,
+      "react-refresh": reactRefresh,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
+    },
+  },
+);
+```
+
+## Jest
+
+```typescript
+// jest.config.ts
+// https://jestjs.io/docs/configuration
+```
+
+## Prettier
+
+```json
+// .prettierrc
+// https://prettier.io/docs/en/configuration.html
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": false
+}
+```
+
+## TypeScript
+
+```json
+// `tsconfig.json`
+// https://www.typescriptlang.org/tsconfig/
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}
+```
+
+### [`compilerOptions.target`](https://www.typescriptlang.org/tsconfig/#target)
+
+The version to compile down to. Should be the minimum version supported by your users and should never be `esnext`. Typically, the second or third most recent version is a good choice.
+
+### [`compilerOptions.module`](https://www.typescriptlang.org/tsconfig/#module)
+
+See [this guide](https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html) for more.
