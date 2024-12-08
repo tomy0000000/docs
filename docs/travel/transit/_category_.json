@@ -1,8 +1,0 @@
-{
-  "label": "🚉 Transit",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "An overview of public transit in cities around the world."
-  }
-}
