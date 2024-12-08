@@ -24,6 +24,11 @@ sidebar_position: 2
 - [Generator](https://staygenerator.com)
 - [Safestay](https://www.safestay.com)
 
+## Resort
+
+- [Aman](https://www.aman.com/)
+- [Hoshino Resorts](https://www.hoshinoresorts.com/en/)
+
 ## Regional Booking Sites
 
 ### 🇹🇼 Taiwan
@@ -35,4 +40,3 @@ sidebar_position: 2
 - [Relux](https://rlx.jp)
 - [Jalan](https://www.jalan.net)
 - [一休](https://www.ikyu.com)
-- [Hoshino Resorts](https://www.hoshinoresorts.com/en/)
