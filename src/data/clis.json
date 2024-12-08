@@ -9,6 +9,13 @@
     "url": "https://github.com/kfish/xsel"
   },
   {
+    "names": ["qlmanage"]
+  },
+  {
+    "names": ["hyperfine"],
+    "url": "https://github.com/sharkdp/hyperfine"
+  },
+  {
     "category": "Cloud provider",
     "names": ["aws"],
     "zsh-completion": "Homebrew"
@@ -294,8 +301,18 @@
   },
   {
     "category": "Network",
+    "names": ["up"],
+    "url": "https://github.com/jesusprubio/up"
+  },
+  {
+    "category": "Network",
     "names": ["gping"],
     "url": "https://github.com/orf/gping"
+  },
+  {
+    "category": "Network",
+    "names": ["pingu"],
+    "url": "https://github.com/sheepla/pingu"
   },
   {
     "category": "Network",
@@ -656,5 +673,15 @@
       }
     ],
     "names": ["wkhtmltopdf"]
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "blueutil",
+        "type": "cask"
+      }
+    ],
+    "names": ["blueutil"]
   }
 ]
