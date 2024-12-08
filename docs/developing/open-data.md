@@ -41,3 +41,4 @@ A list of open data sources. [Data Portals](https://dataportals.org/) is a good 
 
 - [Open Data DC](https://opendata.dc.gov/)
 - [California State Geoportal](https://gis.data.ca.gov/)
+- [OpenSecrets](https://www.opensecrets.org/)
