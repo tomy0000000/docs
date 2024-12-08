@@ -1,11 +1,10 @@
+import tailwindPlugin from "./plugins/tailwind-plugin";
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { slug } from "github-slugger";
 import { themes } from "prism-react-renderer";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
-
-import tailwindPlugin from "./plugins/tailwind-plugin";
 
 // https://docusaurus.io/docs/api/docusaurus-config
 export default {
@@ -59,6 +58,11 @@ export default {
       }
       // NOTE: Check console to see if there are any duplicated slugs
       result.frontMatter.slug = `/${slug(name)}`;
+      if ((result.frontMatter.slug as string).endsWith("s")) {
+        console.warn(
+          `Potential plural doc name: ${result.frontMatter.slug} at ${params.filePath}`,
+        );
+      }
       return result;
     },
   },
@@ -162,7 +166,7 @@ export default {
             },
             {
               label: "Rules",
-              to: "/docs-rules",
+              to: "/docs-rule",
             },
             {
               label: "Privacy Policy",
