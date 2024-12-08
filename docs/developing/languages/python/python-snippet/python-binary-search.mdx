@@ -11,33 +11,31 @@ The magical search algorithm I may never fully understand.
   <TabItem value="py39" label="Python 3.9">
     
     ```python
-    def valid(self, *args, **kwargs) -> bool:
-        # Implement your condition
-        return True or False
+    def valid(self) -> bool:
+        return True or False # Implement your condition
 
-    def find_valid(self, begin: int, end: int, *args, **kwargs) -> int:
+    def find_valid(self, begin: int, end: int) -> int:
         while begin < end:
             mid = (begin + end) // 2
-            if self.valid(a, *args, **kwargs):
+            if self.valid(a):
                 end = mid
             else:
                 begin = mid + 1
-        return begin if self.possible(a, *args, **kwargs) else -1
+        return begin if self.valid(a) else -1
     ```
 
   </TabItem>
   <TabItem value="py310" label="Python 3.10+">
 
     ```python
-    def valid(self, *args, **kwargs) -> bool:
-        # Implement your condition
-        return True or False
+    def valid(self) -> bool:
+        return True or False # Implement your condition
 
-    def find_valid(self, begin: int, end: int, *args, **kwargs) -> int:
+    def find_valid(self, begin: int, end: int) -> int:
         ans = bisect_left(
             range(begin, end + 1), # The range of possible answers: [begin, end]
             True, # The value to search for
-            key=lambda x: self.valid(a, *args, **kwargs) # Call your condition function
+            key=lambda x: self.valid(a) # Call your condition function
         )
         return ans if ans <= max(bloomDay) else -1
     ```
