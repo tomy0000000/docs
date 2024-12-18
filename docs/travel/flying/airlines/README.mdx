@@ -138,16 +138,32 @@ List of airlines, might not cover all.
       },
     },
     {
-      header: "Seatmaps",
+      header: "Seatmap",
       size: 100,
-      accessorKey: "seatguru",
+      accessorFn: (row) => [row.seatguru, row.aerolopa],
       cell: ({ getValue }) => {
-        const seatguru = getValue();
+        const [seatguru, aerolopa] = getValue();
+        const openSeatmap = (event) => {
+          switch (event.target.value) {
+            case "seatguru":
+              window.open(seatguru, "_blank", "noopener,noreferrer");
+              break;
+            case "aerolopa":
+              window.open(aerolopa, "_blank", "noopener,noreferrer");
+              break;
+            default:
+              break;
+          }
+        };
         return (
-          seatguru && (
-            <a href={getValue()} target="blank" rel="noreferrer noopener">
-              SeatGuru
-            </a>
+          (seatguru || aerolopa) && (
+            <select name="seatmap" onChange={openSeatmap}>
+              <option value="" disabled selected>
+                Select a provider
+              </option>
+              {seatguru && <option value="seatguru">Seatguru</option>}
+              {aerolopa && <option value="aerolopa">AeroLOPA</option>}
+            </select>
           )
         );
       },
