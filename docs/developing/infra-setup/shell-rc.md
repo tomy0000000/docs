@@ -45,12 +45,13 @@ Different systems (even installations) may behave differently. Use `zsh -x` to f
 
 When a CLI tool is installed, they may require some configuration on RC files. For the following reasons:
 
-| Type                  | Where to put                          |
-| --------------------- | ------------------------------------- |
-| Environment variables | `~/.zshenv`                           |
-| Aliases               | `~/.zshrc`                            |
-| Functions             | `~/.zshrc`                            |
-| Auto-completion       | `~/.zshrc` (After calling `compinit`) |
+| Type                                 | Where to put                          |
+| ------------------------------------ | ------------------------------------- |
+| Environment Variables (beside Paths) | `~/.zshenv`                           |
+| Paths                                | `~/.zshrc`                            |
+| Aliases                              | `~/.zshrc`                            |
+| Functions                            | `~/.zshrc`                            |
+| Auto-completion                      | `~/.zshrc` (After calling `compinit`) |
 
 ## References
 
