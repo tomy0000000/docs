@@ -55,116 +55,55 @@ List of airlines, might not cover all.
     { header: "ICAO", size: 100, accessorKey: "icao" },
     { header: "Alliance", accessorKey: "alliance" },
     {
-      header: "Wikipedia",
+      header: "Links",
       size: 100,
-      accessorKey: "wikipedia",
-      cell: ({ getValue }) => (
-        <a href={getValue()} target="blank" rel="noreferrer noopener">
-          Wikipedia
-        </a>
-      ),
-    },
-    {
-      header: "Routes",
-      size: 100,
-      accessorFn: (row) => [row.iata, row.icao],
+      accessorFn: (row) => [
+        row.name,
+        row.iata,
+        row.icao,
+        row.wikipedia,
+        row.seatguru,
+        row.aerolopa,
+      ],
       cell: ({ getValue }) => {
-        const [iata, icao] = getValue();
-        const openRoutes = (event) => {
-          switch (event.target.value) {
-            case "flightradar24":
-              window.open(
-                `https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`,
-                "_blank",
-                "noopener,noreferrer",
-              );
-              break;
-            case "flightsfrom":
-              window.open(
-                `https://www.flightsfrom.com/${iata}`,
-                "_blank",
-                "noopener,noreferrer",
-              );
-              break;
-            default:
-              break;
+        const [name, iata, icao, wikipedia, seatguru, aerolopa] = getValue();
+        let link = null;
+        const openLink = (event) => {
+          const links = {
+            wikipedia: wikipedia,
+            "route-flightradar24": `https://www.flightradar24.com/data/airlines/${iata}-${icao}/routes`,
+            "route-flightsfrom": `https://www.flightsfrom.com/${iata}`,
+            "fleet-flightradar24": `https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`,
+            "fleet-airfleets": `https://www.airfleets.net/flottecie/${name}.htm`,
+            "seatmap-seatguru": seatguru,
+            "seatmap-aerolopa": aerolopa,
+          };
+          link = links[event.target.value];
+          if (link) {
+            window.open(link, "_blank", "noopener,noreferrer");
           }
         };
         return (
-          <select name="routes" onChange={openRoutes}>
-            <option value="" disabled selected>
-              Select a provider
+          <select name="routes" onChange={openLink} defaultValue="">
+            <option value="" disabled>
+              Select Link
             </option>
-            <option value="flightradar24">FlightRadar24</option>
-            <option value="flightsfrom">FlightsFrom</option>
+            <option value="wikipedia">Wikipedia</option>
+            <optgroup label="Routes">
+              <option value="route-flightradar24">FlightRadar24</option>
+              <option value="route-flightsfrom">FlightsFrom</option>
+            </optgroup>
+            <optgroup label="Fleet">
+              <option value="fleet-flightradar24">FlightRadar24</option>
+              <option value="fleet-airfleets">Airfleets</option>
+            </optgroup>
+            {(seatguru || aerolopa) && (
+              <optgroup label="Seatmap">
+                {seatguru && <option value="seatmap-seatguru">Seatguru</option>}
+                {aerolopa && <option value="seatmap-aerolopa">AeroLOPA</option>}
+              </optgroup>
+            )}
           </select>
-        );
-      },
-    },
-    {
-      header: "Fleet",
-      accessorFn: (row) => [row.name, row.iata, row.icao],
-      cell: ({ getValue }) => {
-        const [name, iata, icao] = getValue();
-        const openFleet = (event) => {
-          switch (event.target.value) {
-            case "flightradar24":
-              window.open(
-                `https://www.flightradar24.com/data/airlines/${iata}-${icao}/fleet`,
-                "_blank",
-                "noopener,noreferrer",
-              );
-              break;
-            case "airfleets":
-              window.open(
-                `https://www.airfleets.net/flottecie/${name}.htm`,
-                "_blank",
-                "noopener,noreferrer",
-              );
-              break;
-            default:
-              break;
-          }
-        };
-        return (
-          <select name="fleet" onChange={openFleet}>
-            <option value="" disabled selected>
-              Select a provider
-            </option>
-            <option value="flightradar24">FlightRadar24</option>
-            <option value="airfleets">Airfleets</option>
-          </select>
-        );
-      },
-    },
-    {
-      header: "Seatmap",
-      size: 100,
-      accessorFn: (row) => [row.seatguru, row.aerolopa],
-      cell: ({ getValue }) => {
-        const [seatguru, aerolopa] = getValue();
-        const openSeatmap = (event) => {
-          switch (event.target.value) {
-            case "seatguru":
-              window.open(seatguru, "_blank", "noopener,noreferrer");
-              break;
-            case "aerolopa":
-              window.open(aerolopa, "_blank", "noopener,noreferrer");
-              break;
-            default:
-              break;
-          }
-        };
-        return (
-          (seatguru || aerolopa) && (
-            <select name="seatmap" onChange={openSeatmap}>
-              <option value="" disabled selected>
-                Select a provider
-              </option>
-              {seatguru && <option value="seatguru">Seatguru</option>}
-              {aerolopa && <option value="aerolopa">AeroLOPA</option>}
-            </select>
-          )
         );
       },
     },
