@@ -58,24 +58,23 @@ The base URL for all relative URLs in the document. This is optional, but if use
 
 ## Favicon
 
-- There should always be a `favicon.ico` in the root directory.
-
-```html
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="" sizes="" />
-<link rel="icon" type="" href="" sizes="" />
-<link rel="manifest" href="/site.webmanifest" />
-```
+There should always be a `favicon.ico` in the root directory, even if you prefer other formats as default.
 
 ## Meta
 
 TODO
 
-### Open Graph
+### Facebook / Open Graph
 
-### Twitter
+- [Open Graph protocol](https://ogp.me/)
+- [Sharing Debugger](https://developers.facebook.com/tools/debug/): Can debug previews on Facebook.
 
-### Facebook
+### Twitter (X)
+
+- [Official documentation](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
+- For preview, simply paste the URL into new tweet.
+- [Card Validator](https://cards-dev.x.com/validator): Show render debug logs.
+- To refresh cache, [add a unique query string to the URL](https://developer.x.com/en/docs/x-for-websites/cards/guides/troubleshooting-cards#refreshing_tags).
 
 ## Scripts
 
@@ -96,7 +95,7 @@ Scripts that must be in `<head>` should always be placed at the bottom of it to 
 <noscript>Please enable JavaScript to view this page.</noscript>
 ```
 
-## Putting Together
+## Put Together
 
 ```html
 <head>
@@ -104,6 +103,7 @@ Scripts that must be in `<head>` should always be placed at the bottom of it to 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
+
   <!-- Meta -->
   <meta name="title" content="" />
   <meta name="description" content="" />
@@ -119,49 +119,66 @@ Scripts that must be in `<head>` should always be placed at the bottom of it to 
     content="#000000"
     media="(prefers-color-scheme: dark)"
   />
+
   <!-- Base -->
   <base href="" target="" />
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="" sizes="" />
   <link rel="icon" href="" sizes="" type="" />
   <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="" type="text/css" integrity="" />
   <style></style>
+
   <!-- Link -->
   <link rel="canonical" href="" />
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="" />
   <link rel="alternate" type="application/json" href="/index.json" title="" />
   <script type="application/ld+json"></script>
-  <!-- Open Graph -->
+
+  <!-- Facebook / Open Graph -->
   <meta property="og:title" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:description" content="" />
   <meta property="og:locale" content="" />
   <meta property="og:locale:alternate" content="" />
-  <!-- Facebook -->
 
-  <!-- Twitter -->
+  <!-- Twitter (X) -->
   <meta name="twitter:card" content="" />
   <meta name="twitter:site" content="" />
   <meta name="twitter:creator" content="" />
-  <meta name="twitter:description" content="" />
   <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+
   <!-- Author's social link -->
   <link rel="me" href="" />
+
   <!-- Script -->
   <script src=""></script>
   <noscript>Please enable JavaScript to view this page.</noscript>
 </head>
 ```
 
+## Tools
+
+### Platforms
+
+- [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/): LinkedIn used a mix of general meta tags and Open Graph tags to display cards.
+- [Pinterest Rich Pins Documentation](https://developers.pinterest.com/docs/web-features/rich-pins-overview/): Pinterest uses a mix of Open Graph tags and Schema.org properties to determine how to display rich pins.
+
+### Third Party
+
+- [opengraph.xyz](https://www.opengraph.xyz/): Preview + Generate Open Graph tags.
+
 ## References
 
 - [🤯 HEAD](https://htmlhead.dev/)
-- [GitHub: whatwg/html](https://github.com/whatwg/html)
 - [StackExchange: Order of HTML meta tags](https://webmasters.stackexchange.com/a/81409/145798)
 - [MDN - What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 - [MDN - `<base>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
