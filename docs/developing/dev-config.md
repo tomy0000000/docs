@@ -8,6 +8,46 @@ However, these are some opinionated configurations to get started for a new proj
 
 For system-wide configurations, see [dotfiles](https://github.com/tomy0000000/dotfiles).
 
+## Dependabot
+
+```yaml
+# dependabot.yml
+# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+
+version: 2
+updates:
+  # Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "tomy0000000"
+    reviewers:
+      - "tomy0000000"
+    commit-message:
+      prefix: "🗄 chore: "
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/" # Don't change this
+    schedule:
+      interval: "daily"
+
+  # npm, yarn, pnpm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  # pip, pip-compile, pipenv, poetry
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+```
+
 ## EditorConfig
 
 ```ini
