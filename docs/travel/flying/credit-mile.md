@@ -29,7 +29,9 @@ How to decide which frequent flyer credit program to credit your flights to.
    - This can be subjective and depends on your travel habits and goals.
    - e.g. If you are pursuing a status in a program, they may have a higher value for you.
    - The Points Guy posted their monthy valuations [here](https://thepointsguy.com/guide/monthly-valuations/)
-   - Nerdwallet has a list of valuations [here](https://www.nerdwallet.com/article/travel/airline-miles-and-hotel-points-valuations#airline-miles-values)
+   - List of valuations
+     - [Nerdwallet](https://www.nerdwallet.com/article/travel/airline-miles-and-hotel-points-valuations#airline-miles-values)
+     - [Bankrate](https://www.bankrate.com/credit-cards/travel/points-and-miles-valuations/)
 4. Calculate the value of the miles you will earn for each program
    - The estimated value of the miles you will earn $V = M \times VPM$
 5. The highest value program is the one you should credit to.
