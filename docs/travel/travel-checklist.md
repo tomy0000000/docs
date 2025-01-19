@@ -26,6 +26,10 @@ A Checklist / Brain Map / Rubric for planning to travel somewhere.
   - Bus
   - Taxi
   - Bike / Scooter
+- Infra
+  - Currency
+  - Power Plug (hint: use [CheckPlug](https://www.checkplug.com/))
+  - Internet Access
 
 ## Shopping
 
