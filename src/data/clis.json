@@ -300,6 +300,11 @@
     "names": ["ping"]
   },
   {
+    "category": "Text processor",
+    "names": ["markitdown"],
+    "url": "https://github.com/microsoft/markitdown"
+  },
+  {
     "category": "Network",
     "names": ["up"],
     "url": "https://github.com/jesusprubio/up"
@@ -332,6 +337,25 @@
     "category": "Network",
     "names": ["dog"],
     "url": "https://github.com/ogham/dog"
+  },
+  {
+    "category": "Pager",
+    "names": ["delta"],
+    "url": "https://github.com/dandavison/delta"
+  },
+  {
+    "category": "Pager",
+    "names": ["less"],
+    "url": "https://www.greenwoodsoftware.com/less/"
+  },
+  {
+    "category": "Pager",
+    "names": ["more"]
+  },
+  {
+    "category": "Pager",
+    "names": ["most"],
+    "url": "https://jedsoft.org/most/"
   },
   {
     "category": "Network",
