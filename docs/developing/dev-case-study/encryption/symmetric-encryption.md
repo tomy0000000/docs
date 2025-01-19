@@ -9,7 +9,7 @@ Symmetric encryption is a type of encryption where only one key (a secret key) i
 ## Order of preference
 
 1. <abbr title="Key Management Service">KMS</abbr>
-2. <a href="./glossary#libraries">Well-Known Libraries</a>
+2. <a href="encryption#-libraries">Well-Known Libraries</a>
 3. `Chacha20-Poly1305`
 4. `AES-GCM`
 5. `AES-CTR` with `HMAC`
