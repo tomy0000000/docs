@@ -5,3 +5,4 @@ Nomad resources for digital nomads, remote workers, and travelers. This is the p
 - [Nomad List](https://nomadlist.com/)
 - [Numbeo - Cost of Living](https://www.numbeo.com/cost-of-living/)
 - [PayScale - Cost of Living Calculator](https://www.payscale.com/cost-of-living-calculator)
+- [AdvisorSmith City Cost of Living Index](https://advisorsmith.com/data/coli/)
