@@ -2,9 +2,16 @@
 
 Quick reference for `git` commands.
 
+:::tip
+
+Try [Learn Git Branching](https://learngitbranching.js.org/) to learn Git interactively.
+
+:::
+
 ## Commands
 
 - 📄 means the command is built-in.
+- 🎁 means the command is customized in-house.
 - ✚ means the command is available from [tj/git-extras](https://github.com/tj/git-extras).
 - ⛓️ means the command is available from [nvie/git-toolbelt](https://github.com/nvie/git-toolbelt).
 
@@ -93,3 +100,33 @@ git rm --cached `git ls-files -i -c --exclude-from=.gitignore`
 ```
 
 3. Commit the changes.
+
+### Commited to the wrong branch
+
+:::warning
+
+You'll need to force push the changes if the commit is already pushed.
+
+:::
+
+1. Create a new branch from the commit.
+
+```bash
+git branch new-branch
+```
+
+2. Update the current branch to the previous commit.
+
+```bash
+git reset HEAD~ --hard
+```
+
+3. Switch to the new branch.
+
+```bash
+git checkout new-branch
+```
+
+## References
+
+- [Oh Shit, Git!?!](https://ohshitgit.com/): Some useful snippets
