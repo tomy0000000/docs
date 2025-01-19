@@ -67,7 +67,7 @@ List of tech conferences that I'm interested in and tracking.
       accessorFn: (row) => [row.country, row.city],
       cell: ({ getValue }) => {
         const [country, city] = getValue();
-        return `${countries[country.toUpperCase()].emoji} ${city}`;
+        return `${countries[country.toUpperCase()].emoji} ${city ?? ""}`;
       },
     },
     { header: "Form", accessorKey: "form" },

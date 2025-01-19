@@ -202,5 +202,17 @@
     "start-date": "2024-05-23",
     "type": "Development",
     "url": "https://vercel.com/ship"
+  },
+  "viteconf": {
+    "city": null,
+    "country": "us",
+    "end-date": "2024-10-03",
+    "form": "Virtual",
+    "name": "ViteConf",
+    "notes": "",
+    "series": "",
+    "start-date": "2024-10-03",
+    "type": "Development",
+    "url": "https://viteconf.org/"
   }
 }
