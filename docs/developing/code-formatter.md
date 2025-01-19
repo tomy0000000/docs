@@ -3,6 +3,7 @@
 | Language            | VSCode Identifier | CLI                                                                                                                                      | VSCode Extension                                                                                        |
 | ------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | CSS                 | `css`             | [`prettier`](https://github.com/prettier/prettier)                                                                                       | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
+| Dockerfile          | `dockerfile`      | [`hadolint`](https://github.com/hadolint/hadolint)                                                                                       | [hadolint](https://marketplace.visualstudio.com/items?itemName=exiasr.hadolint)                         |
 | Go                  | `go`              | [`go fmt`](https://pkg.go.dev/fmt)                                                                                                       | [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)                                     |
 | GraphQL             | `graphql`         | [`prettier`](https://github.com/prettier/prettier)                                                                                       | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 | HTML                | `html`            | [`prettier`](https://github.com/prettier/prettier)                                                                                       | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
@@ -23,8 +24,6 @@
 | Terraform Variables | `terraform-vars`  | [`terraform fmt`](https://developer.hashicorp.com/terraform/cli/commands/fmt)                                                            | [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)          |
 | SQL                 | `sql`             | [`prettier`](https://github.com/prettier/prettier) + [`prettier-plugin-sql`](https://github.com/un-ts/prettier/tree/master/packages/sql) | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 
-- Dockerfile
-  - Hadolint
 - Shell
   - Shellcheck
 - Go template
