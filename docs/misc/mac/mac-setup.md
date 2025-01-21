@@ -58,40 +58,24 @@ Some preferences and configurations are stored in the Dropbox folder.
 
 ## Dependency Graph
 
+- Homebrew node is not installed because all node CLI should be installed and managed by `pnpm`.
+- Since pipx depends on Homebrew Python, every time Python is updated, all the Python CLIs installed by pipx should be reinstalled. Good news is that this is as easy as running `pipx reinstall-all`. Think of a better way to manage this someday ¯\\\_(ツ)\_/¯
+
 ```mermaid
 graph TD
-	A(Xcode CLI)
-	B(Homebrew)
-	C(Hombrew Python)
-	D(pyenv)
-	E(pipx)
-	F(Python 3.x)
-	G(nodenv)
-	H(Node 20)
-	I(mas)
-	J(git)
-	K(zsh)
-	M(alias)
-	N(Hombrew Node)
-	P(Python CLIs)
-	L(pnpm)
-	O(poetry)
-	Q(Node CLIs)
-	R(rbenv)
-	S(Ruby 3.x)
-	T(goenv)
-	U(Go 1.x)
-
-  A --> B
-  B --> C --> E
-    E --> P
-    E --> O
-  B --> D --> F
-  B --> G --> H
-  B --> N --> L --> Q
-  B --> R --> S
-  B --> T --> U
-  B --> I
-  B --> J
-  B --> K
+  A(alias)
+  B(Xcode CLI) --> C(Homebrew)
+  C --> D(Hombrew Python) --> E(pipx)
+    E --> F(Python CLIs)
+    E --> G(poetry)
+  C --> H(pyenv) --> I(Python 3.x)
+  C --> K(pnpm)
+    K --> L(Node 18)
+    K --> M(Node 20)
+    K --> N("Node 22 (LTS)") --> O(Node CLIs)
+  C --> P(rbenv) --> Q(Ruby 3.x)
+  C --> R(goenv) --> S(Go 1.x)
+  C --> T(mas)
+  C --> U(git)
+  C --> V(zsh)
 ```
