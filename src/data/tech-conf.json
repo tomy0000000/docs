@@ -73,11 +73,11 @@
   },
   "europython": {
     "city": "Prague",
-    "country": "eu",
+    "country": "cz",
     "end-date": "2025-07-20",
     "form": "Hybrid",
     "name": "EuroPython",
-    "notes": null,
+    "notes": "Europe's regional Python conference",
     "series": "🐍 Python",
     "start-date": "2025-07-14",
     "type": "Development",

@@ -2,8 +2,8 @@
 hide_table_of_contents: true
 ---
 
+import Country, { CountryEmoji } from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
-import countries from "@site/src/data/countries.json";
 import conferences from "@site/src/data/tech-conf.json";
 
 # 🎪 Tech Confereces
@@ -67,7 +67,18 @@ List of tech conferences that I'm interested in and tracking.
       accessorFn: (row) => [row.country, row.city],
       cell: ({ getValue }) => {
         const [country, city] = getValue();
-        return `${countries[country.toUpperCase()].emoji} ${city ?? ""}`;
+        console.log(country);
+        return (
+          <>
+            {city ? (
+              <>
+                <CountryEmoji key={country} iso={country} /> <span>{city}</span>
+              </>
+            ) : (
+              <Country key={country} iso={country} />
+            )}
+          </>
+        );
       },
     },
     { header: "Form", accessorKey: "form" },
