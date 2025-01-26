@@ -107,6 +107,18 @@
     "type": "Development",
     "url": "https://galaxy.github.com/"
   },
+  "google-cloud-next": {
+    "city": "Las Vegas, NV",
+    "country": "us",
+    "end-date": "2025-04-11",
+    "form": "Hybrid",
+    "name": "Google Cloud Next",
+    "notes": null,
+    "series": null,
+    "start-date": "2025-04-09",
+    "type": "Development",
+    "url": "https://cloud.withgoogle.com/next"
+  },
   "gophercon-us": {
     "city": "New York, NY",
     "country": "us",
