@@ -63,6 +63,15 @@
     "name": "Dropbox",
     "url": "https://www.dropbox.com/referrals/AACp4-9zGJ_dj4AK2PdDjNKt2WKhivTlKDM?src=global9"
   },
+  "going": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "A gift card for every three Premium or Elite signups",
+    "for-you": "20% off Premium or Elite Membership",
+    "icon": null,
+    "name": "Going",
+    "url": "https://goingwith.me/48kcbqhe"
+  },
   "grammarly": {
     "code": null,
     "dynamic": false,
@@ -89,6 +98,15 @@
     "icon": "simple-icons:instacart",
     "name": "Instacart",
     "url": "https://inst.cr/t/2cddf647a"
+  },
+  "kkday": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "600 points after your itenerary is completed",
+    "for-you": "NT$100 voucher",
+    "icon": null,
+    "name": "KKday",
+    "url": "https://m.kkday.com/zh-tw/i/BLETAG?ud1=ios&cid=10106&p=olink"
   },
   "lime": {
     "code": "RK2Z3XA",
