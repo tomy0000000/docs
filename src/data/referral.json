@@ -113,7 +113,7 @@
     "dynamic": false,
     "for-me": "$3 ride credit",
     "for-you": "$3 ride credit",
-    "icon": null,
+    "icon": "arcticons:lime",
     "name": "Lime",
     "url": "https://lime.bike/referral_signin/RK2Z3XA"
   },
@@ -226,6 +226,15 @@
     "name": "Setapp",
     "url": "https://go.setapp.com/invite/bkbeikto"
   },
+  "shopback": {
+    "code": "QUePnQ",
+    "dynamic": false,
+    "for-me": "NT$100 after you spend NT$500 on any number of purchases",
+    "for-you": "NT$100 after you spend NT$500 on any number of purchases and accured NT$200 of cashback",
+    "icon": "arcticons:shopback",
+    "name": "Shopback",
+    "url": "https://app.shopback.com/G4NWSIhYAQb"
+  },
   "uber": {
     "code": "y2w1uxnhwvep",
     "dynamic": false,
@@ -240,7 +249,7 @@
     "dynamic": false,
     "for-me": "$10 credit per your first two order",
     "for-you": "$10 off for your first two orders",
-    "icon": null,
+    "icon": "arcticons:weee",
     "name": "Weee!",
     "url": "https://www.sayweee.com/zht/account/referral/landing?t=1&referral_id=13831657"
   }
