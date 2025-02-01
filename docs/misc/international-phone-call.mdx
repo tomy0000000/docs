@@ -1,0 +1,62 @@
+import Country from "@site/src/components/Country";
+
+# 📞 International Phone Call
+
+Your options for making international phone calls:
+
+1. Messaging apps or Wi-Fi Calling.
+2. Skype
+3. Roaming
+
+## Wi-Fi Calling
+
+1. Turn on Wi-Fi Calling on your phone
+2. Connect to a Wi-Fi network. The phone carrier shown will suffix with "Wi-Fi"
+3. (Optional) Turn on Airplane mode to avoid roaming charges
+4. Dial the number as you would normally (even when abroad)
+
+## Roaming
+
+```
+{EXIT_CODE} {COUNTRY_CODE} {PHONE_NUMBER}
+```
+
+### Exit Codes
+
+Always depends on the network you're using, regardless of your carrier or base country.
+
+{/* prettier-ignore */}
+<ul>
+  <li><Country iso="us" />: `011`</li>
+  <li><Country iso="tw" /></li>
+  <ul>
+    <li><a
+        href="https://www.cht.com.tw/home/campaign/gxc/c6/idd/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中華電信</a>: `002`, `009`</li>
+    <li><a
+        href="https://aptg.com.tw/esp/APTGmobility/aptg_voice/005015/005/fee02/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >亞太電信</a>: `005`</li>
+    <li><a
+        href="https://www.taiwanmobile.com/cs/public/internationalDirect/enterPage.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+        >台灣大哥大</a>: `006`</li>
+    <li><a
+        href="https://www.fetnet.net/content/cbu/tw/postpaid/others/007.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >遠傳電信</a>: `007`, `017`</li>
+    </ul>
+</ul>
+
+### Country Codes
+
+Where you're calling to. See [Country](../developing/specification/spec-country.mdx) for the country code.
+
+### Phone Number
+
+Remove the leading `0` from the phone number.
