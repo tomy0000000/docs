@@ -33,25 +33,37 @@ Read more in this [article](https://www.alexhyett.com/git-flow-github-flow/).
 
 ## GitHub Settings
 
+### General > Default branch
+
+Change to `develop` if using GitHub Flow or GitFlow. Otherwise, leave `main` as default.
+
 ### General > Features
 
-- [ ] `Wikis`: Ues as minimal documentation if project needs one. Consider a dedicated site if project needs more than a few pages.
-- [ ] `Issues`: Disable only if project is not open source.
-- [ ] `Sponsorships`: Enable if project is offered more or less as a product/service. Use the template from [here](https://github.com/tomy0000000/github/blob/main/.github/FUNDING.yml)
-- [ ] `Discussions`: Always enable. Use as a forum for users to ask questions and share ideas, and making announcements.
-- [ ] `Projects`: Always disable. Use alternatives.
+- `Wikis`: Ues as minimal documentation if project needs one. Consider a dedicated site if project needs more than a few pages.
+- `Issues`: Disable only if project is not open source.
+- `Sponsorships`: Enable if project is offered more or less as a product/service. Use the template from [here](https://github.com/tomy0000000/github/blob/main/.github/FUNDING.yml)
+- `Discussions`: Always enable. Use as a forum for users to ask questions and share ideas, and making announcements.
+- `Projects`: Always disable. Use alternatives.
 
 ### General > Pull Requests
 
-Checks only `Allow merge commits`, and `Pull request title and description` as Default commit message.
+- [x] `Allow merge commits`
+  - `Pull request title and description`
+- [x] `Allow squash merging`
+  - `Pull request title and description`
+- [x] `Allow rebase merging`
 
-This is an idea from [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/#incorporating-a-finished-feature-on-develop). The main benefit is that you can easily identify which branch a commit came from, and it's easier to revert a feature.
+By default, all pull requests should be merged with merge commits. The main benefit is that you can easily identify which branch a commit came from, and it's easier to revert a feature. An idea from [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/#incorporating-a-finished-feature-on-develop).
+
+For CI changes, create a new branch and push commits there for testing. Once it's ready, merge it with squash merge to keep the history clean.
+
+For dependency updates, such as Dependabot PRs and pre-commit CI PRs, use rebase merge to keep the history clean.
 
 Also checks the following:
 
-- [ ] `Always suggest updating pull request branches`
-- [ ] `Allow auto-merge`
-- [ ] `Automatically delete head branches`
+- `Always suggest updating pull request branches`
+- `Allow auto-merge`
+- `Automatically delete head branches`
 
 Because they are useful, and does not yield any downsides so far.
 
