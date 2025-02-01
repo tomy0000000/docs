@@ -176,6 +176,13 @@
     "defunct": false,
     "iata": "AZ",
     "icao": "ITY",
+    "internet": [
+      {
+        "aircraft": ["A330"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/ita-airways/"
+      }
+    ],
     "lcc": false,
     "name": "ITA Airways",
     "seatguru": null,
@@ -221,6 +228,25 @@
     "url": "https://www.frenchbee.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/French_Bee"
   },
+  "BG-BBC": {
+    "alliance": null,
+    "countries": ["bd"],
+    "defunct": false,
+    "iata": "BG",
+    "icao": "BBC",
+    "internet": [
+      {
+        "aircraft": ["B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/biman-bangladesh-airlines/"
+      }
+    ],
+    "lcc": false,
+    "name": "Biman Bangladesh Airlines",
+    "seatguru": null,
+    "url": "http://www.biman-airlines.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Biman_Bangladesh_Airlines"
+  },
   "BR-EVA": {
     "alliance": "Star Alliance",
     "apple-wallet-pass": null,
@@ -228,6 +254,13 @@
     "defunct": false,
     "iata": "BR",
     "icao": "EVA",
+    "internet": [
+      {
+        "aircraft": ["B777"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/eva-air/"
+      }
+    ],
     "lcc": false,
     "name": "EVA Air",
     "seatguru": "https://www.seatguru.com/airlines/Eva_Airways/information.php",
@@ -306,6 +339,13 @@
     "defunct": false,
     "iata": "CX",
     "icao": "CPA",
+    "internet": [
+      {
+        "aircraft": ["A350"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/cathay-pacific/"
+      }
+    ],
     "lcc": false,
     "name": "Cathay Pacific",
     "seatguru": "https://www.seatguru.com/airlines/Cathay_Pacific_Airways/information.php",
@@ -387,6 +427,25 @@
     "url": "https://www.norwegian.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Air_Shuttle"
   },
+  "EI-EIN": {
+    "alliance": null,
+    "countries": ["ie"],
+    "defunct": false,
+    "iata": "EI",
+    "icao": "EIN",
+    "internet": [
+      {
+        "aircraft": ["A330"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/aer-lingus/"
+      }
+    ],
+    "lcc": false,
+    "name": "Aer Lingus",
+    "seatguru": "https://www.seatguru.com/airlines/Aer_Lingus/information.php",
+    "url": "https://www.aerlingus.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Aer_Lingus"
+  },
   "EK-UAE": {
     "alliance": null,
     "apple-wallet-pass": true,
@@ -394,6 +453,13 @@
     "defunct": false,
     "iata": "EK",
     "icao": "UAE",
+    "internet": [
+      {
+        "aircraft": ["B777"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/emirates/"
+      }
+    ],
     "lcc": false,
     "name": "Emirates",
     "seatguru": "https://www.seatguru.com/airlines/Emirates_Airlines/information.php",
@@ -433,6 +499,13 @@
     "defunct": false,
     "iata": "EY",
     "icao": "ETD",
+    "internet": [
+      {
+        "aircraft": ["A350", "B777", "B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/etihad-airways/"
+      }
+    ],
     "lcc": false,
     "name": "Etihad Airways",
     "seatguru": "https://www.seatguru.com/airlines/Etihad_Airways/information.php",
@@ -490,6 +563,25 @@
     "seatguru": "https://www.seatguru.com/airlines/Hawaiian_Airlines/information.php",
     "url": "https://www.hawaiianairlines.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Hawaiian_Airlines"
+  },
+  "HY-UZB": {
+    "alliance": null,
+    "countries": ["uz"],
+    "defunct": false,
+    "iata": "HY",
+    "icao": "UZB",
+    "internet": [
+      {
+        "aircraft": ["B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/uzbekistan-airways/"
+      }
+    ],
+    "lcc": false,
+    "name": "Uzbekistan Airways",
+    "seatguru": "https://www.seatguru.com/airlines/Uzbekistan_Airlines/information.php",
+    "url": "http://www.uzairways.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Uzbekistan_Airways"
   },
   "IB-IBE": {
     "alliance": "One World",
@@ -608,6 +700,25 @@
     "url": "https://www.koreanair.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Korean_Air"
   },
+  "KF-ABB": {
+    "alliance": null,
+    "countries": ["be"],
+    "defunct": false,
+    "iata": "KF",
+    "icao": "ABB",
+    "internet": [
+      {
+        "aircraft": ["A330neo"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/air-belgium/"
+      }
+    ],
+    "lcc": false,
+    "name": "Air Belgium",
+    "seatguru": "https://www.seatguru.com/airlines/Air_Belgium/information.php",
+    "url": "http://www.airbelgium.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Air_Belgium"
+  },
   "KL-KLM": {
     "alliance": "SkyTeam",
     "apple-wallet-pass": null,
@@ -634,6 +745,25 @@
     "url": "https://www.kenya-airways.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Kenya_Airways"
   },
+  "KU-KAC": {
+    "alliance": null,
+    "countries": ["kw"],
+    "defunct": false,
+    "iata": "KU",
+    "icao": "KAC",
+    "internet": [
+      {
+        "aircraft": ["B777"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/kuwait-airways/"
+      }
+    ],
+    "lcc": false,
+    "name": "Kuwait Airways",
+    "seatguru": null,
+    "url": "http://www.kuwaitairways.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kuwait_Airways"
+  },
   "LH-DLH": {
     "alliance": "Star Alliance",
     "apple-wallet-pass": null,
@@ -641,6 +771,13 @@
     "defunct": false,
     "iata": "LH",
     "icao": "DLH",
+    "internet": [
+      {
+        "aircraft": ["A330", "A340", "A350", "A380", "B747"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/lufthansa/"
+      }
+    ],
     "lcc": false,
     "name": "Lufthansa",
     "seatguru": "https://www.seatguru.com/airlines/Lufthansa/information.php",
@@ -667,6 +804,13 @@
     "defunct": false,
     "iata": "LX",
     "icao": "SWR",
+    "internet": [
+      {
+        "aircraft": ["A330", "A340", "B777"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/swiss/"
+      }
+    ],
     "lcc": false,
     "name": "Swiss International Air Lines",
     "seatguru": "https://www.seatguru.com/airlines/Swiss_Airlines/information.php",
@@ -706,6 +850,13 @@
     "defunct": false,
     "iata": "MH",
     "icao": "MAS",
+    "internet": [
+      {
+        "aircraft": ["A350"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/malaysia-airlines/"
+      }
+    ],
     "lcc": false,
     "name": "Malaysia Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Malaysia_Airlines/information.php",
@@ -732,6 +883,13 @@
     "defunct": false,
     "iata": "MS",
     "icao": "MSR",
+    "internet": [
+      {
+        "aircraft": ["B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/egyptair/"
+      }
+    ],
     "lcc": false,
     "name": "Egyptair",
     "seatguru": "https://www.seatguru.com/airlines/Egyptair/information.php",
@@ -874,6 +1032,13 @@
     "defunct": false,
     "iata": "OZ",
     "icao": "AAR",
+    "internet": [
+      {
+        "aircraft": ["A350"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/asiana-airlines/"
+      }
+    ],
     "lcc": false,
     "name": "Asiana Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Asiana/information.php",
@@ -952,6 +1117,13 @@
     "defunct": false,
     "iata": "SK",
     "icao": "SAS",
+    "internet": [
+      {
+        "aircraft": ["A330"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/sas-scandinavian-airlines/"
+      }
+    ],
     "lcc": false,
     "name": "Scandinavian Airlines",
     "seatguru": null,
@@ -978,6 +1150,13 @@
     "defunct": false,
     "iata": "SQ",
     "icao": "SIA",
+    "internet": [
+      {
+        "aircraft": ["A350", "B777", "B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/singapore-airlines/"
+      }
+    ],
     "lcc": false,
     "name": "Singapore Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Singapore_Air/information.php",
@@ -1030,6 +1209,13 @@
     "defunct": false,
     "iata": "TK",
     "icao": "THY",
+    "internet": [
+      {
+        "aircraft": ["A330", "A350", "B777", "B787"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/turkish-airlines/"
+      }
+    ],
     "lcc": false,
     "name": "Turkish Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Turkish_Airlines/information.php",
@@ -1043,6 +1229,13 @@
     "defunct": false,
     "iata": "TP",
     "icao": "TAP",
+    "internet": [
+      {
+        "aircraft": ["A330"],
+        "name": "AeroMobile",
+        "url": "https://www.aeromobile.net/airlines/tap-air-portugal/"
+      }
+    ],
     "lcc": false,
     "name": "TAP Air Portugal",
     "seatguru": "https://www.seatguru.com/airlines/TAP_Portugal/information.php",
