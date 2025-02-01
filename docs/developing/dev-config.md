@@ -13,12 +13,12 @@ For system-wide configurations, see [dotfiles](https://github.com/tomy0000000/do
 ```yaml
 # dependabot.yml
 # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
-
 version: 2
 updates:
   # Docker
   - package-ecosystem: "docker"
     directory: "/"
+    target-branch: "develop" # Add this line if using GitHub Flow or GitFlow
     schedule:
       interval: "daily"
     assignees:
@@ -26,26 +26,47 @@ updates:
     reviewers:
       - "tomy0000000"
     commit-message:
-      prefix: "🗄 chore: "
+      prefix: "⬆️ bump: "
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/" # Don't change this
+    target-branch: "develop" # Add this line if using GitHub Flow or GitFlow
     schedule:
       interval: "daily"
+    assignees:
+      - "tomy0000000"
+    reviewers:
+      - "tomy0000000"
+    commit-message:
+      prefix: "⬆️ bump: "
 
   # npm, yarn, pnpm
   - package-ecosystem: "npm"
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
+    target-branch: "develop" # Add this line if using GitHub Flow or GitFlow
     schedule:
       interval: "daily"
+    assignees:
+      - "tomy0000000"
+    reviewers:
+      - "tomy0000000"
+    commit-message:
+      prefix: "⬆️ bump: "
 
   # pip, pip-compile, pipenv, poetry
   - package-ecosystem: "pip"
     directory: "/"
+    target-branch: "develop" # Add this line if using GitHub Flow or GitFlow
     schedule:
       interval: "daily"
+    assignees:
+      - "tomy0000000"
+    reviewers:
+      - "tomy0000000"
+    commit-message:
+      prefix: "⬆️ bump: "
 ```
 
 ## EditorConfig
@@ -100,6 +121,80 @@ indent_size = 2
 [*.{sh}]
 indent_style = space
 indent_size = 4
+```
+
+## `pyproject.toml`
+
+```toml
+[project]
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+name = ""
+version = ""
+description = ""
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+authors = [{ name = "Tomy Hsieh", email = "pypi@tomy.me" }]
+dependencies = [
+]
+
+[project.urls]
+repository = ""
+issues = ""
+documentation = ""
+
+[build-system]
+# Choose from "setuptools", "flit", "poetry", "flit_core", "pdm-backend"
+requires = []
+build-backend = ""
+
+[tool.black]
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
+line-length = 88  # This is the default
+
+[tool.coverage.run]
+# https://coverage.readthedocs.io/en/latest/config.html
+source = ["the_app"]
+omit = ["the_app/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/config_files.html
+src_paths = ["the_app"]
+profile = "black"
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/config_file.html
+strict = true
+exclude = ["venv", ".venv", "alembic"]
+
+[tool.poetry]
+# https://python-poetry.org/docs/pyproject/
+package-mode = false  # Add this if you're writing a app instead of a library
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/stable/reference/customize.html#configuration-file-formats
+addopts = "--capture=no"  # This will show the output of print statements
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/settings/
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "ARG001", # unused arguments in functions
+]
+
+[tool.uv]
+# https://docs.astral.sh/uv/reference/settings/
 ```
 
 ## ESLint
