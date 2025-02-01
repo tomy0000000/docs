@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { CountryEmoji } from "@site/src/components/Country";
+import Country from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
 import maps from "@site/src/data/maps.json";
 
@@ -11,6 +11,7 @@ List of online maps that can be used in the frontend.
   columns={[
     {
       header: "Name",
+      size: 200,
       accessorFn: (row) => [row.name, row["web-app"], row.country, row.icon],
       cell: ({ getValue }) => {
         const [name, webApp, country, icon] = getValue();
@@ -23,7 +24,7 @@ List of online maps that can be used in the frontend.
             )}
             {country && (
               <>
-                <CountryEmoji key={country} iso={country} />{" "}
+                <Country key={country} iso={country} name={false} />{" "}
               </>
             )}
             <a href={webApp} target="_blank" rel="noopener noreferrer">

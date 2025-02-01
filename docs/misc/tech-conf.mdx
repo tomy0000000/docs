@@ -70,12 +70,12 @@ List of tech conferences that I'm interested in and tracking.
         console.log(country);
         return (
           <>
-            {city ? (
+            <Country key={country} iso={country} name={city === null} />
+            {city && (
               <>
-                <CountryEmoji key={country} iso={country} /> <span>{city}</span>
+                {" "}
+                <span>{city}</span>
               </>
-            ) : (
-              <Country key={country} iso={country} />
             )}
           </>
         );

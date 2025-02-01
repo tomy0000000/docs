@@ -1,22 +1,34 @@
 import countries from "@site/src/data/countries.json";
 
 // 'tw' → '🇹🇼'
-export function CountryEmoji({ iso }): JSX.Element {
+function CountryEmoji({ iso }) {
   const country = countries[iso.toUpperCase()];
   return <span title={country.name}>{country.emoji}</span>;
 }
 
 // 'tw' → 'Taiwan'
-export function CountryNameEn({ iso }): JSX.Element {
+function CountryNameEn({ iso }) {
   const country = countries[iso.toUpperCase()];
   return <>{country.name}</>;
 }
 
+type CountryProps = {
+  iso: string;
+  emoji?: boolean;
+  name?: boolean;
+};
+
 // 'tw' → '🇹🇼 Taiwan'
-export default function Country({ iso }): JSX.Element {
+export default function Country({
+  iso,
+  emoji = true,
+  name = true,
+}: CountryProps) {
   return (
     <>
-      <CountryEmoji iso={iso} /> <CountryNameEn iso={iso} />
+      {emoji && <CountryEmoji iso={iso} />}
+      {emoji && name && " "}
+      {name && <CountryNameEn iso={iso} />}
     </>
   );
 }

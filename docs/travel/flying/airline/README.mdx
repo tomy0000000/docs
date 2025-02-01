@@ -2,10 +2,9 @@
 hide_table_of_contents: true
 ---
 
-import { CountryEmoji } from "@site/src/components/Country";
+import Country from "@site/src/components/Country";
 import SortableTable from "@site/src/components/SortableTable";
 import airlines from "@site/src/data/airlines.json";
-import countries from "@site/src/data/countries.json";
 
 # Airlines
 
@@ -42,7 +41,7 @@ List of airlines, might not cover all.
         return (
           <>
             {countries.map((country) => (
-              <CountryEmoji key={country} iso={country} />
+              <Country key={country} iso={country} name={false} />
             ))}{" "}
             <a href={url} target="blank" rel="noreferrer noopener">
               {name}
