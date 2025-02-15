@@ -1,3 +1,7 @@
+---
+skip_plural_check: true
+---
+
 # Platform as a Service (PaaS)
 
 - [Heroku](https://www.heroku.com/)

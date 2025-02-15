@@ -1,3 +1,7 @@
+---
+skip_plural_check: true
+---
+
 # ƛ Function as a Service (FaaS)
 
 |                 | AWS Lambda                                                                                      | Google Cloud Functions                                                       | Azure Functions                                                                                                               |

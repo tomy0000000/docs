@@ -1,3 +1,7 @@
+---
+skip_plural_check: true
+---
+
 # `defaults`
 
 In macOS, the `defaults` command is used to read, write, and delete user defaults. In another word, settting user preferences, for both system and user applications.

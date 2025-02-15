@@ -58,7 +58,10 @@ export default {
       }
       // NOTE: Check console to see if there are any duplicated slugs
       result.frontMatter.slug = `/${slug(name)}`;
-      if ((result.frontMatter.slug as string).endsWith("s")) {
+      if (
+        (result.frontMatter.slug as string).endsWith("s") &&
+        !result.frontMatter.skip_plural_check
+      ) {
         console.warn(
           `Potential plural doc name: ${result.frontMatter.slug} at ${params.filePath}`,
         );

@@ -1,3 +1,7 @@
+---
+skip_plural_check: true
+---
+
 # ⛽️ Gasoline
 
 美國不同地區的油價可能有所不同，下面幾個是可以查詢油價的方式：
