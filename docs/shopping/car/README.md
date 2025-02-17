@@ -1,6 +1,28 @@
 # 🚘 Car
 
-Quick reference for car models and US prices.
+All about cars
+
+## Ways to get a car
+
+| Method       | Upfront   | Recurring      | Minimum Term | Own / Return |
+| ------------ | --------- | -------------- | ------------ | ------------ |
+| Cash         | Car price | -              | -            | Own          |
+| Finance      | 💰💰💰💰  | Monthly 💰💰   | 72 months    | Own          |
+| Lease        | 💰💰💰    | Monthly 💰     | 36 months    | Return       |
+| Subscription | 💰💰      | Monthly 💰💰💰 | 1 month      | Return       |
+| Rental       | 💰        | Daily          | 1 day        | Return       |
+| Sharing      | 💰        | Hourly         | 1 hour       | Return       |
+
+## 📜 Subscription
+
+- [Sixt+](https://www.sixt.com/plus/)
+- [Eon](https://www.eonrides.com/)
+- [SimpleCar](https://www.simplecar.com/)
+- [Autonomy](https://autonomy.com/)
+- [🇩🇪 FINN](https://www.finn.com/)
+- [🇨🇦 Roam](https://www.roam.auto/)
+
+## US Quick reference
 
 | Manufacturer     | Sedan                   | Premium Sedan                | SUV                | Premium SUV                 |
 | ---------------- | ----------------------- | ---------------------------- | ------------------ | --------------------------- |
