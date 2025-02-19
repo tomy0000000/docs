@@ -8,6 +8,17 @@ Try [Learn Git Branching](https://learngitbranching.js.org/) to learn Git intera
 
 :::
 
+## File State Diagram
+
+```mermaid
+stateDiagram
+    Untracked --> Staged : "git add"
+    Staged --> Unmodified : "git commit"
+    Unmodified --> Modified : "Edit / Delete File"
+    Modified --> Staged : "git add"
+    Modified --> Unmodified : "git checkout -- file"
+```
+
 ## Commands
 
 - 📄 means the command is built-in.
