@@ -3,6 +3,7 @@ hide_table_of_contents: true
 full_width: true
 ---
 
+import JoinLineBreak from "@site/src/components/JoinLineBreak";
 import SortableTable from "@site/src/components/SortableTable";
 import clis from "@site/src/data/clis.json";
 
@@ -13,20 +14,27 @@ A list of common CLI commands and how they're installed on my system.
 <SortableTable
   columns={[
     {
-      header: "CLI",
-      accessorFn: (row) => [row.names, row.url],
+      header: "Name",
+      accessorFn: (row) => [row.name, row.url],
       cell: ({ getValue }) => {
-        const [names, url] = getValue();
+        const [name, url] = getValue();
         return url ? (
           <a href={url} target="blank" rel="noreferrer noopener">
-            {names
-              .map((name, index) => <code key={index}>{name}</code>)
-              .reduce((prev, curr) => [prev, ", ", curr])}
+            {name}
           </a>
         ) : (
-          names
-            .map((name, index) => <code key={index}>{name}</code>)
-            .reduce((prev, curr) => [prev, ", ", curr])
+          name
+        );
+      },
+    },
+    {
+      header: "CLIs",
+      accessorKey: "clis",
+      size: 300,
+      cell: ({ getValue }) => {
+        const clis = getValue();
+        return JoinLineBreak(
+          clis.map((name, index) => <code key={index}>{name}</code>),
         );
       },
     },
@@ -35,19 +43,35 @@ A list of common CLI commands and how they're installed on my system.
       accessorKey: "category",
     },
     {
-      header: "Completion (zsh)",
-      accessorKey: "zsh-completion",
+      header: "macOS Zsh Completion",
+      accessorKey: "macos-zsh-completion",
       cell: ({ getValue }) => {
         const completion = getValue();
-        return completion ? completion : "?";
+        return completion ? completion : null;
       },
     },
     {
-      header: "Alias",
-      accessorKey: "alias",
+      header: "Linux Zsh Completion",
+      accessorKey: "linux-zsh-completion",
+      cell: ({ getValue }) => {
+        const completion = getValue();
+        return completion ? completion : null;
+      },
+    },
+    {
+      header: "macOS Alias",
+      accessorKey: "macos-alias",
       cell: ({ getValue }) => {
         const alias = getValue();
-        return alias ? <code>{getValue()}</code> : null;
+        return alias ? <code>{alias}</code> : null;
+      },
+    },
+    {
+      header: "Linux Alias",
+      accessorKey: "linux-alias",
+      cell: ({ getValue }) => {
+        const alias = getValue();
+        return alias ? <code>{alias}</code> : null;
       },
     },
   ]}
@@ -62,3 +86,7 @@ A list of common CLI commands and how they're installed on my system.
 - Homebrew completions:
   - `/usr/local/share/zsh/site-functions`
   - `/usr/local/share/zsh-completions` (When `zsh-completions` formula is installed)
+
+## References
+
+- [Modern Unix](https://github.com/ibraheemdev/modern-unix)

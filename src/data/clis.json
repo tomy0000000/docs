@@ -1,828 +1,917 @@
 [
   {
     "category": "Clipboard",
-    "names": ["pbcopy", "pbpaste"]
+    "clis": ["pbcopy", "pbpaste"]
   },
   {
     "category": "Clipboard",
-    "names": ["xsel"],
+    "clis": ["xsel"],
+    "name": "XSel",
     "url": "https://github.com/kfish/xsel"
   },
   {
     "category": "Checksum",
-    "names": ["shasum"]
+    "clis": ["shasum"]
   },
   {
     "category": "Checksum",
-    "names": ["md5"]
+    "clis": ["md5"]
   },
   {
-    "names": ["qlmanage"]
-  },
-  {
-    "category": "Cloud provider",
-    "names": ["aws"],
-    "zsh-completion": "Homebrew"
+    "clis": ["qlmanage"]
   },
   {
     "category": "Cloud provider",
-    "names": ["fly", "flyctl"],
-    "zsh-completion": "Homebrew"
+    "clis": ["aws"],
+    "macos-zsh-completion": "Homebrew"
   },
   {
     "category": "Cloud provider",
-    "install": [
-      {
-        "id": "google-cloud-sdk",
-        "type": "cask"
-      }
-    ],
-    "names": [
+    "clis": ["fly", "flyctl"],
+    "macos-zsh-completion": "Homebrew"
+  },
+  {
+    "category": "Cloud provider",
+    "clis": [
       "gcloud",
       "docker-credential-gcloud",
       "bq",
       "git-credential-gcloud",
       "gsutil"
     ],
-    "zsh-completion": "Homebrew (Need additional setup)"
+    "install": [
+      {
+        "id": "google-cloud-sdk",
+        "type": "cask"
+      }
+    ],
+    "macos-zsh-completion": "Homebrew (Need additional setup)"
   },
   {
     "category": "Command help",
-    "names": ["cheat"],
-    "url": "https://github.com/cheat/cheat",
-    "zsh-completion": "Homebrew (Broken)"
+    "clis": ["cheat"],
+    "macos-zsh-completion": "Homebrew (Broken)",
+    "name": "cheat",
+    "url": "https://github.com/cheat/cheat"
   },
   {
     "category": "Command help",
-    "names": ["navi"],
+    "clis": ["navi"],
+    "name": "navi",
     "url": "https://github.com/denisidoro/navi"
   },
   {
     "category": "Command help",
-    "names": ["man"]
+    "clis": ["man"]
   },
   {
     "category": "Command help",
-    "names": ["tldr"],
+    "clis": ["tldr"],
+    "name": "tldr-pages",
     "url": "https://github.com/tldr-pages/tldr"
   },
   {
     "category": "Command History",
-    "names": ["atuin"],
-    "url": "https://github.com/atuinsh/atuin",
-    "zsh-completion": "Homebrew"
+    "clis": ["atuin"],
+    "macos-zsh-completion": "Homebrew",
+    "name": "Atuin",
+    "url": "https://github.com/atuinsh/atuin"
   },
   {
     "category": "Command History",
-    "names": ["history"]
+    "clis": ["history"]
   },
   {
     "category": "Command History",
-    "names": ["mcfly"],
+    "clis": ["mcfly"],
+    "name": "McFly",
     "url": "https://github.com/cantino/mcfly"
   },
   {
-    "alias": "d",
     "category": "Containerization",
-    "names": ["docker"],
-    "zsh-completion": "Homebrew"
+    "clis": ["docker"],
+    "linux-alias": "d",
+    "macos-alias": "d",
+    "macos-zsh-completion": "Homebrew",
+    "name": "Docker",
+    "url": "https://docs.docker.com/reference/cli/docker/"
   },
   {
     "category": "Containerization",
-    "names": ["ctop"],
+    "clis": ["ctop"],
+    "name": "ctop",
     "url": "https://github.com/bcicen/ctop"
   },
   {
     "category": "Containerization",
-    "names": ["lazydocker"],
+    "clis": ["lazydocker"],
+    "name": "lazydocker",
     "url": "https://github.com/jesseduffield/lazydocker"
   },
   {
     "category": "Containerization",
-    "names": ["helm"],
+    "clis": ["helm"],
+    "name": "Helm",
     "url": "https://github.com/helm/helm"
   },
   {
-    "alias": "f",
     "category": "Containerization",
-    "names": ["kubectl"],
+    "clis": ["kubectl"],
+    "name": "Kubernetes (k8s)",
     "url": "https://github.com/kubernetes/kubernetes"
   },
   {
     "category": "Containerization",
-    "names": ["kops"],
-    "url": "https://github.com/kubernetes/kops",
-    "zsh-completion": "Homebrew"
+    "clis": ["kops"],
+    "macos-zsh-completion": "Homebrew",
+    "name": "kOps",
+    "url": "https://github.com/kubernetes/kops"
   },
   {
     "category": "Containerization",
-    "names": ["k9s"],
+    "clis": ["k9s"],
+    "name": "K9s",
     "url": "https://github.com/derailed/k9s"
   },
   {
     "category": "Containerization",
-    "names": ["kdash"],
+    "clis": ["kdash"],
+    "name": "KDash",
     "url": "https://github.com/kdash-rs/kdash"
   },
   {
     "category": "Containerization",
-    "names": ["skaffold"],
+    "clis": ["skaffold"],
+    "name": "Skaffold",
     "url": "https://github.com/GoogleConTainerTools/skaffold"
   },
   {
     "category": "Counter",
-    "names": ["wc"]
+    "clis": ["wc"]
   },
   {
     "category": "Counter",
-    "names": ["cloc"],
+    "clis": ["cloc"],
+    "name": "cloc",
     "url": "https://github.com/AlDanial/cloc"
   },
   {
     "category": "Counter",
-    "names": ["scc"],
+    "clis": ["scc"],
+    "name": "Sloc Cloc and Code",
     "url": "https://github.com/boyter/scc"
   },
   {
     "category": "Debug Print",
-    "names": ["echo"]
+    "clis": ["echo"]
   },
   {
     "category": "Debug Print",
-    "names": ["cowsay"],
+    "clis": ["cowsay"],
+    "name": "cowsay",
     "url": "https://github.com/tnalpgge/rank-amateur-cowsay"
   },
   {
     "category": "Debug Print",
-    "names": ["figlet"],
+    "clis": ["figlet"],
+    "name": "FIGlet",
     "url": "http://www.figlet.org/"
   },
   {
     "category": "Debugger",
-    "names": ["gdb"]
+    "clis": ["gdb"]
   },
   {
     "category": "Debugger",
-    "names": ["gdb-dashboard"],
+    "clis": ["gdb-dashboard"],
+    "name": "GDB dashboard",
     "url": "https://github.com/cyrus-and/gdb-dashboard"
   },
   {
     "category": "Diff Utility",
-    "names": ["diff"]
+    "clis": ["diff"]
   },
   {
     "category": "Diff Utility",
-    "names": ["diff-so-fancy"],
+    "clis": ["diff-so-fancy"],
+    "name": "diff-so-fancy",
     "url": "https://github.com/so-fancy/diff-so-fancy"
   },
   {
     "category": "Diff Utility",
-    "names": ["delta"],
+    "clis": ["delta"],
+    "name": "delta",
     "url": "https://github.com/dandavison/delta"
   },
   {
     "category": "EXIF tool",
-    "names": ["exiftool"],
+    "clis": ["exiftool"],
+    "name": "ExifTool",
     "url": "https://github.com/exiftool/exiftool"
   },
   {
-    "alias": "l",
     "category": "File list",
-    "names": ["ls"]
+    "clis": ["ls"],
+    "linux-alias": "l",
+    "macos-alias": "l"
   },
   {
     "category": "File list",
-    "names": ["exa", "eza"],
+    "clis": ["exa", "eza"],
+    "name": "eza",
     "url": "https://github.com/eza-community/eza"
   },
   {
     "category": "File list",
-    "names": ["lsd"],
+    "clis": ["lsd"],
+    "name": "LSDeluxe",
     "url": "https://github.com/Peltoche/lsd"
   },
   {
     "category": "File list",
-    "names": ["tree"]
+    "clis": ["tree"]
   },
   {
     "category": "File list",
-    "names": ["tre"],
+    "clis": ["tre"],
+    "name": "tre",
     "url": "https://github.com/dduan/tre"
   },
   {
     "category": "File list",
-    "names": ["broot"],
+    "clis": ["broot"],
+    "name": "Broot",
     "url": "https://github.com/Canop/broot"
   },
   {
     "category": "File preview",
-    "names": ["cat"]
+    "clis": ["cat"]
   },
   {
     "category": "File preview",
-    "names": ["lolcat"],
+    "clis": ["lolcat"],
+    "name": "lolcat",
     "url": "https://github.com/busyloop/lolcat"
   },
   {
     "category": "File preview",
-    "names": ["bat"],
+    "clis": ["bat"],
+    "name": "bat",
     "url": "https://github.com/sharkdp/bat"
   },
   {
     "category": "File preview",
-    "names": ["head"]
+    "clis": ["head"]
   },
   {
     "category": "File preview",
-    "names": ["less"]
+    "clis": ["less"]
   },
   {
     "category": "File preview",
-    "names": ["more"]
+    "clis": ["more"]
   },
   {
     "category": "File preview",
-    "names": ["most"]
+    "clis": ["most"]
   },
   {
     "category": "File preview",
-    "names": ["tail"]
+    "clis": ["tail"]
   },
   {
     "category": "File Remove",
-    "names": ["rm"]
+    "clis": ["rm"]
   },
   {
     "category": "File Remove",
-    "names": ["rip"],
+    "clis": ["rip"],
+    "name": "rip (Rm ImProved)",
     "url": "https://github.com/nivekuil/rip"
   },
   {
     "category": "File Remove",
-    "names": ["trash-cli"],
+    "clis": ["trash-cli"],
+    "name": "trash-cli",
     "url": "https://github.com/andreafrancia/trash-cli"
   },
   {
     "category": "File search",
-    "names": ["fd"],
+    "clis": ["fd"],
+    "name": "fd",
     "url": "https://github.com/sharkdp/fd"
   },
   {
     "category": "File search",
-    "names": ["find"]
+    "clis": ["find"]
   },
   {
     "category": "File search",
-    "names": ["fzf"]
+    "clis": ["fzf"]
   },
   {
     "category": "File search",
-    "names": ["locate"]
+    "clis": ["locate"]
   },
   {
     "category": "File search",
-    "names": ["rg"]
+    "clis": ["rg"]
   },
   {
     "category": "File Watcher",
-    "names": ["watchmedo"],
+    "clis": ["watchmedo"],
+    "name": "Watchdog",
     "url": "https://github.com/gorakhargosh/watchdog"
   },
   {
     "category": "File Watcher",
-    "names": ["entr"],
+    "clis": ["entr"],
+    "name": "Event Notify Test Runner",
     "url": "https://github.com/eradman/entr"
   },
   {
     "category": "Go programming language",
-    "names": ["go"]
+    "clis": ["go"]
   },
   {
     "category": "JSON processor",
-    "names": ["jq"]
+    "clis": ["jq"]
   },
   {
     "category": "Just For Fun",
-    "names": ["tty-clock"]
+    "clis": ["tty-clock"]
   },
   {
     "category": "Just For Fun",
-    "names": ["cowsay"]
+    "clis": ["cowsay"]
   },
   {
-    "alias": "j",
     "category": "Navigation",
-    "names": ["autojump"],
-    "url": "https://github.com/wting/autojump",
-    "zsh-completion": "-"
+    "clis": ["autojump"],
+    "linux-alias": "j",
+    "macos-alias": "j",
+    "name": "autojump",
+    "url": "https://github.com/wting/autojump"
   },
   {
-    "alias": "z",
     "category": "Navigation",
-    "names": ["zoxide"],
+    "clis": ["zoxide"],
+    "linux-alias": "z",
+    "macos-alias": "z",
+    "name": "zoxide",
     "url": "https://github.com/ajeetdsouza/zoxide"
   },
   {
     "category": "Network",
-    "names": ["httptap"],
+    "clis": ["httptap"],
+    "name": "httptap",
     "url": "https://github.com/monasticacademy/httptap"
   },
   {
     "category": "Network",
-    "names": ["ping"]
+    "clis": ["ping"]
   },
   {
     "category": "Text processor",
-    "names": ["markitdown"],
+    "clis": ["markitdown"],
+    "name": "MarkItDown",
     "url": "https://github.com/microsoft/markitdown"
   },
   {
     "category": "Network",
-    "names": ["up"],
+    "clis": ["up"],
+    "name": "up",
     "url": "https://github.com/jesusprubio/up"
   },
   {
     "category": "Network",
-    "names": ["gping"],
+    "clis": ["gping"],
+    "name": "gping",
     "url": "https://github.com/orf/gping"
   },
   {
     "category": "Network",
-    "names": ["pingu"],
+    "clis": ["pingu"],
+    "name": "pingu",
     "url": "https://github.com/sheepla/pingu"
   },
   {
     "category": "Network",
-    "names": ["doggo"],
+    "clis": ["doggo"],
+    "name": "doggo",
     "url": "https://github.com/mr-karan/doggo"
   },
   {
     "category": "Network",
-    "names": ["nmap"],
+    "clis": ["nmap"],
+    "name": "Nmap",
     "url": "https://github.com/nmap/nmap"
   },
   {
     "category": "Network",
-    "names": ["dig"]
+    "clis": ["dig"]
   },
   {
     "category": "Network",
-    "names": ["dog"],
+    "clis": ["dog"],
+    "name": "dog",
     "url": "https://github.com/ogham/dog"
   },
   {
     "category": "Pager",
-    "names": ["delta"],
-    "url": "https://github.com/dandavison/delta"
-  },
-  {
-    "category": "Pager",
-    "names": ["less"],
+    "clis": ["less"],
+    "name": "Less",
     "url": "https://www.greenwoodsoftware.com/less/"
   },
   {
     "category": "Pager",
-    "names": ["more"]
+    "clis": ["more"]
   },
   {
     "category": "Pager",
-    "names": ["most"],
+    "clis": ["most"],
+    "name": "MOST",
     "url": "https://jedsoft.org/most/"
   },
   {
     "category": "Network",
-    "names": ["speedtest-cli"],
+    "clis": ["speedtest-cli"],
+    "name": "speedtest-cli",
     "url": "https://github.com/sivel/speedtest-cli"
   },
   {
     "category": "Node.js package manager",
-    "names": ["npm"]
+    "clis": ["npm"]
   },
   {
     "category": "Node.js package manager",
-    "names": ["pnpm"]
+    "clis": ["pnpm"]
   },
   {
     "category": "Node.js package manager",
-    "names": ["yarn"]
+    "clis": ["yarn"]
   },
   {
     "category": "Node.js package runner",
-    "names": ["npx"]
+    "clis": ["npx"]
   },
   {
     "category": "Node.js REPL",
-    "names": ["node"]
+    "clis": ["node"]
   },
   {
     "category": "Package manager",
-    "names": ["apt"]
-  },
-  {
-    "alias": "b",
-    "category": "Package manager",
-    "names": ["brew"],
-    "zsh-completion": "Homebrew"
+    "clis": ["apt"]
   },
   {
     "category": "Package manager",
-    "names": ["yum"]
+    "clis": ["brew"],
+    "macos-alias": "b",
+    "macos-zsh-completion": "Homebrew"
+  },
+  {
+    "category": "Package manager",
+    "clis": ["yum"]
   },
   {
     "category": "Profiling",
-    "names": ["hyperfine"],
+    "clis": ["hyperfine"],
+    "name": "hyperfine",
     "url": "https://github.com/sharkdp/hyperfine"
   },
   {
     "category": "Project Building/Running",
-    "names": ["make"]
+    "clis": ["make"]
   },
   {
     "category": "Project Building/Running",
-    "names": ["just"],
+    "clis": ["just"],
+    "name": "just",
     "url": "https://github.com/casey/just"
   },
   {
     "category": "Python REPL",
-    "names": ["ipython"]
+    "clis": ["ipython"]
   },
   {
     "category": "Python notebook",
-    "names": ["jupyter"]
+    "clis": ["jupyter"]
   },
   {
     "category": "Python package manager",
-    "names": ["pip"]
+    "clis": ["pip"]
   },
   {
     "category": "Python package manager",
-    "names": ["poetry"]
+    "clis": ["poetry"]
   },
   {
     "category": "Python package runner",
-    "names": ["pipx"],
-    "zsh-completion": "Homebrew"
+    "clis": ["pipx"],
+    "macos-zsh-completion": "Homebrew"
   },
   {
     "category": "Python version manager",
-    "names": ["pyenv"]
+    "clis": ["pyenv"]
   },
   {
     "category": "Remote sync",
-    "names": ["rsync"]
+    "clis": ["rsync"]
   },
   {
     "category": "Remote sync",
-    "names": ["rclone"],
+    "clis": ["rclone"],
+    "name": "Rclone",
     "url": "https://github.com/rclone/rclone"
   },
   {
     "category": "Request Utility",
-    "names": ["curl"],
+    "clis": ["curl"],
+    "name": "curl",
     "url": "https://github.com/curl/curl"
   },
   {
     "category": "Request Utility",
-    "names": ["wget"],
+    "clis": ["wget"],
+    "name": "GNU Wget2",
     "url": "https://gitlab.com/gnuwget/wget2"
   },
   {
     "category": "Request Utility",
-    "names": ["aria2"],
+    "clis": ["aria2"],
+    "name": "aria2",
     "url": "https://github.com/aria2/aria2"
   },
   {
     "category": "Request Utility",
-    "names": ["httpie"],
+    "clis": ["httpie"],
+    "name": "HTTPie",
     "url": "https://github.com/httpie/cli"
   },
   {
     "category": "Request Utility",
-    "names": ["curlie"],
+    "clis": ["curlie"],
+    "name": "Curlie",
     "url": "https://github.com/rs/curlie"
   },
   {
     "category": "Request Utility",
-    "names": ["xh"],
+    "clis": ["xh"],
+    "name": "xh",
     "url": "https://github.com/ducaale/xh"
   },
   {
     "category": "Ruby version manager",
-    "names": ["rbenv"]
+    "clis": ["rbenv"]
   },
   {
     "category": "Screen Management",
-    "names": ["screen"]
+    "clis": ["screen"]
   },
   {
     "category": "Screen Management",
-    "names": ["tmux"]
+    "clis": ["tmux"]
   },
   {
     "category": "Screen Management",
-    "names": ["byobu"]
+    "clis": ["byobu"]
   },
   {
     "category": "Screen Management",
-    "names": ["tmate"]
+    "clis": ["tmate"]
   },
   {
     "category": "Secure copy",
-    "names": ["scp"]
+    "clis": ["scp"]
   },
   {
     "category": "Secure shell",
-    "names": ["ssh"]
+    "clis": ["ssh"]
   },
   {
     "category": "Shell",
-    "names": ["bash"]
+    "clis": ["bash"]
   },
   {
     "category": "Shell",
-    "names": ["zsh"]
+    "clis": ["zsh"]
   },
   {
     "category": "Space Management",
-    "names": ["df"]
+    "clis": ["df"]
   },
   {
     "category": "Space Management",
-    "names": ["du"]
+    "clis": ["du"]
   },
   {
     "category": "Space Management",
-    "names": ["duf"],
+    "clis": ["duf"],
+    "name": "duf",
     "url": "https://github.com/muesli/duf"
   },
   {
     "category": "Space Management",
-    "names": ["dust"],
+    "clis": ["dust"],
+    "name": "Dust",
     "url": "https://github.com/bootandy/dust"
   },
   {
     "category": "Space Management",
-    "names": ["ncdu"],
+    "clis": ["ncdu"],
+    "name": "Ncdu",
     "url": "https://code.blicky.net/yorhel/ncdu"
   },
   {
     "category": "Space Management",
-    "names": ["fdupes"],
+    "clis": ["fdupes"],
+    "name": "FDUPES",
     "url": "https://github.com/adrianlopezroche/fdupes"
   },
   {
     "category": "Space Management",
-    "names": ["dua-cli"],
+    "clis": ["dua-cli"],
+    "name": "dua (Disk Usage Analyzer)",
     "url": "https://github.com/Byron/dua-cli"
   },
   {
     "category": "",
-    "names": ["fileicon"],
+    "clis": ["fileicon"],
+    "name": "fileicon",
     "url": "https://github.com/mklement0/fileicon"
   },
   {
     "category": "Static site generator",
-    "names": ["hugo"],
-    "zsh-completion": "Homebrew"
+    "clis": ["hugo"],
+    "macos-zsh-completion": "Homebrew"
   },
   {
-    "names": ["pwgen"],
+    "clis": ["pwgen"],
+    "name": "Password Generator",
     "url": "https://sourceforge.net/projects/pwgen/"
   },
   {
     "category": "System Daemon",
-    "names": ["systemctl"]
+    "clis": ["systemctl"]
   },
   {
     "category": "System Daemon",
-    "names": ["launchd"]
+    "clis": ["launchd"]
   },
   {
     "category": "System Daemon",
-    "names": ["initctl"]
+    "clis": ["initctl"]
   },
   {
     "category": "System Daemon",
-    "names": ["rc-service", "rc-status"]
+    "clis": ["rc-service", "rc-status"],
+    "name": "OpenRC",
+    "url": "https://docs.alpinelinux.org/user-handbook/0.1a/Working/openrc.html"
   },
   {
     "category": "System Daemon",
-    "names": ["s6-svscan", "s6-service", "s6-serve"]
+    "clis": ["s6-svscan", "s6-service", "s6-serve"],
+    "name": "s6-svscan",
+    "url": "https://skarnet.org/software/s6/s6-svscan.html"
   },
   {
     "category": "System Daemon",
-    "names": ["runsv", "runsvctl", "runsvdir"]
+    "clis": ["runit", "runsv", "runsvctl", "runsvdir"],
+    "name": "runit",
+    "url": "https://smarden.org/runit/"
   },
   {
     "category": "System Daemon",
-    "names": ["service"]
+    "clis": ["service"]
   },
   {
     "category": "System Daemon",
-    "names": ["isd"],
+    "clis": ["isd"],
+    "name": "isd (interactive systemd)",
     "url": "https://github.com/isd-project/isd"
   },
   {
     "category": "System info",
-    "names": ["neofetch"],
+    "clis": ["neofetch"],
+    "name": "Neofetch",
     "url": "https://github.com/dylanaraps/neofetch"
   },
   {
     "category": "System monitor",
-    "names": ["ps"]
+    "clis": ["ps"]
   },
   {
     "category": "System monitor",
-    "names": ["ps"]
+    "clis": ["ps"]
   },
   {
     "category": "System monitor",
-    "names": ["procs"],
+    "clis": ["procs"],
+    "name": "procs",
     "url": "https://github.com/dalance/procs"
   },
   {
     "category": "System monitor",
-    "names": ["bandwhich"],
+    "clis": ["bandwhich"],
+    "name": "bandwhich",
     "url": "https://github.com/imsnif/bandwhich"
   },
   {
     "category": "System monitor",
-    "names": ["top"]
+    "clis": ["top"]
   },
   {
     "category": "System monitor",
-    "names": ["htop"]
+    "clis": ["htop"]
   },
   {
     "category": "System monitor",
-    "names": ["gtop"],
+    "clis": ["gtop"],
+    "name": "gtop",
     "url": "https://github.com/aksakalli/gtop"
   },
   {
     "category": "System monitor",
-    "names": ["bottom"],
+    "clis": ["bottom"],
+    "name": "bottom (btm)",
     "url": "https://github.com/ClementTsang/bottom"
   },
   {
     "category": "System monitor",
-    "names": ["gotop"]
+    "clis": ["gotop"]
   },
   {
     "category": "System monitor",
-    "names": ["bpytop"],
+    "clis": ["bpytop"],
+    "name": "Bpytop",
     "url": "https://github.com/aristocratos/bpytop"
   },
   {
     "category": "System monitor",
-    "names": ["glances"],
+    "clis": ["btop"],
+    "name": "Btop",
+    "url": "https://github.com/aristocratos/btop"
+  },
+  {
+    "category": "System monitor",
+    "clis": ["glances"],
+    "name": "Glances",
     "url": "https://github.com/nicolargo/glances"
   },
   {
     "category": "Terminal multiplexer",
-    "names": ["tmux"]
+    "clis": ["tmux"]
   },
   {
     "category": "Text editor",
-    "names": ["atom"]
+    "clis": ["atom"]
   },
   {
     "category": "Text editor",
-    "names": ["code"]
+    "clis": ["code"]
   },
   {
     "category": "Text editor",
-    "names": ["emacs"]
+    "clis": ["emacs"]
   },
   {
     "category": "Text editor",
-    "names": ["gedit"]
+    "clis": ["gedit"]
   },
   {
     "category": "Text editor",
-    "names": ["pico"],
+    "clis": ["pico"],
+    "name": "Pico",
     "url": "https://alpineapp.email/"
   },
   {
     "category": "Text editor",
-    "names": ["nano"],
+    "clis": ["nano"],
+    "name": "Nano",
     "url": "https://www.nano-editor.org/"
   },
   {
     "category": "Text editor",
-    "names": ["micro"],
+    "clis": ["micro"],
+    "name": "micro",
     "url": "https://github.com/zyedidia/micro"
   },
   {
     "category": "Text editor",
-    "names": ["notepad"]
+    "clis": ["notepad"]
   },
   {
     "category": "Text editor",
-    "names": ["subl"]
+    "clis": ["subl"]
   },
   {
     "category": "Text editor",
-    "names": ["vi"]
+    "clis": ["vi"]
   },
   {
     "category": "Text editor",
-    "names": ["vim"]
+    "clis": ["vim"]
   },
   {
     "category": "Text processor",
-    "names": ["awk"]
+    "clis": ["awk"]
   },
   {
     "category": "Text processor",
-    "names": ["cut"]
+    "clis": ["cut"]
   },
   {
     "category": "Text processor",
-    "names": ["choose"],
+    "clis": ["choose"],
+    "name": "Choose",
     "url": "https://github.com/theryangeary/choose"
   },
   {
     "category": "Text processor",
-    "names": ["grep"]
+    "clis": ["grep"]
   },
   {
     "category": "Text processor",
-    "names": ["ripgrep"],
+    "clis": ["ripgrep"],
+    "name": "ripgrep",
     "url": "https://github.com/BurntSushi/ripgrep"
   },
   {
     "category": "Text processor",
-    "names": ["jq"],
+    "clis": ["jq"],
+    "name": "jq",
     "url": "https://github.com/jqlang/jq"
   },
   {
     "category": "Text processor",
-    "names": ["sed"]
+    "clis": ["sed"]
   },
   {
     "category": "Text processor",
-    "names": ["sd"],
+    "clis": ["sd"],
+    "name": "sd (search & displace)",
     "url": "https://github.com/chmln/sd"
   },
   {
-    "category": "Text processor",
-    "names": ["sd"],
-    "url": "https://github.com/chmln/sd"
-  },
-  {
-    "alias": "g",
     "category": "Version control system",
-    "names": ["git"],
-    "zsh-completion": "Homebrew"
+    "clis": ["git"],
+    "linux-alias": "g",
+    "macos-alias": "g",
+    "macos-zsh-completion": "Homebrew",
+    "name": "Git",
+    "url": "https://git-scm.com/"
   },
   {
     "category": "Version control system",
-    "names": ["lazygit"],
+    "clis": ["lazygit"],
+    "name": "Lazygit",
     "url": "https://github.com/jesseduffield/lazygit"
   },
   {
     "category": "",
-    "names": ["gh"],
-    "zsh-completion": "Homebrew"
+    "clis": ["gh"],
+    "macos-zsh-completion": "Homebrew",
+    "name": "GitHub CLI",
+    "url": "https://cli.github.com/"
   },
   {
     "category": "",
+    "clis": ["flutter", "dart"],
     "install": [
       {
         "id": "flutter",
         "type": "cask"
       }
-    ],
-    "names": ["flutter", "dart"]
+    ]
   },
   {
     "category": "",
+    "clis": ["chromedriver"],
     "install": [
       {
         "id": "chromedriver",
         "type": "cask"
       }
-    ],
-    "names": ["chromedriver"]
+    ]
   },
   {
     "category": "",
+    "clis": ["wkhtmltopdf"],
     "install": [
       {
         "id": "wkhtmltopdf",
         "type": "cask"
       }
-    ],
-    "names": ["wkhtmltopdf"]
+    ]
   },
   {
     "category": "",
+    "clis": ["blueutil"],
     "install": [
       {
         "id": "blueutil",
         "type": "cask"
       }
-    ],
-    "names": ["blueutil"]
+    ]
   }
 ]
