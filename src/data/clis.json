@@ -9,11 +9,15 @@
     "url": "https://github.com/kfish/xsel"
   },
   {
-    "names": ["qlmanage"]
+    "category": "Checksum",
+    "names": ["shasum"]
   },
   {
-    "names": ["hyperfine"],
-    "url": "https://github.com/sharkdp/hyperfine"
+    "category": "Checksum",
+    "names": ["md5"]
+  },
+  {
+    "names": ["qlmanage"]
   },
   {
     "category": "Cloud provider",
@@ -59,16 +63,23 @@
   },
   {
     "category": "Command help",
-    "names": ["tldr"]
+    "names": ["tldr"],
+    "url": "https://github.com/tldr-pages/tldr"
   },
   {
     "category": "Command History",
     "names": ["atuin"],
+    "url": "https://github.com/atuinsh/atuin",
     "zsh-completion": "Homebrew"
   },
   {
     "category": "Command History",
     "names": ["history"]
+  },
+  {
+    "category": "Command History",
+    "names": ["mcfly"],
+    "url": "https://github.com/cantino/mcfly"
   },
   {
     "alias": "d",
@@ -165,6 +176,11 @@
     "url": "https://github.com/so-fancy/diff-so-fancy"
   },
   {
+    "category": "Diff Utility",
+    "names": ["delta"],
+    "url": "https://github.com/dandavison/delta"
+  },
+  {
     "category": "EXIF tool",
     "names": ["exiftool"],
     "url": "https://github.com/exiftool/exiftool"
@@ -181,12 +197,22 @@
   },
   {
     "category": "File list",
+    "names": ["lsd"],
+    "url": "https://github.com/Peltoche/lsd"
+  },
+  {
+    "category": "File list",
     "names": ["tree"]
   },
   {
     "category": "File list",
     "names": ["tre"],
     "url": "https://github.com/dduan/tre"
+  },
+  {
+    "category": "File list",
+    "names": ["broot"],
+    "url": "https://github.com/Canop/broot"
   },
   {
     "category": "File preview",
@@ -238,7 +264,8 @@
   },
   {
     "category": "File search",
-    "names": ["fd"]
+    "names": ["fd"],
+    "url": "https://github.com/sharkdp/fd"
   },
   {
     "category": "File search",
@@ -294,6 +321,11 @@
     "category": "Navigation",
     "names": ["zoxide"],
     "url": "https://github.com/ajeetdsouza/zoxide"
+  },
+  {
+    "category": "Network",
+    "names": ["httptap"],
+    "url": "https://github.com/monasticacademy/httptap"
   },
   {
     "category": "Network",
@@ -465,6 +497,16 @@
     "url": "https://github.com/httpie/cli"
   },
   {
+    "category": "Request Utility",
+    "names": ["curlie"],
+    "url": "https://github.com/rs/curlie"
+  },
+  {
+    "category": "Request Utility",
+    "names": ["xh"],
+    "url": "https://github.com/ducaale/xh"
+  },
+  {
     "category": "Ruby version manager",
     "names": ["rbenv"]
   },
@@ -515,6 +557,11 @@
   },
   {
     "category": "Space Management",
+    "names": ["dust"],
+    "url": "https://github.com/bootandy/dust"
+  },
+  {
+    "category": "Space Management",
     "names": ["ncdu"],
     "url": "https://code.blicky.net/yorhel/ncdu"
   },
@@ -539,9 +586,50 @@
     "zsh-completion": "Homebrew"
   },
   {
+    "names": ["pwgen"],
+    "url": "https://sourceforge.net/projects/pwgen/"
+  },
+  {
+    "category": "System Daemon",
+    "names": ["systemctl"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["launchd"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["initctl"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["rc-service", "rc-status"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["s6-svscan", "s6-service", "s6-serve"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["runsv", "runsvctl", "runsvdir"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["service"]
+  },
+  {
+    "category": "System Daemon",
+    "names": ["isd"],
+    "url": "https://github.com/isd-project/isd"
+  },
+  {
     "category": "System info",
     "names": ["neofetch"],
     "url": "https://github.com/dylanaraps/neofetch"
+  },
+  {
+    "category": "System monitor",
+    "names": ["ps"]
   },
   {
     "category": "System monitor",
@@ -564,6 +652,16 @@
   {
     "category": "System monitor",
     "names": ["htop"]
+  },
+  {
+    "category": "System monitor",
+    "names": ["gtop"],
+    "url": "https://github.com/aksakalli/gtop"
+  },
+  {
+    "category": "System monitor",
+    "names": ["bottom"],
+    "url": "https://github.com/ClementTsang/bottom"
   },
   {
     "category": "System monitor",
@@ -636,6 +734,15 @@
   },
   {
     "category": "Text processor",
+    "names": ["cut"]
+  },
+  {
+    "category": "Text processor",
+    "names": ["choose"],
+    "url": "https://github.com/theryangeary/choose"
+  },
+  {
+    "category": "Text processor",
     "names": ["grep"]
   },
   {
@@ -658,10 +765,20 @@
     "url": "https://github.com/chmln/sd"
   },
   {
+    "category": "Text processor",
+    "names": ["sd"],
+    "url": "https://github.com/chmln/sd"
+  },
+  {
     "alias": "g",
     "category": "Version control system",
     "names": ["git"],
     "zsh-completion": "Homebrew"
+  },
+  {
+    "category": "Version control system",
+    "names": ["lazygit"],
+    "url": "https://github.com/jesseduffield/lazygit"
   },
   {
     "category": "",
