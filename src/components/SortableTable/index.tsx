@@ -1,4 +1,7 @@
+import "./style.css";
 import {
+  ColumnDef,
+  ColumnSort,
   flexRender,
   getCoreRowModel,
   getSortedRowModel,
@@ -7,15 +10,19 @@ import {
 } from "@tanstack/react-table";
 import React from "react";
 
-import "./style.css";
+interface SortableTableProps {
+  columns: ColumnDef<any>[];
+  data: any[];
+  defaultSorting?: ColumnSort;
+}
 
 export default function SortableTable({
   columns,
   data,
   defaultSorting,
-}): JSX.Element {
-  defaultSorting = defaultSorting ? [defaultSorting] : [];
-  const [sorting, setSorting] = React.useState<SortingState>(defaultSorting);
+}: SortableTableProps): JSX.Element {
+  const initialSorting: SortingState = defaultSorting ? [defaultSorting] : [];
+  const [sorting, setSorting] = React.useState<SortingState>(initialSorting);
   const table = useReactTable({
     data,
     columns,
