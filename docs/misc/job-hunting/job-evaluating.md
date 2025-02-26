@@ -1,4 +1,4 @@
-# Evaluating Job
+# 💭 Job Evaluating
 
 The un-documented check list for evaluating a US Software Engineer job offer.
 
