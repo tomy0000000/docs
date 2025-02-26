@@ -1,4 +1,4 @@
-## Slides
+# 🖼️ Slides
 
 General tips to create good slides.
 
