@@ -1,6 +1,6 @@
 # 🚙 Rental Car
 
-## Companies
+## Companies / Platforms
 
 - Enterprise Holdings
   - [Enterprise](https://www.enterprise.com/)
@@ -14,6 +14,14 @@
   - [Firefly](https://www.fireflycarrental.com/)
   - [Thrifty](https://www.thrifty.com/)
 - [Kyte](https://kyte.com/): 專人送、取車
+- [Turo](https://turo.com/): Airbnb for cars
+- [U-Haul](https://www.uhaul.com/): 搬家卡車
+- [RVezy](https://www.rvezy.com/): 露營車 (RV)
+
+### Hourly
+
+- [Zipcar](https://www.zipcar.com/)
+- [Getaround](https://getaround.com/)
 
 ## 保險
 
