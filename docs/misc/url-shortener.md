@@ -21,6 +21,7 @@ A list of known URL shorteners.
 | dub.co    | [Dub](https://dub.co/)                   | ✅                  |                                                             |
 | d.to      | [Dub](https://dub.co/)                   | ✅                  |                                                             |
 | ninten.do | Nintendo                                 | ❌                  |                                                             |
+| t.ly      | [T.LY](https://t.ly/)                    | ✅                  |                                                             |
 
 ## More Information
 
