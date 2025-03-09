@@ -1,9 +1,48 @@
 # 💿 Music Album
 
-## Process
+## Lifecycle
+
+```mermaid
+graph TD
+    I-RW(Real World)
+    I-SZ(Shazam)
+    I-SP(Spotify Recommendation)
+    I-WL(Watch List)
+    New(#quot;New#quot; Playlist)
+    Rating(#quot;Rating#quot; Playlist)
+    Granted(#quot;Granted#quot; Playlist)
+    Archive(#quot;Archive#quot; Playlist)
+    List(Buy List)
+    Purchase(Buy)
+    Obsolete(Obsolete)
+    Import(Import<br/>Save on Spotify<br/>#quot;Mood#quot; Playlist)
+
+    I-RW --A--> New
+    I-SZ --A--> New
+    I-SP --A--> New
+    I-WL --A--> New
+    New --B--> Rating --> Granted --> Archive
+    Rating --> Archive
+
+    Granted --C--> List
+    List --D--> Obsolete
+    List --D--> Purchase --> Import
+```
+
+### Weekly batch process
+
+- A
+- B
+- C
+- D
+- Buy List organization
+  - Input all albums to buy
+  - Fetch prices by merchants
+
+## Import to Library
 
 1. Ripping (FLAC, 16bit, 44.1kHz)
-2. Metadata (see [Fields](#fields))
+2. Prepare [Metadata](#metadata)
 3. Artwork (3000px x 3000px)
 4. Rename Files (`{Disc Number}-{Track Number} - {Title}`)
 5. Rename Folder (`{Album Artist} - {Album} ({Release Year})`)
@@ -14,7 +53,7 @@ Regarding rename:
 - There might be multiple Album Artists, choose the main one only
 - Make sure the name is sanitized and compatible with all file systems (macOS, NTFS, SMB, CIFS, etc.)
 
-## Fields
+## Metadata
 
 | Group | Field Name               | Multiple | MP4       | Vorbis               | ID3v2.4 | Notes                                                                                    |
 | ----- | ------------------------ | -------- | --------- | -------------------- | ------- | ---------------------------------------------------------------------------------------- |
