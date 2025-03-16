@@ -211,4 +211,8 @@ export default {
   } satisfies Preset.ThemeConfig,
 
   plugins: [tailwindPlugin],
+
+  customFields: {
+    imageBaseURL: "https://img.tomy.me/docs/",
+  },
 } satisfies Config;

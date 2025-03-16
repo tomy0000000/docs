@@ -1,3 +1,5 @@
+import Image from "@site/src/components/TomyImage";
+
 # 🗃️ Database
 
 Some general concepts and ideas about databases and how to choose the right one.
@@ -23,12 +25,15 @@ A --Unstructured--> D(Blob Store)
 
 - <abbr title="Online Transaction Processing">OLAP</abbr>: Write Heavy
 - <abbr title="Online Analytical Processing">OLTP</abbr>: Read Havy
-- <abbr title="Hybrid Transaction + Analytical Processing">HTAP</abbr>: A mix of both the above
+- <abbr title="Hybrid Transaction + Analytical Processing">HTAP</abbr>: A mix of
+  both the above
 
 ## Storage Models
 
-- <abbr title="N-Ary Storage Model">NSM</abbr>: Store all attributes of a tuple in the same page
-- <abbr title="Decomposition Storage Model">DSM</abbr>: Store each attribute of a tuple in different page
+- <abbr title="N-Ary Storage Model">NSM</abbr>: Store all attributes of a tuple
+  in the same page
+- <abbr title="Decomposition Storage Model">DSM</abbr>: Store each attribute of
+  a tuple in different page
 - <abbr title="Partition Attributes Across">PAX</abbr>: A mix of both the above
 
 ## ACID
@@ -44,7 +49,10 @@ Consistent, Available, and Partition Tolerant
 
 ## Serializability
 
-![A diagram titled 'Universe of Schedules,' displaying nested relationships among different types of database schedules. The outermost box is labeled 'All Schedules,' containing subsets: 'View Serializable,' 'Conflict Serializable,' and 'Serial.' 'No Cascading Aborts' and 'Strong Strict 2PL' overlap some of these categories. The hierarchy highlights how certain scheduling properties are stricter than others.](https://img.tomy.me/docs/database-universe-of-schedules.png)
+<Image
+  filename="database-universe-of-schedules.png"
+  alt="A diagram titled 'Universe of Schedules,' displaying nested relationships among different types of database schedules. The outermost box is labeled 'All Schedules,' containing subsets: 'View Serializable,' 'Conflict Serializable,' and 'Serial.' 'No Cascading Aborts' and 'Strong Strict 2PL' overlap some of these categories. The hierarchy highlights how certain scheduling properties are stricter than others."
+></Image>
 
 ## Isolation Levels
 
