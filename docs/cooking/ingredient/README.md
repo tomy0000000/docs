@@ -1,6 +1,6 @@
-# 其他實用知識
+# 🧄 Ingredients
 
-有的沒的，先放這邊
+General information about food ingredients.
 
 ## 高筋麵粉 vs 低筋麵粉
 
