@@ -143,6 +143,30 @@
     "type": "Development",
     "url": "https://gopherday.golang.tw/"
   },
+  "hitcon-community": {
+    "city": "Taipei City",
+    "country": "tw",
+    "end-date": "2024-08-24",
+    "form": "In-person",
+    "name": "HITCON Community",
+    "notes": null,
+    "series": null,
+    "start-date": "2024-08-23",
+    "type": "Development",
+    "url": "https://hitcon.org/2024/CMT/"
+  },
+  "hitcon-enterprise": {
+    "city": "Taipei City",
+    "country": "tw",
+    "end-date": "2024-10-30",
+    "form": "In-person",
+    "name": "HITCON Enterprise",
+    "notes": null,
+    "series": null,
+    "start-date": "2024-10-30",
+    "type": "Development",
+    "url": "https://hitcon.org/2024/ENT/"
+  },
   "local-first-conf": {
     "city": "Berlin",
     "country": "de",
@@ -214,6 +238,18 @@
     "start-date": "2025-05-14",
     "type": "Development",
     "url": "https://us.pycon.org"
+  },
+  "sincon": {
+    "city": "Singapore",
+    "country": "sg",
+    "end-date": "2025-05-23",
+    "form": "In-person",
+    "name": "SINCON",
+    "notes": null,
+    "series": null,
+    "start-date": "2025-05-22",
+    "type": "Development",
+    "url": "https://www.infosec-city.com/sin-25"
   },
   "vercel-ship": {
     "city": "New York, NY",
