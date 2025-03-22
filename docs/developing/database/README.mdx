@@ -56,12 +56,21 @@ Consistent, Available, and Partition Tolerant
 
 ## Isolation Levels
 
-| Level            | Dirty Read | Unrepeatable Read | Lost Updates | Phantom |
-| ---------------- | ---------- | ----------------- | ------------ | ------- |
-| Serializable     | No         | No                | No           | No      |
-| Repeatable Read  | No         | No                | No           | Maybe   |
-| Read Committed   | No         | Maybe             | Maybe        | Maybe   |
-| Read Uncommitted | Maybe      | Maybe             | Maybe        | Maybe   |
+Different isolation levels may suffer from different types of anomalies:
+
+- **Dirty Read**: A transaction may reads uncommitted changes from another transaction.
+- **Unrepeatable Read**: A transaction reads the same row twice but gets different values because another transaction modified and committed it in between.
+- **Lost Updates**: Two transactions read the same data and update it, but one overwrites the other’s changes, losing data.
+- **Phantom Reads**: A transaction reads a set of rows, but when it reads again, new rows appear because another transaction inserted or deleted data.
+
+| Level            | Dirty Read | Unrepeatable Read | Lost Updates | Phantom Reads | Usage                               |
+| ---------------- | ---------- | ----------------- | ------------ | ------------- | ----------------------------------- |
+| Serializable     | No         | No                | No           | No            | SQLite's Default[^1]                |
+| Repeatable Read  | No         | No                | No           | Maybe         | MySQL's Default                     |
+| Read Committed   | No         | Maybe             | Maybe        | Maybe         | PostgreSQL & Oracle's Default       |
+| Read Uncommitted | Maybe      | Maybe             | Maybe        | Maybe         | Almost Never, but MySQL supports it |
+
+[^1]: In practice, it behaves like Read Committed.
 
 ## Indexes
 
