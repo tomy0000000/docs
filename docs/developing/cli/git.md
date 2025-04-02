@@ -138,6 +138,14 @@ git reset HEAD~ --hard
 git checkout new-branch
 ```
 
+### Update author and committer of the latest commit
+
+```bash
+git commit --amend --no-edit --reset-author --date="$(git show -s --format=%ci HEAD)"
+```
+
+Note: This will update commit timestamp, in most case, you should.
+
 ## References
 
 - [Oh Shit, Git!?!](https://ohshitgit.com/): Some useful snippets
