@@ -93,6 +93,17 @@ TODO
 ^[a-zA-Z0-9+/]*={0,2}$
 ```
 
+### URL-safe slug
+
+- Have at least one character
+- Contains only letters, numbers, hyphens, and underscores
+- Does not start or end with a hyphen or underscore
+- Does not have consecutive hyphens or underscores
+
+```regex
+^[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*$
+```
+
 ### Semantic Version
 
 ```regex
@@ -122,3 +133,4 @@ This is a WIP, might not be perfect.
 ## References
 
 - [ICU Regular Expressions](https://unicode-org.github.io/icu/userguide/strings/regexp.html)
+- [i Hate Regex](https://ihateregex.io/)
