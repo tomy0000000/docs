@@ -1,20 +1,20 @@
 # 🚀 Setup
 
-SOP for setting up new computer/server.
+SOP for setting up new 🖥️ computer / 🧠 server.
 
 ## Steps & How they are done
 
-| #   | Step                      | Bare server       | Cloud VM          | Container | Device            |
-| --- | ------------------------- | ----------------- | ----------------- | --------- | ----------------- |
-| 1   | Setup Hardware            | 🐒 Monkey         | terraform         | -         | -                 |
-| 2   | Networking                | 🐒 Monkey         |                   | -         | -                 |
-| 3   | Configure SSH             | dotfiles (script) | -                 | -         | dotfiles (script) |
-| 4   | Configure Non-root User   | dotfiles (script) | dotfiles (script) | -         | dotfiles (script) |
-| 5   | Configure Firewall        | playbook          | playbook          | -         | -                 |
-| 6   | Install Core Utilities    | playbook          | playbook          | dotfiles  | dotfiles          |
-| 7   | Configure Dotfiles        | playbook          | playbook          | dotfiles  | dotfiles          |
-| 8   | Install Core Applications | playbook          | playbook          | dotfiles  | dotfiles          |
-| 9   | Install Application Suite | playbook          | playbook          | dotfiles  | dotfiles          |
+| #   | Step                      | 🧠 On-Prem | 🧠 Cloud VM | 🖥️ Container | 🖥️ Device |
+| --- | ------------------------- | ---------- | ----------- | ------------ | --------- |
+| 1   | Setup Hardware            | 🐒 Monkey  | terraform   | -            | -         |
+| 2   | Networking                | 🐒 Monkey  | terraform   | -            | -         |
+| 3   | Configure root SSH        | 🐒 Monkey  | terraform   | -            | -         |
+| 4   | Configure Non-root User   | 🐒 Monkey  | terraform   | -            | 🐒 Monkey |
+| 5   | Configure Firewall        | playbook   | playbook    | -            | -         |
+| 6   | Install Core Utilities    | playbook   | playbook    | dotfiles     | dotfiles  |
+| 7   | Configure Dotfiles        | playbook   | playbook    | dotfiles     | dotfiles  |
+| 8   | Install Core Applications | playbook   | playbook    | dotfiles     | dotfiles  |
+| 9   | Install Application Suite | playbook   | playbook    | dotfiles     | dotfiles  |
 
 - **Setup hardware**: Get machine ready for use.
 - **Networking**: Configure static IP for server, hosts, DNS.
