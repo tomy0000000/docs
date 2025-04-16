@@ -29,6 +29,15 @@ sidebar_position: 2
 - [Aman](https://www.aman.com/)
 - [Hoshino Resorts](https://www.hoshinoresorts.com/en/)
 
+## Boutique Hotel
+
+- [Tablet Hotels](https://www.tablethotels.com/)
+
+## Day Time Hotel
+
+- [ByHours](https://www.byhours.com)
+- [Dayuse](https://www.dayuse.com)
+
 ## Regional Booking Sites
 
 ### 🇹🇼 Taiwan
