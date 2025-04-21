@@ -27,6 +27,15 @@
     "icon": "simple-icons:chase",
     "name": "Chase Sapphire Credit Card 🇺🇸"
   },
+  "chime": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$100 if you receive a direct deposit of $200 within 45 days",
+    "for-you": "$100 if you receive a direct deposit of $200 within 45 days",
+    "icon": "arcticons:chime",
+    "name": "Chime",
+    "url": "https://chime.com/r/chiweihsieh"
+  },
   "cloudinary": {
     "code": null,
     "dynamic": false,
@@ -176,6 +185,15 @@
     "name": "Railway",
     "url": "https://railway.app?referralCode=tomyhsieh"
   },
+  "rakuten": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$30 if you spend $30 within 90 days of joining",
+    "for-you": "$30 if you spend $30",
+    "icon": "simple-icons:rakuten",
+    "name": "Rakuten",
+    "url": "https://www.rakuten.com/r/RAKUTE5991"
+  },
   "read-cv": {
     "code": null,
     "dynamic": false,
@@ -234,6 +252,24 @@
     "icon": "arcticons:shopback",
     "name": "Shopback",
     "url": "https://app.shopback.com/G4NWSIhYAQb"
+  },
+  "space": {
+    "code": "S3A541Y7",
+    "dynamic": false,
+    "for-me": "$50 credits after you order your first box",
+    "for-you": "$50 credits",
+    "icon": null,
+    "name": "Space",
+    "url": "https://app.spacereimagined.io/S3A541Y7"
+  },
+  "tesla": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$250 credit",
+    "for-you": "3 months of Full Self-Driving (Supervised) or $400 Off Solar Panel Installation",
+    "icon": "simple-icons:tesla",
+    "name": "Tesla",
+    "url": "https://ts.la/tomy474547"
   },
   "uber": {
     "code": "y2w1uxnhwvep",
