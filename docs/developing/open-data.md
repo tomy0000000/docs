@@ -27,6 +27,7 @@ A list of open data sources. [Data Portals](https://dataportals.org/) is a good 
 ## 🇭🇰 Hong Kong
 
 - [資料一線通](https://data.gov.hk/en/)
+- [Common Spatial Data Infrastructure (CSDI) Portal](https://portal.csdi.gov.hk/)
 
 ## 🇫🇷 France
 
