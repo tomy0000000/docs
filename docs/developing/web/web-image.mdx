@@ -1,0 +1,123 @@
+# 🖼️ Image
+
+How to optimize images for the web.
+
+## Formats
+
+| Format                                    | 🔥 Compression          | 🖼️ Quality           | 🧠 Browser Support            | ⏱️ Decode Speed | 🧪 Best For                                  |
+| ----------------------------------------- | ----------------------- | -------------------- | ----------------------------- | --------------- | -------------------------------------------- |
+| [AVIF](https://web.dev/learn/images/avif) | 🥇 Best (tiny size)     | Great (supports HDR) | ~95% (no Safari \<16)         | Slowest         | Ultra-optimize, bandwidth sensitive          |
+| [WebP](https://web.dev/learn/images/webp) | 🥈 Better than JPEG/PNG | Very good            | ✅ Almost all modern browsers | Fast            | General web use                              |
+| [JPEG](https://web.dev/learn/images/jpeg) | 🥉 OK                   | Good                 | ✅ Universal                  | Fastest         | Legacy support, photos                       |
+| [PNG](https://web.dev/learn/images/png)   | ❌ Big files            | Perfect (lossless)   | ✅ Universal                  | OK              | Graphics, transparency                       |
+| [GIF](https://web.dev/learn/images/gif)   | 👴 Outdated             | Low (8-bit only)     | ✅ Universal                  | Slow            | Animations only (consider APNG/WebP instead) |
+
+## Aspect Ratio
+
+Prefer `aspect-ratio` + `object-fit: cover` to maintain the aspect ratio of images.
+
+```css
+.image-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
+
+For plain HTML, just lock the `width` and `height` on `<img>`.
+
+## Templates
+
+### Just One Plain Image
+
+```html
+<img src="image.jpg" alt="Always include alt text" />
+```
+
+### Lazy Loading
+
+Use `loading="lazy"` to lazy load images.
+
+```html
+<img src="image.jpg" alt="Always include alt text" loading="lazy" />
+```
+
+:::warning
+
+Don't use `loading="lazy"` on images that are above the fold or critical to the page.
+
+:::
+
+### Multiple Formats
+
+Use `<source>` inside `<picture>` to load different formats based on browser support.
+
+```html
+<picture>
+  <source srcset="image.webp" type="image/webp" />
+  <source srcset="image.jpg" type="image/jpeg" />
+  <img src="image.jpg" alt="Always include alt text" />
+</picture>
+```
+
+### Multiple Resolutions
+
+Use `srcset` to load iamges with different resolutions based on the viewport size.
+
+```html
+<img
+  srcset="image-small.jpg 400w, image-medium.jpg 800w"
+  src="image.jpg"
+  alt="Always include alt text"
+/>
+```
+
+### Multiple Display Sizes (Responsive)
+
+Use `srcset` + `sizes` to load images with different display sizes based on the viewport size.
+
+```html
+<img
+  srcset="image-small.jpg 400w, image-medium.jpg 800w"
+  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+  src="image.jpg"
+  alt="Always include alt text"
+/>
+```
+
+### Caption
+
+Use `<figure>` and `<figcaption>` to add a caption to the image.
+
+```html
+<figure>
+  <img src="image.jpg" alt="Always include alt text" />
+  <figcaption>Some description</figcaption>
+</figure>
+```
+
+### All Together
+
+```html
+<figure>
+  <picture>
+    <source
+      srcset="image-small.webp 400w, image-large.webp 800w"
+      type="image/webp"
+      sizes="(max-width: 600px) 100vw, 50vw"
+    />
+    <source
+      srcset="image-small.jpg 400w, image-large.jpg 800w"
+      type="image/jpeg"
+      sizes="(max-width: 600px) 100vw, 50vw"
+    />
+    <img src="image-large.jpg" alt="Always include alt text" />
+  </picture>
+  <figcaption>Some description</figcaption>
+</figure>
+```
