@@ -3,9 +3,9 @@ hide_table_of_contents: true
 full_width: true
 ---
 
-import JoinLineBreak from "@site/src/components/JoinLineBreak";
 import SortableTable from "@site/src/components/SortableTable";
 import clis from "@site/src/data/clis.json";
+import joinWithLineBreak from "@site/src/utils/joinWithLineBreak";
 
 # 📟 CLIs
 
@@ -33,7 +33,7 @@ A list of common CLI commands and how they're installed on my system.
       size: 300,
       cell: ({ getValue }) => {
         const clis = getValue();
-        return JoinLineBreak(
+        return joinWithLineBreak(
           clis.map((name, index) => <code key={index}>{name}</code>),
         );
       },

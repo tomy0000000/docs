@@ -1,4 +1,4 @@
-export default function JoinLineBreak(
+export default function joinWithLineBreak(
   arr: Array<JSX.Element>,
 ): Array<JSX.Element> {
   return arr.reduce((acc, current, index) => {

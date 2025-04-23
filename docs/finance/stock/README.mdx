@@ -4,9 +4,9 @@ full_width: true
 ---
 
 import Country from "@site/src/components/Country";
-import JoinLineBreak from "@site/src/components/JoinLineBreak";
 import SortableTable from "@site/src/components/SortableTable";
 import stockExchanges from "@site/src/data/stock-exchanges.json";
+import joinWithLineBreak from "@site/src/utils/joinWithLineBreak";
 
 # 📈 Stock
 
@@ -31,14 +31,14 @@ import stockExchanges from "@site/src/data/stock-exchanges.json";
     {
       header: "MIC",
       accessorKey: "mic",
-      cell: ({ getValue }) => JoinLineBreak(getValue()),
+      cell: ({ getValue }) => joinWithLineBreak(getValue()),
     },
     {
       header: "Countries",
       accessorKey: "countries",
       size: 200,
       cell: ({ getValue }) =>
-        JoinLineBreak(
+        joinWithLineBreak(
           getValue().map((country) => <Country key={country} iso={country} />),
         ),
     },
