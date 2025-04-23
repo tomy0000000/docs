@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import GitHubBadge from "@site/src/components/GitHubBadge";
 import Markdownify from "@site/src/components/Markdownify";
 import SortableTable from "@site/src/components/SortableTable";
 import apps from "@site/src/data/mac-apps.json";
@@ -85,6 +86,14 @@ Handful Mac apps. May not always need them, but they are here when I need them.
           }
           return [...acc, current];
         }, []);
+      },
+    },
+    {
+      header: "GitHub",
+      accessorKey: "github",
+      cell: ({ getValue }) => {
+        const slug = getValue();
+        return slug && <GitHubBadge slug={getValue()} />;
       },
     },
     {
