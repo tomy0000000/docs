@@ -23,6 +23,9 @@
 | Terraform           | `terraform`       | [`terraform fmt`](https://developer.hashicorp.com/terraform/cli/commands/fmt)                                                            | [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)          |
 | Terraform Variables | `terraform-vars`  | [`terraform fmt`](https://developer.hashicorp.com/terraform/cli/commands/fmt)                                                            | [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)          |
 | SQL                 | `sql`             | [`prettier`](https://github.com/prettier/prettier) + [`prettier-plugin-sql`](https://github.com/un-ts/prettier/tree/master/packages/sql) | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
+| SQL                 | `sql`             | [`sqlfluff`](https://github.com/sqlfluff/sqlfluff)                                                                                       | [sqlfluff](https://marketplace.visualstudio.com/items?itemName=dorzey.vscode-sqlfluff)                  |
+
+_For SQL, Use `sqlfluff` for standalone file and Python project, `prettier` for JS project_
 
 - Shell
   - Shellcheck
