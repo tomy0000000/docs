@@ -112,6 +112,18 @@ git rm --cached `git ls-files -i -c --exclude-from=.gitignore`
 
 3. Commit the changes.
 
+### Undo a commit
+
+```bash
+git reset --soft HEAD~1
+```
+
+To discard the changes:
+
+```bash
+git reset --hard HEAD~1
+```
+
 ### Commited to the wrong branch
 
 :::warning
@@ -149,3 +161,4 @@ Note: This will update commit timestamp, in most case, you should.
 ## References
 
 - [Oh Shit, Git!?!](https://ohshitgit.com/): Some useful snippets
+- [Beej's Guide to Git](https://beej.us/guide/bggit/html/split-wide/): A comprehensive, but not too detailed handbook
