@@ -11,3 +11,9 @@ Some online tools to draw diagrams.
 - [Gliffy](https://www.gliffy.com/)
 - [Edraw Max](https://www.edrawsoft.com/)
 - [SmartDraw](https://www.smartdraw.com/)
+
+## Database
+
+- [dbdiagram.io](https://dbdiagram.io/)
+- [DrawSQL](https://drawsql.app/)
+- [drawDB](https://www.drawdb.app/)
