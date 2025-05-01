@@ -1,0 +1,106 @@
+import PipPackageBadge from "@site/src/components/PipPackageBadge";
+
+# 📝 Edit Distance
+
+| Algorithm                    | Insertions | Deletions | Substitutions | Transposition | Use Case                                                                  |
+| ---------------------------- | ---------- | --------- | ------------- | ------------- | ------------------------------------------------------------------------- |
+| Longest Common Subsequence   | ✅         | ✅        |               |               | Diff tools, file comparison                                               |
+| Hamming Distance             |            |           | ✅            |               | Error detection                                                           |
+| Levenshtein Distance         | ✅         | ✅        | ✅            |               | Spelling correction, <abbr title="Natural Language Processing">NLP</abbr> |
+| Damerau–Levenshtein Distance | ✅         | ✅        | ✅            | ✅            | Typos with swapped characters                                             |
+| Jaro–Winkler Distance        |            |           |               | ✅            | Fuzzy name matching                                                       |
+
+|                              | <PipPackageBadge name="textdistance" /> | <PipPackageBadge name="strsimpy" /> | <PipPackageBadge name="jellyfish" /> | <PipPackageBadge name="Levenshtein" /> |
+| ---------------------------- | --------------------------------------- | ----------------------------------- | ------------------------------------ | -------------------------------------- |
+| Longest Common Subsequence   | ✅                                      | ✅                                  |                                      |                                        |
+| Hamming Distance             | ✅                                      |                                     | ✅                                   | ✅                                     |
+| Levenshtein Distance         | ✅                                      | ✅                                  | ✅                                   | ✅                                     |
+| Damerau–Levenshtein Distance | ✅                                      | ✅                                  | ✅                                   |                                        |
+| Jaro–Winkler Distance        | ✅                                      | ✅                                  | ✅                                   | ✅                                     |
+
+## [<abbr title="Longest Common Subsequence">LCS</abbr>](https://en.wikipedia.org/wiki/Longest_common_subsequence)
+
+Longest sequence in both strings in order (not contiguous)
+
+```python
+def lcs(a, b):
+    dp = [[""] * (len(b)+1) for _ in range(len(a)+1)]
+    for i in range(len(a)):
+        for j in range(len(b)):
+            if a[i] == b[j]:
+                dp[i+1][j+1] = dp[i][j] + a[i]
+            else:
+                dp[i+1][j+1] = max(dp[i][j+1], dp[i+1][j], key=len)
+    return dp[-1][-1]
+
+print(lcs("ABCBDAB", "BDCAB"))  # Output: 'BCAB' or 'BDAB'
+```
+
+## [Hamming](https://en.wikipedia.org/wiki/Hamming_distance)
+
+Count of different bits/characters (same length only).
+
+```python
+def hamming_distance(string1: str, string2: str) -> int:
+    """Return the Hamming distance between two strings."""
+    if len(string1) != len(string2):
+        raise ValueError("Strings must be of equal length.")
+    dist_counter = 0
+    for n in range(len(string1)):
+        if string1[n] != string2[n]:
+            dist_counter += 1
+    return dist_counter
+```
+
+## [Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance)
+
+Count of minimum edits: insert, delete, substitute
+
+```python
+def levenshtein(a, b):
+    dp = [[i + j if i * j == 0 else 0 for j in range(len(b)+1)] for i in range(len(a)+1)]
+    for i in range(1, len(a)+1):
+        for j in range(1, len(b)+1):
+            cost = 0 if a[i-1] == b[j-1] else 1
+            dp[i][j] = min(
+                dp[i-1][j] + 1,      # deletion
+                dp[i][j-1] + 1,      # insertion
+                dp[i-1][j-1] + cost  # substitution
+            )
+    return dp[-1][-1]
+
+print(levenshtein("kitten", "sitting"))  # Output: 3
+```
+
+## [Damerau–Levenshtein Distance](https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance)
+
+Like Levenshtein, but also allows adjacent swaps
+
+```python
+def damerau_levenshtein(a, b):
+    d = {}
+    len_a, len_b = len(a), len(b)
+    for i in range(-1, len_a+1):
+        d[(i, -1)] = i + 1
+    for j in range(-1, len_b+1):
+        d[(-1, j)] = j + 1
+
+    for i in range(len_a):
+        for j in range(len_b):
+            cost = 0 if a[i] == b[j] else 1
+            d[(i, j)] = min(
+                d[(i-1, j)] + 1,       # deletion
+                d[(i, j-1)] + 1,       # insertion
+                d[(i-1, j-1)] + cost   # substitution
+            )
+            if i > 0 and j > 0 and a[i] == b[j-1] and a[i-1] == b[j]:
+                d[(i, j)] = min(d[(i, j)], d[(i-2, j-2)] + 1)  # transposition
+
+    return d[(len_a-1, len_b-1)]
+
+print(damerau_levenshtein("ca", "ac"))  # Output: 1
+```
+
+## [Jaro-Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
+
+Similarity for short strings (e.g., names), boosts prefix matches.
