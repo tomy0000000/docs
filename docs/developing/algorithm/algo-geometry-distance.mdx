@@ -1,0 +1,54 @@
+import Image from "@site/src/components/TomyImage";
+
+# 📐 Geometry Distance
+
+Different methods to measure distance between two data points.
+
+<Image
+  filename="geometry-distance-overview.png"
+  alt="Illustration comparing four distance metrics: Euclidean uses straight-line distance, Manhattan follows horizontal and vertical paths, Chebyshev takes the maximum of horizontal and vertical distances, Minkowski varies with different p values"
+>
+  <a
+    href="https://medium.com/@jodancker/a-brief-introduction-to-distance-measures-ac89cbd2298"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Source
+  </a>
+</Image>
+
+## [Euclidean](https://en.wikipedia.org/wiki/Euclidean_distance)
+
+Straight-line distance (good for physical space).
+
+$$
+D_{\text{Euclidean}}(\mathbf{p}, \mathbf{q}) = \sqrt{ \sum_{i=1}^{n} (p_i - q_i)^2 }
+$$
+
+## [Manhattan](https://en.wikipedia.org/wiki/Taxicab_geometry)
+
+Grid-based movement (like walking city blocks).
+
+$$
+D_{\text{Manhattan}}(\mathbf{p}, \mathbf{q}) = \sum_{i=1}^{n} |p_i - q_i|
+$$
+
+## [Chebyshev](https://en.wikipedia.org/wiki/Chebyshev_distance)
+
+maximum difference along any coordinate dimension between two vectors.
+
+$$
+D_{\text{Chebyshev}}(\mathbf{p}, \mathbf{q}) = \max_{i=1}^{n} |p_i - q_i|
+$$
+
+## [Minkowski](https://en.wikipedia.org/wiki/Minkowski_distance)
+
+Generalization of all the above.
+
+- $p = 1$ is Manhattan
+- $p = 2$ is Euclidean
+- $p \approx \inf$ is Chebyshev
+
+$$
+D_{\text{Minkowski}}(\mathbf{p}, \mathbf{q}) = \left( \sum_{i=1}^{n} |p_i - q_i|^p \right)^{\frac{1}{p}}
+$$
