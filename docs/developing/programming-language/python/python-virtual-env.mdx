@@ -1,0 +1,59 @@
+# Virtual Environment
+
+A brief overview of various environment tools available for Python.
+
+## `venv`
+
+- Standard library module for creating lightweight virtual environments.
+- Built-in module in Python 3.3 and later.
+
+```shell
+python3 -m venv path-to-env
+```
+
+:::tip
+
+Think about where you'd like to store your virtual environments.
+
+| Directory         | Path             | Pros                                     | Cons                                                                            |
+| ----------------- | ---------------- | ---------------------------------------- | ------------------------------------------------------------------------------- |
+| Project directory | `./venv`         | Straightforward and easy to manage.      | - Should be added to `.gitignore`<br/>- Bloated project directory               |
+| User directory    | `~/.virtualenvs` | Manage virtual environments in one place | - May pile up over time<br/>- Easy to forget to delete after project completion |
+
+:::
+
+## [`virtualenv`](https://github.com/pypa/virtualenv)
+
+- The predecessor of `venv`.
+- Now offers as a more feature-rich edition of `venv`.
+- Use `virtualenv` if you need to...
+  - Faster environment setup.
+  - More control over the environment.
+
+## [`pipenv`](https://github.com/pypa/pipenv)
+
+TODO
+
+## [`poetry`](https://github.com/python-poetry/poetry)
+
+TODO
+
+## [`pdm`](https://github.com/pdm-project/pdm)
+
+TODO
+
+## [`hatch`](https://github.com/pypa/hatch)
+
+TODO
+
+## [`uv`](https://github.com/astral-sh/uv)
+
+TODO
+
+## [`rye`](https://github.com/astral-sh/rye)
+
+TODO
+
+## [`dephell`](https://github.com/dephell/dephell)
+
+TODO

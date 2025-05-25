@@ -1,0 +1,40 @@
+# Installing Python
+
+How to install and manage multiple versions of Pythons.
+
+| Method                          | Linux | macOS | Windows |
+| ------------------------------- | ----- | ----- | ------- |
+| [pyenv](#pyenv)                 | ✅    | ✅    | ✅      |
+| [Homebrew](#homebrew)           | ✅    | ✅    | ❌      |
+| [Deadsnakes](#deadsnakes-ppa)   | ✅    | ❌    | ❌      |
+| [Windows Store](#windows-store) | ❌    | ❌    | ✅      |
+
+## [`pyenv`](https://github.com/pyenv/pyenv)
+
+- Install and managed multiple versions of Python on the same machine.
+- Control python version in _global_, _local_, and _shell_ levels.
+- 👍🏻 Written in shell script, does not require pre-existed Python installation.
+- 👎🏻 Use shims to inject the correct Python version into your shell.
+- Does not support Windows natively, but there's [pyenv-win/pyenv-win](https://github.com/pyenv-win/pyenv-win).
+
+## Homebrew
+
+Homebrew can install [multiple versions](https://formulae.brew.sh/formula/) of Python, e.g.
+
+```shell
+brew install python@3.12
+```
+
+:::warning
+
+Homebrew pythons exists to serve other formulas. Always use virtual environment and do not install other packages into Homebrew Python.
+
+:::
+
+## [Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
+
+Deadsnakes team maintains a PPA for Ubuntu and other Debian-based distributions, providing newer Python versions than the default repositories.
+
+## Windows Store
+
+Windows Store offers [multiple versions](https://apps.microsoft.com/search?query=Python) of Python.
