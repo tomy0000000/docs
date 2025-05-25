@@ -1,4 +1,6 @@
-# Python Packaging Tools
+# Packaging
+
+How to package Python code for distribution.
 
 TODO
 
