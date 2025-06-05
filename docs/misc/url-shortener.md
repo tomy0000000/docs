@@ -14,6 +14,7 @@ A list of known URL shorteners.
 | fb.me     | Facebook                                 | ❌                  |                                                             |
 | ow.ly     | Hootsuite                                | ❌                  |                                                             |
 | gov.tw    | [Taiwan Government](https://url.gov.tw/) | ❌                  | For government page only                                    |
+| go.gov.sg | Singapore Government                     | ❌                  | For government page only                                    |
 | llili.li  | [llili](https://llili.li/)               | ✅                  |                                                             |
 | psee.io   | [PicSee](https://picsee.io/)             | ✅                  |                                                             |
 | reurl.cc  | [Reurl](https://reurl.cc/)               | ✅                  |                                                             |
@@ -22,6 +23,15 @@ A list of known URL shorteners.
 | d.to      | [Dub](https://dub.co/)                   | ✅                  |                                                             |
 | ninten.do | Nintendo                                 | ❌                  |                                                             |
 | t.ly      | [T.LY](https://t.ly/)                    | ✅                  |                                                             |
+| bbc.in    | BBC                                      | ❌                  |                                                             |
+| dsh.re    | Dropshare / Shortshare                   | ✅                  | Can only created with Dropshare / Shortshare app            |
+| lnkd.in   | LinkedIn                                 | ❌                  | Links are shortened automatically by LinkedIn               |
+| ts.la     | Tesla                                    | ❌                  |                                                             |
+| boxd.it   | Letterboxd                               | ❌                  | Profile link                                                |
+| drd.sh    | DoorDash                                 | ❌                  |                                                             |
+| a.co      | Amazon                                   | ❌                  | Created by product share                                    |
+| amzn.to   | Amazon                                   | ❌                  |                                                             |
+| amzn.com  | Amazon                                   | ❌                  |                                                             |
 
 ## More Information
 
