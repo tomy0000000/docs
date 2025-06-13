@@ -1,0 +1,67 @@
+# 📆 Datetime
+
+Various datetime formats at a glance.
+
+:::tip
+
+1. Store datetimes as UTC in databse and convert to local time when displaying to users.
+2. Timezone is not a part of a datetime or timestamp. To store timezone information, it should be record in a seperate field. See [Timezone](./spec-timezone.mdx)
+3. Use `_on` for date, and `_at` for time
+4. Do not attemp to self-hack datetime computation. Use libraries.
+
+:::
+
+## ISO 8601 / RFC 3339
+
+The goto option, atively supported by JavaScript. They are quite similar but have subtle differences. Check [RFC 3339 vs ISO 8601](https://ijmacd.github.io/rfc3339-iso8601/) for comprehensive examples.
+
+Most common format that works for JSON are:
+
+- Datetime: `%Y-%M-%DT%h:%m:%s%Z:%z`
+  - `2021-01-01T13:00:00Z`
+  - `2021-01-01T13:00:00+00:00`
+  - `2021-01-01T13:00:00-05:00`
+- Date: `%Y-%M-%D`
+  - `2021-01-01`
+- Time: `%h:%m:%s%Z:%z`
+  - `13:00:00Z`
+- Periods: Use ISO 8601
+  - `P1Y1M1DT1H1M1S`
+- Range / Interval: Use seperate fields for start and end
+
+RFC 9557 is an updated version of RFC 3339 published in April 2024.
+
+## RFC 2822
+
+Used in email headers
+
+Format: `Day, DD Mon YYYY HH:MM:SS +0000`
+
+Examples:
+
+- `Fri, 01 Jan 2021 00:00:00 +0000`
+- `Fri, 01 Jan 2021 00:00:00 -0500`
+
+## Unix Timestamp
+
+Number of seconds since 1970-01-01 00:00:00 UTC
+
+Examples:
+
+- `1609459200` (2021-01-01 00:00:00 UTC)
+
+:::warning
+
+JavaScript use miliseconds by default!
+
+e.g.
+
+- `Math.floor(Date.now() / 1000)`
+- `new Date(timestamp * 1000)`
+
+:::
+
+## References
+
+- [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
+- [Stackoverflow - What's the difference between ISO 8601 and RFC 3339 Date Formats?](https://stackoverflow.com/questions/522251/whats-the-difference-between-iso-8601-and-rfc-3339-date-formats)
