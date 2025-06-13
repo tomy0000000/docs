@@ -1,0 +1,35 @@
+import Country from "@site/src/components/Country";
+
+# 🧭 Timezone
+
+Timezones are defined and manged by <abbr title="Internet Assigned Numbers Authority">IANA</abbr> under BCP 175.
+
+:::tip
+
+- Timezones change over time very often. The way you convert time between zone today, does not apply in the past or future.
+- Always use libraries.
+- Curious how one area's timezone change over time? Source code often denote history!
+
+:::
+
+{/* # List */}
+
+{/* _This is a quick lookup table for canonical timezones (the ones you're should most likely be using), check latest data from references_ */}
+
+{/* TODO: Create a script that generate this. */}
+
+## <Country iso="us" />
+
+| Common Name          | IANA Identifier       | SDT Offset | DST Offset |
+| -------------------- | --------------------- | ---------- | ---------- |
+| Eastern Time         | `America/New_York`    | −05:00     | −04:00     |
+| Central Time         | `America/Chicago`     | −06:00     | −05:00     |
+| Mountain Time        | `America/Denver`      | −07:00     | −06:00     |
+| Arizona Time         | `America/Phoenix`     | −07:00     | −07:00     |
+| Pacific Time         | `America/Los_Angeles` | −08:00     | −07:00     |
+| Hawaii Standard Time | `Pacific/Honolulu`    | −10:00     | −10:00     |
+
+## References
+
+- [IANA Time Zone Database](https://www.iana.org/time-zones)
+- [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
