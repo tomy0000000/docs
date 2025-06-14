@@ -4,18 +4,38 @@ skip_plural_check: true
 ---
 
 import { Icon } from "@iconify/react";
+import GitHubBadge from "@site/src/components/GitHubBadge";
 
 # <Icon icon="logos:javascript" inline={true} /> JavaScript
 
+## Runtimes
+
+Runtimes are environments where JavaScript code executes, in or out of browsers.
+
+- Browser
+  - [V8](https://github.com/v8/v8) used by Google Chrome
+  - [SpiderMonkey](https://spidermonkey.dev/) by Firefox
+  - [JavaScriptCore](https://docs.webkit.org/Deep%20Dive/JSC/JavaScriptCore.html) by Apple Safari
+- <GitHubBadge slug="nodejs/node" />: The OG built on V8, still widely used by
+  most
+- <GitHubBadge slug="denoland/deno" />: A reboot by Ryan Dahl (the creator of
+  Node.js). Not entirely compatible with Node.js.
+- <GitHubBadge slug="oven-sh/bun" />
+
+|                      | Node.js             | Deno                     | Bun                          | Browser                 |
+| -------------------- | ------------------- | ------------------------ | ---------------------------- | ----------------------- |
+| Engine               | V8                  | V8 + Rust                | JavaScriptCore (JSC)         | V8 / JSC / SpiderMonkey |
+| Language             | C++                 | Rust                     | Zig                          | C++ / C                 |
+| TypeScript Support   | ❌ (via transpiler) | ✅ (native)              | ✅ (native)                  | ❌ (via bundler)        |
+| Built-in Tools       | ❌                  | ✅ formatter, test, lint | ✅ bundler, transpiler, test | ❌                      |
+| Permissions Security | ❌                  | ✅ secure by default     | ❌                           | ✅ sandboxed            |
+| Performance          | Medium              | Medium                   | Fast                         | Medium                  |
+
 ## CommonJS vs. ES Modules (ESM)
 
-The main differences between CommonJS and ES Modules are:
-
-- Import
-  - CommonJS: `const fs = require("fs");`
-  - ES Modules: `import fs from "fs";`
-- Export
-  - CommonJS: `module.exports = { fs };`
-  - ES Modules: `export { fs };`
+|        | CommonJS                    | ES Modules             |
+| ------ | --------------------------- | ---------------------- |
+| Import | `const fs = require("fs");` | `import fs from "fs";` |
+| Export | `module.exports = { fs };`  | `export { fs };`       |
 
 All modern browsers, and Node.js 12+ now support ES Modules. CommonJS and extension `.cjs` should be avoided in favor of ES Modules and extension `.mjs` whenever possible.
