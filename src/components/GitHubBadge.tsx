@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react";
 import "@primer/primitives/dist/css/functional/themes/light.css";
 import { Button, Link } from "@primer/react";
-import { BaseStyles, ThemeProvider } from "@primer/react";
 import { useEffect, useState } from "react";
 
 interface GitHubBadgeProps {
@@ -38,20 +37,16 @@ export default function GitHubBadge({ slug }: GitHubBadgeProps) {
   }, [slug]);
 
   return (
-    <ThemeProvider>
-      <BaseStyles>
-        <Button
-          as={Link}
-          href={`http://github.com/${slug}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          muted={true}
-          leadingVisual={<Icon icon="logos:github-icon" inline={true} />}
-          count={formatNumber(count)}
-        >
-          {slug}
-        </Button>
-      </BaseStyles>
-    </ThemeProvider>
+    <Button
+      as={Link}
+      href={`http://github.com/${slug}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      muted={true}
+      leadingVisual={<Icon icon="logos:github-icon" inline={true} />}
+      count={formatNumber(count)}
+    >
+      {slug}
+    </Button>
   );
 }
