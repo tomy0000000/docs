@@ -1,0 +1,24 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
+# JavaScript Library
+
+Quick reference for all kinds of tasks.
+
+## Datetime
+
+JavaScript have native `Date` object, as well as experimental `Temporal` object.
+
+Checkout the [cookbook](https://tc39.es/proposal-temporal/docs/cookbook.html) and [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal). You can polyfill them today with:
+
+- <GitHubBadge slug="js-temporal/temporal-polyfill" />
+- <GitHubBadge slug="fullcalendar/temporal-polyfill" />
+
+Other more humanize features are provided in third-party library:
+
+- <GitHubBadge slug="iamkun/dayjs" />: Super tiny Moment.js drop-in replacement,
+  the modern go-to option.
+- <GitHubBadge slug="moment/moment" />: The OG. Full features, widely-used, but
+  in maintainence mode.
+- <GitHubBadge slug="moment/luxon" />: The modern reboot of Moment.js.
+- <GitHubBadge slug="date-fns/date-fns" />: Native-focus, good for proejct that
+  do not used much humanize feature and looking to adopt Temporal in the future.
