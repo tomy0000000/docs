@@ -85,5 +85,15 @@
       "<Image filename=\"${1}\" alt=\"${2}\">${3}</Image>"
     ],
     "description": "Table"
+  },
+  "GitHub": {
+    "scope": "markdown,mdx",
+    "prefix": "github",
+    "body": [
+      "import GitHubBadge from '@site/src/components/GitHubBadge';",
+      "",
+      "<GitHubBadge slug=\"\" />"
+    ],
+    "description": "Render GitHub Badge"
   }
 }
