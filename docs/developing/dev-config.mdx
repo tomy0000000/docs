@@ -1,3 +1,5 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
 # ⚙️ Configurations
 
 > The best configurations is no configuration.
@@ -199,10 +201,10 @@ select = [
 
 ## ESLint
 
-Use `eslint.config.js` and change to `eslint.config.ts` once the feature is stable.
+Use `eslint.config.mjs` and change to `eslint.config.ts` once the feature is stable.
 
 ```javascript
-// eslint.config.js
+// eslint.config.mjs
 // https://eslint.org/docs/latest/use/configure/configuration-files
 import js from "@eslint/js";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -257,6 +259,9 @@ export default tseslint.config(
 
 ## TypeScript
 
+<GitHubBadge slug="tsconfig/bases" /> have a bunch of great starter which can just
+plug-in-and-play.
+
 ```json
 // `tsconfig.json`
 // https://www.typescriptlang.org/tsconfig/
@@ -281,8 +286,12 @@ export default tseslint.config(
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
-  },
-  "include": ["src"]
+  }
+
+  /* Defaults, adjust as needed */
+  // "files": false,
+  // "include": ["**/*"],
+  // "exclude": ["node_modules", "bower_components", "jspm_packages"],
 }
 ```
 
@@ -293,3 +302,9 @@ The version to compile down to. Should be the minimum version supported by your 
 ### [`compilerOptions.module`](https://www.typescriptlang.org/tsconfig/#module)
 
 See [this guide](https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html) for more.
+
+## Tailwind
+
+As of Tailwind v4, there is no longer `tailwind.config.js`.
+
+To migrate config file from v3, there's a official upgrade tool which take cares most of the step, which is documented in the [doc]](https://tailwindcss.com/docs/upgrade-guide#container-configuration). Also checkout [this](https://www.youtube.com/watch?v=ud913ekwAOQ) [two](https://www.youtube.com/watch?v=bupetqS1SMU) YouTube videos for quick look.
