@@ -253,6 +253,15 @@
     "name": "Shopback",
     "url": "https://app.shopback.com/G4NWSIhYAQb"
   },
+  "so-fi": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$75 after you fund your account",
+    "for-you": "$25",
+    "icon": "arcticons:sofi",
+    "name": "SoFi Bank",
+    "url": "https://www.sofi.com/invite/money?gcp=61825f4c-df85-4f17-acb8-fad654b4c4da&isAliasGcp=false"
+  },
   "space": {
     "code": "S3A541Y7",
     "dynamic": false,
