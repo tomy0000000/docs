@@ -58,7 +58,7 @@ Some preferences and configurations are stored in the Dropbox folder.
 
 ## Dependency Graph
 
-- Homebrew node is not installed because all node CLI should be installed and managed by `pnpm`.
+- Volta manages node, package managers, and Node CLIs. The node which Node CLIs depend on is the default Node version set in Volta.
 - Since pipx depends on Homebrew Python, every time Python is updated, all the Python CLIs installed by pipx should be reinstalled. Good news is that this is as easy as running `pipx reinstall-all`. Think of a better way to manage this someday ¯\\\_(ツ)\_/¯
 
 ```mermaid
@@ -69,10 +69,10 @@ graph TD
     E --> F(Python CLIs)
     E --> G(poetry)
   C --> H(pyenv) --> I(Python 3.x)
-  C --> K(pnpm)
-    K --> L(Node 18)
+  C --> K(Volta)
+    K --> L(pnpm)
     K --> M(Node 20)
-    K --> N("Node 22 (LTS)") --> O(Node CLIs)
+    K --> N("Node 22 (LTS)") --> O(Node CLIs installed with Volta)
   C --> P(rbenv) --> Q(Ruby 3.x)
   C --> R(goenv) --> S(Go 1.x)
   C --> T(mas)
