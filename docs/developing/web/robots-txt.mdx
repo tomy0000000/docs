@@ -1,0 +1,105 @@
+import GitHubBadge from '@site/src/components/GitHubBadge';
+
+# `robots.txt`
+
+Copy-and-Paste ready `robots.txt`.
+
+## Don't Mess with Me
+
+```
+# https://www.robotstxt.org/
+User-agent: *
+Disallow: /
+```
+
+## Welcome I'm All Yours
+
+```
+# https://www.robotstxt.org/
+User-agent: *
+Disallow:
+```
+
+## Not These Pages
+
+```
+User-agent: *
+Disallow: /super-secret/
+```
+
+:::tip
+
+If it really is that much secret, you may not even want to list it, or not on the site at all. ;-)
+
+:::
+
+## Only Googlebot
+
+_but why??_
+
+```
+# https://www.robotstxt.org/
+User-agent: Google
+Disallow:
+
+User-agent: *
+Disallow: /
+```
+
+## Getout AI Bots
+
+```
+# https://www.robotstxt.org/
+User-agent: GPTBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-Agent: FacebookBot
+Disallow: /
+User-Agent: Applebot-Extended
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: ImagesiftBot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: YouBot
+Disallow: /
+```
+
+## Crawlers
+
+| Organization | Product Bot                                                                     | Data Bot                                                                    | IP Range | Docs                                                                                                                                      |
+| ------------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Google       | `Googlebot`                                                                     | `Google-Extended`                                                           |          | [Doc](https://developers.google.com/search/docs/crawling-indexing/googlebot)                                                              |
+| Microsoft    | `Bingbot`                                                                       |                                                                             |          | [Doc](https://www.bing.com/webmasters/help/how-to-create-a-robotstxt-file-cb7c31ec)                                                       |
+| Meta         |                                                                                 |                                                                             |          | [Doc](https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/)                                                              |
+| Amazon       |                                                                                 |                                                                             |          | [Doc](https://developer.amazon.com/amazonbot)                                                                                             |
+| DuckDuckGo   | `DuckDuckBot`                                                                   |                                                                             |          | [Doc]()                                                                                                                                   |
+| Yahoo        | `Slurp`                                                                         |                                                                             |          | [Doc]()                                                                                                                                   |
+| Apple        | `Applebot`                                                                      | `Applebot-Extended`                                                         |          | [Doc](https://support.apple.com/en-us/119829)                                                                                             |
+| OpenAI       |                                                                                 |                                                                             |          | [Doc](https://platform.openai.com/docs/bots)                                                                                              |
+| Anthrophic   | `Claude-User`, `Claude-SearchBot`                                               | `ClaudeBot`                                                                 |          | [Doc](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) |
+| Perplexity   | `Perplexity‑User` ([IP Range](https://www.perplexity.com/perplexity-user.json)) | `PerplexityBot` ([IP Range](https://www.perplexity.com/perplexitybot.json)) |          | [Doc](https://docs.perplexity.ai/guides/bots)                                                                                             |
+
+## References
+
+- <GitHubBadge slug="ai-robots-txt/ai.robots.txt" />
+- [nixCraft](https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/)
