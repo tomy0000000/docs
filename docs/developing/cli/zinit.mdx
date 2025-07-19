@@ -1,0 +1,33 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
+# Zinit
+
+- <GitHubBadge slug="zdharma-continuum/zinit" />
+- [Unofficial Wiki](https://zdharma-continuum.github.io/zinit/wiki/)
+
+Zsh plugin manager.
+
+## Create a local plugin automatically
+
+```zsh
+zinit ice \
+    as"program" \
+    id-as"awesome-plugin" \
+    atclone"do something" \
+    atpull"%atclone" \
+    run-atpull \
+    nocompile
+zinit light zdharma-continuum/null
+```
+
+## Create a local plugin manually
+
+```zsh
+plugin_name="awesome-plugin"
+plugin_dir="${ZINIT[PLUGINS_DIR]}/${plugin_name}"
+mkdir -p "$plugin_dir"
+
+# Dynamically generate shell scripts in ${plugin_dir}, e.g. Generate completion
+
+zinit creinstall "${plugin_dir}"
+```
