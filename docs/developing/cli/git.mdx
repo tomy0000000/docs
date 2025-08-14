@@ -1,3 +1,5 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
 # `git`
 
 Quick reference for `git` commands.
@@ -157,6 +159,23 @@ git commit --amend --no-edit --reset-author --date="$(git show -s --format=%ci H
 ```
 
 Note: This will update commit timestamp, in most case, you should.
+
+### Wipe files from the history
+
+There's a git command called `filter-branch`, but <GitHubBadge slug="newren/git-filter-repo" /> is a faster, safer modern alternative.
+
+1. Filter the branch to remove the file from the entire history.
+
+```bash
+git filter-repo --path-glob '*.png' --invert-paths
+```
+
+2. Re-add your origin back if it is removed by `git-filter-repo`
+3. Push the changes to the remote repository.
+
+```bash
+git push --force-with-lease
+```
 
 ## References
 
