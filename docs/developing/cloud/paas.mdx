@@ -1,0 +1,64 @@
+---
+skip_plural_check: true
+title: PaaS
+---
+
+import { Icon } from "@iconify/react";
+
+# <abbr title="Platform as a Service">PaaS</abbr>
+
+## For Backend
+
+### <Icon icon="simple-icons:render" inline={true} /> [Render](https://render.com/)
+
+- ✅ Go-to replacement for Heroku for general purpose backend app
+- ✅ Global CDN built-in
+- ⚠️ Scaling, globalize is not as great as Fly.io and Vercel
+
+### <Icon icon="simple-icons:railway" inline={true} /> [Railway](https://railway.app)
+
+- Backed by Google Cloud, [but going on-prem](https://blog.railway.com/p/data-center-build-part-one)
+- ✅ Very transparent pricing
+- ✅ Great DX
+- ⚠️ No Free-tier
+- ⚠️ Harder to customize
+- ⚠️ Does not scale well
+
+### <Icon icon="logos:fly-icon" inline={true} /> [Fly.io](https://fly.io/)
+
+- ✅ Great global distribution
+- ✅ Best-in-class Docker deployment
+- ✅ Low-latency
+- ⚠️ Steep learning curve, DX is not on-par
+
+### <Icon icon="skill-icons:heroku" inline={true} /> [Heroku](https://www.heroku.com/)
+
+- Backed by AWS
+- ✅ The OG, super easy to start for small project
+- ⚠️ Free-tier is gone
+- ⚠️ Cold start is quite long
+- ⚠️ Quite expensive to scale
+
+### Misc
+
+- [Porter](https://www.porter.run/)
+- [Deno Deploy](https://deno.com/deploy)
+- [Koyeb](https://www.koyeb.com)
+
+## For Frontend
+
+### <Icon icon="logos:vercel-icon" inline={true} /> [Vercel](https://vercel.com/)
+
+- Backed by AWS
+- ✅ The go-to deployment for Frontend Next.js App
+- ✅ Global CDN by default
+- ⚠️ Not quite suitable for complex backend app
+
+### <Icon icon="logos:netlify-icon" inline={true} /> [Netlify](https://www.netlify.com/)
+
+- ✅ The go-to deployment for non-Next.js JAMstack & Frontend App
+- ⚠️ Not quite suitable for complex backend app
+
+## Self-Hosting
+
+See [Self-Hosting PaaS](./self-hosting-paas) for more options.
