@@ -1,0 +1,31 @@
+# 🛡️ Firewall CLIs
+
+## Core Tools
+
+- `ipfwadm`: Originated with Linux 1.2.x/2.0.x. Inspired by BSD’s `ipfw`.
+  - Simple stateless packet filtering
+- `ipchains`: Introduced with Linux 2.2.x
+  - Basic stateful packet filtering
+  - Better chain organization
+  - NAT support
+  - IPv6 support: `ip6chains`.
+- `iptables` / Netfilter: Introduced with Linux 2.4.x
+  - Netfilter became a kernel-space framework for hooks and connection tracking.
+  - `iptables` is the user-space command-line tool to configure Netfilter.
+  - Module-based architecture for extensibility.
+  - IPv6 support: `ip6tables`.
+- `nftables`: Introduced with Linux 3.13.x
+  - Replaces `iptables`, `ip6tables`, `arptables`, and `ebtables`.
+  - Uses a single command-line tool: `nft`.
+  - More efficient rule processing with a new virtual machine.
+  - De-duplicates v4/v6 rules
+
+## Distro Frontends
+
+- `firewalld` (Red Hat, Fedora, CentOS)
+  - Uses `iptables`/`nftables` as backend.
+  - Dynamic firewall management with zones and services.
+  - D-Bus interface for programmatic control.
+- `ufw` (Ubuntu)
+  - Simplified interface for `iptables`.
+  - Friendly wrapper that auto-generates rules underneath.
