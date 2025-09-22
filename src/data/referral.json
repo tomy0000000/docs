@@ -289,6 +289,15 @@
     "name": "Uber",
     "url": "https://referrals.uber.com/refer?id=y2w1uxnhwvep"
   },
+  "waymo": {
+    "code": "TOMYN2A8",
+    "dynamic": false,
+    "for-me": "$10 off for my next ride",
+    "for-you": "Get $10 off your first ride",
+    "icon": null,
+    "name": "Waymo",
+    "url": "https://waymo.smart.link/4pcoqniy5?code=TOMYN2A8"
+  },
   "weee": {
     "code": null,
     "dynamic": false,
