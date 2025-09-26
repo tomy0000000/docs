@@ -1,0 +1,82 @@
+---
+skip_plural_check: true
+---
+
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# `iptables` / Netfilter
+
+## Snippets
+
+### List all chains and rules
+
+```shell
+iptables --list --numeric --line-numbers
+```
+
+### Allow incoming SSH connections
+
+```shell
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
+
+## Persist rules across reboots
+
+<Tabs groupId="os" defaultValue="manual">
+  <TabItem value="manual" label="Manual">
+    1. Save current rules
+
+      ```shell
+      sudo iptables-save > /etc/iptables/rules.v4
+      sudo ip6tables-save > /etc/iptables/rules.v6
+      ```
+
+    2. Create a systemd service to restore these rules on boot:
+
+      ```ini title="/etc/systemd/system/iptables-restore.service"
+      [Unit]
+      Description=Restore iptables firewall
+      Before=network-pre.target
+      Wants=network-pre.target
+
+      [Service]
+      Type=oneshot
+      ExecStart=/sbin/iptables-restore < /etc/iptables/rules.v4
+      ExecStart=/sbin/ip6tables-restore < /etc/iptables/rules.v6
+      RemainAfterExit=yes
+
+      [Install]
+      WantedBy=multi-user.target
+      ```
+
+    3. Enable the service
+
+      ```shell
+      sudo systemctl enable iptables-restore
+      ```
+
+  </TabItem>
+  <TabItem value="debian" label="Debian/Ubuntu">
+    1. Install the `iptables-persistent` package:
+
+      ```shell
+      sudo apt install iptables-persistent
+      ```
+
+    2. Save current rules
+
+      ```shell
+      sudo netfilter-persistent save
+      ```
+
+      Rules are saved in `/etc/iptables/rules.v4` and `/etc/iptables/rules.v6`. A systemd service will be setup automatically to restore these rules on boot.
+
+    3. In case you want to reload rules manually, use:
+
+      ```shell
+      sudo netfilter-persistent reload
+      ```
+
+  </TabItem>
+</Tabs>
