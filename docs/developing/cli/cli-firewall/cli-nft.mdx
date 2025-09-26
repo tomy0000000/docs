@@ -1,0 +1,29 @@
+# `nft`
+
+## Snippets
+
+### List all tables, chains and rules
+
+```shell
+nft list ruleset
+```
+
+## Persist rules across reboots
+
+1. Save current rules
+
+```shell
+nft list ruleset > /etc/nftables.conf
+```
+
+2. Create a systemd service to restore these rules on boot:
+
+```shell
+sudo systemctl enable --now nftables
+```
+
+3. In case you want to reload rules manually, use:
+
+```shell
+nft -f /etc/nftables.conf
+```
