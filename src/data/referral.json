@@ -108,6 +108,15 @@
     "name": "Instacart",
     "url": "https://inst.cr/t/2cddf647a"
   },
+  "linode": {
+    "code": null,
+    "dynamic": false,
+    "for-me": "$25 credit after you spend $25 and remained active for 90 days",
+    "for-you": "$100 credit good for 60 days once a valid payment method is added",
+    "icon": "logos:linode",
+    "name": "Linode",
+    "url": "https://www.linode.com/lp/refer/?r=d3ad347aba0ca5a6c8c2718a7cab85f1a86ad610"
+  },
   "kkday": {
     "code": null,
     "dynamic": false,
