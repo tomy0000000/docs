@@ -3,6 +3,25 @@
     "category": "",
     "install": [
       {
+        "id": "pairpods",
+        "type": "cask"
+      }
+    ],
+    "name": "PairPods",
+    "note": null,
+    "url": "https://github.com/wozniakpawel/PairPods"
+  },
+  {
+    "category": "",
+    "install": [],
+    "name": "Refine",
+    "note": null,
+    "url": "https://refine.sh/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
         "id": "farrago",
         "type": "brew"
       }
@@ -224,6 +243,30 @@
     "name": "Background Music",
     "note": null,
     "url": "https://github.com/kyleneideck/BackgroundMusic"
+  },
+  {
+    "category": "Preference Pane",
+    "github": "Lord-Kamina/SwiftDefaultApps",
+    "install": [
+      {
+        "id": "swiftdefaultappsprefpane",
+        "type": "cask"
+      }
+    ],
+    "name": "SwiftDefaultApps",
+    "note": null
+  },
+  {
+    "category": "Utilities",
+    "github": "ninxsoft/Mist",
+    "install": [
+      {
+        "id": "mist",
+        "type": "cask"
+      }
+    ],
+    "name": "MIST",
+    "note": null
   },
   {
     "category": "",
@@ -1046,6 +1089,18 @@
     "name": "IINA",
     "note": null,
     "url": "https://iina.io/"
+  },
+  {
+    "category": "Menu Bar",
+    "github": "exelban/stats",
+    "install": [
+      {
+        "id": "stats",
+        "type": "cask"
+      }
+    ],
+    "name": "Stats",
+    "note": null
   },
   {
     "category": "Menu Bar",
