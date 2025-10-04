@@ -14,6 +14,18 @@
     "clis": ["shasum"]
   },
   {
+    "category": "GitHub Action Simulation",
+    "clis": ["wrkflw"],
+    "name": "WRKFLW",
+    "url": "https://github.com/bahdotsh/wrkflw"
+  },
+  {
+    "category": "GitHub Action Simulation",
+    "clis": ["act"],
+    "name": "act",
+    "url": "https://github.com/nektos/act"
+  },
+  {
     "category": "Checksum",
     "clis": ["md5"]
   },
@@ -29,6 +41,31 @@
     "category": "Cloud provider",
     "clis": ["fly", "flyctl"],
     "macos-zsh-completion": "Homebrew"
+  },
+  {
+    "category": "Syntax Highlighter",
+    "clis": ["chroma"],
+    "name": "Chroma",
+    "url": "https://github.com/alecthomas/chroma"
+  },
+  {
+    "category": "Syntax Highlighter",
+    "clis": ["yh"],
+    "name": "yh",
+    "url": "https://github.com/andreazorzetto/yh"
+  },
+  {
+    "category": "Syntax Highlighter",
+    "clis": ["pygments"],
+    "name": "Pygments",
+    "url": "https://github.com/pygments/pygments"
+  },
+  {
+    "category": "Cloud provider",
+    "clis": ["az"],
+    "macos-zsh-completion": "Homebrew",
+    "name": "Azure CLI",
+    "url": "https://learn.microsoft.com/en-us/cli/azure/"
   },
   {
     "category": "Cloud provider",
@@ -117,6 +154,7 @@
   {
     "category": "Containerization",
     "clis": ["kubectl"],
+    "macos-zsh-completion": "Homebrew",
     "name": "Kubernetes (k8s)",
     "url": "https://github.com/kubernetes/kubernetes"
   },
@@ -200,6 +238,7 @@
   {
     "category": "Diff Utility",
     "clis": ["delta"],
+    "macos-zsh-completion": "Homebrew",
     "name": "delta",
     "url": "https://github.com/dandavison/delta"
   },
@@ -331,7 +370,18 @@
   },
   {
     "category": "Go programming language",
-    "clis": ["go"]
+    "clis": ["go"],
+    "macos-zsh-completion": "zsh-users/zsh-completions"
+  },
+  {
+    "category": "JSON processor",
+    "clis": ["fx"],
+    "url": "https://github.com/antonmedv/fx"
+  },
+  {
+    "category": "JSON processor",
+    "clis": ["yh"],
+    "url": "https://github.com/andreazorzetto/yh"
   },
   {
     "category": "JSON processor",
@@ -350,6 +400,7 @@
     "clis": ["autojump"],
     "linux-alias": "j",
     "macos-alias": "j",
+    "macos-zsh-completion": "Homebrew",
     "name": "autojump",
     "url": "https://github.com/wting/autojump"
   },
@@ -445,11 +496,13 @@
   },
   {
     "category": "Node.js package manager",
-    "clis": ["pnpm"]
+    "clis": ["pnpm"],
+    "macos-zsh-completion": "Homebrew"
   },
   {
     "category": "Node.js package manager",
-    "clis": ["yarn"]
+    "clis": ["yarn"],
+    "macos-zsh-completion": "zsh-users/zsh-completions"
   },
   {
     "category": "Node.js package runner",
@@ -476,6 +529,7 @@
   {
     "category": "Profiling",
     "clis": ["hyperfine"],
+    "macos-zsh-completion": "Homebrew",
     "name": "hyperfine",
     "url": "https://github.com/sharkdp/hyperfine"
   },
@@ -532,6 +586,12 @@
   },
   {
     "category": "Request Utility",
+    "clis": ["hurl"],
+    "name": "hurl",
+    "url": "https://github.com/Orange-OpenSource/hurl"
+  },
+  {
+    "category": "Request Utility",
     "clis": ["wget"],
     "name": "GNU Wget2",
     "url": "https://gitlab.com/gnuwget/wget2"
@@ -571,6 +631,11 @@
   {
     "category": "Screen Management",
     "clis": ["tmux"]
+  },
+  {
+    "category": "Screen Management",
+    "clis": ["zellij"],
+    "url": "https://github.com/zellij-org/zellij"
   },
   {
     "category": "Screen Management",
@@ -646,6 +711,16 @@
     "macos-zsh-completion": "Homebrew"
   },
   {
+    "category": "Shell",
+    "clis": ["starship"],
+    "macos-zsh-completion": "Homebrew"
+  },
+  {
+    "category": "Python package manager",
+    "clis": ["uv", "uvx"],
+    "macos-zsh-completion": "Homebrew"
+  },
+  {
     "clis": ["pwgen"],
     "name": "Password Generator",
     "url": "https://sourceforge.net/projects/pwgen/"
@@ -661,6 +736,20 @@
   {
     "category": "System Daemon",
     "clis": ["initctl"]
+  },
+  {
+    "category": "",
+    "clis": ["openssl"],
+    "macos-zsh-completion": "zsh-users/zsh-completions",
+    "name": "OpenSSL",
+    "url": "https://www.openssl.org/"
+  },
+  {
+    "category": "",
+    "clis": ["pre-commit"],
+    "macos-zsh-completion": "zsh-users/zsh-completions",
+    "name": "pre-commit",
+    "url": "https://pre-commit.com/"
   },
   {
     "category": "System Daemon",
@@ -695,6 +784,15 @@
     "clis": ["neofetch"],
     "name": "Neofetch",
     "url": "https://github.com/dylanaraps/neofetch"
+  },
+  {
+    "category": "GPU monitor",
+    "clis": ["nvidia-smi"]
+  },
+  {
+    "category": "GPU monitor",
+    "clis": ["nvitop"],
+    "url": "https://github.com/XuehaiPan/nvitop"
   },
   {
     "category": "System monitor",
@@ -844,6 +942,12 @@
   },
   {
     "category": "Text processor",
+    "clis": ["yq"],
+    "name": "yq",
+    "url": "https://github.com/mikefarah/yq"
+  },
+  {
+    "category": "Text processor",
     "clis": ["sed"]
   },
   {
@@ -851,6 +955,12 @@
     "clis": ["sd"],
     "name": "sd (search & displace)",
     "url": "https://github.com/chmln/sd"
+  },
+  {
+    "category": "Version control system",
+    "clis": ["jj"],
+    "name": "Jujutsu",
+    "url": "https://jj-vcs.github.io/"
   },
   {
     "category": "Version control system",
