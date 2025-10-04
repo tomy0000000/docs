@@ -37,6 +37,7 @@
   "information": {
     "apt": "apt show _",
     "brew": "brew info _",
+    "cpan": "cpan -D _",
     "gem": "gem info _",
     "npm": "npm info _",
     "pip": "pip show _"
@@ -44,6 +45,7 @@
   "installGlobal": {
     "apt": "apt install _",
     "brew": "brew install _",
+    "cpan": "cpan install _",
     "gem": "gem install _",
     "go": "go install _",
     "npm": "npm install -g _",
@@ -112,7 +114,12 @@
     "gem": "gem dependency _ --reverse-dependencies",
     "go": "go mod why _",
     "npm": "npm explain _",
-    "pip": "pipdeptree --reverse --packages _"
+    "pip": "pipdeptree --reverse --packages _",
+    "pnpm": "pnpm why _"
+  },
+  "runWithoutInstall": {
+    "npm": "npx _",
+    "pnpm": "pnpm dlx _"
   },
   "search": {
     "apt": "apt search _",
@@ -165,5 +172,10 @@
     "gem": "gem update",
     "npm": "npm update -g",
     "pip": "pip list --outdated --format=json | jq '.[] | .name' | xargs -n1 pip install -U"
+  },
+  "upgradeProject": {
+    "apt": null,
+    "brew": null,
+    "npm": "npm update _@latest"
   }
 }
