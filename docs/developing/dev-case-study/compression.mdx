@@ -1,11 +1,15 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
 # 🗜️ Compression
 
 General glossary of wide-range compression format.
 
-| Algorithm | Extension | Common Use Case | Assosiation | Notes                    |
-| --------- | --------- | --------------- | ----------- | ------------------------ |
-| Zip       | `.zip`    | Files           |             |                          |
-| 7-Zip     | `.7z`     | Files           |             |                          |
-| gzip      | `.gz`     | Files, Web      | GNU Project | Commonly used with `tar` |
-| Zstandard | `.zst`    | Files, Web      | Meta        |                          |
-| Brotli    | `.br`     | Web             | Google      |                          |
+| Algorithm                                       | Extension | Common Use Case | Assosiation | Notes                    |
+| ----------------------------------------------- | --------- | --------------- | ----------- | ------------------------ |
+| Zip                                             | `.zip`    | Files           |             |                          |
+| [7-Zip](https://www.7-zip.org/)                 | `.7z`     | Files           |             |                          |
+| [gzip](https://savannah.gnu.org/projects/gzip/) | `.gz`     | Files, Web      | GNU Project | Commonly used with `tar` |
+| <GitHubBadge slug="facebook/zstd" />            | `.zst`    | Files, Web      | Meta        |                          |
+| <GitHubBadge slug="google/brotli" />            | `.br`     | Web             | Google      |                          |
+| [bzip2](https://gitlab.com/bzip2/bzip2/)        | `.bz2`    | Files           |             | Commonly used with `tar` |
+| <GitHubBadge slug="iczelia/bzip3" />            | `.bz3`    | Files           |             | Successor to bzip2       |
