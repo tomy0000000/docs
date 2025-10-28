@@ -1,0 +1,22 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
+# 🪪 Identifier
+
+## UUID
+
+| Version | Input                          | Use Case                           | Notes                                    |
+| ------- | ------------------------------ | ---------------------------------- | ---------------------------------------- |
+| v1      | Time + MAC address             | Avoid                              | Privacy concerns because the MAC address |
+| v2      | Time + POSIX UID/GID (DCE)     | Avoid                              |                                          |
+| v3      | Namespace UUID + name (string) | Avoid, use UUIDv5 instead          | Deterministic, MD5 hashing               |
+| v4      | Random bits                    | General purpose unique identifiers | Consider using UUIDv7                    |
+| v5      | Namespace UUID + name (string) | Need deterministic                 | Deterministic, SHA-1 hashing             |
+| v6      | Reordered time + MAC address   | Avoid, use UUIDv7 instead          | Privacy concerns because the MAC address |
+| v7      | Unix timestamp + random bits   | General purpose unique identifiers | Time-ordered                             |
+| v8      | Custom                         | Rarely used                        | User-defined format                      |
+
+## Nano ID
+
+Small, secure, URL-friendly.
+
+<GitHubBadge slug="ai/nanoid" />
