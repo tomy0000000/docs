@@ -1,0 +1,45 @@
+# 📄 Pagination
+
+How to design and implement pagination for API, data grids, and scrolling content.
+
+## Overview
+
+|                | Offset-based                                                                              | Cursor-based                                                                  |
+| -------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Definition** | Uses a specific number (offset) to indicate the starting point of the data to be fetched. | Uses a unique identifier (cursor) to mark the position in the dataset.        |
+| **Use Cases**  | Simple data retrieval scenarios where the dataset is relatively small[^1] and static.     | Large datasets, real-time data, or when data changes frequently.              |
+| **Pros**       | Easy to implement and understand.                                                         | More efficient for large datasets and reduces the risk of data inconsistency. |
+| **Cons**       | Prone to data drifting & Performance degrade when scaled                                  | Complex to implement. Can't jump to arbitrary pages.                          |
+
+[^1]: [TanStack Table loads 100,000 rows](https://tanstack.com/table/latest/docs/guide/pagination) and works just fine.
+
+## Things to Consider
+
+- **Performance**: Fast is always charming. Locate the bottlenecks and optimize them.
+  - Sometimes backend spend time querying the database
+  - Sometimes complex frontend rendering takes times.
+  - Either way, `page_size` must have a reasonable limit.
+- **User Experience**
+  - Do user need to jump to arbitrary pages?
+  - Do you need Sorting, filtering, and searching? Where to apply them?
+- **Data Consistency**
+  - How often does the data change? By same user or other users on different clients?
+  - How critical is it to avoid duplicates or missing items? (maybe some drifting is acceptable?)
+
+## Decision Making
+
+- If data may be drifting → cursor-based
+- If data is relatively static and small → offset-based
+- If you need to jump to arbitrary pages → offset-based
+- Infinite scrolling → cursor-based
+
+## Cursor Checklist
+
+- Include all necessary information, e.g., unique ID, timestamp, sorting, filters, etc.
+- Unique
+- Opaque: Clients should not infer any meaning from the cursor value
+- Idempotent: Retried requests with the same cursor must return the same page
+- Signed with HMAC
+- Support `has_more` to indicate if there are more pages
+- Support bidirectional scrolling with `next_cursor` and `prev_cursor`
+- For GraphQL, use [Relay Cursor Connections Specification](https://relay.dev/graphql/connections.htm)
