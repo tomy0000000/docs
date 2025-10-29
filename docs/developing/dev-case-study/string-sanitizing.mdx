@@ -1,0 +1,68 @@
+# 🧼 String Sanitizing
+
+Guide to sanitizing strings.
+
+## File Name
+
+|                            | Linux    | macOS  | Windows                                              |
+| -------------------------- | -------- | ------ | ---------------------------------------------------- |
+| `/`                        | ❌       | ❌[^1] | ❌                                                   |
+| `\`                        | ❌       | ✅     | ❌                                                   |
+| `:`                        | ✅       | ✅[^1] | ❌                                                   |
+| `*`                        | ✅       | ✅     | ❌                                                   |
+| `?`                        | ✅       | ✅     | ❌                                                   |
+| `"`                        | ✅       | ✅     | ❌                                                   |
+| `<`                        | ✅       | ✅     | ❌                                                   |
+| `>`                        | ✅       | ✅     | ❌                                                   |
+| `\|`                       | ✅       | ✅     | ❌                                                   |
+| ASCII `0–31`               | ❌       | ❌     | ❌                                                   |
+| Leading/trailing space/dot | ✅       | ✅     | ❌                                                   |
+| Case sensitivity           | ✅       | ❌     | ✅[^2]                                               |
+| Reserved names             |          |        | `CON`, `PRN`, `AUX`, `NUL`, `COM1–COM9`, `LPT1–LPT9` |
+| Unicode normalization      | NFC      | NFD    | NFC                                                  |
+| Max length (bytes)         | 255      | 255    | 255                                                  |
+| Max path length (bytes)    | 4096[^3] | 1024   | 260                                                  |
+
+May want to avoid shell special characters: `$`, `!`, `&`, `;`, `'`, `(`, `)`, `;`, `~`, `#`, `%`, `@`
+
+NFD normalization encode certain characters into multiple code points, like `é` (U+0065 U+0301) instead of `é` (U+00E9).
+
+To make a filename works cross-platform, it'll be easier to just lowercase everything.
+
+Other relevevant limits:
+
+- Git is case sensitive
+- Dropbox does not support emojis
+
+A sample implementation in Python:
+
+```python
+def sanitize_filename(name: str, replacement: str = "_", max_length: int = 255, lower: bool = True) -> str:
+    import re, unicodedata
+
+    name = unicodedata.normalize("NFC", name)
+    name = re.sub(r'[\\\/:*?"<>|\x00-\x1F]', replacement, name)
+    name = name.strip(" .")
+
+    if lower:
+        name = name.lower()
+
+    reserved = {"con","prn","aux","nul","com1","com2","com3","com4","com5","com6","com7","com8","com9",
+                "lpt1","lpt2","lpt3","lpt4","lpt5","lpt6","lpt7","lpt8","lpt9"}
+    if name.lower() in reserved:
+        name += replacement
+
+    if len(name.encode("utf-8")) > max_length:
+        encoded = name.encode("utf-8")[:max_length]
+        name = encoded.decode("utf-8", errors="ignore")
+
+    return name or "untitled"
+```
+
+[^1]: Finder treats `:` as `/`.
+[^2]: Internally yes, but some software may treat them as case insensitive.
+[^3]: Can be configure via `PATH_MAX` limit, but don't.
+
+## HTML
+
+Escape `<`, `>`, `&`
