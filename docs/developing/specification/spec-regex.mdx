@@ -1,13 +1,36 @@
-# 🎰 Regular Expressions
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
+# 🎰 Regular Expressions (RegEx)
 
 Various useful tools and resources for working with regular expressions.
+
+## Specifications
+
+| Engine / Flavor                                               | Origin / Common Use  | Lookahead    | Lookbehind        | Backreferences   | Named Groups   | Unicode `\p{}`                 | Non-greedy Quantifiers | Guarantees Linear Time | Notable Traits                      |
+| ------------------------------------------------------------- | -------------------- | ------------ | ----------------- | ---------------- | -------------- | ------------------------------ | ---------------------- | ---------------------- | ----------------------------------- |
+| POSIX (BRE/ERE)                                               | `grep`, `sed`, `awk` | ❌           | ❌                | ✅ (BRE limited) | ❌             | Partial                        | ❌                     | ✅ (deterministic)     | Classic Unix tools, minimal         |
+| <abbr title="Perl Compatible Regular Expressions">PCRE</abbr> | PHP, Perl, Apache    | ✅           | ✅                | ✅               | ✅             | ✅                             | ✅                     | ❌                     | De facto standard, very expressive  |
+| Python `re`                                                   | Python               | ✅           | ✅ (fixed width)  | ✅               | ✅ (`?P<>`)    | Partial (full via `regex` lib) | ✅                     | ❌                     | PCRE-like with some constraints     |
+| JavaScript (ECMAScript)                                       | Web, Node.js         | ✅           | ✅ (since ES2018) | ✅               | ✅ (`?<name>`) | ✅ (`\p{}` in ES2018+)         | ✅                     | ❌                     | Minimal but modern                  |
+| <GitHubBadge slug="google/re2" />                             | Go, Google infra     | ✅           | ❌                | ❌               | ✅             | ✅                             | ✅                     | ✅                     | No backtracking, ultra fast         |
+| Java `java.util.regex`                                        | JVM ecosystem        | ✅           | ✅ (fixed width)  | ✅               | ✅             | Partial                        | ✅                     | ❌                     | PCRE-ish, stable                    |
+| .NET                                                          | C#, F#, etc.         | ✅           | ✅                | ✅               | ✅             | ✅                             | ✅                     | ❌                     | Very feature-rich, balancing groups |
+| Rust `regex`                                                  | Rust crate           | ✅           | ❌                | ❌               | ✅             | ✅                             | ✅                     | ✅                     | Like RE2, safe & Unicode-first      |
+| PostgreSQL                                                    | SQL                  | ✅ (limited) | ❌                | ✅               | ❌             | Partial                        | ❌                     | ❌                     | POSIX-based                         |
+| Oniguruma                                                     | Ruby                 | ✅           | ✅                | ✅               | ✅             | ✅                             | ✅                     | ❌                     | Advanced Unicode and named groups   |
 
 ## 💡 Tips
 
 - Think about you want to "match" or "search"
 - For matching, use `^` and `$` to match the beginning and end of the string
   - Be careful with multi-line strings
-- Different tools may have different syntax
+
+## Tools
+
+- [regex101](https://regex101.com/)
+- [Debuggex](https://www.debuggex.com/)
+- [RegExr](https://regexr.com/)
+- [Rubular](https://rubular.com/)
 
 ## Characters
 
@@ -51,13 +74,6 @@ In possessive match mode, the regex engine will not backtrack to find a match. T
 | Between n and m | `{n,m}?`              | Reluctant Match (Prefer less) |
 | At least n      | `{n,}+`               | Possessive Match              |
 | Between n and m | `{n,m}+`              | Possessive Match              |
-
-## Tools
-
-- [regex101](https://regex101.com/)
-- [Debuggex](https://www.debuggex.com/)
-- [RegExr](https://regexr.com/)
-- [Rubular](https://rubular.com/)
 
 ## Snippets
 
