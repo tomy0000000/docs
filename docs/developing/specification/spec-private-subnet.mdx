@@ -1,0 +1,17 @@
+# 🛜 Private Subnet
+
+How to define and use private subnets in your network architecture, according to [RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918).
+
+## Overview
+
+|         | Begin Address | End Address     | CIDR Notation  | Total Addresses |
+| ------- | ------------- | --------------- | -------------- | --------------- |
+| Class A | 10.0.0.0      | 10.255.255.255  | 10.0.0.0/8     | 16,777,216      |
+| Class B | 172.16.0.0    | 172.31.255.255  | 172.16.0.0/12  | 1,048,576       |
+| Class C | 192.168.0.0   | 192.168.255.255 | 192.168.0.0/16 | 65,536          |
+
+## How to choose
+
+- Class A: Best for very large organizations or when you need many isolated networks (accounts/projects/regions). Carve it into smaller blocks (for example, /16, /20) with an IPAM plan.
+- Class B: A solid default for most teams—large enough for growth and less likely to overlap with home networks and partners.
+- Class C: Fine for small labs or single-site setups, but it commonly collides with home routers (192.168.0.0/24, 192.168.1.0/24), which can break VPN access.
