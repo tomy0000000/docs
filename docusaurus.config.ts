@@ -19,7 +19,6 @@ export default {
   projectName: "docs",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   stylesheets: [
     {
