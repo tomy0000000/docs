@@ -1,8 +1,39 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
 # Email
 
-- [Stalwart Mail Server](https://github.com/stalwartlabs/mail-server)
-- [Mailcow](https://github.com/mailcow/mailcow-dockerized)
-- [Mox](https://github.com/mjl-/mox)
+Guide to self-hosting your own email server.
+
+## Overview
+
+You need at least three main components to send/receive emails from your self-hosted email server:
+
+{/* prettier-ignore */}
+- <abbr title="Mail Transfer Agent">MTA</abbr>: Responsible for sending and receiving emails.
+  - [Postfix](https://www.postfix.org/)
+  - [Exim](https://www.exim.org/)
+  - [Sendmail](https://www.proofpoint.com/us/products/email-protection/open-source-email-solution)
+- <abbr title="Mail Delivery Agent">MDA</abbr>: Responsible for delivering emails to the recipient's mailbox.
+  - <GitHubBadge slug="dovecot/core" /> 
+  - Courier
+- <abbr title="Mail User Agent">MUA</abbr>: The client application used to read and send emails.
+  - Thunderbird
+  - Outlook
+  - <GitHubBadge slug="roundcube/roundcubemail" /> 
+  - <GitHubBadge slug="Alinto/sogo" />
+
+## Integrated Solutions
+
+Existed solution that bundle MTA, MDA, and MUA together for easier setup and management, so you don't have to start from scratch.
+
+| Name                                              | MTA     | MDA     | MUA              | Notes                            |
+| ------------------------------------------------- | ------- | ------- | ---------------- | -------------------------------- |
+| <GitHubBadge slug="mail-in-a-box/mailinabox" />   | Postfix | Dovecot | Roundcube        |                                  |
+| <GitHubBadge slug="mailcow/mailcow-dockerized" /> | Postfix | Dovecot | SOGo             |                                  |
+| <GitHubBadge slug="modoboa/modoboa" />            | Postfix | Dovecot | -                |                                  |
+| <GitHubBadge slug="iredmail/iRedMail" />          | Postfix | Dovecot | Roundcube / SOGo |                                  |
+| <GitHubBadge slug="stalwartlabs/stalwart" />      | Rewrite | Rewrite | Rewrite          | Support JMAP                     |
+| <GitHubBadge slug="mjl-/mox" />                   | Rewrite | Rewrite | Rewrite          | Implement from ground up with Go |
 
 ## Tools
 
