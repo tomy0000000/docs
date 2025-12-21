@@ -1,0 +1,102 @@
+# 📋 Things
+
+A opinionated mindset for organizing tasks in Things.
+
+## Task
+
+- A single actionable item that you can complete in one sitting.
+- Small, specific, and self-contained.
+- Should be achievable within a short time frame (e.g., a day or less).
+
+e.g. Buy groceries, Call mom, Write blog post
+
+## Checklist
+
+- A sub-list within a task to break it down into smaller steps.
+- Helps track progress on multi-step tasks without creating separate tasks for each step.
+- If things get too complex, consider turn task into a project, and each checklist item into a task.
+
+e.g. For Task "Grocery Shopping", checklist items might be "milk", "eggs", "bread".
+
+## Project
+
+- A group of multiple tasks toward a defined outcome, that has a clear ending, a clear definition of done.
+- Once you finish all the steps, you check the project off completely and it’s archived.
+- Tasks are unlikely to be routine or repetitive.
+- Projects are _reviewed_, instead of _maintained_.
+
+e.g. Plan Vacation, Write Book, Launch Website
+
+## Header
+
+- A way to visually separate different sections within a project (not area).
+- Helps organize tasks into smaller stages or phases.
+- One header should typically contain 3-10 tasks underneath it.
+  - To few, it should just be a task with a few checklist items.
+  - To many, consider breaking it into multiple headers or projects.
+
+e.g. For Project "Plan Vacation", you might have headers like "Research", "Booking", "Pack List".
+
+## Area
+
+- A major _concept_ used to bucket / group items (tasks and projects) together.
+- Items may end, but the _concept_ or domain itself have no deadline and never really ends.
+- Represent roles or long-standing categories in life.
+- Good place to put recurring tasks.
+- Areas are _maintained_, instead of _reviewed_.
+
+e.g. Work, Personal, Health, Hobbies
+
+## Tag
+
+- A minor _concept_ or cross-cutting metadata to help filter, find and organize tasks across realms.
+- Can represent contexts, priorities, locations, states, or any other attribute.
+- Think about When, Where, Why, and How will you need to find a task later.
+- A task should typically have at most 5 tags, and should not have tag same as its Area or Project.
+
+e.g. urgent, trader-joe, waiting
+
+## Decision Tree
+
+```mermaid
+flowchart TD
+  S["New item: what should this be in Things?"] --> Q0{"Is it purely reference info<br/>(no action needed)?"}
+
+  Q0 -- "Yes" --> R1["Not for Things, use Notes."]
+  Q0 -- "No" --> Q1{"Is there an actionable next step?"}
+
+  Q1 -- "No" --> R2["Use Someday (or a Project in Someday)<br/>for ideas you may act on later."]
+  Q1 -- "Yes" --> Q2{"Is it one sitting<br/>(one clear verb, one outcome)?"}
+
+  Q2 -- "Yes" --> T["Task"]
+  Q2 -- "No" --> Q3{"Is it a single task with<br/>small steps that don't need<br/>separate dates / tags / reminders?"}
+
+  Q3 -- "Yes" --> C["Task + Checklist"]
+  Q3 -- "No" --> Q4{"Does it have a clear<br/>'end state' (finishable)?"}
+
+  Q4 -- "Yes" --> P["Project"]
+  Q4 -- "No" --> A["Area (or a Task in an Area)"]
+
+  %% Project structuring
+  P --> QH{"Does the project benefit from<br/>phases / stages or visual grouping?"}
+  QH -- "Yes" --> H["Add Headers inside the Project"]
+  QH -- "No" --> PN["No Headers needed"]
+
+  %% Where to place tasks / projects
+  T --> QPlace{"Is it part of an ongoing<br/>responsibility / domain?"}
+  C --> QPlace
+  P --> QPlaceP{"Which domain / role does this belong to?"}
+
+  QPlace -- "Yes" --> PA["Put Task under the right Area"]
+  QPlace -- "No" --> PL["Leave in Inbox / Today / Upcoming<br/>then file later"]
+
+  QPlaceP --> PA2["File Project under an Area"]
+
+  %% Tags as cross-cutting
+  PA --> QT{"Will you need to filter / find this<br/>by context (where / how / with whom),<br/>across Areas / Projects?"}
+  PA2 --> QT
+  PL --> QT
+
+  QT -- "Yes" --> TAG["Add Tag(s)"]
+  QT -- "No" --> NT["No Tags needed"]
+```
