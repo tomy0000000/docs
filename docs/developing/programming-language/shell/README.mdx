@@ -8,20 +8,51 @@ import { Icon } from "@iconify/react";
 
 Guide to writing good shell scripts.
 
-## Shebang
+## TL;DR starter template
 
-Put at the first line of the script. It tells the system which interpreter to use.
+### Script
 
-- Bash: `#!/bin/bash` or `#!/usr/bin/env bash`
-- POSIX: `#!/bin/sh`
+```bash
+#!/usr/bin/env bash
+set -xeuo pipefail
+```
+
+### Library script
+
+```sh
+# Source guard: Exit if executed directly
+(return 0 2>/dev/null) || exit 0
+
+# Idempotent import: Prevent multiple imports
+[ "${__LOG_SH_LOADED:-}" = "1" ] && return 0
+__LOG_SH_LOADED=1
+```
+
+## What shell to use?
 
 If you meet any of the following criteria, use POSIX:
 
 - Executing on a minimal environment
 - Bash is not available
 - You want to ensure high portability (Think again if you really need this)
+- If you're writing a utility library script that will be sourced by different shells
 
 Otherwise, use Bash.
+
+### Shebang line
+
+Put at the first line of the script. It tells the system which interpreter to use.
+
+- `#!/usr/bin/env bash`
+  - You need your script to be portable and run on various systems.
+  - You don't have control over the environment where the script will be executed.
+- `#!/bin/bash`
+  - You are working in a controlled environment where you can ensure Bash is located at `/bin/bash`.
+  - You need the slight performance benefit of directly invoking the interpreter without using `env`.
+- `#!/bin/sh`
+  - You're writing a POSIX-compliant script.
+- (No shebang)
+  - The script is intended to be sourced by other scripts or run in an interactive shell.
 
 ### Bash-only features
 
@@ -33,32 +64,14 @@ Otherwise, use Bash.
 - `local`
 - `source`
 
-### `env` or `bash`?
-
-- Use `#!/usr/bin/env bash` if:
-  - You need your script to be portable and run on various systems.
-  - You don't have control over the environment where the script will be executed.
-- Use `#!/bin/bash` if:
-  - You are working in a controlled environment where you can ensure Bash is located at `/bin/bash`.
-  - You need the slight performance benefit of directly invoking the interpreter without using env.
-
 ## `set` flags
 
 Most commonly used flags:
 
-- `-x`: Print commands before executing
+- `-x`: Print commands before executing, you can remove it after debugging
 - `-e`: Exit on error
 - `-u`: Exit on unset variable
 - `-o pipefail`: Exit on pipe fail
-
-TL;DR: Use this starter template:
-
-```bash
-#!/bin/bash
-set -xeuo pipefail
-```
-
-after script is done, you can remove the `-x` flag.
 
 ## Bracketing
 
@@ -87,6 +100,18 @@ The above examples are safe because the script is fetched first and then execute
 :::
 
 ## Tips
+
+### Library script
+
+- Write with POSIX compliance, use `.sh` extension
+- Top of the script
+  - No shebang
+  - No `set` flags
+  - Source guard: to prevent direct execution
+  - Idempotent import: to prevent multiple imports
+- Use `printf` instead of `echo`
+
+See the starter template above.
 
 ### Don't use `cd` in scripts
 
