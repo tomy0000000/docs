@@ -77,7 +77,7 @@ export default {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
-          exclude: ["**/*.{md}"],
+          exclude: ["**/*.md"],
           editUrl: "https://github.com/tomy0000000/docs/blob/main/",
           showLastUpdateTime: true,
           remarkPlugins: [remarkMath],
