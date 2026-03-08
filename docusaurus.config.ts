@@ -167,11 +167,7 @@ export default {
               label: "About",
               to: "/about",
             },
-            {
-              label: "Rules",
-              to: "/docs-rule",
-            },
-            {
+{
               label: "Privacy Policy",
               to: "/privacy-policy",
             },
