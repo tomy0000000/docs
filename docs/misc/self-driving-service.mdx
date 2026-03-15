@@ -1,46 +1,39 @@
 import Country from "@site/src/components/Country";
+import SortableTable from "@site/src/components/SortableTable";
+import services from "@site/src/data/self-driving-services.json";
 
 # Self Driving Service
 
-List of self-driving taxi services that are open to the public, or waitlisting.
+List of self-driving taxi services that are open to the public, waitlisting, or announced.
 
-| Service        | Technology | Area                                                | Public / WL | Notes              |
-| -------------- | ---------- | --------------------------------------------------- | ----------- | ------------------ |
-| Waymo One      | Waymo      | <Country iso="us" name={false} /> San Francisco, CA | 🌎          | Including Bay Area |
-| Waymo One      | Waymo      | <Country iso="us" name={false} /> Los Angeles, CA   | 🌎          |                    |
-| Waymo One      | Waymo      | <Country iso="us" name={false} /> Phoenix, AZ       | 🌎          | Including Metro    |
-| Uber           | Waymo      | <Country iso="us" name={false} /> Austin, TX        | 🌎          |                    |
-| Uber           | Waymo      | <Country iso="us" name={false} /> Atlanta, GA       | 🌎          |                    |
-| Zoox           | Zoox       | <Country iso="us" name={false} /> Las Vegas, NV     | 🌎          |                    |
-| Zoox           | Zoox       | <Country iso="us" name={false} /> San Francisco, CA | ⏳          |                    |
-| Tesla Robotaxi | Tesla      | <Country iso="us" name={false} /> San Francisco, CA | ⏳          | Including Bay Area |
-| Tesla Robotaxi | Tesla      | <Country iso="us" name={false} /> Austin, TX        | ⏳          |                    |
-| Uber           | Avride     | <Country iso="us" name={false} /> Dallas, TX        | 🌎          |                    |
-| Uber           | WeRide     | <Country iso="ae" name={false} /> Abu Dhabi         | 🌎          |                    |
-| Uber           | WeRide     | <Country iso="ae" name={false} /> Dubai             | 🌎          |                    |
-| Uber           | WeRide     | <Country iso="sa" name={false} /> Riyadh            | 🌎          |                    |
-| 文远出行       | WeRide     | <Country iso="cn" name={false} /> Beijing           | 🌎          | 微信小程序         |
-| 文远出行       | WeRide     | <Country iso="cn" name={false} /> Guangzhou         | 🌎          | 微信小程序         |
-| 小马智行       | Pony.ai    | <Country iso="cn" name={false} /> Beijing           | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Beijing           | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Jiaxing           | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Yangquan          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Guangzhou         | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Ezhou             | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Jiangmen          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Dongguan          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Wuhan             | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Changsha          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Haikou            | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Hefei             | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Chongqing         | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Suzhou            | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Shanghai          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Foshan            | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Nanchang          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Shenzhen          | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Xiongan           | 🌎          | 微信小程序         |
-| 萝卜快跑       | Apollo Go  | <Country iso="cn" name={false} /> Sanya             | 🌎          | 微信小程序         |
+<SortableTable
+  columns={[
+    { header: "Service", accessorKey: "service" },
+    { header: "Technology", accessorKey: "technology" },
+    {
+      header: "Area",
+      accessorFn: (row) => [row.country, row.city],
+      size: 200,
+      cell: ({ getValue }) => {
+        const [country, city] = getValue();
+        return (
+          <>
+            <Country iso={country} name={false} /> {city}
+          </>
+        );
+      },
+    },
+    {
+      header: "Status",
+      accessorKey: "status",
+      cell: ({ getValue }) =>
+        ({ public: "🌎", waitlist: "⏳", announced: "📢" })[getValue()],
+    },
+    { header: "Notes", accessorKey: "notes", size: 300 },
+  ]}
+  data={services}
+  defaultSorting={{ id: "service", desc: false }}
+/>
 
 ## Source
 

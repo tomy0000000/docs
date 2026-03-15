@@ -1,0 +1,272 @@
+[
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "status": "public",
+    "notes": "Including Bay Area"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Los Angeles, CA",
+    "status": "public"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Phoenix, AZ",
+    "status": "public",
+    "notes": "Including Metro"
+  },
+  {
+    "service": "Uber",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Austin, TX",
+    "status": "public"
+  },
+  {
+    "service": "Uber",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Atlanta, GA",
+    "status": "public"
+  },
+  {
+    "service": "Zoox",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "Las Vegas, NV",
+    "status": "public"
+  },
+  {
+    "service": "Zoox",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "status": "waitlist"
+  },
+  {
+    "service": "Tesla Robotaxi",
+    "technology": "Tesla",
+    "country": "us",
+    "city": "San Francisco, CA",
+    "status": "waitlist",
+    "notes": "Including Bay Area"
+  },
+  {
+    "service": "Tesla Robotaxi",
+    "technology": "Tesla",
+    "country": "us",
+    "city": "Austin, TX",
+    "status": "waitlist"
+  },
+  {
+    "service": "Uber",
+    "technology": "Avride",
+    "country": "us",
+    "city": "Dallas, TX",
+    "status": "public"
+  },
+  {
+    "service": "Uber",
+    "technology": "WeRide",
+    "country": "ae",
+    "city": "Abu Dhabi",
+    "status": "public"
+  },
+  {
+    "service": "Uber",
+    "technology": "WeRide",
+    "country": "ae",
+    "city": "Dubai",
+    "status": "public"
+  },
+  {
+    "service": "Uber",
+    "technology": "WeRide",
+    "country": "sa",
+    "city": "Riyadh",
+    "status": "public"
+  },
+  {
+    "service": "文远出行",
+    "technology": "WeRide",
+    "country": "cn",
+    "city": "Beijing",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "文远出行",
+    "technology": "WeRide",
+    "country": "cn",
+    "city": "Guangzhou",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "小马智行",
+    "technology": "Pony.ai",
+    "country": "cn",
+    "city": "Beijing",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Beijing",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Jiaxing",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Yangquan",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Guangzhou",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Ezhou",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Jiangmen",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Dongguan",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Wuhan",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Changsha",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Haikou",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Hefei",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Chongqing",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Suzhou",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Shanghai",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Foshan",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Nanchang",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Shenzhen",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Xiongan",
+    "status": "public",
+    "notes": "微信小程序"
+  },
+  {
+    "service": "萝卜快跑",
+    "technology": "Apollo Go",
+    "country": "cn",
+    "city": "Sanya",
+    "status": "public",
+    "notes": "微信小程序"
+  }
+]
