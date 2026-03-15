@@ -103,6 +103,18 @@
     "url": "https://github.com/alienator88/Pearcleaner"
   },
   {
+    "category": "Virtual Machine",
+    "install": [
+      {
+        "id": "1538878817",
+        "type": "mas"
+      }
+    ],
+    "name": "UTM",
+    "note": null,
+    "url": "https://mac.getutm.app/"
+  },
+  {
     "category": "Safari Extension",
     "install": [
       {
@@ -373,6 +385,19 @@
     "name": "Buttercup",
     "note": null,
     "url": "https://buttercup.pw/"
+  },
+  {
+    "category": "Password Manager",
+    "github": "keepassxreboot/keepassxc",
+    "install": [
+      {
+        "id": "keepassxc",
+        "type": "cask"
+      }
+    ],
+    "name": "KeePassXC",
+    "note": null,
+    "url": "https://keepassxc.org/"
   },
   {
     "category": "",
@@ -1533,6 +1558,7 @@
   },
   {
     "category": "Password Manager",
+    "deprecated": true,
     "install": [
       {
         "id": "1523397704",
@@ -1797,6 +1823,25 @@
     "url": "https://podman-desktop.io/"
   },
   {
+    "category": "",
+    "install": [],
+    "name": "Picmal",
+    "note": null,
+    "url": "https://picmal.app/"
+  },
+  {
+    "category": "",
+    "install": [
+      {
+        "id": "popclip",
+        "type": "medis"
+      }
+    ],
+    "name": "Medis",
+    "note": null,
+    "url": "https://getmedis.com/"
+  },
+  {
     "category": "Utilities",
     "install": [
       {
@@ -1823,6 +1868,22 @@
     "name": "Postman",
     "note": null,
     "url": "https://www.postman.com/"
+  },
+  {
+    "category": "Dev Tools",
+    "install": [
+      {
+        "id": "requestly",
+        "type": "cask"
+      },
+      {
+        "id": "requestly",
+        "type": "setapp"
+      }
+    ],
+    "name": "Requestly",
+    "note": null,
+    "url": "https://requestly.com/"
   },
   {
     "category": "Utilities",
@@ -1855,6 +1916,18 @@
     "name": "Proton Drive",
     "note": null,
     "url": "https://proton.me/drive"
+  },
+  {
+    "category": "Password Manager",
+    "install": [
+      {
+        "id": "strongbox",
+        "type": "setapp"
+      }
+    ],
+    "name": "Strongbox",
+    "note": null,
+    "url": "https://strongboxsafe.com/"
   },
   {
     "category": "Password Manager",
@@ -2318,6 +2391,18 @@
   },
   {
     "category": "SQL Client",
+    "install": [
+      {
+        "id": "dataflare",
+        "type": "cask"
+      }
+    ],
+    "name": "Dataflare",
+    "note": null,
+    "url": "https://dataflare.app/"
+  },
+  {
+    "category": "SQL Client",
     "github": "TablePlus/TablePlus",
     "install": [
       {
@@ -2590,6 +2675,58 @@
     "name": "Warp",
     "note": null,
     "url": "https://www.warp.dev/"
+  },
+  {
+    "category": "Terminal",
+    "github": "wezterm/wezterm",
+    "install": [
+      {
+        "id": "wezterm",
+        "type": "cask"
+      }
+    ],
+    "name": "Wez's Terminal",
+    "note": null,
+    "url": "https://wezterm.org/"
+  },
+  {
+    "category": "Terminal",
+    "github": "kovidgoyal/kitty",
+    "install": [
+      {
+        "id": "kitty",
+        "type": "cask"
+      }
+    ],
+    "name": "kitty",
+    "note": null,
+    "url": "https://sw.kovidgoyal.net/kitty/"
+  },
+  {
+    "category": "Terminal",
+    "github": "alacritty/alacritty",
+    "install": [
+      {
+        "id": "alacritty",
+        "type": "cask"
+      }
+    ],
+    "name": "Alacritty",
+    "note": null,
+    "url": "https://alacritty.org/"
+  },
+  {
+    "category": "Terminal",
+    "github": "ghostty-org/ghostty",
+    "install": [
+      {
+        "id": "ghostty",
+        "type": "cask"
+      }
+    ],
+    "name": "Ghostty",
+    "note": null,
+    "url": "https://ghostty.org/"
   },
   {
     "category": "Social",
