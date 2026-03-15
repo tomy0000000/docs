@@ -23,6 +23,189 @@
     "notes": "Including Metro"
   },
   {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Dallas, TX",
+    "status": "waitlist"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Houston, TX",
+    "status": "waitlist"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Miami, FL",
+    "status": "waitlist"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Orlando, FL",
+    "status": "waitlist"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "San Antonio, TX",
+    "status": "waitlist"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Baltimore, MD",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Boston, MA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Charlotte, NC",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Chicago, IL",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Denver, CO",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Detroit, MI",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Las Vegas, NV",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Minneapolis, MN",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Nashville, TN",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "New Orleans, LA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "New York, NY",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Philadelphia, PA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Pittsburgh, PA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Sacramento, CA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "San Diego, CA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Seattle, WA",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "St. Louis, MO",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Tampa, FL",
+    "status": "announced"
+  },
+  {
+    "service": "Waymo One",
+    "technology": "Waymo",
+    "country": "us",
+    "city": "Washington, DC",
+    "status": "announced"
+  },
+  {
+    "service": "Moove",
+    "technology": "Waymo",
+    "country": "gb",
+    "city": "London",
+    "status": "announced",
+    "notes": "Est. 2026"
+  },
+  {
+    "service": "GO + Nihon Kotsu",
+    "technology": "Waymo",
+    "country": "jp",
+    "city": "Tokyo",
+    "status": "announced"
+  },
+  {
     "service": "Uber",
     "technology": "Waymo",
     "country": "us",
@@ -51,6 +234,20 @@
     "status": "waitlist"
   },
   {
+    "service": "Zoox",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "Austin, TX",
+    "status": "announced"
+  },
+  {
+    "service": "Zoox",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "Miami, FL",
+    "status": "announced"
+  },
+  {
     "service": "Tesla Robotaxi",
     "technology": "Tesla",
     "country": "us",
@@ -64,6 +261,22 @@
     "country": "us",
     "city": "Austin, TX",
     "status": "waitlist"
+  },
+  {
+    "service": "Uber",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "Las Vegas, NV",
+    "status": "announced",
+    "notes": "Est. 2026"
+  },
+  {
+    "service": "Uber",
+    "technology": "Zoox",
+    "country": "us",
+    "city": "Los Angeles, CA",
+    "status": "announced",
+    "notes": "Est. 2027"
   },
   {
     "service": "Uber",
