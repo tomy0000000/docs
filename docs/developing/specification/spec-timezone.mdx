@@ -29,7 +29,20 @@ Timezones are defined and manged by <abbr title="Internet Assigned Numbers Autho
 | Pacific Time         | `America/Los_Angeles` | −08:00     | −07:00     |
 | Hawaii Standard Time | `Pacific/Honolulu`    | −10:00     | −10:00     |
 
+## Edge Cases
+
+If your code touches timezones, these real-world cases are worth covering. Most naive implementations break on at least one.
+
+- **Non-hour offsets** — `Asia/Kathmandu` sits at UTC+05:45, `Asia/Kolkata` at UTC+05:30. Plenty of code assumes offsets are whole or half hours.
+- **Non-hour DST jumps** — `Australia/Lord_Howe` is the **only** timezone with a 30-minute DST transition (UTC+10:30 ↔ UTC+11:00); hourly cron jobs will not align with wall-clock hours across the transition. `Antarctica/Troll` uses a 2-hour DST jump.
+- **DST at unusual times** — `America/Nuuk` transitions at `-1:00` (23:00 the previous day); older parsers may reject negative hours. `Africa/Cairo` and `America/Santiago` transition at `24:00` (next day); some parsers clamp to `23:59`.
+- **Lunar-calendar DST** — `Africa/Casablanca` and `Asia/Gaza` pause DST during Ramadan, which follows the Islamic lunar calendar and drifts against the Gregorian year. Rules are hard-coded in tzdb through 2086.
+- **Ambiguous abbreviations** — `CST` maps to 66 different zones (China, Cuba, multiple Americas). Never identify a zone by abbreviation — use the IANA identifier.
+- **Leap seconds** — Most runtimes cannot represent a 61-second minute. Production systems typically **smear** leap seconds across a window rather than inserting them. Do not assume `23:59:60` parses.
+- **UTC ≠ GMT** — They are often conflated but are distinct. Use UTC in code and storage.
+
 ## References
 
 - [IANA Time Zone Database](https://www.iana.org/time-zones)
 - [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+- [Tesseral Blog - Australia/Lord_Howe is the weirdest timezone](https://tesseral.com/blog/australia-lord_howe-is-the-weirdest-timezone)
