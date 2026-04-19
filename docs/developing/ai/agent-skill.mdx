@@ -1,4 +1,62 @@
 # Agent Skill
 
-- [Agent Skills](https://agentskills.io/)
-- [The Agent Skills Directory](https://skills.sh/)
+Reusable folders of instructions, scripts, and resources that AI agents load on demand to perform specialized tasks. The Agent Skills specification is an [open standard](https://github.com/agentskills/agentskills).
+
+Supported agents: GitHub Copilot cloud agent, GitHub Copilot CLI, VS Code agent mode, Claude Code.
+
+## Key Insights
+
+- Skills are loaded **on demand** based on the agent's judgment — use the `description` to guide when they trigger.
+- Skills vs. custom instructions: use **custom instructions** for always-applicable guidelines (e.g. coding standards); use **skills** for detailed, specialized, task-specific instructions.
+- `allowed-tools: shell` pre-approves shell execution — only add it for scripts you fully trust.
+
+## Location
+
+| Scope | Paths |
+|---|---|
+| Project (per-repo) | `.github/skills/`, `.claude/skills/`, `.agents/skills/` |
+| Personal (all projects) | `~/.copilot/skills/`, `~/.claude/skills/`, `~/.agents/skills/` |
+
+Each skill lives in its own subdirectory. Directory names should be lowercase with hyphens.
+
+```
+.github/skills/
+└── my-skill/
+    ├── SKILL.md
+    └── optional-script.sh
+```
+
+## `SKILL.md` Format
+
+Each skill directory must contain a `SKILL.md` file with YAML frontmatter and a Markdown body.
+
+```md
+---
+name: github-actions-failure-debugging
+description: Guide for debugging failing GitHub Actions workflows. Use this when asked to debug failing GitHub Actions workflows.
+allowed-tools: shell
+---
+
+To debug failing GitHub Actions workflows...
+```
+
+### Frontmatter Fields
+
+| Field | Required | Description |
+|---|---|---|
+| `name` | ✅ | Unique identifier, lowercase with hyphens. |
+| `description` | ✅ | What the skill does and **when** the agent should use it. |
+| `license` | | License for the skill. |
+| `allowed-tools` | | Pre-approved tools (e.g. `shell`, `bash`). Agent will ask for permission for unlisted tools. |
+
+## Skill Collections
+
+- [Awesome GitHub Copilot Skills](https://awesome-copilot.github.com/skills/) — community skills for Copilot
+- [anthropics/skills](https://github.com/anthropics/skills) — official skills from Anthropic
+
+## References
+
+- [Agent Skills spec](https://github.com/agentskills/agentskills)
+- [Agent Skills Directory](https://skills.sh/)
+- [GitHub Docs - About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+- [GitHub Docs - Adding agent skills for Copilot](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills)
