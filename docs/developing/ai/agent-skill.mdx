@@ -1,4 +1,59 @@
 # Agent Skill
 
+Modular capability packages that extend AI agent behavior. Teach agent _how_ to do things.
+
+## Key Insights
+
+- Triggered manually via `/skill-name` or automatically when agent detects relevance.
+- Descriptions always load (~100 tokens each), full content loads progressively.
+- Descriptions share a ~15k-char discovery budget, going over silently truncates.
+- All loaded skills share a ~25k-token budget. Older skills may be dropped after auto-compaction.
+- Updated skills apply to existing sessions.
+- Claude Desktop and Claude Code do not share skills.
+- Technique-teaching skills rot as models improve, preference skills stay durable.
+
+## DOs
+
+- Use [`skill-creator`](https://github.com/anthropics/skills/tree/main/skills/skill-creator) skill.
+  - Run locally when possible, cloud env is [somewhat limited](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md#claudeai-specific-instructions).
+- Keep ~5–8 active skills per project.
+- Audit recurringly. Most value is in relocating and merging, not deleting.
+- Retire skills re-derivable with a one-liner or absorbed by newer models.
+
+## DON'Ts
+
+- Don't keep skills "just in case"; disable after two weeks unused.
+- Don't keep a larger procedure's steps as separate skills — merge.
+- Don't write evals with only clean prompts — real users have typos and abbreviations.
+- Don't use multi-line YAML descriptions — they fail silently.
+
+## Hierarchy
+
+```
+~/.claude/skills/
+└── my-awesome-global-skill/
+
+my-awesome-project/
+├── my-awesome-project-skill/
+└── packages/
+    └── api/
+        └── my-awesome-project-override-skill/
+
+my-awesome-skill/
+├── SKILL.md           → Required, the main skill definition
+├── assets/            → Optional, static files used in output (templates, icons, fonts)
+├── references/        → Optional, detailed context loaded on demand
+├── scripts/           → Optional, executable code for deterministic/repetitive tasks
+└── some-other-dir/    → Optional, explain what it's for in SKILL.md
+```
+
+## References
+
 - [Agent Skills](https://agentskills.io/)
 - [The Agent Skills Directory](https://skills.sh/)
+- [Claude Code — Skills Docs](https://code.claude.com/docs/en/skills)
+- [Claude — Skills Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+- [Shimo — 15 Days of Skill Sprawl in Claude Code](https://dev.to/shimo4228/15-days-of-skill-sprawl-in-claude-code-lessons-from-3-audits-27em)
+- [Pere Villega — Claude Code Skills 2.0](https://perevillega.com/posts/2026-04-01-claude-code-skills-2-what-changed-what-works-what-to-watch-out-for/)
+- [Massively Parallel Procrastination — Claude Code Skills Not Triggering](https://blog.fsck.com/2025/12/17/claude-code-skills-not-triggering/)
+- [MindStudio — 3 Common Claude Skills Mistakes](https://www.mindstudio.ai/blog/claude-code-skills-common-mistakes-guide)
