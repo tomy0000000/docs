@@ -12,9 +12,12 @@ How to write instruction docs for AI agents. e.g. `AGENTS.md` and `CLAUDE.md`.
 
 - `AGENTS.md` = vendor-neutral open standard.
 - `CLAUDE.md` = Claude Code-specific memory file, loaded every session.
-- Human written docs improve success ~4% over LLM-generated ones[^1].
+  - Loads into memory every session, so keep it under ~60–150 lines, only include what applies to every session.
+  - Before Claude Code starts support `AGENTS.md`, just put a single line of `See @AGENTS.md`.
+- **Human written docs improve success ~4% over LLM-generated ones**[^1].
+- Updated docs do not applied to existing session.
 
-[^1]: A study by ETH Zurich, [source](https://arxiv.org/html/2602.11988v1).
+[^1]: A study by [ETH Zurich](https://arxiv.org/html/2602.11988v1).
 
 ## DOs
 
@@ -26,31 +29,28 @@ How to write instruction docs for AI agents. e.g. `AGENTS.md` and `CLAUDE.md`.
 
 ## DON'Ts
 
-- Project tree structure without explanations. Agents can easily infer from the codebase itself.
-- Task-specific instructions. These should be in directory-specific `AGENTS.md`.
-- Code examples of patterns. Agents can learn from the codebase itself.
-- Set "Never do X" rules. This make agents get stuck, always provide alternatives.
-- Put repetitive, outdated, or non-crucial info (e.g. Emojis)
+- Don't put project tree structure without explanations. Agents can easily infer from the codebase itself.
+- Don't put task-specific instructions. These should be in directory-specific `AGENTS.md`.
+- Don't put code examples of patterns. Agents can learn from the codebase itself.
+- Don't set "Never do X" rules. This make agents get stuck, always provide alternatives.
+- Don't put repetitive, outdated, or non-crucial info (e.g. Emojis)
 
 ## Hierarchy
 
 ```
-./AGENTS.md                   → repo root (primary)
-./packages/api/AGENTS.md      → specific overrides
-```
+~/.codex/
+└── AGENTS.md                 → personal Codex global preferences, apply to all projects
+~/.claude/
+└── CLAUDE.md                 → personal Claude global preferences, apply to all projects
 
-## `CLAUDE.md`
-
-Some behavior that only applies to Claude Code worth noting.
-
-- Loads into memory every session, so keep it under ~60–150 lines, only include what applies to every session.
-- You can store personal global preferences at `~/.claude/CLAUDE.md` that apply to all sessions.
-- You can also have personal project-specific overrides at `./CLAUDE.local.md` that are gitignored.
-
-Before Claude Code starts support `AGENTS.md`, just put a single line in `CLAUDE.md`:
-
-```md
-See @AGENTS.md
+my-awesome-project/
+├── AGENTS.md                 → project (primary)
+├── CLAUDE.md                 → project
+├── CLAUDE.local.md           → personal overrides, git ignored
+└── packages/api/
+    ├── AGENTS.md             → local overrides (primary)
+    ├── CLAUDE.md             → local overrides
+    └── CLAUDE.local.md       → personal local overrides, git ignored
 ```
 
 ## Template
@@ -71,3 +71,4 @@ See @AGENTS.md
 - [HumanLayer Blog - Writing a good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
 - [GitHub - How to write a great agents.md: Lessons from over 2,500 repositories](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)
 - [Vercel - AGENTS.md outperforms skills in our agent evals](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals)
+- [The Prompt Shelf - AGENTS.md vs CLAUDE.md: What's the Difference and When to Use Each (2026)](https://thepromptshelf.dev/blog/agents-md-vs-claude-md/)
