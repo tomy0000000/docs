@@ -1,0 +1,49 @@
+# Agent Rules
+
+Modular instruction files, optionally scoped to file paths. Tell agent _what_ to do, _where_ it matters.
+
+## Key Insights
+
+- Think again if you can use tools + hooks to enforce. E.g. pre-commit, git hooks, formatters...
+- Use `AGENTS.md` for quick and simple rules, use path-scope rules when rules starts growing, one topic per file.
+- Unscoped rules load every session at same priority as `AGENTS.md`. Path-scoped rules load only when matching files are touched.
+- Best rules capped at ~150 lines.
+
+## DOs
+
+- Path-scope subsystem rules (DB, API, styling) so they only load when relevant.
+- Split giant `AGENTS.md` down to small rules by topic.
+- Symlink shared rule sets to keep one source of truth across repos.
+- Audit periodically. Especially conflicts between `AGENTS.md` and rules.
+
+## DON'Ts
+
+- Don't duplicate `AGENTS.md` content into rules. Convert to rules whenever possible.
+- Don't put task-specific procedures in rules. Those belong in skills.
+- Don't write multi-page rules. Split, summarize, or move to a skill.
+- Don't omit `paths` on subsystem-only rules. Unscoped rules leak into every session.
+
+## Hierarchy
+
+```
+~/.claude/rules/
+└── personal-prefs.md            → personal, applies to all projects
+
+my-awesome-project/
+└── .claude/
+    ├── CLAUDE.md
+    └── rules/
+        ├── testing.md           → unscoped, loads every session
+        ├── api.md               → path-scoped via `paths:`
+        └── frontend/            → same, just organizing
+            └── styling.md
+```
+
+## References
+
+- [Claude Code — How Claude remembers your project](https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/)
+- [Cursor — Rules](https://cursor.com/docs/context/rules)
+- [Windsurf — Memories & Rules](https://docs.windsurf.com/windsurf/cascade/memories)
+- [ClaudeLog — What is .claude/rules/ in Claude Code](https://claudelog.com/faqs/what-are-claude-rules/)
+- [Claude Fast — Claude Code Rules Directory: Modular Instructions That Scale](https://claudefa.st/blog/guide/mechanics/rules-directory)
+- [LocalSkills — Cursor vs Claude Code vs Windsurf: Rules Compared](https://localskills.sh/blog/cursor-vs-claude-code-vs-windsurf)
