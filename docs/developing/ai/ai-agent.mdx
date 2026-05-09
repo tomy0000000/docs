@@ -1,0 +1,53 @@
+# Subagent
+
+Specialized agents in their own context windows for _parallel_ or _isolated_ tasks.
+
+## Key Insights
+
+- Primarily a context-isolation tool, secondarily a specialization tool. Use to keep verbose tool output (test runs, log scans, file enumeration) out of the parent thread.
+- Subagents inherit a brief, not the conversation. Forks reuse the full parent context and prompt cache, prefer them when context fidelity matters.
+- Slower per task than the main thread. Each spawn rebuilds task understanding from scratch, skip for tight iteration loops.
+- Auto-delegation is ~50% reliable. Tighten the `description` with action-keywords ("Use proactively after X..."), or invoke explicitly with `@agent-name`.
+- One-shot only. No mid-stream steering, no nesting (subagents can't spawn subagents), and rejecting output discards the context.
+- Multi-agent burns ~15× the tokens of a single chat. Reserve for tasks whose value pays for the overhead.
+- Over-specialization backfires. A narrow `python-tests` subagent hides testing context from the main agent, forcing delegation just to verify its own work.
+- Parallel writers need `isolation: worktree`, or they trample each other's working directory.
+
+## DOs
+
+- Use forks (full parent context + prompt cache reuse) when the brief would lose something important.
+- Write `description` as routing instructions, not human documentation. Action-keywords with explicit triggers ("Use proactively after X...").
+- Inline MCP servers in the subagent definition to keep their tool descriptions out of the parent context.
+- Route read-heavy exploration to a cheaper model (Haiku) via the `model:` field for ~5× cost reduction.
+- Use `SubagentStop` hooks for cost observability. Claude Code has no native cost breakdown.
+
+## DON'Ts
+
+- Don't trust the `/agents` wizard's auto-generated prompts. Sprawling system prompts eat context and dilute routing.
+- Don't combine `tools:` and `disallowedTools:`. Denylist applies first, conflicting entries silently leave the agent toolless.
+- Don't run autonomous parallel subagents with `bypassPermissions` on. They write to `.git`, `.claude`, `.vscode` without prompting.
+- Don't run worktree-isolated subagents on a dirty checkout. Cleanup edge cases have hit the main repo, commit or stash first.
+- Don't grow the fleet. Long agent lists dilute routing relevance, prefer 3-5 well-scoped over 15 niche ones.
+
+## Hierarchy
+
+```
+~/.claude/agents/
+└── code-reviewer.md              → personal, available in all projects
+
+my-awesome-project/
+└── .claude/
+    └── agents/
+        ├── migration-runner.md   → project (overrides personal with same name)
+        └── doc-checker.md
+```
+
+## References
+
+- [Claude Code — Subagents](https://code.claude.com/docs/en/sub-agents)
+- [Anthropic Engineering — How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- [Shrivu Shankar — How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)
+- [Steve Kinney — Common Sub-Agent Anti-Patterns and Pitfalls](https://stevekinney.com/courses/ai-development/subagent-anti-patterns)
+- [Mejba Ahmed — Forked Subagents in Claude Code: Why I Stopped Using Normal Ones](https://www.mejba.me/blog/forked-subagents-claude-code-anthropic)
+- [Rich Snapp — Context Management with Subagents in Claude Code](https://www.richsnapp.com/article/2025/10-05-context-management-with-subagents-in-claude-code)
+- [AICosts — The Claude Code Subagent Cost Explosion: 887K Tokens/Minute](https://www.aicosts.ai/blog/claude-code-subagent-cost-explosion-887k-tokens-minute-crisis)
