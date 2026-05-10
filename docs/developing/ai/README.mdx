@@ -1,3 +1,82 @@
 # 🤖 AI
 
 Everything about AI.
+
+## Concepts
+
+- `AGENTS.md` / `CLAUDE.md`: High level background context. Think of it as a sub system prompt.
+- **Skills**: How to do things, teach agent reusable task, workflows, or processes. Previously known as "Commands".
+- **Rules**: Path-gated rules load only when matching files enter context.
+- **MCP**: Access to external tools.
+- **Agents**: Specialized characters with their own context window for parallel or isolated tasks.
+  {/* - **Plugins**: Just package the above concepts for easier installation. */}
+- **Memory**
+
+## AGENTS.md vs README.md
+
+Decide on **who the reader is** and whether the info is **inferable from code**.
+
+- **`README.md`**
+  - if the reader is a human: project description, install/usage, contributing, badges.
+  - if it's what a new contributor wants on first read.
+- **`AGENTS.md`**
+  - if the reader is an agent: non-obvious project rules, hidden constraints, gotchas.
+  - if the info isn't inferable from `package.json`, code, or git history.
+
+Concrete cases:
+
+- "Install with `pnpm install`": `README.md`. Agents read it from `package.json` scripts.
+- "Tests must hit a real DB, never mocks": `AGENTS.md`. Non-obvious project rule.
+- Project description, badges, screenshots: `README.md`. Humans-only content.
+- "Use `git -C` instead of `cd && git`": `AGENTS.md`. Convention not visible in code.
+
+`AGENTS.md` pointing at `README.md` only works for parts that genuinely overlap (tech stack, repo layout). Most agent-facing content has no `README.md` equivalent.
+
+## AGENTS.md vs Rules
+
+Decide on **scope** (project-wide or subsystem) and **size**.
+
+- **`AGENTS.md`**
+  - if the rule is cross-cutting and every session needs it.
+  - if it fits in one or two lines, keeping the file under ~150 lines.
+- **Agent rules** (`.claude/rules/`)
+  - if the rule is subsystem-specific: path-scope it so it only loads on matching files.
+  - if a topic outgrows `AGENTS.md`: split into its own file.
+
+Concrete cases:
+
+- "No `console.log` in production code": `AGENTS.md`. Cross-cutting one-liner.
+- "DB migrations need a backfill plan": Rule with `paths: db/migrations/**`. Subsystem-specific.
+- "API response envelope conventions": Rule with `paths: src/api/**`. Subsystem-specific.
+- Long styling checklist: Unscoped rule in `.claude/rules/styling.md`. Topic too big for `AGENTS.md`.
+
+Convert from `AGENTS.md` to a rule when content grows past one paragraph or applies only to a subsystem. Don't duplicate.
+
+## Subagent vs Skills
+
+Decide on **where the output should land** and whether you need **context separation**.
+
+- **Skill**
+  - if the output stays in the main thread: code edits, artifacts to iterate on, or a procedure the main agent should learn and apply.
+  - if you'd want to ask "what about X?" mid-execution.
+- **Subagent**
+  - if the output is just a summary and the raw work is noise to quarantine: verbose test runs, log scans, file enumeration, or parallel independent reviews.
+  - if Fire-and-forget with a report, it's a subagent.
+
+Concrete cases:
+
+- `skill-creator`: Skill, you co-create the file across turns.
+- `code-reviewer`: Subagent, fresh perspective plus verbose file scan.
+- `test-runner`: Skill, If you'll debug iteratively. Subagent, If you want a quick pass/fail summary.
+- `code-scanner`: Subagent. Value is the summary, the scan is token noise.
+- `second-opinion`: Subagent. you _want_ the context-blind read.
+
+## Marketplaces
+
+- [The Agent Skills Directory](https://skills.sh/)
+- [Claude Plugins](https://github.com/anthropics/claude-plugins-official)
+- [Build with Claude](https://buildwithclaude.com/)
+
+## References
+
+- [Claude Code Docs - Explore the .claude directory](https://code.claude.com/docs/en/claude-directory)
