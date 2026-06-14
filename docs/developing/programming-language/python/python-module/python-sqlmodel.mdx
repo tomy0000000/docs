@@ -1,55 +1,201 @@
 # SQLModel
 
-## Primary Key w/ auto increment int
+Follow the [SQLModel + FastAPI tutorial pattern](https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/): each aggregate module defines a `Base` data class plus `table` / `Create` / `Read` (and sometimes `Update`) variants.
+
+- `<Name>Base(SQLModel)`: data-only. Fields shared by create input and read output. Excludes `id`, server-derived fields, and `sa_column` directives.
+- `<Name>(<Name>Base, table=True)`: the SQLAlchemy table. Adds `id`, relationships, server-derived columns, `__table_args__`, and `sa_column` overrides.
+- `<Name>Create(<Name>Base)`: usually just `pass`. If `Create` needs to omit fields, those fields don't belong in `Base`, move them to the table class.
+- `<Name>Read(<Name>Base)`: adds `id: int` (required) and any server-derived field readers should see.
+- `<Name>Update(SQLModel)`: partial update. Inherits from `SQLModel` directly (every field becomes optional). Only add when the resource supports PATCH.
+
+## One-file example
+
+:::tip The purpose of `NULL`
+
+- 99% of the time, `NULL` should be treated as "absence of a value".
+- Using `NULL` as a stand-in for a specific named state (`"never expires"`, `"approved"`, `"inherit"`) is a code smell. Name the state with an enum, sentinel, or boolean-plus-value instead.
+- It makes total sense for a client to explicitly supply `NULL` when they mean "no value", while leaving some other fields absent because they don't care, want to use default.
+
+:::
+
+:::tip Nullabiliy × Default
+
+- Nullability is a statement about whether a column accept "no value" as a legitimate value.
+- A default is a convenience for the writer, fires only when the field is absent. It does not imply nullability.
+
+:::
+
+Every column falls into one of four groups, on two axes:
+
+- **Required vs Optional**: does the DB column allow `NULL`? (`str` → `NOT NULL`, `str | None` → nullable)
+- **With default vs no default**: does the app supply a fallback value when the client omits the field?
+
+| Group                      | Client must send?  | What's the value if client omit?       | Example     |
+| -------------------------- | ------------------ | -------------------------------------- | ----------- |
+| **Required, no default**   | yes                | n/a (INSERT fails)                     | Name        |
+| **Required, with default** | no                 | app-supplied default                   | Timestamp   |
+| **Optional, no default**   | no                 | `NULL`                                 | Description |
+| **Optional, with default** | no (can be `NULL`) | app-supplied default (Could be `NULL`) | Status      |
+
+The example below has one column per shape:
+
+{/* TODO: float, bytes, datetime.date, datetime.time, datetime.timedelta. uuid.UUID */}
+
+| Column | Nullability | Type                      | Default                   | Remarks                      |
+| ------ | ----------- | ------------------------- | ------------------------- | ---------------------------- |
+| `id`   | Required    | `int`                     | auto-increment integer    |                              |
+| `a`    | Required    | `int`                     | no default                |                              |
+| `b`    | Required    | `int`                     | default `0`               |                              |
+| `c`    | Optional    | `int`                     | no default                |                              |
+| `d`    | Optional    | `int`                     | default `0`               |                              |
+| `e`    | Required    | naive `datetime`          | no default                |                              |
+| `f`    | Required    | naive `datetime`          | default `datetime.utcnow` |                              |
+| `g`    | Optional    | naive `datetime`          | no default                |                              |
+| `h`    | Optional    | naive `datetime`          | default `datetime.utcnow` |                              |
+| `i`    | Required    | timezone-aware `datetime` | no default                |                              |
+| `j`    | Required    | timezone-aware `datetime` | default `datetime.utcnow` |                              |
+| `k`    | Optional    | timezone-aware `datetime` | no default                |                              |
+| `l`    | Optional    | timezone-aware `datetime` | default `datetime.utcnow` |                              |
+| `m`    | Required    | `Decimal`                 | no default                |                              |
+| `n`    | Required    | `Decimal`                 | default `0`               |                              |
+| `o`    | Optional    | `Decimal`                 | no default                |                              |
+| `p`    | Optional    | `Decimal`                 | default `0`               |                              |
+| `q`    | Required    | `Enum`                    | no default                |                              |
+| `r`    | Required    | `Enum`                    | default `Draft`           |                              |
+| `s`    | Optional    | `Enum`                    | no default                |                              |
+| `t`    | Optional    | `Enum`                    | default `Draft`           |                              |
+| `u`    | Required    | `int`                     | -                         | foreign key                  |
+| `v`    | Optional    | `int`                     | -                         | self-referential foreign key |
 
 ```python
-attr: int | None = Field(primary_key=True, default=None)
+import enum
+from datetime import UTC, datetime
+from decimal import Decimal
+from typing import TYPE_CHECKING
+
+import sqlmodel
+from sqlmodel import Column, DateTime, Field, Relationship, SQLModel, UniqueConstraint
+
+if TYPE_CHECKING:
+    from myapp.schemas.fxample import Fxample
+
+
+class ExampleStatus(enum.Enum):
+    Draft = "Draft"
+    Active = "Active"
+    Archived = "Archived"
+
+
+class ExampleBase(SQLModel):
+    # int across 4 groups
+    a: int
+    b: int = Field(default=0)
+    c: int | None = None
+    d: int | None = 0
+
+    # naive datetime across 4 groups (no sa_column override needed)
+    e: datetime
+    f: datetime = Field(default_factory=lambda: datetime.now(UTC))
+    g: datetime | None = None
+    h: datetime | None = Field(default_factory=lambda: datetime.now(UTC))
+
+    # timezone-aware datetime across 4 groups (table class re-declares with sa_column)
+    i: datetime
+    j: datetime = Field(default_factory=lambda: datetime.now(UTC))
+    k: datetime | None = None
+    l: datetime | None = Field(default_factory=lambda: datetime.now(UTC))
+
+    # Decimal across 4 groups (default mapping to NUMERIC; no sa_column override needed)
+    m: Decimal
+    n: Decimal = Field(default=Decimal(0))
+    o: Decimal | None = None
+    p: Decimal | None = Decimal(0)
+
+    # Enum across 4 groups
+    q: ExampleStatus
+    r: ExampleStatus = Field(default=ExampleStatus.Draft)
+    s: ExampleStatus | None = None
+    t: ExampleStatus | None = ExampleStatus.Draft
+
+    # Foreign keys (required and optional, both no default)
+    u: int = Field(foreign_key="fxample.id")
+    v: int | None = Field(foreign_key="example.id", default=None)
+
+
+class Example(ExampleBase, table=True):
+    __tablename__ = "example"
+    __table_args__ = (UniqueConstraint("a", "b", name="example_a_b_key"),)
+
+    id: int | None = Field(primary_key=True, default=None)
+
+    # Only re-declare non-primitives in the table class
+    # `sa_column` bypasses nullability inference, so explicitly `nullable=` is required.
+    # `default` and `default_factory` are ignored because creation happens at `ExampleCreate`,
+    # all object should have already populated default value when they are parsed here.
+    i: datetime = Field(sa_column=Column(DateTime(timezone=True), nullable=False))
+    j: datetime = Field(sa_column=Column(DateTime(timezone=True), nullable=False))
+    k: datetime | None = Field(sa_column=Column(DateTime(timezone=True), nullable=True))
+    l: datetime | None = Field(sa_column=Column(DateTime(timezone=True), nullable=True))
+    q: ExampleStatus = Field(
+        sa_column=Column(sqlmodel.Enum(ExampleStatus), nullable=False),
+    )
+    r: ExampleStatus = Field(
+        sa_column=Column(sqlmodel.Enum(ExampleStatus), nullable=False),
+    )
+    s: ExampleStatus | None = Field(
+        sa_column=Column(sqlmodel.Enum(ExampleStatus), nullable=True),
+    )
+    t: ExampleStatus | None = Field(
+        sa_column=Column(sqlmodel.Enum(ExampleStatus), nullable=True),
+    )
+
+    # Relationships live only on the table class
+    fxample: "Fxample" = Relationship(back_populates="examples")
+    parent: "Example | None" = Relationship(
+        back_populates="children",
+        sa_relationship_kwargs={"remote_side": "Example.id"},
+    )
+    children: list["Example"] = Relationship(back_populates="parent")
+
+
+class ExampleCreate(ExampleBase):
+    pass
+
+
+class ExampleRead(ExampleBase):
+    # Only put server-derived field here
+    id: int
+
+
+class ExampleUpdate(SQLModel):  # Note that this does NOT inherit from ExampleBase
+    # all fields are customizable / optional here
+    a: int | None = None
+    b: int | None = None
+    e: datetime | None = None
+    f: datetime | None = None
+    i: datetime | None = None
+    j: datetime | None = None
+    q: ExampleStatus | None = None
+    r: ExampleStatus | None = None
 ```
 
-## Primary Key
+## Primitive types
 
-```python
-attr: str = Field(primary_key=True)
-```
+SQLModel auto-maps these Python types to a SQL column type, so they can be declared plainly in `Base` without an `sa_column` override:
 
-## Nullable
+| Python               | SQL (default)                            |
+| -------------------- | ---------------------------------------- |
+| `int`                | `INTEGER`                                |
+| `str`                | `VARCHAR`                                |
+| `float`              | `FLOAT`                                  |
+| `bool`               | `BOOLEAN`                                |
+| `bytes`              | `LargeBinary`                            |
+| `Decimal`            | `NUMERIC`                                |
+| `datetime.date`      | `DATE`                                   |
+| `datetime.time`      | `TIME`                                   |
+| `datetime.datetime`  | `DATETIME` _(naive — no timezone)_       |
+| `datetime.timedelta` | `Interval`                               |
+| `uuid.UUID`          | `UUID` (Postgres) / `CHAR(32)` elsewhere |
+| `enum.Enum` subclass | `Enum`                                   |
 
-```python
-attr: int | None = None
-```
-
-## Non-Nullable
-
-```python
-attr: int
-```
-
-Non-primitive data type such as `datetime` or `Enum` should explicitly assign `nullable=False`
-
-```python
-attr: datetime = Field(nullable=False)
-```
-
-## Non-Nullable with default
-
-```python
-attr: int = Field(default=0)
-```
-
-## Nullable Foreign Key
-
-```python
-ext_id: int | None = Field(foreign_key="table.column", default=None)
-```
-
-## Non-Nullable Foreign Key
-
-```python
-ext_id: int = Field(foreign_key="table.column")
-```
-
-## Non-Nullable Foreign Key with default
-
-```
-ext_id: int = Field(foreign_key="table.column", default=1)
-```
+Anything else — or any case where the default mapping is wrong (timezone-aware `datetime`, `JSONB` instead of `JSON`, `String(255)` vs default `String`, custom Pydantic types, Postgres-only types like `ARRAY` / `INET`) — needs an `sa_column=Column(...)` re-declaration on the table class.
