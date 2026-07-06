@@ -59,6 +59,12 @@
     "defunct": false,
     "iata": "AD",
     "icao": "AZU",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/azul-entrusts-viasat-to-deliver-advanced-in-flight-connectivity-to-airbus-a330-900neo-fleet"
+      }
+    ],
     "lcc": true,
     "name": "Azul Linhas Aereas",
     "seatguru": "https://www.seatguru.com/airlines/Azul_Airlines/information.php",
@@ -398,6 +404,12 @@
     "defunct": false,
     "iata": "DL",
     "icao": "DAL",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.delta.com/delta-takes-fast-free-wi-fi-international"
+      }
+    ],
     "lcc": false,
     "name": "Delta Air Lines",
     "offers": [
@@ -524,6 +536,25 @@
     "seatguru": "https://www.seatguru.com/airlines/Frontier_Airlines/information.php",
     "url": "https://www.flyfrontier.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Frontier_Airlines"
+  },
+  "FI-ICE": {
+    "alliance": null,
+    "apple-wallet-pass": null,
+    "countries": ["is"],
+    "defunct": false,
+    "iata": "FI",
+    "icao": "ICE",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/viasat-chosen-to-power-inflight-connectivity-on-icelandairs-new-airbus-aircraft"
+      }
+    ],
+    "lcc": true,
+    "name": "Icelandair",
+    "seatguru": "https://www.seatguru.com/airlines/Icelandair/information.php",
+    "url": "https://www.icelandair.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Icelandair"
   },
   "G4-AAY": {
     "alliance": null,
@@ -681,6 +712,12 @@
     "defunct": false,
     "iata": "JX",
     "icao": "SJX",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/starlux-commits-to-viasat-with-launch-of-enhancedin-flight-connectivity-service"
+      }
+    ],
     "lcc": false,
     "name": "Starlux Airlines",
     "seatguru": null,
@@ -694,6 +731,13 @@
     "defunct": false,
     "iata": "KE",
     "icao": "KAL",
+    "internet": [
+      {
+        "aircraft": ["B737", "B787", "A321", "A350"],
+        "name": "Viasat",
+        "url": "https://www.koreanair.com/contents/plan-your-travel/in-flight-experience/wi-fi"
+      }
+    ],
     "lcc": false,
     "name": "Korean Air",
     "seatguru": "https://www.seatguru.com/airlines/Korean_Air/information.php",
@@ -764,6 +808,19 @@
     "url": "http://www.kuwaitairways.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Kuwait_Airways"
   },
+  "LA-LAN": {
+    "alliance": null,
+    "apple-wallet-pass": null,
+    "countries": ["ci"],
+    "defunct": false,
+    "iata": "LA",
+    "icao": "LAN",
+    "lcc": false,
+    "name": "LATAM Airlines",
+    "seatguru": "https://www.seatguru.com/airlines/LATAM_Chile/information.php",
+    "url": "http://www.latamairlines.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/LATAM_Airlines"
+  },
   "LH-DLH": {
     "alliance": "Star Alliance",
     "apple-wallet-pass": null,
@@ -776,6 +833,10 @@
         "aircraft": ["A330", "A340", "A350", "A380", "B747"],
         "name": "AeroMobile",
         "url": "https://www.aeromobile.net/airlines/lufthansa/"
+      },
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/lufthansa-group-selects-viasat-for-in-flight-connectivity-upgrades"
       }
     ],
     "lcc": false,
@@ -791,6 +852,12 @@
     "defunct": false,
     "iata": "LO",
     "icao": "LOT",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/lot-polish-airlines-selects-viasat-to-deliver-in-flight-connectivity-to-boeing-787-dreamliner-fleet"
+      }
+    ],
     "lcc": false,
     "name": "LOT Polish Airlines",
     "seatguru": "https://www.seatguru.com/airlines/LOT_Polish_Airlines/information.php",
@@ -809,6 +876,10 @@
         "aircraft": ["A330", "A340", "B777"],
         "name": "AeroMobile",
         "url": "https://www.aeromobile.net/airlines/swiss/"
+      },
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/lufthansa-group-selects-viasat-for-in-flight-connectivity-upgrades"
       }
     ],
     "lcc": false,
@@ -916,6 +987,12 @@
     "defunct": false,
     "iata": "MX",
     "icao": "MXY",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://www.flybreeze.com/support?a=Getting-Connected-to-Inflight-WiFi---id--h_MewxojSZ60wvTu5QGcdg"
+      }
+    ],
     "lcc": true,
     "name": "Breeze Airways",
     "seatguru": null,
@@ -1006,6 +1083,12 @@
     "defunct": false,
     "iata": "OS",
     "icao": "AUA",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/newsroom/press-releases/lufthansa-group-selects-viasat-for-in-flight-connectivity-upgrades"
+      }
+    ],
     "lcc": false,
     "name": "Austrian Airlines",
     "seatguru": "https://www.seatguru.com/airlines/Austrian_Airlines/information.php",
@@ -1251,7 +1334,7 @@
     "icao": "TGW",
     "lcc": true,
     "name": "Scoot",
-    "seatguru": "",
+    "seatguru": "https://www.seatguru.com/airlines/Scoot_Airlines/information.php",
     "url": "https://www.flyscoot.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Scoot"
   },
@@ -1330,6 +1413,24 @@
     "seatguru": "https://www.seatguru.com/airlines/Vietnam_Airlines/information.php",
     "url": "https://www.vietnamairlines.com/",
     "wikipedia": "https://en.wikipedia.org/wiki/Vietnam_Airlines"
+  },
+  "VS-VIR": {
+    "alliance": "SkyTeam",
+    "countries": ["gb"],
+    "defunct": false,
+    "iata": "VS",
+    "icao": "VIR",
+    "internet": [
+      {
+        "name": "Viasat",
+        "url": "https://news.viasat.com/blog/gem/virgin-atlantic-adds-viasat-wi-fi-offerings-to-its-newest-planes"
+      }
+    ],
+    "lcc": false,
+    "name": "Virgin Atlantic",
+    "seatguru": "https://www.seatguru.com/airlines/Virgin_Atlantic_Airways/information.php",
+    "url": "https://www.virginatlantic.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Virgin_Atlantic"
   },
   "WN-SWA": {
     "alliance": null,
