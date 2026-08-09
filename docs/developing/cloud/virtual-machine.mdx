@@ -1,0 +1,31 @@
+import services from "@site/src/data/cloud-services.json";
+
+# 🐑 Virtual Machine
+
+List of virtual machine solution.
+
+<ul>
+  {Object.entries(services["Virtual Machines"])
+    .map(([provider, serviceList]) =>
+      serviceList.map((service) => (
+        <li key={`${provider}-${service.name}`}>
+          {provider === "aws"
+            ? "AWS"
+            : provider === "azure"
+              ? "Azure"
+              : provider === "digital-ocean"
+                ? "DigitalOcean"
+                : "Google Cloud"}
+          : <a href={service.url}>{service.abbr ? `${service.name} (${service.abbr})` : service.name}</a>
+        </li>
+      )),
+    )
+    .flat()}
+</ul>
+
+## References
+
+https://instances.vantage.sh/
+https://cheapvpslist.com/
+https://lowendstock.com/
+https://www.hetzner.com/
