@@ -1,0 +1,44 @@
+import GitHubBadge from "@site/src/components/GitHubBadge";
+
+# Dockerfile
+
+Dockerfile examples that are good to copy-and-paste.
+
+```dockerfile
+# syntax=docker/dockerfile:1
+LABEL org.opencontainers.image.created="2025-01-01T00:00:00Z"
+LABEL org.opencontainers.image.url="https://example.com"
+LABEL org.opencontainers.image.source="https://github.com/example/repo"
+LABEL org.opencontainers.image.version="1.0.0"
+LABEL org.opencontainers.image.revision="abc123"
+LABEL org.opencontainers.image.vendor="Example Corp"
+LABEL org.opencontainers.image.title="Example Image"
+LABEL org.opencontainers.image.description="This is an example image."
+LABEL org.opencontainers.image.documentation="https://example.com/docs"
+LABEL org.opencontainers.image.authors="John Doe <john.doe@example.com>"
+LABEL org.opencontainers.image.licenses="MIT"
+
+FROM _
+
+EXPOSE 80
+WORKDIR /app
+
+...
+
+# Start the application
+# Fixed entrypoint
+ENTRYPOINT ["app", "start"]
+# Variable flags
+CMD ["--port", "80"]
+```
+
+:::tip
+
+If you're building docker images with GitHub Actions, <GitHubBadge slug="docker/metadata-action" /> take care of most labels for you automatically. Except these:
+
+- `authors`
+- `documentation`
+- `title`
+- `vendor`
+
+:::
