@@ -1,0 +1,780 @@
+{
+  "national-dl-skymiles": {
+    "kind": "earn",
+    "from": "national",
+    "to": "dl-skymiles",
+    "rate": "2 Miles/$",
+    "url": "https://www.nationalcar.com/en/partner-rewards/delta-skymiles.html"
+  },
+  "national-as-atmos": {
+    "kind": "earn",
+    "from": "national",
+    "to": "as-atmos",
+    "rate": "50 Miles/Rental",
+    "url": "https://www.nationalcar.com/en/partner-rewards/alaska-airlines.html"
+  },
+  "national-best-western-rewards": {
+    "kind": "earn",
+    "from": "national",
+    "to": "best-western-rewards",
+    "rate": "3 Points/$",
+    "url": null
+  },
+  "hertz-dl-skymiles": {
+    "kind": "earn",
+    "from": "hertz",
+    "to": "dl-skymiles",
+    "rate": "4-9 Miles/$",
+    "url": "https://www.hertz.com/rentacar/partner/index.jsp?targetPage=DeltaAirLines.jsp&selectedPartnerCode=DL&partnerType=A&leftNavUserSelection=globNav_8_1"
+  },
+  "starbucks-dl-skymiles": {
+    "kind": "earn",
+    "from": "starbucks",
+    "to": "dl-skymiles",
+    "rate": null,
+    "url": "#STARBUCKS-DL"
+  },
+  "starbucks-bank-of-america": {
+    "kind": "earn",
+    "from": "starbucks",
+    "to": "bank-of-america",
+    "rate": null,
+    "url": "#STARBUCKS-BOA"
+  },
+  "starbucks-marriott-bonvoy": {
+    "kind": "earn",
+    "from": "starbucks",
+    "to": "marriott-bonvoy",
+    "rate": null,
+    "url": "#STARBUCKS-MARRIOTT"
+  },
+  "lyft-as-atmos": {
+    "kind": "earn",
+    "from": "lyft",
+    "to": "as-atmos",
+    "rate": "2-3 Points/$",
+    "url": "https://help.lyft.com/hc/en-us/all/articles/4546040548-Alaska-Airlines-and-Lyft-partnership"
+  },
+  "lyft-ua-mileageplus": {
+    "kind": "earn",
+    "from": "lyft",
+    "to": "ua-mileageplus",
+    "rate": "1-4 Miles/$",
+    "url": "https://help.lyft.com/hc/en-us/all/articles/5808341311-united-mileageplus"
+  },
+  "lyft-hilton-honors": {
+    "kind": "earn",
+    "from": "lyft",
+    "to": "hilton-honors",
+    "rate": "3 Points/$",
+    "url": "https://help.lyft.com/hc/en-us/all/articles/360020588473-Hilton-Honors-Lyft-partnership"
+  },
+  "lyft-bilt-rewards": {
+    "kind": "earn",
+    "from": "lyft",
+    "to": "bilt-rewards",
+    "rate": "2 Points/$",
+    "url": "https://help.lyft.com/hc/en-us/rider/articles/3531945693-bilt-rewards"
+  },
+  "chase-ultimate-rewards-aer-lingus-aerclub": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "aer-lingus-aerclub",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-aeroplan": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "aeroplan",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-british-airways-club": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "british-airways-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-flying-blue": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "flying-blue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-iberia-club": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "iberia-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-jetblue-trueblue": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "jetblue-trueblue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-krisflyer": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "krisflyer",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-southwest-rapid-rewards": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "southwest-rapid-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-ua-mileageplus": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "ua-mileageplus",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-virgin-atlantic-flying-club": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "virgin-atlantic-flying-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-wyndham-rewards": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "wyndham-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-ihg-one-rewards": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "ihg-one-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-marriott-bonvoy": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "marriott-bonvoy",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "chase-ultimate-rewards-world-of-hyatt": {
+    "kind": "transfer",
+    "from": "chase-ultimate-rewards",
+    "to": "world-of-hyatt",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-hilton-honors": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "hilton-honors",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000,
+    "notes": "2,000 points minimum for Blue members"
+  },
+  "bilt-rewards-i-prefer-hotel-rewards": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "i-prefer-hotel-rewards",
+    "ratio": [
+      1,
+      2
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-virgin-red": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "virgin-red",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-accor-all": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "accor-all",
+    "ratio": [
+      3,
+      2
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-world-of-hyatt": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "world-of-hyatt",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-marriott-bonvoy": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "marriott-bonvoy",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-ihg-one-rewards": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "ihg-one-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-wyndham-rewards": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "wyndham-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-as-atmos": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "as-atmos",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-jal-mileage-bank": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "jal-mileage-bank",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-british-airways-club": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "british-airways-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-aer-lingus-aerclub": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "aer-lingus-aerclub",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-iberia-club": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "iberia-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-etihad-guest": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "etihad-guest",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-avianca-lifemiles": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "avianca-lifemiles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-qatar-privilege-club": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "qatar-privilege-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-southwest-rapid-rewards": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "southwest-rapid-rewards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-tap-miles-and-go": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "tap-miles-and-go",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-ua-mileageplus": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "ua-mileageplus",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-turkish-miles-and-smiles": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "turkish-miles-and-smiles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-emirates-skywards": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "emirates-skywards",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-cathay-asia-miles": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "cathay-asia-miles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-flying-blue": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "flying-blue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-aeroplan": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "aeroplan",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "bilt-rewards-virgin-atlantic-flying-club": {
+    "kind": "transfer",
+    "from": "bilt-rewards",
+    "to": "virgin-atlantic-flying-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-ana-mileage-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "ana-mileage-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-dl-skymiles": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "dl-skymiles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-aer-lingus-aerclub": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "aer-lingus-aerclub",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-aeromexico-rewards": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "aeromexico-rewards",
+    "ratio": [
+      1,
+      1.6
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-aeroplan": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "aeroplan",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-flying-blue": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "flying-blue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-avianca-lifemiles": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "avianca-lifemiles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-cathay-asia-miles": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "cathay-asia-miles",
+    "ratio": [
+      1,
+      0.8
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-choice-privileges": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "choice-privileges",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-emirates-skywards": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "emirates-skywards",
+    "ratio": [
+      1,
+      0.8
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-hilton-honors": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "hilton-honors",
+    "ratio": [
+      1,
+      2
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-iberia-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "iberia-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-jetblue-trueblue": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "jetblue-trueblue",
+    "ratio": [
+      1,
+      0.8
+    ],
+    "minimumTransfer": 250
+  },
+  "amex-membership-rewards-marriott-bonvoy": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "marriott-bonvoy",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-qantas-frequent-flyer": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "qantas-frequent-flyer",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 500
+  },
+  "amex-membership-rewards-qatar-privilege-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "qatar-privilege-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-krisflyer": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "krisflyer",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-british-airways-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "british-airways-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-leaders-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "leaders-club",
+    "ratio": [
+      1,
+      0.25
+    ],
+    "minimumTransfer": 1000
+  },
+  "amex-membership-rewards-virgin-atlantic-flying-club": {
+    "kind": "transfer",
+    "from": "amex-membership-rewards",
+    "to": "virgin-atlantic-flying-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": 1000
+  },
+  "wells-fargo-rewards-aer-lingus-aerclub": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "aer-lingus-aerclub",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-avianca-lifemiles": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "avianca-lifemiles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-cathay-asia-miles": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "cathay-asia-miles",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-choice-privileges": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "choice-privileges",
+    "ratio": [
+      1,
+      2
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-flying-blue": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "flying-blue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-iberia-club": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "iberia-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-british-airways-club": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "british-airways-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-jetblue-trueblue": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "jetblue-trueblue",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-virgin-atlantic-flying-club": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "virgin-atlantic-flying-club",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-virgin-red": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "virgin-red",
+    "ratio": [
+      1,
+      1
+    ],
+    "minimumTransfer": null
+  },
+  "wells-fargo-rewards-wyndham-rewards": {
+    "kind": "transfer",
+    "from": "wells-fargo-rewards",
+    "to": "wyndham-rewards",
+    "ratio": [
+      1,
+      2
+    ],
+    "minimumTransfer": null
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "amex-membership-rewards": {
+    "name": "American Express Membership Rewards",
+    "type": "bank",
+    "url": "https://www.americanexpress.com/us/rewards/membership-rewards/"
+  },
+  "chase-ultimate-rewards": {
+    "name": "Chase Ultimate Rewards",
+    "type": "bank",
+    "url": "https://www.chase.com/personal/credit-cards/ultimate-rewards"
+  },
+  "citi-thankyou": {
+    "name": "Citi ThankYou",
+    "type": "bank",
+    "url": "https://www.thankyou.com/"
+  },
+  "wells-fargo-rewards": {
+    "name": "Wells Fargo Rewards",
+    "type": "bank",
+    "url": "https://www.wellsfargo.com/rewards/"
+  },
+  "bank-of-america": {
+    "name": "Bank of America",
+    "type": "bank",
+    "url": "https://www.bankofamerica.com/"
+  },
+  "bilt-rewards": {
+    "name": "Bilt Rewards",
+    "type": "bank",
+    "url": "https://www.biltrewards.com/"
+  },
+  "aa-aadvantage": {
+    "name": "American AAdvantage",
+    "type": "airline",
+    "url": "https://www.aa.com/aadvantage"
+  },
+  "aer-lingus-aerclub": {
+    "name": "Aer Lingus AerClub",
+    "type": "airline",
+    "url": "https://www.aerlingus.com/html/aerclub/"
+  },
+  "aeromexico-rewards": {
+    "name": "Aeromexico Rewards",
+    "type": "airline",
+    "url": "https://www.aeromexico.com/en-us/aeromexico-rewards"
+  },
+  "aeroplan": {
+    "name": "Air Canada Aeroplan",
+    "type": "airline",
+    "url": "https://www.aircanada.com/aeroplan"
+  },
+  "ana-mileage-club": {
+    "name": "ANA Mileage Club",
+    "type": "airline",
+    "url": "https://www.ana.co.jp/en/us/amc/"
+  },
+  "as-atmos": {
+    "name": "Alaska Hawaiian Atmos Rewards",
+    "type": "airline",
+    "url": "https://www.alaskaair.com/atmosrewards"
+  },
+  "avianca-lifemiles": {
+    "name": "Avianca LifeMiles",
+    "type": "airline",
+    "url": "https://www.lifemiles.com/"
+  },
+  "british-airways-club": {
+    "name": "British Airways Club",
+    "type": "airline",
+    "url": "https://www.britishairways.com/en-us/executive-club"
+  },
+  "cathay-asia-miles": {
+    "name": "Cathay Asia Miles",
+    "type": "airline",
+    "url": "https://www.cathaypacific.com/"
+  },
+  "dl-skymiles": {
+    "name": "Delta SkyMiles",
+    "type": "airline",
+    "url": "https://www.delta.com/skymiles"
+  },
+  "emirates-skywards": {
+    "name": "Emirates Skywards",
+    "type": "airline",
+    "url": "https://www.emirates.com/us/english/skywards/"
+  },
+  "etihad-guest": {
+    "name": "Etihad Guest",
+    "type": "airline",
+    "url": "https://www.etihad.com/en/etihad-guest"
+  },
+  "flying-blue": {
+    "name": "Air France-KLM Flying Blue",
+    "type": "airline",
+    "url": "https://www.flyingblue.com/"
+  },
+  "iberia-club": {
+    "name": "Iberia Club",
+    "type": "airline",
+    "url": "https://www.iberia.com/us/iberia-club/"
+  },
+  "jal-mileage-bank": {
+    "name": "JAL Mileage Bank",
+    "type": "airline",
+    "url": "https://www.jal.co.jp/jmb/"
+  },
+  "jetblue-trueblue": {
+    "name": "JetBlue TrueBlue",
+    "type": "airline",
+    "url": "https://www.jetblue.com/trueblue"
+  },
+  "krisflyer": {
+    "name": "Singapore Airlines KrisFlyer",
+    "type": "airline",
+    "url": "https://www.singaporeair.com/krisflyer"
+  },
+  "qantas-frequent-flyer": {
+    "name": "Qantas Frequent Flyer",
+    "type": "airline",
+    "url": "https://www.qantas.com/us/en/frequent-flyer.html"
+  },
+  "qatar-privilege-club": {
+    "name": "Qatar Airways Privilege Club",
+    "type": "airline",
+    "url": "https://www.qatarairways.com/en/privilegeclub.html"
+  },
+  "southwest-rapid-rewards": {
+    "name": "Southwest Rapid Rewards",
+    "type": "airline",
+    "url": "https://www.southwest.com/rapidrewards/"
+  },
+  "tap-miles-and-go": {
+    "name": "TAP Miles&Go",
+    "type": "airline",
+    "url": "https://www.flytap.com/en-us/miles-and-go"
+  },
+  "turkish-miles-and-smiles": {
+    "name": "Turkish Miles&Smiles",
+    "type": "airline",
+    "url": "https://www.turkishairlines.com/en-int/miles-and-smiles/"
+  },
+  "ua-mileageplus": {
+    "name": "United MileagePlus",
+    "type": "airline",
+    "url": "https://www.united.com/en/us/mileageplus"
+  },
+  "virgin-atlantic-flying-club": {
+    "name": "Virgin Atlantic Flying Club",
+    "type": "airline",
+    "url": "https://www.virginatlantic.com/flying-club"
+  },
+  "accor-all": {
+    "name": "Accor Live Limitless",
+    "type": "hotel",
+    "url": "https://all.accor.com/"
+  },
+  "best-western-rewards": {
+    "name": "Best Western Rewards",
+    "type": "hotel",
+    "url": "https://www.bestwestern.com/en_US/best-western-rewards.html"
+  },
+  "choice-privileges": {
+    "name": "Choice Privileges",
+    "type": "hotel",
+    "url": "https://www.choicehotels.com/choice-privileges"
+  },
+  "hilton-honors": {
+    "name": "Hilton Honors",
+    "type": "hotel",
+    "url": "https://www.hilton.com/en/hilton-honors/"
+  },
+  "i-prefer-hotel-rewards": {
+    "name": "I Prefer Hotel Rewards",
+    "type": "hotel",
+    "url": "https://iprefer.com/"
+  },
+  "ihg-one-rewards": {
+    "name": "IHG One Rewards",
+    "type": "hotel",
+    "url": "https://www.ihg.com/onerewards/content/us/en/home"
+  },
+  "leaders-club": {
+    "name": "Leading Hotels of the World Leaders Club",
+    "type": "hotel",
+    "url": "https://www.lhw.com/leaders-club"
+  },
+  "marriott-bonvoy": {
+    "name": "Marriott Bonvoy",
+    "type": "hotel",
+    "url": "https://www.marriott.com/loyalty.mi"
+  },
+  "world-of-hyatt": {
+    "name": "World of Hyatt",
+    "type": "hotel",
+    "url": "https://world.hyatt.com/"
+  },
+  "wyndham-rewards": {
+    "name": "Wyndham Rewards",
+    "type": "hotel",
+    "url": "https://www.wyndhamhotels.com/wyndham-rewards"
+  },
+  "virgin-red": {
+    "name": "Virgin Red",
+    "type": "airline",
+    "url": "https://www.virgin.com/virgin-red"
+  },
+  "national": {
+    "name": "National",
+    "type": "car-rental",
+    "url": "https://www.nationalcar.com/en/partner-rewards.html"
+  },
+  "hertz": {
+    "name": "Hertz",
+    "type": "car-rental",
+    "url": "https://www.hertz.com/rentacar/partner/index.jsp"
+  },
+  "avis": {
+    "name": "Avis",
+    "type": "car-rental",
+    "url": "https://www.avis.com/"
+  },
+  "alamo": {
+    "name": "Alamo",
+    "type": "car-rental",
+    "url": "https://www.alamo.com/"
+  },
+  "budget": {
+    "name": "Budget",
+    "type": "car-rental",
+    "url": "https://www.budget.com/"
+  },
+  "enterprise": {
+    "name": "Enterprise",
+    "type": "car-rental",
+    "url": "https://www.enterprise.com/"
+  },
+  "starbucks": {
+    "name": "Starbucks",
+    "type": "merchant",
+    "url": "https://www.starbucks.com/rewards"
+  },
+  "lyft": {
+    "name": "Lyft",
+    "type": "merchant",
+    "url": "https://www.lyft.com/"
+  }
+}
