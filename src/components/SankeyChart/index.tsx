@@ -36,6 +36,7 @@ interface SankeyChartProps {
   nodes: NodeData[];
   links: LinkData[];
   height?: number;
+  gutter?: number;
 }
 
 /** Tableau 10, the palette Mermaid's sankey uses. */
@@ -56,7 +57,7 @@ const WIDTH = 1000;
 const NODE_WIDTH = 10;
 const NODE_PADDING = 10;
 const LABEL_GAP = 6;
-/** Empty margin either side, reserved for the link labels. */
+/** Default empty margin either side, reserved for the link labels. */
 const GUTTER = 60;
 
 const color = (node: SankeyNode<NodeData, LinkData>) =>
@@ -66,6 +67,7 @@ export default function SankeyChart({
   nodes,
   links,
   height = 1000,
+  gutter = GUTTER,
 }: SankeyChartProps): JSX.Element {
   const gradientId = React.useId().replaceAll(":", "");
   const graph = sankey<NodeData, LinkData>()
@@ -74,8 +76,8 @@ export default function SankeyChart({
     .nodePadding(NODE_PADDING)
     .nodeSort((a, b) => a.index - b.index)
     .extent([
-      [GUTTER, 0],
-      [WIDTH - GUTTER, height],
+      [gutter, 0],
+      [WIDTH - gutter, height],
     ])({
     nodes: nodes.map((node) => ({ ...node })),
     links: links.map((link) => ({ ...link })),
@@ -122,7 +124,7 @@ export default function SankeyChart({
               <>
                 <text
                   className="link-label link-label--source"
-                  x={GUTTER - LABEL_GAP}
+                  x={gutter - LABEL_GAP}
                   y={link.y0}
                   dy="0.35em"
                   textAnchor="end"
@@ -133,7 +135,7 @@ export default function SankeyChart({
                 </text>
                 <text
                   className="link-label link-label--target"
-                  x={WIDTH - GUTTER + LABEL_GAP}
+                  x={WIDTH - gutter + LABEL_GAP}
                   y={link.y1}
                   dy="0.35em"
                   textAnchor="start"

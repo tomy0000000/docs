@@ -76,6 +76,298 @@
     "rate": "2 Points/$",
     "url": "https://help.lyft.com/hc/en-us/rider/articles/3531945693-bilt-rewards"
   },
+  "uber-dl-skymiles": {
+    "kind": "earn",
+    "from": "uber",
+    "to": "dl-skymiles",
+    "rate": "1-3 Miles/$",
+    "url": "#UBER-DL"
+  },
+  "uber-marriott-bonvoy": {
+    "kind": "earn",
+    "from": "uber",
+    "to": "marriott-bonvoy",
+    "rate": "1-3 Points/$",
+    "url": "#UBER-MARRIOTT"
+  },
+  "avis-as-atmos": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "as-atmos",
+    "rate": "500-1250 Miles/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/alaska-airlines"
+  },
+  "avis-aa-aadvantage": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "aa-aadvantage",
+    "rate": "2-5 Miles/$",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/american-airlines",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "avis-ua-mileageplus": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "ua-mileageplus",
+    "rate": "500-1250 Miles/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/united-airlines"
+  },
+  "avis-southwest-rapid-rewards": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "southwest-rapid-rewards",
+    "rate": "600 Points/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/southwest-airlines",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "avis-jetblue-trueblue": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "jetblue-trueblue",
+    "rate": "100 Points/Day",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/jetBlue-airways",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "avis-avianca-lifemiles": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "avianca-lifemiles",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/avianca-taca",
+    "notes": "$0.75/day frequent flyer surcharge"
+  },
+  "avis-best-western-rewards": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "best-western-rewards",
+    "rate": "1000 Points/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/hotel/best-western"
+  },
+  "avis-choice-privileges": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "choice-privileges",
+    "rate": "1000 Points/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/hotel/choice-privileges"
+  },
+  "avis-world-of-hyatt": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "world-of-hyatt",
+    "rate": "500 Points/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/hotel/hyatt-hotels-resorts",
+    "notes": "$0.75/day frequent flyer surcharge"
+  },
+  "avis-wyndham-rewards": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "wyndham-rewards",
+    "rate": "100 Points/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/hotel/wyndham-hotels-and-resorts"
+  },
+  "budget-as-atmos": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "as-atmos",
+    "rate": "500-1250 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-alaska",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "budget-aa-aadvantage": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "aa-aadvantage",
+    "rate": "2-5 Miles/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-american",
+    "notes": "$1.50/day frequent flyer surcharge"
+  },
+  "budget-ua-mileageplus": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "ua-mileageplus",
+    "rate": "500-1250 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/united-airlines",
+    "notes": "$1.50/day frequent flyer surcharge"
+  },
+  "budget-southwest-rapid-rewards": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "southwest-rapid-rewards",
+    "rate": "600 Points/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/south-west",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "budget-jetblue-trueblue": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "jetblue-trueblue",
+    "rate": "100 Points/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/jet-blue",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "budget-avianca-lifemiles": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "avianca-lifemiles",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-life-miles"
+  },
+  "budget-aeroplan": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "aeroplan",
+    "rate": "1-2 Points/C$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aeroplan"
+  },
+  "budget-ana-mileage-club": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "ana-mileage-club",
+    "rate": "100 Miles/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/ana"
+  },
+  "budget-cathay-asia-miles": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "cathay-asia-miles",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/asia-miles"
+  },
+  "budget-qatar-privilege-club": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "qatar-privilege-club",
+    "rate": "2-5 Avios/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/qatar"
+  },
+  "budget-krisflyer": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "krisflyer",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/singapore-airlines"
+  },
+  "budget-aer-lingus-aerclub": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "aer-lingus-aerclub",
+    "rate": "1 Avios/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aer-lingus"
+  },
+  "budget-british-airways-club": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "british-airways-club",
+    "rate": "1 Avios/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/british-airways"
+  },
+  "budget-emirates-skywards": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "emirates-skywards",
+    "rate": "2-6 Miles/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/emirates"
+  },
+  "budget-iberia-club": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "iberia-club",
+    "rate": "1 Avios/$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/iberia-plus"
+  },
+  "budget-jal-mileage-bank": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "jal-mileage-bank",
+    "rate": "50 Miles/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/japan-airlines"
+  },
+  "budget-qantas-frequent-flyer": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "qantas-frequent-flyer",
+    "rate": "4 Points/A$",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/qantas"
+  },
+  "budget-best-western-rewards": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "best-western-rewards",
+    "rate": "1000 Points/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/hotel-partners/best-western-rewards"
+  },
+  "budget-choice-privileges": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "choice-privileges",
+    "rate": "1000 Points/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/hotel-partners/choice-privileges",
+    "notes": "$0.75-1.00/day frequent flyer surcharge"
+  },
+  "budget-wyndham-rewards": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "wyndham-rewards",
+    "rate": "100 Points/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/hotel-partners/wyndham-rewards"
+  },
+  "alamo-dl-skymiles": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "dl-skymiles",
+    "rate": "2 Miles/$",
+    "url": "https://www.alamo.com/en/partners.html"
+  },
+  "alamo-aa-aadvantage": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "aa-aadvantage",
+    "rate": "2 Miles/$",
+    "url": "https://www.alamo.com/en/partners/american-airlines-aadvantage.html",
+    "notes": "Frequent Traveler Recovery Fee in US, Canada, and Puerto Rico"
+  },
+  "alamo-ana-mileage-club": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "ana-mileage-club",
+    "rate": "300 Miles/Rental",
+    "url": "https://www.alamo.com/en/partners.html"
+  },
+  "alamo-southwest-rapid-rewards": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "southwest-rapid-rewards",
+    "rate": "600 Points/Rental",
+    "url": "https://www.alamo.com/en/partners.html"
+  },
+  "alamo-best-western-rewards": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "best-western-rewards",
+    "rate": "3 Points/$",
+    "url": "https://www.alamo.com/en/partners.html"
+  },
+  "alamo-hilton-honors": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "hilton-honors",
+    "rate": "500 Points/Rental",
+    "url": "https://www.alamo.com/en/partners.html"
+  },
+  "enterprise-hilton-honors": {
+    "kind": "earn",
+    "from": "enterprise",
+    "to": "hilton-honors",
+    "rate": "500 Points/Rental",
+    "url": "https://partners.rentalcar.com/hiltonhonors/?locale=en_US"
+  },
+  "enterprise-flying-blue": {
+    "kind": "earn",
+    "from": "enterprise",
+    "to": "flying-blue",
+    "rate": "4 Miles/€",
+    "url": "https://www.enterprise.com/en/about/travel-partners.html"
+  },
   "chase-ultimate-rewards-aer-lingus-aerclub": {
     "kind": "transfer",
     "from": "chase-ultimate-rewards",

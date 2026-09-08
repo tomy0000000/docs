@@ -6,7 +6,6 @@ import SankeyChart from "@site/src/components/SankeyChart";
 import SortableTable from "@site/src/components/SortableTable";
 import flows from "@site/src/data/point-flows.json";
 import programs from "@site/src/data/point-programs.json";
-import Mermaid from "@theme/Mermaid";
 
 # 🗺️ Point Map
 
@@ -14,54 +13,97 @@ How does points/miles accumulate and flow between different accounts?
 
 ## Earning
 
-export const shapes = {
-  bank: (name) => `(${name})`,
-  airline: (name) => `([${name}])`,
-  hotel: (name) => `[[${name}]]`,
-  rewards: (name) => `[${name}]`,
-  "car-rental": (name) => `>${name}]`,
-  merchant: (name) => `{{${name}}}`,
-};
-
-{/* Mermaid node ids cannot contain a hyphen. */}
-
-export const nodeId = (id) => id.replaceAll("-", "_");
-
-{/* TODO: Only Mermaid syntaxed links open in new tab, HTML anchor tags does not. */}
-
-export const edgeLabel = ({ rate, url }) =>
-  url === null
-    ? rate
-    : url.startsWith("#")
-      ? `<a href="${url}">${rate ?? "Rules"}</a>`
-      : `<a href="${url}" target="_blank" rel="noopener noreferrer">${rate ?? "Rules"}</a>`;
+export const byName = (a, b) =>
+  programs[a].name.localeCompare(programs[b].name);
 
 export const earnEdges = Object.values(flows).filter(
   ({ kind }) => kind === "earn",
 );
 
-export const earnNodes = Object.entries(programs).filter(([id]) =>
-  earnEdges.some(({ from, to }) => from === id || to === id),
-);
+export const earnDestinationsOfType = (type) =>
+  [...new Set(earnEdges.map(({ to }) => to))]
+    .filter((id) => programs[id].type === type)
+    .sort(byName);
 
-:::tip
+export const earnSankeyNodes = [
+  ...[...new Set(earnEdges.map(({ from }) => from))].sort(byName),
+  ...earnDestinationsOfType("airline"),
+  ...earnDestinationsOfType("hotel"),
+  ...earnDestinationsOfType("bank"),
+].map((id) => ({ id, name: programs[id].name }));
 
-Click on box to visit rule pages
+Each ribbon is one earning partnership, so a node's height is its partner count, not how much a route actually pays. Hover a ribbon to follow one route, or a program to see every route through it, each labeled with its rate.
 
-:::
+Only one program earns per car rental. A flat per-rental award (500 miles) is not comparable to a per-dollar rate (2 Miles/$): on a long or expensive rental the per-dollar partners pay far more.
 
-<Mermaid
-  value={[
-    "flowchart LR",
-    ...earnNodes.map(
-      ([id, { name, type }]) => `${nodeId(id)}${shapes[type](name)}`,
-    ),
-    ...earnNodes.map(([id, { url }]) => `click ${nodeId(id)} "${url}" _blank`),
-    ...earnEdges.map(
-      (edge) =>
-        `${nodeId(edge.from)} -- ${edgeLabel(edge)} --> ${nodeId(edge.to)}`,
-    ),
-  ].join("\n")}
+<SankeyChart
+  nodes={earnSankeyNodes}
+  gutter={160}
+  links={earnEdges.map(({ from, to, rate }) => ({
+    source: from,
+    target: to,
+    value: 1,
+    label: rate ?? undefined,
+  }))}
+/>
+
+export const earnRows = earnEdges.map((flow) => ({
+  from: programs[flow.from].name,
+  fromUrl: programs[flow.from].url,
+  to: programs[flow.to].name,
+  toUrl: programs[flow.to].url,
+  rate: flow.rate ?? "",
+  url: flow.url,
+  notes: flow.notes ?? "",
+}));
+
+<SortableTable
+  columns={[
+    {
+      header: "From",
+      accessorKey: "from",
+      size: 160,
+      cell: ({ row }) => (
+        <a
+          href={row.original.fromUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {row.original.from}
+        </a>
+      ),
+    },
+    {
+      header: "To",
+      accessorKey: "to",
+      size: 280,
+      cell: ({ row }) => (
+        <a href={row.original.toUrl} target="_blank" rel="noopener noreferrer">
+          {row.original.to}
+        </a>
+      ),
+    },
+    { header: "Rate", accessorKey: "rate", size: 180 },
+    {
+      header: "Rules",
+      accessorKey: "url",
+      size: 80,
+      enableSorting: false,
+      cell: ({ row }) =>
+        row.original.url === null ? (
+          ""
+        ) : row.original.url.startsWith("#") ? (
+          <a href={row.original.url}>Rules</a>
+        ) : (
+          <a href={row.original.url} target="_blank" rel="noopener noreferrer">
+            Rules
+          </a>
+        ),
+    },
+    { header: "Notes", accessorKey: "notes", size: 260 },
+  ]}
+  data={earnRows}
+  defaultSorting={{ id: "from", desc: false }}
 />
 
 ### [Starbucks → Delta](https://www.deltastarbucks.com/) {#STARBUCKS-DL}
@@ -86,14 +128,36 @@ Click on box to visit rule pages
 - 100 Marriott Bonvoy® points for 3 purchases during Marriott Bonvoy® Week
 - Double stars during stays at Marriott Bonvoy® hotels
 
+### [Uber → Delta](https://www.uber.com/us/en/u/delta/) {#UBER-DL}
+
+- US accounts only, taxes/fees/tips excluded
+- Only one Uber earning partner (Delta or Marriott) earns at a time
+
+| Spend                              | Miles |
+| ---------------------------------- | ----- |
+| Uber Reserve                       | 3/$   |
+| Premium (Comfort, XL, Black, SUV)  | 2/$   |
+| UberX airport rides                | 1/$   |
+| Uber Eats restaurant/grocery, $40+ | 1/$   |
+
+### [Uber → Marriott Bonvoy](https://uber.marriott.com/en-us) {#UBER-MARRIOTT}
+
+- US accounts only, taxes/fees/tips excluded
+- Only one Uber earning partner (Delta or Marriott) earns at a time
+- Uber One members get complimentary Marriott Bonvoy Silver Elite
+
+| Spend                                               | Points |
+| --------------------------------------------------- | ------ |
+| Premium (Comfort, XL, Black, SUV)                   | 3/$    |
+| UberX Reserve                                       | 2/$    |
+| Uber Eats at Residence Inn/TownePlace/Element, $40+ | 2/$    |
+| Uber Eats restaurant/grocery, $40+                  | 1/$    |
+
 ## Transfer
 
 export const transfers = Object.values(flows).filter(
   ({ kind }) => kind === "transfer",
 );
-
-export const byName = (a, b) =>
-  programs[a].name.localeCompare(programs[b].name);
 
 export const destinationsOfType = (type) =>
   [...new Set(transfers.map(({ to }) => to))]
