@@ -69,6 +69,7 @@ export default {
     },
   },
   themes: ["@docusaurus/theme-mermaid"],
+  clientModules: ["./src/clientModules/sankeyNodeHover.js"],
 
   presets: [
     [
@@ -167,7 +168,7 @@ export default {
               label: "About",
               to: "/about",
             },
-{
+            {
               label: "Privacy Policy",
               to: "/privacy-policy",
             },

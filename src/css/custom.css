@@ -103,3 +103,63 @@ main > .container {
    */
   max-width: initial !important;
 }
+
+/**
+  * Sankey ribbons: dim the whole chart while one route is hovered, so a single
+  * source-to-target flow can be followed across the diagram.
+  * Scoped to `g.links`, which only sankey diagrams render.
+  */
+svg[id^="mermaid-svg"] g.links g.link,
+svg.sankey g.links g.link {
+  transition: opacity 0.15s ease;
+}
+
+svg[id^="mermaid-svg"] g.links:hover g.link,
+svg.sankey g.links:hover g.link {
+  opacity: 0.12;
+}
+
+svg[id^="mermaid-svg"] g.links g.link:hover,
+svg.sankey g.links g.link:hover {
+  opacity: 1;
+}
+
+svg[id^="mermaid-svg"].sankey-node-hover g.links g.link,
+svg.sankey.sankey-node-hover g.links g.link {
+  opacity: 0.12;
+}
+
+svg[id^="mermaid-svg"].sankey-node-hover g.links g.link.sankey-active,
+svg.sankey.sankey-node-hover g.links g.link.sankey-active {
+  opacity: 1;
+}
+
+/**
+  * Ribbons read heavier against a dark background, where they drown out the
+  * labels at the opacity that suits the light theme.
+  */
+svg.sankey g.links g.link path {
+  stroke-opacity: 0.5;
+}
+
+[data-theme="dark"] svg.sankey g.links g.link path {
+  stroke-opacity: 0.3;
+}
+
+/**
+  * Link labels live in the gutters, revealed only for the routes in play:
+  * at the far end from a hovered node, and at the target end of a hovered
+  * ribbon. They never take pointer events, or the invisible text would
+  * trigger a ribbon hover of its own.
+  */
+svg.sankey .link-label {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+svg.sankey g.links g.link:hover .link-label--target,
+svg.sankey.sankey-hover-left g.links g.link.sankey-active .link-label--target,
+svg.sankey.sankey-hover-right g.links g.link.sankey-active .link-label--source {
+  opacity: 1;
+}
