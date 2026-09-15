@@ -34,7 +34,7 @@ export const earnSankeyNodes = [
 
 Each ribbon is one earning partnership, so a node's height is its partner count, not how much a route actually pays. Hover a ribbon to follow one route, or a program to see every route through it, each labeled with its rate.
 
-Only one program earns per car rental. A flat per-rental award (500 miles) is not comparable to a per-dollar rate (2 Miles/$): on a long or expensive rental the per-dollar partners pay far more.
+Only one program earns per car rental, and only one Uber partner earns at a time. Uber rates are US accounts only, excluding taxes, fees, and tips. A flat per-rental award (500 miles) is not comparable to a per-dollar rate (2 Miles/$): on a long or expensive rental the per-dollar partners pay far more.
 
 <SankeyChart
   nodes={earnSankeyNodes}
@@ -92,8 +92,6 @@ export const earnRows = earnEdges.map((flow) => ({
       cell: ({ row }) =>
         row.original.url === null ? (
           ""
-        ) : row.original.url.startsWith("#") ? (
-          <a href={row.original.url}>Rules</a>
         ) : (
           <a href={row.original.url} target="_blank" rel="noopener noreferrer">
             Rules
@@ -105,53 +103,6 @@ export const earnRows = earnEdges.map((flow) => ({
   data={earnRows}
   defaultSorting={{ id: "from", desc: false }}
 />
-
-### [Starbucks → Delta](https://www.deltastarbucks.com/) {#STARBUCKS-DL}
-
-- Double Stars on Delta travel day
-- Earn stars on reload
-
-| Reload | Miles |
-| ------ | ----- |
-| $25+   | 25    |
-| $50+   | 75    |
-| $75+   | 125   |
-| $100+  | 200   |
-
-### [Starbucks → Bank of America](https://promotions.bankofamerica.com/starbucks) {#STARBUCKS-BOA}
-
-- 1 Bonus Star per $2
-- 2% Cash Back
-
-### [Starbucks → Marriott Bonvoy](https://www.starbucks.com/rewards/partnerships/marriottbonvoy) {#STARBUCKS-MARRIOTT}
-
-- 100 Marriott Bonvoy® points for 3 purchases during Marriott Bonvoy® Week
-- Double stars during stays at Marriott Bonvoy® hotels
-
-### [Uber → Delta](https://www.uber.com/us/en/u/delta/) {#UBER-DL}
-
-- US accounts only, taxes/fees/tips excluded
-- Only one Uber earning partner (Delta or Marriott) earns at a time
-
-| Spend                              | Miles |
-| ---------------------------------- | ----- |
-| Uber Reserve                       | 3/$   |
-| Premium (Comfort, XL, Black, SUV)  | 2/$   |
-| UberX airport rides                | 1/$   |
-| Uber Eats restaurant/grocery, $40+ | 1/$   |
-
-### [Uber → Marriott Bonvoy](https://uber.marriott.com/en-us) {#UBER-MARRIOTT}
-
-- US accounts only, taxes/fees/tips excluded
-- Only one Uber earning partner (Delta or Marriott) earns at a time
-- Uber One members get complimentary Marriott Bonvoy Silver Elite
-
-| Spend                                               | Points |
-| --------------------------------------------------- | ------ |
-| Premium (Comfort, XL, Black, SUV)                   | 3/$    |
-| UberX Reserve                                       | 2/$    |
-| Uber Eats at Residence Inn/TownePlace/Element, $40+ | 2/$    |
-| Uber Eats restaurant/grocery, $40+                  | 1/$    |
 
 ## Transfer
 

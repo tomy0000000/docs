@@ -31,22 +31,25 @@
     "kind": "earn",
     "from": "starbucks",
     "to": "dl-skymiles",
-    "rate": null,
-    "url": "#STARBUCKS-DL"
+    "rate": "25-200 Miles/Reload",
+    "url": "https://www.deltastarbucks.com/",
+    "notes": "$25/$50/$75/$100 reload earns 25/75/125/200. Double Stars on Delta travel day"
   },
   "starbucks-bank-of-america": {
     "kind": "earn",
     "from": "starbucks",
     "to": "bank-of-america",
-    "rate": null,
-    "url": "#STARBUCKS-BOA"
+    "rate": "2% Cash Back",
+    "url": "https://promotions.bankofamerica.com/starbucks",
+    "notes": "1 Bonus Star per $2"
   },
   "starbucks-marriott-bonvoy": {
     "kind": "earn",
     "from": "starbucks",
     "to": "marriott-bonvoy",
-    "rate": null,
-    "url": "#STARBUCKS-MARRIOTT"
+    "rate": "100 Points/3 Purchases",
+    "url": "https://www.starbucks.com/rewards/partnerships/marriottbonvoy",
+    "notes": "Bonvoy Week only. Double Stars during Bonvoy stays"
   },
   "lyft-as-atmos": {
     "kind": "earn",
@@ -81,14 +84,16 @@
     "from": "uber",
     "to": "dl-skymiles",
     "rate": "1-3 Miles/$",
-    "url": "#UBER-DL"
+    "url": "https://www.uber.com/us/en/u/delta/",
+    "notes": "Reserve 3/$, Premium 2/$, UberX airport 1/$, Uber Eats $40+ 1/$"
   },
   "uber-marriott-bonvoy": {
     "kind": "earn",
     "from": "uber",
     "to": "marriott-bonvoy",
     "rate": "1-3 Points/$",
-    "url": "#UBER-MARRIOTT"
+    "url": "https://uber.marriott.com/en-us",
+    "notes": "Premium 3/$, UberX Reserve 2/$, Uber Eats $40+ 1-2/$. Uber One gets Bonvoy Silver Elite"
   },
   "avis-as-atmos": {
     "kind": "earn",
@@ -135,6 +140,14 @@
     "rate": "500 Miles/Rental",
     "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/avianca-taca",
     "notes": "$0.75/day frequent flyer surcharge"
+  },
+  "avis-frontier-miles": {
+    "kind": "earn",
+    "from": "avis",
+    "to": "frontier-miles",
+    "rate": "50-500 Miles/Rental",
+    "url": "https://www.avis.com/en/business-programs/miles-points-partners/airlines/frontier-airlines",
+    "notes": "50/day, 500 at 5+ days. $0.75/day surcharge"
   },
   "avis-best-western-rewards": {
     "kind": "earn",
@@ -289,6 +302,67 @@
     "rate": "4 Points/A$",
     "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/qantas"
   },
+  "budget-frontier-miles": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "frontier-miles",
+    "rate": "50-500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/frontier",
+    "notes": "50/day, 500 at 5+ days. $0.75/day surcharge"
+  },
+  "budget-copa-connectmiles": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "copa-connectmiles",
+    "rate": "100 Points/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-copa",
+    "notes": "$1.00/day frequent flyer surcharge"
+  },
+  "budget-air-nz-airpoints": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "air-nz-airpoints",
+    "rate": "2.50 Airpoints Dollars/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-new-zealand"
+  },
+  "budget-airasia-rewards": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "airasia-rewards",
+    "rate": "250 Points/Day",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/airasia",
+    "notes": "Capped at 2,500 Points/Rental"
+  },
+  "budget-malaysia-enrich": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "malaysia-enrich",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/malaysia-airlines"
+  },
+  "budget-thai-royal-orchid-plus": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "thai-royal-orchid-plus",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/thai"
+  },
+  "budget-saudia-alfursan": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "saudia-alfursan",
+    "rate": "600 Miles/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/saudia",
+    "notes": "Up to 600 miles"
+  },
+  "budget-elal-matmid": {
+    "kind": "earn",
+    "from": "budget",
+    "to": "elal-matmid",
+    "rate": "10 Points/Rental",
+    "url": "https://www.budget.com/en/programs/miles-points-partners/airlines/aero-el-al",
+    "notes": "Rental must accompany an EL AL flight"
+  },
   "budget-best-western-rewards": {
     "kind": "earn",
     "from": "budget",
@@ -332,6 +406,29 @@
     "to": "ana-mileage-club",
     "rate": "300 Miles/Rental",
     "url": "https://www.alamo.com/en/partners.html"
+  },
+  "alamo-eva-infinity-mileagelands": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "eva-infinity-mileagelands",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.alamo.com/en/partners/eva-air.html",
+    "notes": "US and Canada locations only"
+  },
+  "alamo-frontier-miles": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "frontier-miles",
+    "rate": "50-500 Miles/Rental",
+    "url": "https://www.alamo.com/en/partners/frontier-miles.html",
+    "notes": "50/day, 500 at 5+ days. $0.75/day Recovery Fee, max $7.50"
+  },
+  "alamo-korean-air-skypass": {
+    "kind": "earn",
+    "from": "alamo",
+    "to": "korean-air-skypass",
+    "rate": "500 Miles/Rental",
+    "url": "https://www.alamo.com/en/partners/korean-air-skypass.html"
   },
   "alamo-southwest-rapid-rewards": {
     "kind": "earn",

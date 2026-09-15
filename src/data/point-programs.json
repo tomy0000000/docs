@@ -49,6 +49,16 @@
     "type": "airline",
     "url": "https://www.aircanada.com/aeroplan"
   },
+  "air-nz-airpoints": {
+    "name": "Air New Zealand Airpoints",
+    "type": "airline",
+    "url": "https://www.airnewzealand.com/en-us/koru"
+  },
+  "airasia-rewards": {
+    "name": "AirAsia Rewards",
+    "type": "airline",
+    "url": "https://www.airasiarewards.com/"
+  },
   "ana-mileage-club": {
     "name": "ANA Mileage Club",
     "type": "airline",
@@ -74,10 +84,20 @@
     "type": "airline",
     "url": "https://www.cathaypacific.com/"
   },
+  "copa-connectmiles": {
+    "name": "Copa ConnectMiles",
+    "type": "airline",
+    "url": "https://www.copaair.com/en-us/connectmiles/"
+  },
   "dl-skymiles": {
     "name": "Delta SkyMiles",
     "type": "airline",
     "url": "https://www.delta.com/skymiles"
+  },
+  "elal-matmid": {
+    "name": "EL AL Matmid",
+    "type": "airline",
+    "url": "https://www.elal.com/eng/frequentflyer/get-to-know"
   },
   "emirates-skywards": {
     "name": "Emirates Skywards",
@@ -89,10 +109,20 @@
     "type": "airline",
     "url": "https://www.etihad.com/en/etihad-guest"
   },
+  "eva-infinity-mileagelands": {
+    "name": "EVA Air Infinity MileageLands",
+    "type": "airline",
+    "url": "https://www.evaair.com/en-us/infinity-mileagelands/"
+  },
   "flying-blue": {
     "name": "Air France-KLM Flying Blue",
     "type": "airline",
     "url": "https://www.flyingblue.com/"
+  },
+  "frontier-miles": {
+    "name": "Frontier Miles",
+    "type": "airline",
+    "url": "https://www.flyfrontier.com/frontiermiles/"
   },
   "iberia-club": {
     "name": "Iberia Club",
@@ -109,10 +139,20 @@
     "type": "airline",
     "url": "https://www.jetblue.com/trueblue"
   },
+  "korean-air-skypass": {
+    "name": "Korean Air SKYPASS",
+    "type": "airline",
+    "url": "https://www.koreanair.com/skypass"
+  },
   "krisflyer": {
     "name": "Singapore Airlines KrisFlyer",
     "type": "airline",
     "url": "https://www.singaporeair.com/krisflyer"
+  },
+  "malaysia-enrich": {
+    "name": "Malaysia Airlines Enrich",
+    "type": "airline",
+    "url": "https://enrich.malaysiaairlines.com/enrich.html"
   },
   "qantas-frequent-flyer": {
     "name": "Qantas Frequent Flyer",
@@ -124,6 +164,11 @@
     "type": "airline",
     "url": "https://www.qatarairways.com/en/privilegeclub.html"
   },
+  "saudia-alfursan": {
+    "name": "Saudia Alfursan",
+    "type": "airline",
+    "url": "https://www.saudia.com/alfursan"
+  },
   "southwest-rapid-rewards": {
     "name": "Southwest Rapid Rewards",
     "type": "airline",
@@ -133,6 +178,11 @@
     "name": "TAP Miles&Go",
     "type": "airline",
     "url": "https://www.flytap.com/en-us/miles-and-go"
+  },
+  "thai-royal-orchid-plus": {
+    "name": "Thai Airways Royal Orchid Plus",
+    "type": "airline",
+    "url": "https://www.thaiairways.com/en-th/content/about-royal-orchid-plus/"
   },
   "turkish-miles-and-smiles": {
     "name": "Turkish Miles&Smiles",
